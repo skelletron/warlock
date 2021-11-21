@@ -1,0 +1,77 @@
+﻿religiousity_perk = {
+	lifestyle = warlock_lifestyle
+	tree = blood
+	position = { 0 0 }
+	icon = node_diplomacy
+
+	auto_selection_weight = {
+		value = 1000
+		if = {
+			limit = {
+				has_focus = blood_magic_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					can_start_new_lifestyle_tree_trigger = no
+					NOT = {
+						has_trait = warlock
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.8
+	}
+}
+
+banana_blood_perk = {
+	lifestyle = warlock_lifestyle
+	tree = blood
+	position = { 2 0 }
+	icon = node_diplomacy
+
+	auto_selection_weight = {
+		value = 1000
+		if = {
+			limit = {
+				has_focus = blood_magic_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					can_start_new_lifestyle_tree_trigger = no
+					NOT = {
+						has_trait = warlock
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.9
+	}
+}
+
+mango_blood_perk = {
+	lifestyle = warlock_lifestyle
+	tree = blood
+	position = { 1 1.25 }
+	icon = trait_theologian
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.5
+	}
+
+	parent = religiousity_perk
+	parent = banana_blood_perk
+}

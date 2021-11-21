@@ -1,0 +1,29 @@
+﻿blood_magic_focus = {
+	lifestyle = warlock_lifestyle
+	
+	modifier = {
+		fertility = 0.4
+	}
+
+	focus_id = 8000
+}
+
+bone_sculpting_focus = {
+	lifestyle = warlock_lifestyle
+	
+	modifier = {
+		learning = 10
+	}
+
+	focus_id = 8001
+}
+
+mind_breaking_focus = {
+	lifestyle = warlock_lifestyle
+	
+	modifier = {
+		intrigue = 10
+	}
+
+	focus_id = 8002
+}

@@ -24,6 +24,4 @@ warlock = {
 			desc = trait_warlock_character_desc
 		}
 	}
-	# group = education_intrigue
-	# level = 4
 }

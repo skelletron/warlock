@@ -1,0 +1,9 @@
+﻿warlock_lifestyle = {
+	
+	is_valid = {
+		has_trait = warlock
+	}
+
+	xp_per_level = 1000
+	base_xp_gain = 25
+}

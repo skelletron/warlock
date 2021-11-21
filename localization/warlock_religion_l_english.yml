@@ -41,3 +41,26 @@
  warlock_decision.1001.a.tt:0 "You will become a Warlock"
  warlock_decision.1001.b:0 "I'm not ready for that kind of power yet."
  warlock_decision.1001.b.flavor:0 "I need to study and learn more before I can take on such a burden of power."
+
+ warlock_lifestyle_name:0 "Warlock"
+ warlock_lifestyle_desc:0 "Focus on defying the laws that other mortals live by, through the psychic powers gained by virtue of being a Warlock."
+
+ blood_magic_focus:0 "Blood Magic Focus"
+ blood_magic_focus_effect_desc:0 "Control the flow of blood among bodies, near and far."
+ bone_sculpting_focus:0 "Bone Sculpting Focus"
+ bone_sculpting_focus_effect_desc:0 "Snap, twist, and sculpt boneworks and bring them to life."
+ mind_breaking_focus:0 "Mind Breaking Focus"
+ mind_breaking_focus_effect_desc:0 "Upset the reality perceived by minds around you."
+
+ blood_name:0 "Blood"
+ bone_name:0 "Bone"
+ mind_name:0 "Mind"
+
+ religiousity_perk_name:0 "Religiousity"
+ adoration_perk_name:0 "Adoration"
+ unaging_perk_name:0 "Unaging"
+
+ action_lifestyle_warlock:0 "$action_can_spend_perk_point$"
+ action_lifestyle_warlock_label:0 "$action_can_spend_perk_point_label$"
+ action_lifestyle_warlock_desc:0 "$action_can_spend_perk_point_desc$"
+ action_lifestyle_warlock_click:0 "$action_can_spend_perk_point_click$"

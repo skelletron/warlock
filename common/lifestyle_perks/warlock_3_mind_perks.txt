@@ -1,0 +1,46 @@
+﻿adoration_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 0 }
+	icon = node_diplomacy
+
+	auto_selection_weight = {
+		value = 1000
+		if = {
+			limit = {
+				has_focus = mind_breaking_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					can_start_new_lifestyle_tree_trigger = no
+					NOT = {
+						has_trait = warlock
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+
+	character_modifier = {
+		general_opinion = 100
+	}
+
+}
+
+mango_mind_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 1.25 }
+	icon = trait_theologian
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.5
+	}
+
+
+	parent = adoration_perk
+}
