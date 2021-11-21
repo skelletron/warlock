@@ -27,3 +27,17 @@
  warlock_decision.0001.a.tt:0 "You will convert to the [faith:great_old_one]"
  warlock_decision.0001.b:0 "I'm not ready to make such a decision."
  warlock_decision.0001.b.flavor:0 "That was just a bit too bizarre for me. I'll stick to what I know for now."
+
+ beseech_dark_coronation_decision:0 "Beseech Dark Coronation"
+ beseech_dark_coronation_decision.tt:0 "You've read tales of great Warlocks of yore sewing chaos in service of the Great Old One, and you will beseech such a title from your lord"
+ beseech_dark_coronation_decision.desc:0 "#F I will attempt to attain the lofty title of Warlock#!"
+ beseech_dark_coronation_decision.desc.tt:0 "You may be gifted with a dark crown, rife with power"
+ beseech_dark_coronation_decision_effect.tt:0 "You prepare the ritual and begin chanting"
+ beseech_dark_coronation_decision_confirm:0 "Call out to your lord"
+
+ warlock_decision.1001.t:0 "Gain Power Unimaginable"
+ warlock_decision.1001.desc:0 "You've dedicated yourself to the Great Old One, and now, armed with black magics, you will enact its will with even greater fervor."
+ warlock_decision.1001.a:0 "I will take my place among the greatest of our faith."
+ warlock_decision.1001.a.tt:0 "You will become a Warlock"
+ warlock_decision.1001.b:0 "I'm not ready for that kind of power yet."
+ warlock_decision.1001.b.flavor:0 "I need to study and learn more before I can take on such a burden of power."

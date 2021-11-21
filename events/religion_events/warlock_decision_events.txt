@@ -1,0 +1,66 @@
+﻿namespace = warlock_decision
+
+warlock_decision.0001 = {
+	type = character_event
+	title = warlock_decision.0001.t
+	desc = warlock_decision.0001.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = personality_zealous
+	}
+	trigger = {
+
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = {
+
+		name = warlock_decision.0001.a
+		remove_short_term_gold = minor_gold_value
+		custom_tooltip = warlock_decision.0001.a.tt
+		set_character_faith_with_conversion = faith:great_old_one
+	}
+
+	option = {
+		name = warlock_decision.0001.b
+		flavor = warlock_decision.0001.b.flavor
+	}
+}
+
+warlock_decision.1001 = {
+	type = character_event
+	title = warlock_decision.1001.t
+	desc = warlock_decision.1001.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = personality_zealous
+	}
+	trigger = {
+
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = {
+		name = warlock_decision.1001.a
+		remove_short_term_gold = 69
+		custom_tooltip = warlock_decision.1001.a.tt
+		add_trait_force_tooltip = warlock
+	}
+
+	option = {
+		name = warlock_decision.1001.b
+		flavor = warlock_decision.1001.b.flavor
+	}
+}
