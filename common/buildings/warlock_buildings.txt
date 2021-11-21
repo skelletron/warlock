@@ -1,0 +1,27 @@
+﻿warlock_gemstone_01 = {
+	construction_time = quick_construction_time
+
+	cost_gold = 40
+	cost_piety = 150
+	
+	province_modifier = {
+		monthly_income = 0.1
+	}
+
+	character_modifier = {
+		monthly_piety = 1
+	}
+
+	type_icon = "icon_building_warlock_gemstone.dds"
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+
+	is_enabled = {
+		scope:holder = {
+			religion = religion:great_old_one_religion
+		}
+	}
+}

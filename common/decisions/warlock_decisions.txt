@@ -1,0 +1,44 @@
+read_esoteric_texts_decision = {	#Go to the library and read esoteric texts.
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+
+	desc = read_esoteric_texts_decision.desc
+	selection_tooltip = read_esoteric_texts_decision.tt
+
+	is_shown = {
+		# has_variable = false_convert
+		# NOR = {
+		# 	this = faith.religious_head
+		# 	var:false_convert = faith
+		# }
+		# NOT = {
+		# 	faith.religion = faith:great_old_one.religion
+		# }
+		NOT = {
+			faith = faith:great_old_one
+		}
+	}
+
+	is_valid = {
+		is_adult = yes
+		# NOT = { has_trait = zealous }
+	}
+
+	# is_valid_showing_failures_only = {
+	# 	custom_description = {
+	# 		text = cannot_be_atoned_krstjani_leader_flag
+	# 		NOT = { has_character_flag = atoned_krstjani_leader_flag }
+	# 	}
+	# }
+
+	cost = {
+		piety = minor_piety_value
+	}
+
+	cooldown = { years = 5 }
+
+	effect = {
+		custom_tooltip = read_esoteric_texts_decision_effect.tt
+		trigger_event = warlock_decision.0001
+	}
+}

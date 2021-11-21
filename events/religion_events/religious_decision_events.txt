@@ -1,0 +1,192 @@
+warlock_decision.0001 = {
+	type = character_event
+	title = warlock_decision.0001.t
+	desc = warlock_decision.0001.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = personality_zealous
+	}
+	trigger = {
+
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = {
+		# trigger = {
+		# 	OR = {
+		# 		is_ai = no
+		# 		short_term_gold > minor_gold_value
+		# 	}
+		# }
+		name = warlock_decision.0001.a
+		remove_short_term_gold = minor_gold_value
+		custom_tooltip = warlock_decision.0001.a.tt
+		# save_scope_value_as = {
+		# 	name = offering
+		# 	value = flag:traditional
+		# }
+		# trigger_event = {
+		# 	id = warlock_decision.0002
+		# 	days = { 2 3 }
+		# }
+		# ai_chance = {
+		# 	base = 100
+		# }
+		set_character_faith_with_conversion = faith:great_old_one
+	}
+
+	option = {
+		name = warlock_decision.0001.b
+		flavor = warlock_decision.0001.b.flavor
+
+		# ai_chance = {
+		# 	base = 0
+		# }
+	}
+}
+
+# option = { # An option the player/AI can pick
+# # Localization key for the event option button text
+# name = X
+
+# # The effects that will be run when picking the options. Written directly here with no label
+# X..
+
+# # A trigger that has to be fulfilled for this option to be valid.
+# trigger = {}
+# # If the event is invalid, but this trigger is, the option will be shown, but disabled. This behavior is also influenced by the EVENT_OPTIONS_SHOWN_HIDE_UNAVAILABLE define
+# show_as_unavailable = {}
+# # Highlights the event portrait of this character while this option is hovered. This is in addition to the automatic highlighting when hovering an event option that has an effect that affects portrait characters.
+# highlight_portrait = scope:a_character
+# }
+
+# religious_decision.0001 = {
+# 	type = character_event
+# 	title = religious_decision.0001.t
+# 	desc = religious_decision.0001.desc
+# 	theme = faith
+# 	override_background = {
+# 		event_background = wilderness
+# 	}
+# 	left_portrait = {
+# 		character = scope:realm_priest
+# 		animation = personality_zealous
+# 	}
+	
+# 	trigger = {
+
+# 	}
+
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
+
+# 	immediate = {
+# 		cp:councillor_court_chaplain = {
+# 			save_scope_as = realm_priest
+# 		}
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				short_term_gold > major_gold_value
+# 			}
+# 		}
+# 		name = religious_decision.0001.a
+# 		remove_short_term_gold = major_gold_value
+# 		custom_tooltip = religious_decision.0001.a.tt.1
+# 		custom_tooltip = religious_decision.0001.a.tt.2
+# 		save_scope_value_as = {
+# 			name = offering
+# 			value = flag:expensive
+# 		}
+# 		stress_impact = {
+# 			greedy = medium_stress_gain
+# 			cynical = medium_stress_gain
+# 		}
+# 		trigger_event = {
+# 			id = religious_decision.0002
+# 			days = { 2 3 }
+# 		}
+# 		ai_chance = {
+# 			base = 0
+
+# 			ai_value_modifier = {
+# 				ai_zeal = 10
+# 				ai_greed = -10
+# 			}
+# 		}		
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				short_term_gold > minor_gold_value
+# 			}
+# 		}
+# 		name = religious_decision.0001.b
+# 		remove_short_term_gold = minor_gold_value
+# 		custom_tooltip = religious_decision.0001.b.tt
+# 		save_scope_value_as = {
+# 			name = offering
+# 			value = flag:traditional
+# 		}
+# 		trigger_event = {
+# 			id = religious_decision.0002
+# 			days = { 2 3 }
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 		}		
+# 	}
+	
+# 	option = {
+# 		name = religious_decision.0001.c
+# 		custom_tooltip = religious_decision.0001.c.tt
+# 		save_scope_value_as = {
+# 			name = offering
+# 			value = flag:none
+# 		}
+# 		stress_impact = {
+# 			generous = medium_stress_gain
+# 			humble = medium_stress_gain
+# 		}
+# 		trigger_event = {
+# 			id = religious_decision.0002
+# 			days = { 2 3 }
+# 		}
+
+# 		ai_chance = {
+# 			base = 0
+
+# 			ai_value_modifier = {
+# 				ai_boldness = 5
+# 				ai_greed = 5
+# 				ai_zeal = -10
+# 			}
+
+# 			modifier = {
+# 				add = 980
+# 				has_trait = arrogant
+# 			}
+# 		}		
+# 	}
+
+# 	option = {
+# 		name = religious_decision.0001.d
+# 		flavor = religious_decision.0001.d.flavor
+
+# 		ai_chance = {
+# 			base = 0
+# 		}
+# 	}
+# }
