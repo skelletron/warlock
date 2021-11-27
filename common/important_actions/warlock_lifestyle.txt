@@ -8,6 +8,7 @@ action_lifestyle_warlock = {
 		if = {
 			limit = {
 				has_focus_warlock = yes
+
 				perk_points > 0
 				is_adult = yes
 			}

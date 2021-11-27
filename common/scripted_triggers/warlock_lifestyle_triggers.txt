@@ -1,0 +1,16 @@
+﻿has_focus_warlock = {
+	OR = {
+		has_focus = blood_magic_focus
+		has_focus = bone_sculpting_focus
+		has_focus = mind_breaking_focus
+	}
+}
+
+# Folder is scripted_triggers file is lifestyle_triggers
+# has_focus_intrigue = {
+# 	OR = {
+# 		has_focus = intrigue_intimidation_focus
+# 		has_focus = intrigue_temptation_focus
+# 		has_focus = intrigue_skulduggery_focus
+# 	}
+# }
