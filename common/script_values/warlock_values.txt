@@ -1,0 +1,2 @@
+vein_snare_victim_duration = 365
+level_4_spell_cost_value = 400

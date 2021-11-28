@@ -1,0 +1,4 @@
+vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -5.0
+}

@@ -1,0 +1,185 @@
+cast_vein_snare = {
+	category = interaction_category_warlock
+	desc = cast_vein_snare_interaction_desc
+	send_name = cast_vein_snare_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+		}
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			is_alive = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_4_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_4_spell_cost_value
+			}
+		}
+
+		scope:recipient = {
+			add_character_modifier = { modifier = vein_snare_victim_modifier days = vein_snare_victim_duration }
+		}
+	}
+}
+
+# give_bubonic_plague_interaction = {
+# 	category = interaction_debug_main
+# 	use_diplomatic_range = no
+# 	ignores_pending_interaction_block = yes
+	
+# 	interface_priority = -1
+
+# 	is_shown = {
+# 		debug_only = yes
+# 	}
+
+# 	on_accept = {
+# 		scope:recipient = {
+# 			add_trait = bubonic_plague
+# 		}
+# 	}
+# 	auto_accept = yes
+# }
+
+# add_character_modifier = { modifier = risky_wound_treatment_failure_modifier days = wound_treatment_failure_duration }
+
+# sacrifice_to_the_darkness_interaction = {
+# 	category = interaction_category_hostile
+# 	desc = sacrifice_to_the_darkness_interaction_desc
+# 	send_name = sacrifice_to_the_darkness_interaction
+# 	use_diplomatic_range = yes
+# 	popup_on_receive = no
+# 	send_options_exclusive = no
+# 	ai_min_reply_days = 4
+# 	ai_max_reply_days = 9
+
+# 	is_shown = {
+# 		#scope:recipient.location = { squared_distance = { target = scope:actor.location value <= 4000 } }
+# 		scope:actor = {
+# 			has_trait = a_touch_of_power_diabolist
+# 			is_at_same_location = scope:recipient
+# 		}
+# 		scope:recipient = { 
+# 			NOT = { this = scope:actor }
+# 			is_alive = yes
+# 		}
+# 	}
+	
+# 	is_valid = {
+# 		scope:actor = {
+# 			NOT = { is_imprisoned = yes }
+# 		}
+# 	}
+
+# 	auto_accept = { always = yes }
+# 	cooldown = { months = 1 }
+# 	cooldown_against_recipient = { years = 1 }
+
+# 	on_send = {
+# 		scope:actor = {
+# 			trigger_event = diabolist_event.1000
+# 		}
+# 	}
+
+# 	#Use hook
+# 	send_option = {
+# 		is_valid = {
+# 			scope:actor = {
+# 				has_usable_hook = scope:recipient
+# 			}
+# 		}
+# 		flag = hook	
+# 		localization = GENERIC_SPEND_A_HOOK
+# 	}
+# 	should_use_extra_icon = {
+# 		scope:actor = { has_usable_hook = scope:recipient }
+# 	}
+# 	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+
+# 	on_accept = {
+# 		scope:actor = {
+# 			custom_tooltip = diabolist_event.1000.sacrifice_attempt
+# 			trigger_event = diabolist_event.1010
+# 		}
+# 	}
+
+# 	on_decline = {
+# 	}
+
+# 	auto_accept = {
+# 		custom_description = {
+# 			text = "spending_hook"
+# 			subject = scope:actor
+# 			object = scope:recipient
+# 			scope:hook = yes
+# 		}
+# 	}
+
+# 	ai_accept = {
+# 		base = 100
+# 	}
+
+# 	ai_potential = {
+# 		is_at_war = no
+# 		is_ruler = yes
+# 	}
+
+# 	ai_targets = {
+# 		ai_recipients = prisoners
+# 		max = 20
+# 	}
+
+# 	ai_targets = {
+# 		ai_recipients = courtiers
+# 		max = 20
+# 	}
+	
+# 	ai_targets = {
+# 		ai_recipients = dynasty
+# 		max = 20
+# 	}
+	
+# 	ai_targets = {
+# 		ai_recipients = family
+# 		max = 10
+# 	}
+	
+# 	ai_targets = {
+# 		ai_recipients = spouses
+# 	}
+	
+# 	ai_frequency = 12
+	
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
