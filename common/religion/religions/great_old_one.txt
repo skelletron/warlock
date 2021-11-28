@@ -6,23 +6,23 @@
 	pagan_roots = yes
 
 	#Main Group
-	doctrine = doctrine_no_head
-	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_temporal_head
+	doctrine = doctrine_gender_equal
 	doctrine = doctrine_pluralism_pluralistic
-	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_theocracy_lay_clergy
 
 	#Marriage
-	doctrine = doctrine_concubines
+	doctrine = doctrine_polygamy
 	doctrine = doctrine_divorce_allowed
 	doctrine = doctrine_bastardry_legitimization
-	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 
 	#Crimes
-	doctrine = doctrine_homosexuality_shunned
-	doctrine = doctrine_adultery_men_crime
-	doctrine = doctrine_adultery_women_crime
-	doctrine = doctrine_kinslaying_close_kin_crime
-	doctrine = doctrine_deviancy_crime
+	doctrine = doctrine_homosexuality_accepted
+	doctrine = doctrine_adultery_men_accepted
+	doctrine = doctrine_adultery_women_accepted
+	doctrine = doctrine_kinslaying_accepted
+	doctrine = doctrine_deviancy_accepted
 	doctrine = doctrine_witchcraft_accepted
 
 	#Clerical Functions
@@ -32,8 +32,8 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 
 	traits = {
-		virtues = { brave just honest }
-		sins = { craven arbitrary deceitful }
+		virtues = { zealous humble sadistic }
+		sins = { lazy gluttonous }
 	}
 
 	custom_faith_icons = {
@@ -201,9 +201,9 @@
 			holy_site = haridwar
 
 			#Generic pagan tenets
-			doctrine = tenet_astrology
-			doctrine = tenet_ancestor_worship
-			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_pursuit_of_power
+			doctrine = tenet_human_sacrifice
+			doctrine = tenet_sacred_shadows
 		}
 	}
 }
