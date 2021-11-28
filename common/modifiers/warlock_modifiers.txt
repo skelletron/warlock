@@ -1,4 +1,40 @@
-vein_snare_victim_modifier = {
+﻿vein_snare_victim_modifier = {
 	icon = vein_snare_victim
 	health = -5.0
+}
+
+# Doomed Vein Snare Victim
+level_6_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -10.0
+}
+
+# Severe Vein Snare Victim
+level_5_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -5.0
+}
+
+# Ailing Vein Snare Victim
+level_4_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -2.5
+}
+
+# Weary Vein Snare Victim
+level_3_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -1.0
+}
+
+# Resistant Vein Snare Victim
+level_2_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -0.5
+}
+
+# Tickled Vein Snare Victim
+level_1_vein_snare_victim_modifier = {
+	icon = vein_snare_victim
+	health = -0.25
 }

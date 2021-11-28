@@ -1,4 +1,4 @@
-cast_vein_snare = {
+﻿cast_vein_snare = {
 	category = interaction_category_warlock
 	desc = cast_vein_snare_interaction_desc
 	send_name = cast_vein_snare_interaction
@@ -43,13 +43,109 @@ cast_vein_snare = {
 				value = 0
 				subtract = level_4_spell_cost_value
 			}
+			if = {
+				limit = {
+					scope:actor.learning > 20
+					scope:actor.intrigue > 20
+					scope:actor.learning > scope:recipient.learning
+					scope:actor.intrigue > scope:recipient.intrigue
+				}
+				scope:recipient = {
+					add_character_modifier = { modifier = level_6_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
+			else_if = {
+				limit = {
+					scope:actor.learning > 18
+					scope:actor.intrigue > 18
+					scope:actor.learning > scope:recipient.learning
+					scope:actor.intrigue > scope:recipient.intrigue
+				}
+				scope:recipient = {
+					add_character_modifier = { modifier = level_5_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
+			else_if = {
+				limit = {
+					scope:actor.learning > 16
+					scope:actor.intrigue > 16
+					OR = {
+						scope:actor.learning > scope:recipient.learning
+						scope:actor.intrigue > scope:recipient.intrigue
+					}
+				}
+				scope:recipient = {
+					add_character_modifier = { modifier = level_4_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
+			else_if = {
+				limit = {
+					scope:actor.learning > 14
+					scope:actor.intrigue > 14
+					OR = {
+						scope:actor.learning > scope:recipient.learning
+						scope:actor.intrigue > scope:recipient.intrigue
+					}
+				}
+				scope:recipient = {
+					add_character_modifier = { modifier = level_3_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
+			else_if = {
+				limit = {
+					scope:actor.learning > 12
+					scope:actor.intrigue > 12
+				}
+				scope:recipient = {
+					add_character_modifier = { modifier = level_2_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
+			else = {
+				scope:recipient = {
+					add_character_modifier = { modifier = level_1_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				}
+			}
 		}
 
-		scope:recipient = {
-			add_character_modifier = { modifier = vein_snare_victim_modifier days = vein_snare_victim_duration }
-		}
+		# scope:recipient = {
+		# 	add_character_modifier = { modifier = vein_snare_victim_modifier days = vein_snare_victim_duration }
+		# }
 	}
 }
+
+# if = {
+# 	limit = {
+# 		scope:treatment_result_treatment = flag:safe
+# 		scope:treatment_result_outcome = flag:success
+# 	}
+# 	if = {
+# 		limit = {
+# 			has_short_disease_type_trigger = yes
+# 			has_high_health_penalty_disease_type_trigger = yes
+# 		}
+# 		add_character_modifier = { modifier = safe_disease_treatment_success_high_modifier days = disease_treatment_short_duration }
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_short_disease_type_trigger = no
+# 			has_high_health_penalty_disease_type_trigger = yes
+# 		}
+# 		add_character_modifier = { modifier = safe_disease_treatment_success_high_modifier days = disease_treatment_long_duration }
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_short_disease_type_trigger = yes
+# 			has_high_health_penalty_disease_type_trigger = no
+# 		}
+# 		add_character_modifier = { modifier = safe_disease_treatment_success_low_modifier days = disease_treatment_short_duration }
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_short_disease_type_trigger = no
+# 			has_high_health_penalty_disease_type_trigger = no
+# 		}
+# 		add_character_modifier = { modifier = safe_disease_treatment_success_low_modifier days = disease_treatment_long_duration }
+# 	}
 
 # give_bubonic_plague_interaction = {
 # 	category = interaction_debug_main
