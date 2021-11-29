@@ -76,3 +76,43 @@ beseech_dark_coronation_decision = {
 	}
 
 }
+
+spawn_undead_faction_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+
+	# desc = beseech_dark_coronation_decision.desc
+	# selection_tooltip = beseech_dark_coronation_decision.tt
+
+	is_shown = {
+		faith = faith:great_old_one
+		has_trait = warlock
+	}
+
+	is_valid = {
+		is_adult = yes
+	}
+
+	cost = {
+		piety = 1
+	}
+
+	cooldown = { days = 10 }
+
+	effect = {
+		# custom_tooltip = beseech_dark_coronation_decision_effect.tt
+		# trigger_event = {
+		# 	id = warlock_decision.1001
+		# }
+		# trigger_event = warlock_decision.1001
+		# faction = {
+		# 	save_scope_as = faction
+		# 	setup_peasant_leader_effect = yes
+		# 	# special_character = {
+		# 	# 	save_scope_as = peasant_leader
+		# 	# }
+		# }
+
+		trigger_event = warlock_faction_decision.0001
+	}
+}

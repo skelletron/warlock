@@ -1,0 +1,208 @@
+﻿namespace = warlock_faction_decision
+
+warlock_faction_decision.0001 = {
+	type = character_event
+	theme = war
+	title = warlock_faction_decision.0001.t # Synthetic Dawn III
+	desc = warlock_faction_decision.0001.desc
+	# title = PDXCON.1400.t # Synthetic Dawn III
+	# desc = PDXCON.1400.desc
+	# type = character_event
+	# type = letter_event
+	# sender = scope:peasant_leader
+	# opening = "FACTION_DEMAND_UNDEAD"
+	# desc = FACTION_DEMAND_UNDEAD_DESC
+
+	left_portrait = {
+		character = scope:undead_leader
+		animation = personality_bold
+		#war_attacker
+	}
+
+	trigger = {
+		# exists = scope:faction
+		# exists = scope:peasant_leader
+		# scope:peasant_leader.joined_faction = scope:faction
+	}
+
+	# on_trigger_fail = {
+	# 	debug_log = "Peasant Faction tried to press claim (probably) without existing peasant_leader"
+	# 	debug_log_scopes = yes
+	# 	debug_log = "Peasant Faction error reporting complete"
+	# }
+
+	# option = {
+	# 	name = "FACTION_DEMAND_UNDEAD_ACCEPT"
+	# 	peasant_faction_demands_enforced = {FACTION = scope:faction}
+
+	# 	ai_chance = {
+	# 		base = 0
+	# 		ai_value_modifier = {
+	# 			ai_boldness = -4
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 100 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 110 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 120 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 130 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 140 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power >= 150 }
+	# 		}
+	# 		modifier = {
+	# 			add = -50
+	# 			scope:faction.faction_target = {
+	# 				is_at_war = no
+	# 				primary_title.tier >= tier_kingdom
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = -150
+	# 			scope:faction.faction_target = {
+	# 				is_at_war = no
+	# 				primary_title.tier >= tier_empire
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# debug_log = "about to begin the immediate block"
+
+	immediate = {
+		debug_log = "inside immediate block"
+		hidden_effect = {
+			create_character = {
+				name = "UNDEAD LEADER"
+				# mother = scope:PDXCON_synth_leader
+				# dynasty_house = scope:PDXCON_synth_leader.house
+				# location = scope:PDXCON_synth_leader.capital_province
+				location = title:c_middlesex.title_province
+				# culture = scope:PDXCON_synth_leader.culture	
+				# culture = root.culture
+				template = undead_leader_template
+				# template = PDXCON_synthetic_template
+				save_scope_as = undead_leader
+			}
+
+
+					
+			scope:undead_leader = {
+				# add_character_modifier = {
+				# 	modifier = PDXCON_has_tommygun_modifier
+				# }
+				# set_immortal_age = 21
+					
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = change_undead_leader
+					add_claim_on_loss = no
+				}
+				
+				title:c_ile_de_france = {
+						change_title_holder = {
+							holder = scope:undead_leader
+							change = scope:change_undead_leader
+							take_baronies = yes
+						}
+					}
+				
+				resolve_title_and_vassal_change = scope:change_undead_leader
+				add_pressed_claim = title:d_valois
+				add_pressed_claim = title:k_france
+				add_pressed_claim = title:k_sweden
+				add_prestige = 10000
+			}
+		}
+
+		scope:undead_leader = {
+			spawn_army = {
+				uses_supply = yes
+				inheritable = no
+				name = sterlization_army_02_event_troops
+				levies = {
+					value = 100000
+				}
+				men_at_arms = {
+					type = bombard
+					stacks = 1
+				}
+				men_at_arms = {
+					type = house_guard
+					stacks = 1
+				}				
+				# location = title:c_ile_de_france.title_province
+				location = title:c_middlesex.title_province
+			}				
+		}
+	}
+
+	option = {
+		# name = PDXCON.1400.option.a
+		# add_prestige = 4000
+		scope:undead_leader = {
+		
+# To start a war:		
+			start_war = {
+				casus_belli = claim_cb
+				target = title:k_sweden.holder
+				claimant = scope:undead_leader
+			}
+		}
+	}
+
+	after = {	
+		set_global_variable = {
+			name = undead_war_is_over
+			value = yes
+		}
+		# custom_tooltip = PDXCON.1400.after.tt
+		custom_tooltip = warlock_faction_decision.0001.after.tt
+		# debug_log = warlock_faction_decision.0001.after.tt
+		debug_log = "Undead War is Over dubuuuu"
+	}
+
+	# option = {
+	# 	name = "FACTION_DEMAND_UNDEAD_REFUSE"
+
+	# 	scope:faction = {
+	# 		faction_start_war = {}
+			
+	# 		# This needs to run after 'faction_start_war' or the troops won't spawn correctly.
+	# 		faction_spawn_member_county_armies_effect = {
+	# 			FACTION = scope:faction
+	# 			ARMY_OWNER = scope:peasant_leader
+	# 			PEASANT_ARMY_NAME = claimant_faction_event_troops
+	# 		}	
+	# 	}
+
+	# 	ai_chance = {
+	# 		base = 100
+	# 		ai_value_modifier = {
+	# 			ai_boldness = 4
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power < 90 }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+	# 			scope:faction = { faction_power < 80 }
+	# 		}
+	# 	}
+	# }
+}
