@@ -1,0 +1,20 @@
+turned_soldiers_modifier = {
+	icon = turned_soldiers_modifier_icon
+	levy_size = -0.50
+}
+
+ravaged_by_undead_modifier = {
+	icon = undead_city_modifier_icon
+	development_growth_factor = -0.5
+	monthly_county_control_change_factor = -0.5
+	tax_mult = -0.9
+	county_opinion_add = -50
+}
+
+undead_wreckage_modifier = {
+	icon = undead_wreckage_modifier_icon
+	build_speed = 0.5
+	build_gold_cost = 0.5
+	build_prestige_cost = 0.5
+	build_piety_cost = 0.5
+}

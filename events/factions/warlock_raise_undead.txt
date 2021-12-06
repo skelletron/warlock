@@ -201,6 +201,20 @@ warlock_raise_undead.0001 = {
 		}
 	}
 	option = {
+
+		scope:recipient.capital_province.county = {
+			change_county_control = -75
+			add_county_modifier = {
+				# modifier = hunt_punished_locals_modifier
+				modifier = turned_soldiers_modifier
+				years = 20
+			}
+		}
+		# title:c_upland = {
+		# 	change_county_control = -50
+		# }
+
+
 		scope:undead_leader = {
 			start_war = {
 				casus_belli = undead_war
@@ -213,9 +227,13 @@ warlock_raise_undead.0001 = {
 			spawn_army = {
 				uses_supply = no
 				inheritable = no
-				name = sterlization_army_02_event_troops
+				name = undead_army
 				levies = {
-					value = scope:recipient.max_military_strength
+					value = {
+						value = scope:recipient.max_military_strength
+						multiply = 2
+					}
+
 					# value = 100000
 					# scope:recipient.title_province.county.county_levies_to_raise
 					# value = scope:recipient.title_province.county.total_county_levies

@@ -34,6 +34,57 @@
 
 	on_victory = {
 		debug_log = "undead won"
+
+		scope:defender.capital_province.county = {
+			add_county_modifier = {
+				# modifier = hunt_punished_locals_modifier
+				modifier = ravaged_by_undead_modifier
+				years = 20
+			}
+			add_county_modifier = {
+				modifier = undead_wreckage_modifier
+				years = 20
+			}
+			# county_modifier = {
+			# 	occupation_modifier
+			# }
+		}
+		# scope:recipient.capital_province.county = {
+		# 	change_county_control = -75
+		# }
+		# county_modifier = {
+		# }
+
+		# scope:defender = {
+			# remove_piety_level_for_shunned_or_criminal_trait_effect = { TRAIT = kinslayer_1 }
+			# add_piety = {
+			# 	value = 0
+			# 	# subtract = level_4_spell_cost_value
+			# 	subtract = 5000
+			# }
+			# remove_gold = {
+			# 	value = 5000
+			# 	# value = 0
+			# 	# subtract = 5000
+			# }
+			# add_prestige = {
+			# 	value = 0
+			# 	subtract = 5000
+			# }
+			
+		# }
+
+		# modify_all_participants_fame_values = {
+		# 	WINNER = scope:attacker
+		# 	LOSER = scope:defender
+		# 	# FAME_BASE = scope:cb_prestige_factor # Set by 'setup_claim_cb'
+		# 	IS_RELIGIOUS_WAR = no
+		# 	# WINNER_FAME_SCALE = 10
+		# 	LOSER_FAME_SCALE = -10
+		# 	# WINNER_ALLY_FAME_SCALE = 10
+		# 	# LOSER_ALLY_FAME_SCALE = 10
+		# }
+
 		# scope:attacker = { show_pow_release_message_effect = yes }
 		# hidden_effect = {
 		# 	scope:attacker = {
