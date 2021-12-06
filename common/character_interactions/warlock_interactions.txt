@@ -163,8 +163,8 @@ raise_undead = {
 		# scope:actor = { save_scope_as = warlock }
 		# scope:recipient = { save_scope_as = target }
 
-		trigger_event = warlock_raise_undead.0001
-		# scope:recipient = { trigger_event = warlock_raise_undead.0001}
+		# trigger_event = warlock_raise_undead.0001
+		scope:recipient = { trigger_event = warlock_raise_undead.0001}
 	}
 }
 
