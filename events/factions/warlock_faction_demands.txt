@@ -91,7 +91,8 @@ warlock_faction_decision.0001 = {
 				# mother = scope:PDXCON_synth_leader
 				# dynasty_house = scope:PDXCON_synth_leader.house
 				# location = scope:PDXCON_synth_leader.capital_province
-				location = title:c_middlesex.title_province
+				# location = title:c_middlesex.title_province
+				location = title:c_upland.title_province
 				# culture = scope:PDXCON_synth_leader.culture	
 				# culture = root.culture
 				template = undead_leader_template
@@ -102,36 +103,127 @@ warlock_faction_decision.0001 = {
 
 					
 			scope:undead_leader = {
+
+				create_dynamic_title = {
+					tier = duchy
+					# name = FACTION_PEASANT_TITLE_NAME
+					name = "UNDEAD DUCHY"
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+
+				scope:new_title = {
+					# set_capital_county = scope:peasant_county
+					set_capital_county = title:c_upland
+					set_landless_title = yes
+					set_destroy_on_succession = yes
+					set_delete_on_destroy = yes
+					set_no_automatic_claims = yes
+					set_definitive_form = yes
+					set_can_be_named_after_dynasty = no
+					change_title_holder = {
+						holder = scope:undead_leader
+						change = scope:change
+					}
+			
+					# set_variable = {
+					# 	name = faction
+					# 	value = scope:faction
+					# }
+			
+					# # avoid unused variable error. This variable is referenced in code
+					# var:faction = {}
+				}
+				resolve_title_and_vassal_change = scope:change
+				# scope:peasant_leader = {
+				# 	set_variable = {
+				# 		name = peasant_title
+				# 		value = scope:new_title
+				# 	}
+				# }
+				# scope:new_title = { generate_coa = factions }
+			
+				# scope:peasant_leader = {
+				# 	set_variable = {
+				# 		name = rebel_leader_peasants
+				# 		value = scope:faction
+				# 	}
+				# 	join_faction_skip_check = scope:faction
+				# }
+			
+				# set_special_character = scope:peasant_leader
+
 				# add_character_modifier = {
 				# 	modifier = PDXCON_has_tommygun_modifier
 				# }
 				# set_immortal_age = 21
 					
-				create_title_and_vassal_change = {
-					type = created
-					save_scope_as = change_undead_leader
-					add_claim_on_loss = no
-				}
+				# create_title_and_vassal_change = {
+				# 	type = created
+				# 	save_scope_as = change_undead_leader
+				# 	add_claim_on_loss = no
+				# }
 				
-				title:c_ile_de_france = {
-						change_title_holder = {
-							holder = scope:undead_leader
-							change = scope:change_undead_leader
-							take_baronies = yes
-						}
-					}
+				# title:c_ile_de_france = {
+				# 		change_title_holder = {
+				# 			holder = scope:undead_leader
+				# 			change = scope:change_undead_leader
+				# 			take_baronies = yes
+				# 		}
+				# 	}
 				
-				resolve_title_and_vassal_change = scope:change_undead_leader
-				add_pressed_claim = title:d_valois
-				add_pressed_claim = title:k_france
-				add_pressed_claim = title:k_sweden
+				# resolve_title_and_vassal_change = scope:change_undead_leader
+				# add_pressed_claim = title:d_valois
+				# add_pressed_claim = title:k_france
+				# add_pressed_claim = title:k_sweden
+				# title:c_upland = {
+				# 	change_title_holder = {
+				# 		holder = scope:undead_leader
+				# 		change = scope:change
+				# 		take_baronies = yes
+				# 	}
+				# }
+
 				add_prestige = 10000
+				add_gold = 10000
+
+				add_opinion = {
+					modifier = angry_opinion
+					target = title:k_sweden.holder
+					opinion = -50
+				}
+			}
+		}
+
+	}
+
+	option = {
+		# name = PDXCON.1400.option.a
+		# add_prestige = 4000
+		title:c_upland = {
+			change_county_control = -50
+
+		}
+
+		scope:undead_leader = {
+		
+			# To start a war:		
+			start_war = {
+				casus_belli = undead_war
+				# casus_belli = claim_cb
+				# target = title:k_sweden.holder
+				# claimant = scope:undead_leader
+				target = title:k_sweden.holder
 			}
 		}
 
 		scope:undead_leader = {
 			spawn_army = {
-				uses_supply = yes
+				# uses_supply = yes
+				uses_supply = no
 				inheritable = no
 				name = sterlization_army_02_event_troops
 				levies = {
@@ -146,22 +238,10 @@ warlock_faction_decision.0001 = {
 					stacks = 1
 				}				
 				# location = title:c_ile_de_france.title_province
-				location = title:c_middlesex.title_province
+				# location = title:c_middlesex.title_province
+				# location = title:k_sweden.title_province
+				location = title:c_upland.title_province
 			}				
-		}
-	}
-
-	option = {
-		# name = PDXCON.1400.option.a
-		# add_prestige = 4000
-		scope:undead_leader = {
-		
-# To start a war:		
-			start_war = {
-				casus_belli = claim_cb
-				target = title:k_sweden.holder
-				claimant = scope:undead_leader
-			}
 		}
 	}
 
