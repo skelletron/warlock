@@ -197,7 +197,6 @@ warlock_faction_decision.0001 = {
 				}
 			}
 		}
-
 	}
 
 	option = {

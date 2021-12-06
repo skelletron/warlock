@@ -2,13 +2,14 @@
     age = { 18 30 }
 	culture = capital_province.culture
 	faith = faith:great_old_one
-	gender_female_chance = 50
+	# gender_female_chance = 50
+	gender_female_chance = 0
 	diplomacy = { 1 5 }
-	martial = { 1 5 }
+	martial = { 15 20 }
 	stewardship = { 1 5 }
 	intrigue = { 1 5 }
 	learning = { 1 5 }
-	prowess = { 1 5 }
+	prowess = { 15 20 }
 
 	trait = warlock
 	# trait = cynical
@@ -19,21 +20,25 @@
 	random_traits_list = {
 	    count = 1
 		education_martial_1 = {}
-		education_intrigue_1 = {}
-		education_stewardship_1 = {}
-		education_learning_1 = {}
 		education_martial_2 = {}
-		education_intrigue_2 = {}
-		education_stewardship_2 = {}
-		education_learning_2 = {}	
 		education_martial_3 = {}
-		education_intrigue_3 = {}
-		education_stewardship_3 = {}
-		education_learning_3 = {}
 		education_martial_4 = {}
-		education_intrigue_4 = {}
-		education_stewardship_4 = {}
-		education_learning_4 = {}		
+		# education_martial_1 = {}
+		# education_intrigue_1 = {}
+		# education_stewardship_1 = {}
+		# education_learning_1 = {}
+		# education_martial_2 = {}
+		# education_intrigue_2 = {}
+		# education_stewardship_2 = {}
+		# education_learning_2 = {}	
+		# education_martial_3 = {}
+		# education_intrigue_3 = {}
+		# education_stewardship_3 = {}
+		# education_learning_3 = {}
+		# education_martial_4 = {}
+		# education_intrigue_4 = {}
+		# education_stewardship_4 = {}
+		# education_learning_4 = {}		
 	}
 	
 }
