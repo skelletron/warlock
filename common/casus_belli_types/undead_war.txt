@@ -14,7 +14,7 @@
 
 	}
 
-	landless_attacker_needs_armies = no
+	# landless_attacker_needs_armies = no
 
 	on_declaration = {
 		#on_declared_war = yes
