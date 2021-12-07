@@ -1,4 +1,4 @@
-skeleton_warriors = {
+﻿skeleton_warriors = {
 	type = light_infantry
 
 	can_recruit = no
@@ -237,7 +237,7 @@ skeletal_black_mages = {
 	
 	stack = 20
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_crossbowmen }
+	ai_quality = { value = culture_ai_weight_archers }
 	icon = dnd_lich
 }
 
@@ -271,7 +271,7 @@ skeletal_grey_mages = {
 	
 	stack = 20
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_crossbowmen }
+	ai_quality = { value = culture_ai_weight_archers }
 	icon = blood_scrivener
 }
 
