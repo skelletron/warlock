@@ -1,4 +1,4 @@
-pale_skin = {
+﻿pale_skin = {
 	pale_skin = {
 		dna_modifiers = {
 			color = {
@@ -62,3 +62,78 @@ visual_traits_wounded_1 = {
 		}
 	}
 }
+
+undead_hair = {
+	undead_hair = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = undead_hairstyles
+				value = 0
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				AND = {
+					OR = {
+						has_trait = undead
+					}
+				}
+			}
+		}
+	}
+}
+
+undead_beard = {
+	undead_beard = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = undead_beards
+				value = 0
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				AND = {
+					OR = {
+						has_trait = undead
+					}
+				}
+			}
+		}
+	}
+}
+
+# beardless = {
+# 	beardless = {
+# 		dna_modifiers = {
+# 			accessory = {
+#                 mode = add
+#                 gene = beards
+#                 template = no_beard
+#                 range = { 0 1 } # For the randomness to work correctly
+#             }
+# 		}
+# 		outfit_tags = { bald }
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 100
+# 				AND = {
+# 					OR = {
+# 						has_character_flag = beardless_flag
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
