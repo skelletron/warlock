@@ -25,7 +25,39 @@ skeleton_warriors = {
 	
 	stack = 10
 	ai_quality = { value = culture_ai_weight_skirmishers }
-	icon = skirmishers
+	icon = erebos_titan
+}
+
+dread_cavalry = {
+	type = heavy_cavalry
+
+	can_recruit = no
+
+	damage = 70
+	toughness = 40
+	pursuit = 60
+	screen = 10
+
+	# this counters, it's not countered BY (i think. look at pikemen example in vanilla)
+	# i want them to be countered by light_horsemen
+
+	counters = {
+		# light_horsemen = -1
+	}
+
+	buy_cost = { }
+	low_maintenance_cost = { }
+	high_maintenance_cost = { }
+
+	allowed_in_hired_troops = no
+
+
+	mercenary_fallback = yes
+	holy_order_fallback = yes
+	
+	stack = 10
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = josu_vess_lich_knight
 }
 
 death_knights = {
@@ -57,7 +89,7 @@ death_knights = {
 	
 	stack = 20
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = heavy_infantry
+	icon = liu_chong_ghost_samurai
 }
 
 skeletal_berzerkers = {
@@ -88,7 +120,7 @@ skeletal_berzerkers = {
 	
 	stack = 20
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = heavy_infantry
+	icon = erebos_titan
 }
 
 zombie_titans = {
@@ -115,7 +147,7 @@ zombie_titans = {
 	stack = 2
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = heavy_infantry
+	icon = grave_titan
 }
 
 undead_rammers = {
@@ -142,7 +174,7 @@ undead_rammers = {
 	stack = 5
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = heavy_infantry
+	icon = juggernaut_wars_giant
 }
 
 acid_belchers = {
@@ -169,7 +201,7 @@ acid_belchers = {
 	stack = 50
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = bowmen
+	icon = dreg_mangler
 }
 
 skeletal_black_mages = {
@@ -206,10 +238,10 @@ skeletal_black_mages = {
 	stack = 20
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_crossbowmen }
-	icon = crossbowmen
+	icon = dnd_lich
 }
 
-skeletal_white_mages = {
+skeletal_grey_mages = {
 	type = archers
 
 	can_recruit = no
@@ -240,7 +272,7 @@ skeletal_white_mages = {
 	stack = 20
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_crossbowmen }
-	icon = bowmen
+	icon = blood_scrivener
 }
 
 # onager = {

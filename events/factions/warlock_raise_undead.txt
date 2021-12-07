@@ -272,7 +272,11 @@ warlock_raise_undead.0001 = {
 					stacks = 2
 				}
 				men_at_arms = {
-					type = skeletal_white_mages
+					type = skeletal_grey_mages
+					stacks = 2
+				}
+				men_at_arms = {
+					type = dread_cavalry
 					stacks = 2
 				}
 
