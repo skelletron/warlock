@@ -26,24 +26,24 @@
 	}
 
 	random_traits_list = {
-		count = 3
-		arrogant = {}
-		arbitrary = {}
-		brave = {}
-		cynical = {}
-		deceitful = {}
-		diligent = {}
-		humble = {}
-		ambitious = {}
-		impatient = {}
-		wrathful = {}
-		callous = {}
-		sadistic = {}
-		stubborn = {}
-		vengeful = {}
-		greedy = {}
-		wrathful = {}
-		zealous = {}
+		count = 4
+		arrogant = { weight = { base = 10 } }
+		arbitrary = { weight = { base = 5 } }
+		brave = { weight = { base = 5 } }
+		cynical = { weight = { base = 5 } }
+		deceitful = { weight = { base = 10 } }
+		diligent = { weight = { base = 5 } }
+		humble = { weight = { base = 5 } }
+		ambitious = { weight = { base = 5 } }
+		impatient = { weight = { base = 5 } }
+		wrathful = { weight = { base = 10 } }
+		callous = { weight = { base = 10 } }
+		sadistic = { weight = { base = 10 } }
+		stubborn = { weight = { base = 5 } }
+		vengeful = { weight = { base = 5 } }
+		greedy = { weight = { base = 5 } }
+		wrathful = { weight = { base = 10 } }
+		zealous = { weight = { base = 10 } }
 	}
 
 	random_traits_list = {
