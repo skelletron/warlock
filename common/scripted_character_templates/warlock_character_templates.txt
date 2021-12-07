@@ -5,11 +5,11 @@
 	# gender_female_chance = 50
 	gender_female_chance = 0
 	diplomacy = { 1 5 }
-	martial = { 15 20 }
+	martial = { 15 25 }
 	stewardship = { 1 5 }
 	intrigue = { 1 5 }
 	learning = { 1 5 }
-	prowess = { 15 20 }
+	prowess = { 15 25 }
 
 	trait = warlock
 	trait = undead
@@ -18,27 +18,45 @@
 	# trait = diligent
 	
 	random_traits_list = {
-	    count = 1
-		education_martial_1 = {}
-		education_martial_2 = {}
-		education_martial_3 = {}
-		education_martial_4 = {}
-		# education_martial_1 = {}
-		# education_intrigue_1 = {}
-		# education_stewardship_1 = {}
-		# education_learning_1 = {}
-		# education_martial_2 = {}
-		# education_intrigue_2 = {}
-		# education_stewardship_2 = {}
-		# education_learning_2 = {}	
-		# education_martial_3 = {}
-		# education_intrigue_3 = {}
-		# education_stewardship_3 = {}
-		# education_learning_3 = {}
-		# education_martial_4 = {}
-		# education_intrigue_4 = {}
-		# education_stewardship_4 = {}
-		# education_learning_4 = {}		
+		count = 1
+		education_martial_1 = { weight = { base = 5 } }
+		education_martial_2 = { weight = { base = 10 } }
+		education_martial_3 = { weight = { base = 30 } }
+		education_martial_4 = { weight = { base = 20 } }
 	}
-	
+
+	random_traits_list = {
+		count = 3
+		arrogant = {}
+		arbitrary = {}
+		brave = {}
+		cynical = {}
+		deceitful = {}
+		diligent = {}
+		humble = {}
+		ambitious = {}
+		impatient = {}
+		wrathful = {}
+		callous = {}
+		sadistic = {}
+		stubborn = {}
+		vengeful = {}
+		greedy = {}
+		wrathful = {}
+		zealous = {}
+	}
+
+	random_traits_list = {
+		count = 2
+		physique_good_1 = { weight = { base = 5 } }
+		physique_good_2 = { weight = { base = 5 } }
+		physique_good_3 = { weight = { base = 5 } }
+		strong = { weight = { base = 5 } }
+		holy_warrior = { weight = { base = 60 } }
+		winter_soldier = { weight = { base = 20 } }
+		reckless = { weight = { base = 20 } }
+		aggressive_attacker = { weight = { base = 20 } }
+		rough_terrain_expert = { weight = { base = 5 } }
+		organizer = { weight = { base = 5 } }
+	}
 }
