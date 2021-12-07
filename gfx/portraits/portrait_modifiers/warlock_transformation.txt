@@ -24,3 +24,41 @@ pale_skin = {
 		}
 	}
 }
+
+visual_traits_wounded_1 = {
+	usage = game
+	wounded_1 = {
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_wounded
+				value = 1.0
+				# value = 0.5
+				# value = 0.25
+				template = wounded_1
+			}
+			accessory = {
+				mode = modify				
+				gene = eye_accessory
+				template = bloodshot_eyes
+				# value = 0.5
+				value = 1.0
+				# value = 0.25
+				# value = 0.125
+			}
+
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = wounded_1
+					has_character_flag = wounded_look_1_flag
+					has_trait = undead
+				}
+				should_show_disturbing_portrait_modifiers = yes
+			}
+		}
+	}
+}
