@@ -228,24 +228,54 @@ warlock_raise_undead.0001 = {
 				uses_supply = no
 				inheritable = no
 				name = undead_army
-				levies = {
-					value = {
-						value = scope:recipient.max_military_strength
-						multiply = 2
-					}
+				# levies = {
+					# value = {
+					# 	value = scope:recipient.max_military_strength
+					# 	multiply = 2
+					# }
 
 					# value = 100000
 					# scope:recipient.title_province.county.county_levies_to_raise
 					# value = scope:recipient.title_province.county.total_county_levies
+				# }
+				men_at_arms = {
+					types = skeleton_warriors
+					stacks = {
+						value = {
+							value = scope:recipient.max_military_strength
+							multiply = 0.01
+						}
+					}
 				}
-				# men_at_arms = {
-				# 	type = bombard
-				# 	stacks = 1
-				# }
-				# men_at_arms = {
-				# 	type = house_guard
-				# 	stacks = 1
-				# }
+				men_at_arms = {
+					type = death_knights
+					stacks = 1
+				}
+				men_at_arms = {
+					type = skeletal_berzerkers
+					stacks = 1
+				}
+				men_at_arms = {
+					type = zombie_titans
+					stacks = 2
+				}
+				men_at_arms = {
+					type = undead_rammers
+					stacks = 1
+				}
+				men_at_arms = {
+					type = acid_belchers
+					stacks = 1
+				}
+				men_at_arms = {
+					type = skeletal_black_mages
+					stacks = 2
+				}
+				men_at_arms = {
+					type = skeletal_white_mages
+					stacks = 2
+				}
+
 				# location = title:c_upland.title_province
 				location = scope:recipient.capital_province
 			}
