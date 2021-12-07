@@ -1,0 +1,120 @@
+white_eyes = {
+	white_eyes = {
+		traits = { undead }
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				x = 0.0
+				y = 0.0
+			}
+		}
+	}
+}
+
+white_hair = {
+	white_hair = {
+		traits = { undead }
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				x = 0.0
+				y = 0.0
+			}
+		}
+	}
+}
+
+undead_gauntness = {
+	undead_gauntness = {
+		traits = {
+			undead
+			# pneumonic
+			# ill
+		}
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_illness
+				value = 1.0
+				template = illness
+			}
+			color = {
+				gene = skin_color
+				mode = modify				
+				x = 0.0
+				y = -0.1
+			}
+			accessory = {
+				mode = modify				
+				gene = eye_accessory
+				template = bloodshot_eyes
+				# value = 0.5
+				value = 1.0
+			}
+		}
+	}
+	# replace_non_distrubing_traits = {
+	# 	base = illness
+	# 	trigger = {
+	# 		should_show_disturbing_portrait_modifiers = no
+	# 	}
+	# 	traits = {
+	# 		bubonic_plague
+	# 		smallpox
+	# 		great_pox
+	# 		lovers_pox
+	# 	}
+	# }
+}
+
+undead_spindly = {
+	undead_spindly = {
+		traits = {
+			undead
+		}
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_spindly
+				value = 1.0
+				template = spindly
+			}
+			morph = {
+				mode = modify
+				gene = gene_neck_width
+				value = -0.5
+				# template = spindly
+			}
+			morph = {
+				mode = modify
+				gene = gene_height
+				value = 0.1
+				# template = spindly
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_body_type
+				value = 0.6
+				# template = spindly
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_body_shape
+				value = 0.5
+				# template = spindly
+			}
+		}
+	}
+}

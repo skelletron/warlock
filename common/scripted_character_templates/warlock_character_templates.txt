@@ -12,10 +12,10 @@
 	prowess = { 15 20 }
 
 	trait = warlock
+	trait = undead
 	# trait = cynical
 	# trait = callous
 	# trait = diligent
-	# trait = PDXCON_synthetic
 	
 	random_traits_list = {
 	    count = 1
