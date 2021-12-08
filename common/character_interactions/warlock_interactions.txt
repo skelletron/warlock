@@ -24,7 +24,7 @@
 	}
 
 	is_valid_showing_failures_only = {
-		scope:actor.piety >= level_4_spell_cost_value
+		scope:actor.piety >= level_2_spell_cost_value
 	}
 
 	auto_accept = {
@@ -42,7 +42,7 @@
 		scope:actor = {
 			add_piety = {
 				value = 0
-				subtract = level_4_spell_cost_value
+				subtract = level_2_spell_cost_value
 			}
 			hidden_effect = {
 				if = {
@@ -155,6 +155,79 @@ raise_undead = {
 		scope:recipient = { trigger_event = warlock_raise_undead.0001}
 	}
 }
+
+cast_dynasticide = {
+	category = interaction_category_warlock
+	desc = cast_dynasticide_interaction_desc
+	send_name = cast_dynasticide_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = dynasticide_perk
+		}
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			is_alive = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_6_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_6_spell_cost_value
+			}
+			# hidden_effect = {
+
+			# }
+		}
+		scope:recipient = {
+			dynasty = {
+				add_dynasty_modifier = {
+					modifier = blood_curse_modifier
+				}
+			}
+		}
+
+		# scope:recipient = {
+		# 	add_character_modifier = { modifier = vein_snare_victim_modifier days = vein_snare_victim_duration }
+		# }
+	}
+}
+
+# dynasty_of_many_crowns_effects = {
+# 	dynasty = {
+# 		add_dynasty_modifier = {
+# 			modifier = dynasty_of_many_crowns
+# 		}
+# 		add_dynasty_prestige = monumental_dynasty_prestige_gain
+# 	}
+# }
 
 debug_gain_warlock_xp = {
 	category = interaction_category_warlock

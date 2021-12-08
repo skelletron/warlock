@@ -38,3 +38,11 @@ level_1_vein_snare_victim_modifier = {
 	icon = vein_snare_victim
 	health = -0.25
 }
+
+blood_curse_modifier = {
+	icon = health_positive
+	health = -0.5
+	fertility = -0.8
+	# positive_inactive_inheritance_chance = 0.4
+	# positive_random_genetic_chance = 4 # This will for instance cause a .2% chance to become 1%
+}
