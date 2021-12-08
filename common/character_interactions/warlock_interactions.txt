@@ -168,6 +168,44 @@ raise_undead = {
 	}
 }
 
+debug_gain_warlock_xp = {
+	category = interaction_category_warlock
+	desc = debug_gain_warlock_xp_desc
+	send_name = debug_gain_warlock_xp_interaction
+	use_diplomatic_range = no
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+		}
+		scope:recipient = {
+			AND = { this = scope:actor }
+			is_alive = yes
+			is_ruler = yes
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = debug_gain_warlock_xp_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_warlock_lifestyle_xp = monumental_lifestyle_experience
+		}
+	}
+}
+
 # if = {
 # 	limit = {
 # 		scope:treatment_result_treatment = flag:safe
