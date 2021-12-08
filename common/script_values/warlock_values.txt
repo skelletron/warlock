@@ -1,2 +1,9 @@
 ﻿vein_snare_victim_duration = 365
+level_1_spell_cost_value = 100
+level_2_spell_cost_value = 200
+level_3_spell_cost_value = 300
 level_4_spell_cost_value = 400
+level_5_spell_cost_value = 500
+level_6_spell_cost_value = 600
+level_7_spell_cost_value = 700
+level_8_spell_cost_value = 800
