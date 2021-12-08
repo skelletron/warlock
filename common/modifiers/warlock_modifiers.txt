@@ -40,7 +40,7 @@ level_1_vein_snare_victim_modifier = {
 }
 
 blood_curse_modifier = {
-	icon = health_positive
+	icon = blood_curse_modifier
 	health = -0.5
 	fertility = -0.8
 	# positive_inactive_inheritance_chance = 0.4
