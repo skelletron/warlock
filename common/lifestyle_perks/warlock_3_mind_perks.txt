@@ -1,7 +1,7 @@
-﻿adoration_perk = {
+﻿create_puppet_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 0 0 }
+	position = { 1.5 0 }
 	icon = node_diplomacy
 
 	auto_selection_weight = {
@@ -26,21 +26,47 @@
 	}
 
 	character_modifier = {
-		general_opinion = 100
+		general_opinion = 10
 	}
 
 }
 
-mango_mind_perk = {
+architect_the_mind_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 0 1.25 }
+	position = { 0 0.75 }
 	icon = trait_theologian
 
 	character_modifier = {
-		monthly_piety_gain_mult = 0.5
+		learning = 1
 	}
 
 
-	parent = adoration_perk
+	parent = create_puppet_perk
+}
+
+psychic_jailbreak_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 3 0.75 }
+	icon = trait_theologian
+
+	character_modifier = {
+		intrigue = 1
+	}
+
+	parent = create_puppet_perk
+}
+
+weaponize_puppet_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 1.5 1.25 }
+	icon = trait_theologian
+
+	character_modifier = {
+		intrigue = 1
+	}
+
+	parent = create_puppet_perk
 }
