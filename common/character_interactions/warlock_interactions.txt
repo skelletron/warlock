@@ -44,66 +44,52 @@
 				value = 0
 				subtract = level_4_spell_cost_value
 			}
-			if = {
-				limit = {
-					scope:actor.learning > 20
-					scope:actor.intrigue > 20
-					scope:actor.learning > scope:recipient.learning
-					scope:actor.intrigue > scope:recipient.intrigue
-				}
-				scope:recipient = {
-					add_character_modifier = { modifier = level_6_vein_snare_victim_modifier days = vein_snare_victim_duration }
-				}
-			}
-			else_if = {
-				limit = {
-					scope:actor.learning > 18
-					scope:actor.intrigue > 18
-					scope:actor.learning > scope:recipient.learning
-					scope:actor.intrigue > scope:recipient.intrigue
-				}
-				scope:recipient = {
-					add_character_modifier = { modifier = level_5_vein_snare_victim_modifier days = vein_snare_victim_duration }
-				}
-			}
-			else_if = {
-				limit = {
-					scope:actor.learning > 16
-					scope:actor.intrigue > 16
-					OR = {
+			hidden_effect = {
+				if = {
+					limit = {
+						scope:actor.learning > 17
+						scope:actor.intrigue > 17
 						scope:actor.learning > scope:recipient.learning
 						scope:actor.intrigue > scope:recipient.intrigue
 					}
+					scope:recipient = {
+						add_character_modifier = { modifier = level_6_vein_snare_victim_modifier days = vein_snare_victim_duration }
+					}
 				}
-				scope:recipient = {
-					add_character_modifier = { modifier = level_4_vein_snare_victim_modifier days = vein_snare_victim_duration }
-				}
-			}
-			else_if = {
-				limit = {
-					scope:actor.learning > 14
-					scope:actor.intrigue > 14
-					OR = {
+				else_if = {
+					limit = {
+						scope:actor.learning > 13
+						scope:actor.intrigue > 13
 						scope:actor.learning > scope:recipient.learning
 						scope:actor.intrigue > scope:recipient.intrigue
 					}
+					scope:recipient = {
+						add_character_modifier = { modifier = level_5_vein_snare_victim_modifier days = vein_snare_victim_duration }
+					}
 				}
-				scope:recipient = {
-					add_character_modifier = { modifier = level_3_vein_snare_victim_modifier days = vein_snare_victim_duration }
-				}
-			}
-			else_if = {
-				limit = {
-					scope:actor.learning > 12
-					scope:actor.intrigue > 12
-				}
-				scope:recipient = {
-					add_character_modifier = { modifier = level_2_vein_snare_victim_modifier days = vein_snare_victim_duration }
-				}
-			}
-			else = {
-				scope:recipient = {
-					add_character_modifier = { modifier = level_1_vein_snare_victim_modifier days = vein_snare_victim_duration }
+				else = {
+					random_list = {
+						25 = {
+							scope:recipient = {
+								add_character_modifier = { modifier = level_4_vein_snare_victim_modifier days = vein_snare_victim_duration }
+							}
+						}
+						25 = {
+							scope:recipient = {
+								add_character_modifier = { modifier = level_3_vein_snare_victim_modifier days = vein_snare_victim_duration }
+							}
+						}
+						25 = {
+							scope:recipient = {
+								add_character_modifier = { modifier = level_2_vein_snare_victim_modifier days = vein_snare_victim_duration }
+							}
+						}
+						25 = {
+							scope:recipient = {
+								add_character_modifier = { modifier = level_1_vein_snare_victim_modifier days = vein_snare_victim_duration }
+							}
+						}
+					}
 				}
 			}
 		}
