@@ -1,4 +1,4 @@
-﻿religiousity_perk = {
+﻿vein_snare_perk = {
 	lifestyle = warlock_lifestyle
 	tree = blood
 	position = { 0 0 }
@@ -72,6 +72,6 @@ mango_blood_perk = {
 		monthly_piety_gain_mult = 0.5
 	}
 
-	parent = religiousity_perk
+	parent = vein_snare_perk
 	parent = banana_blood_perk
 }

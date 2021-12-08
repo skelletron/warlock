@@ -9,6 +9,7 @@
 	is_shown = {
 		scope:actor = {
 			has_trait = warlock
+			has_perk = vein_snare_perk
 		}
 		scope:recipient = {
 			NOT = { this = scope:actor }
@@ -125,6 +126,7 @@ raise_undead = {
 	is_shown = {
 		scope:actor = {
 			has_trait = warlock
+			has_perk = raise_undead_perk
 		}
 		scope:recipient = {
 			NOT = { this = scope:actor }
@@ -140,8 +142,8 @@ raise_undead = {
 	}
 
 	is_valid_showing_failures_only = {
-		# scope:actor.piety >= level_4_spell_cost_value
-		scope:actor.piety >= 5
+		scope:actor.piety >= level_4_spell_cost_value
+		# scope:actor.piety >= 5
 	}
 
 	auto_accept = {
@@ -155,8 +157,8 @@ raise_undead = {
 		scope:actor = {
 			add_piety = {
 				value = 0
-				# subtract = level_4_spell_cost_value
-				subtract = 5
+				subtract = level_4_spell_cost_value
+				# subtract = 5
 			}
 		}
 
