@@ -13,6 +13,12 @@
  building_type_warlock_gemstone_01_desc:1 "Powerful crystals such as these draw in aether from the surrounding environment, converting them into mana for use in magical rituals."
  building_warlock_gemstone_01:1 "Ragged Gemstone Circle"
  building_warlock_gemstone_01_desc:1 "A number of weak gemstones placed in a rough circle."
+ building_warlock_gemstone_02:1 "Orderly Gemstone Circle"
+ building_warlock_gemstone_02_desc:1 "A myriad of gemstones, carefully placed at select points in a magic circle."
+ building_warlock_gemstone_03:1 "Supernatural Crystal"
+ building_warlock_gemstone_03_desc:1 "Potent gemstones lay at each point of power in a magic circle. At the centre of them hovers a large, eerie crystal, floating idly as if bound by some unseen force."
+ building_warlock_gemstone_04:1 "Elder Nexus"
+ building_warlock_gemstone_04_desc:1 "A nexus of potent gemstones float counter clockwise in a circle around a crystal of mythical proportions. The crystal rumbles in the air and emits a sickening purple glow. It is bound to the ground by tens of enchanted chains, lest it spin out of control and crash into the heavens."
 
  read_esoteric_texts_decision:0 "Peruse Esoteric Texts"
  read_esoteric_texts_decision.tt:0 "Delve into ancient matters depicted within tomes covered in dust"

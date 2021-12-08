@@ -2,14 +2,106 @@
 	construction_time = quick_construction_time
 
 	cost_gold = 40
-	cost_piety = 150
+	cost_piety = 40
 	
 	province_modifier = {
 		monthly_income = 0.1
 	}
 
 	character_modifier = {
-		monthly_piety = 1
+		monthly_piety = 0.2
+	}
+
+	type_icon = "icon_building_warlock_gemstone.dds"
+
+	next_building = warlock_gemstone_02
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+
+	is_enabled = {
+		scope:holder = {
+			religion = religion:great_old_one_religion
+		}
+	}
+}
+
+warlock_gemstone_02 = {
+	construction_time = quick_construction_time
+
+	cost_gold = 80
+	cost_piety = 80
+	
+	province_modifier = {
+		monthly_income = 0.2
+	}
+
+	character_modifier = {
+		monthly_piety = 0.4
+	}
+
+	type_icon = "icon_building_warlock_gemstone.dds"
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+
+	next_building = warlock_gemstone_03
+
+	is_enabled = {
+		scope:holder = {
+			religion = religion:great_old_one_religion
+		}
+	}
+}
+
+warlock_gemstone_03 = {
+	construction_time = standard_construction_time
+
+	cost_gold = 160
+	cost_piety = 160
+	
+	province_modifier = {
+		monthly_income = 0.4
+	}
+
+	character_modifier = {
+		monthly_piety = 0.8
+		monthly_piety_gain_mult = 0.1
+	}
+
+	type_icon = "icon_building_warlock_gemstone.dds"
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+
+	next_building = warlock_gemstone_04
+
+	is_enabled = {
+		scope:holder = {
+			religion = religion:great_old_one_religion
+		}
+	}
+}
+
+warlock_gemstone_04 = {
+	construction_time = slow_construction_time
+
+	cost_gold = 320
+	cost_piety = 320
+	
+	province_modifier = {
+		monthly_income = 1.0
+	}
+
+	character_modifier = {
+		monthly_piety = 2.0
+		monthly_piety_gain_mult = 0.2
 	}
 
 	type_icon = "icon_building_warlock_gemstone.dds"
