@@ -229,6 +229,132 @@ cast_dynasticide = {
 # 	}
 # }
 
+cast_succubus = {
+	category = interaction_category_warlock
+	desc = cast_vein_snare_interaction_desc
+	send_name = cast_vein_snare_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = succubus_perk
+			is_adult = yes
+			is_pregnant = no 
+		}
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			is_alive = yes
+			is_adult = yes
+			is_pregnant = no 
+		}
+		OR = {
+			AND = {
+				scope:recipient = { is_female = yes }
+				scope:actor = { is_male = yes }
+			}
+			AND = {
+				scope:recipient = { is_male = yes }
+				scope:actor = { is_female = yes }
+			}
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_1_spell_cost_value
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_1_spell_cost_value
+			}
+		}
+		scope:actor = { trigger_event = debug.0002 }
+	}
+}
+
+cast_wall_of_bone = {
+	category = interaction_category_warlock
+	desc = cast_wall_of_bone_interaction_desc
+	send_name = cast_wall_of_bone_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = wall_of_bone_perk
+		}
+		scope:recipient = {
+			# this = scope:actor
+			is_ruler = yes
+			is_alive = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_2_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			# text = stealthy_auto_accept_interaction
+			text = helpful_spell_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+	
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_2_spell_cost_value
+			}
+		}
+		scope:recipient = {
+			hidden_effect = {
+				if = {
+					limit = { is_ruler = yes}
+					every_realm_province = {
+						add_province_modifier = {
+							modifier = wall_of_bone_modifier
+							years = wall_of_bone_years_duration
+						}
+						# province_modifier = {
+						# 	defender_holding_advantage = normal_building_advantage_tier_8
+						# 	fort_level = normal_building_fort_level_tier_8
+						# 	supply_limit = 600
+						# }
+						# refill_levy = yes
+						# refill_garrison = yes
+					}
+				}
+			}
+		}
+	}
+}
+
 debug_gain_warlock_xp = {
 	category = interaction_category_warlock
 	desc = debug_gain_warlock_xp_desc
@@ -266,6 +392,32 @@ debug_gain_warlock_xp = {
 		}
 	}
 }
+
+		# # move into own interaction
+		# scope:recipient = {
+		# 	if = {
+		# 		limit = { is_ruler = yes}
+		# 		every_realm_province = {
+		# 			add_province_modifier = {
+		# 				modifier = hostile_mists_modifier
+		# 				years = 5
+		# 			}
+		# 			# province_modifier = {
+		# 			# 	defender_holding_advantage = normal_building_advantage_tier_8
+		# 			# 	fort_level = normal_building_fort_level_tier_8
+		# 			# 	supply_limit = 600
+		# 			# }
+		# 			# refill_levy = yes
+		# 			# refill_garrison = yes
+		# 		}
+		# 		# every_sub_realm_county = {
+		# 			# add_county_modifier = {
+		# 			# 	modifier = undead_wreckage_modifier
+		# 			# 	years = 20
+		# 			# }
+		# 		# }
+		# 	}
+		# }
 
 # if = {
 # 	limit = {
