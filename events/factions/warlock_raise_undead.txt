@@ -228,25 +228,27 @@ warlock_raise_undead.0001 = {
 				uses_supply = no
 				inheritable = no
 				name = undead_army
-				# levies = {
-					# value = {
-					# 	value = scope:recipient.max_military_strength
-					# 	multiply = 2
-					# }
-
+				levies = {
+					value = {
+						value = scope:recipient.max_military_strength
+						multiply = 2
+					}
 					# value = 100000
 					# scope:recipient.title_province.county.county_levies_to_raise
 					# value = scope:recipient.title_province.county.total_county_levies
-				# }
-				men_at_arms = {
-					types = skeleton_warriors
-					stacks = {
-						value = {
-							value = scope:recipient.max_military_strength
-							multiply = 0.01
-						}
-					}
 				}
+
+				# this maa has issues. need to debug
+				# men_at_arms = {
+				# 	types = skeleton_warriors
+				# 	stacks = {
+				# 		value = {
+				# 			value = scope:recipient.max_military_strength
+				# 			multiply = 0.01
+				# 		}
+				# 	}
+				# }
+
 				men_at_arms = {
 					type = death_knights
 					stacks = 1
