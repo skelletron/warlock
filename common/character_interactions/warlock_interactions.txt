@@ -437,8 +437,8 @@ create_thrall_spell = {
 
 release_thrall_interaction = {
 	category = interaction_category_warlock
-	desc = create_thrall_spell_interaction_desc
-	send_name = create_thrall_spell_interaction
+	desc = release_thrall_spell_interaction_desc
+	send_name = release_thrall_spell_interaction
 	use_diplomatic_range = no
 	popup_on_receive = no
 	send_options_exclusive = no
@@ -496,6 +496,72 @@ release_thrall_interaction = {
 		}
 	}
 }
+
+dominate_thrall_interaction = {
+	category = interaction_category_warlock
+	desc = dominate_thrall_interaction_desc
+	send_name = dominate_thrall_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = create_puppet_perk
+		}
+		scope:recipient = {
+			has_opinion_modifier = {
+				target = scope:actor
+				modifier = thrall_opinion_modifier
+			}
+		}
+
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_1_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = thralls_must_obey_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_1_spell_cost_value
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_hook = scope:recipient
+					}
+					remove_hook = {
+						target = scope:recipient
+						type = loyalty_hook
+					}
+				}
+			}
+			add_hook = {
+				target = scope:recipient
+				type = loyalty_hook
+			}
+		}
+	}
+}
+
+# scope:actor = {	
+# 	remove_hook = {
+# 		target = scope:recipient
+# 		type = house_head_hook
+# 	}
+# }
 
 tithe_thrall_interaction = {
 	category = interaction_category_warlock
