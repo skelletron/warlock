@@ -27,7 +27,8 @@
 
 	character_modifier = {
 		life_expectancy = 2000
-		monthly_piety_gain_mult = 0.5
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
 	}
 }
 
@@ -38,7 +39,8 @@ raise_undead_perk = {
 	icon = trait_theologian
 
 	character_modifier = {
-		monthly_piety_gain_mult = 0.5
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
 	}
 
 	parent = wall_of_bone_perk

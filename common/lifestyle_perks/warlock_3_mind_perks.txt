@@ -27,6 +27,7 @@
 
 	character_modifier = {
 		general_opinion = 10
+		monthly_piety = 0.1
 	}
 
 }
@@ -39,6 +40,7 @@ architect_the_mind_perk = {
 
 	character_modifier = {
 		learning = 1
+		monthly_piety = 0.1
 	}
 
 
@@ -53,6 +55,7 @@ psychic_jailbreak_perk = {
 
 	character_modifier = {
 		intrigue = 1
+		monthly_piety = 0.1
 	}
 
 	parent = create_puppet_perk
@@ -66,6 +69,7 @@ weaponize_puppet_perk = {
 
 	character_modifier = {
 		intrigue = 1
+		monthly_piety = 0.1
 	}
 
 	parent = create_puppet_perk
