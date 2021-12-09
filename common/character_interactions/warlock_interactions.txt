@@ -382,10 +382,11 @@ create_thrall_spell = {
 			NOT = {
 				this = scope:actor
 				has_trait = warlock
-				has_opinion_modifier = {
-					modifier = thrall_opinion_modifier
-					target = scope:actor
-				}
+				# has_opinion_modifier = {
+				# 	modifier = thrall_opinion_modifier
+				# 	target = scope:actor
+				# }
+				has_character_flag = is_thrall_flag
 			}
 			is_alive = yes
 		}
@@ -426,6 +427,7 @@ create_thrall_spell = {
 					modifier = thrall_opinion_modifier
 					target = scope:actor
 				}
+				add_character_flag = { flag = is_thrall_flag }
 			}
 		}
 	}
