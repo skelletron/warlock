@@ -1,4 +1,4 @@
-﻿raise_undead_perk = {
+﻿wall_of_bone_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
 	position = { 0 0 }
@@ -31,7 +31,7 @@
 	}
 }
 
-mango_bone_perk = {
+raise_undead_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
 	position = { 0 1.25 }
@@ -41,5 +41,5 @@ mango_bone_perk = {
 		monthly_piety_gain_mult = 0.5
 	}
 
-	parent = raise_undead_perk
+	parent = wall_of_bone_perk
 }
