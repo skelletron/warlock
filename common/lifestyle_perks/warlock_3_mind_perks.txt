@@ -1,8 +1,8 @@
 ﻿create_puppet_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 1.5 0 }
-	icon = node_diplomacy
+	position = { 2 0 }
+	icon = node_intrigue
 
 	auto_selection_weight = {
 		value = 1000
@@ -32,29 +32,42 @@
 
 }
 
-architect_the_mind_perk = {
+tithe_puppet_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 0 0.75 }
-	icon = trait_theologian
+	position = { 4 1.25 }
+	icon = node_intrigue
 
 	character_modifier = {
-		learning = 1
+		intrigue = 1
 		monthly_piety = 0.1
 	}
-
 
 	parent = create_puppet_perk
 }
 
-psychic_jailbreak_perk = {
+dominate_puppet_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 3 0.75 }
-	icon = trait_theologian
+	position = { 2 1.25 }
+	icon = node_intrigue
 
 	character_modifier = {
 		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = create_puppet_perk
+}
+
+architect_the_mind_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 1.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		learning = 1
 		monthly_piety = 0.1
 	}
 
@@ -64,7 +77,107 @@ psychic_jailbreak_perk = {
 weaponize_puppet_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
-	position = { 1.5 1.25 }
+	position = { 3 2.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = tithe_puppet_perk
+	parent = dominate_puppet_perk
+}
+
+psychic_jailbreak_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 2.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = architect_the_mind_perk
+}
+
+mass_suggestion_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 2 3.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = weaponize_puppet_perk
+}
+
+sacrifice_thrall_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 4 3.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = weaponize_puppet_perk
+}
+
+pariahfy_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 3.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = psychic_jailbreak_perk
+}
+
+poison_the_well_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 3 4.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = mass_suggestion_perk
+	parent = sacrifice_thrall_perk
+}
+
+melt_mind_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 4.25 }
+	icon = node_intrigue
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = pariahfy_perk
+}
+
+placeholder_1_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 2 5.25 }
 	icon = trait_theologian
 
 	character_modifier = {
@@ -72,5 +185,33 @@ weaponize_puppet_perk = {
 		monthly_piety = 0.1
 	}
 
-	parent = create_puppet_perk
+	parent = poison_the_well_perk
+}
+
+placeholder_2_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 4 5.25 }
+	icon = trait_theologian
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = poison_the_well_perk
+}
+
+modify_collective_memory_perk = {
+	lifestyle = warlock_lifestyle
+	tree = mind
+	position = { 0 5.25 }
+	icon = trait_theologian
+
+	character_modifier = {
+		intrigue = 1
+		monthly_piety = 0.1
+	}
+
+	parent = melt_mind_perk
 }
