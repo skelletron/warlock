@@ -428,6 +428,7 @@ create_thrall_spell = {
 					target = scope:actor
 				}
 				add_character_flag = { flag = is_thrall_flag }
+				add_character_modifier = { modifier = dulled_sense_of_self }
 			}
 		}
 	}

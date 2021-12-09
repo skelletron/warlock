@@ -63,6 +63,16 @@ receiving_thrall_tithe_modifier = {
 	stacking = yes
 }
 
+dulled_sense_of_self = {
+	icon = dulled_sense_of_self
+	diplomacy = -3
+	martial = -1
+	stewardship = -2
+	intrigue = -3
+	learning = -2
+	prowess = -1
+}
+
 # research this later (it's a script value)
 # council_scaled_monthly_income = {
 # 	add = liege.highest_held_title_tier
