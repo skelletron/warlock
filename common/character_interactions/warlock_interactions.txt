@@ -450,11 +450,7 @@ summon_thrall_to_war = {
 			has_perk = weaponize_puppet_perk
 		}
 
-		# implement this later
 		scope:recipient = {
-			# found better way than this
-			# is_thrall_of = scope:actor
-
 			# this checks that they are your thrall
 			has_opinion_modifier = {
 				target = scope:actor
@@ -522,10 +518,11 @@ summon_thrall_to_war = {
 			}
 		}
 
-		can_potentially_call_ally_trigger = {
-			WARRIOR = scope:actor
-			JOINER = scope:recipient
-		}
+		# this makes it so vassals can't call lieges to war and lieges can't call vassals to war
+		# can_potentially_call_ally_trigger = {
+		# 	WARRIOR = scope:actor
+		# 	JOINER = scope:recipient
+		# }
 
 		# Cannot call a character of the "wrong" religion to a Great Holy War
 		scope:actor = {
@@ -549,6 +546,8 @@ summon_thrall_to_war = {
 	}
 
 	can_be_picked = {
+
+		# what does this do?
 		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
 
 		scope:target = {
