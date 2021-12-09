@@ -435,6 +435,68 @@ create_thrall_spell = {
 	}
 }
 
+release_thrall_interaction = {
+	category = interaction_category_warlock
+	desc = create_thrall_spell_interaction_desc
+	send_name = create_thrall_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			# dont need to be a warlock, in case player quits warlockdom.
+			# has_trait = warlock
+
+			# dont need the perk to remove thrall. in case player resets perks
+			# has_perk = create_puppet_perk
+		}
+		scope:recipient = {
+			has_opinion_modifier = {
+				modifier = thrall_opinion_modifier
+				target = scope:actor
+			}
+			has_character_flag = is_thrall_flag
+			is_alive = yes
+		}
+	}
+
+	# is_valid = {
+	# 	scope:actor = {
+	# 		NOT = { is_imprisoned = yes}
+	# 	}
+	# }
+
+	auto_accept = {
+		custom_description = {
+			text = thralls_must_obey_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_opinion = {
+				modifier = thrall_opinion_modifier
+				target = scope:actor
+			}
+			remove_character_modifier = dulled_sense_of_self
+			remove_character_flag = is_thrall_flag
+			if = {
+				limit = { has_character_modifier = tithed_thrall_modifier}
+				remove_character_modifier = tithed_thrall_modifier
+			}
+		}
+		scope:actor = {
+			if = {
+				limit = { has_character_modifier = receiving_thrall_tithe_modifier }
+				remove_character_modifier = receiving_thrall_tithe_modifier
+			}
+			remove_character_modifier = maintaining_thralls_modifier
+		}
+	}
+}
+
 tithe_thrall_interaction = {
 	category = interaction_category_warlock
 	desc = tithe_thrall_interaction_desc
