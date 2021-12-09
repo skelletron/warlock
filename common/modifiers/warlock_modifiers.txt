@@ -73,6 +73,12 @@ dulled_sense_of_self = {
 	prowess = -1
 }
 
+maintaining_thralls_modifier = {
+	icon = maintaining_thralls
+	monthly_piety = -5
+	stacking = yes
+}
+
 # research this later (it's a script value)
 # council_scaled_monthly_income = {
 # 	add = liege.highest_held_title_tier

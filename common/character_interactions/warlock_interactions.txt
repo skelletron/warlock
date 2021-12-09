@@ -419,6 +419,7 @@ create_thrall_spell = {
 				value = 0
 				subtract = level_3_spell_cost_value
 			}
+			add_character_modifier = { modifier = maintaining_thralls_modifier }
 		}
 
 		hidden_effect = {
