@@ -146,7 +146,6 @@ zombie_titans = {
 	
 	stack = 2
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_heavy_infantry }
 	icon = grave_titan
 }
 
@@ -173,7 +172,6 @@ undead_rammers = {
 	
 	stack = 5
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_heavy_infantry }
 	icon = juggernaut_wars_giant
 }
 
@@ -200,7 +198,6 @@ acid_belchers = {
 	
 	stack = 50
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_heavy_infantry }
 	icon = dreg_mangler
 }
 
