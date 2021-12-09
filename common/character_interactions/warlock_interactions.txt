@@ -364,6 +364,73 @@ cast_wall_of_bone = {
 	}
 }
 
+# later on turn this into a ritual (scheme)
+create_thrall_spell = {
+	category = interaction_category_warlock
+	desc = create_thrall_spell_interaction_desc
+	send_name = create_thrall_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = create_puppet_perk
+		}
+		scope:recipient = {
+			NOT = {
+				this = scope:actor
+				has_trait = warlock
+				has_opinion_modifier = {
+					modifier = thrall_opinion_modifier
+					target = scope:actor
+				}
+			}
+			is_alive = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_3_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_3_spell_cost_value
+			}
+		}
+
+		hidden_effect = {
+			scope:recipient = {
+				add_opinion = {
+					modifier = thrall_opinion_modifier
+					target = scope:actor
+				}
+			}
+		}
+	}
+}
+
 summon_thrall_to_war = {
 	category = interaction_category_diplomacy
 	desc = call_ally_interaction_desc
@@ -380,12 +447,20 @@ summon_thrall_to_war = {
 		scope:actor = {
 			is_at_war = yes
 			has_trait = warlock
+			has_perk = weaponize_puppet_perk
 		}
 
 		# implement this later
-		# scope:recipient = {
-		# 	is_thrall_of = scope:actor
-		# }
+		scope:recipient = {
+			# found better way than this
+			# is_thrall_of = scope:actor
+
+			# this checks that they are your thrall
+			has_opinion_modifier = {
+				target = scope:actor
+				modifier = thrall_opinion_modifier
+			}
+		}
 
 		# dont need to be allied to a thrall to summon them to war
 		# scope:recipient = {
