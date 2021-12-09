@@ -469,8 +469,8 @@ summon_thrall_to_war = {
 		scope:actor = { #If you can call them as a House Member then do that
 			NOT = {
 				is_character_interaction_valid = {
-				    recipient = scope:recipient
-				    interaction = call_house_member_to_war_interaction
+					recipient = scope:recipient
+					interaction = call_house_member_to_war_interaction
 				}
 			}
 		}
