@@ -433,6 +433,58 @@ create_thrall_spell = {
 	}
 }
 
+tithe_thrall_interaction = {
+	category = interaction_category_warlock
+	desc = tithe_thrall_interaction_desc
+	send_name = tithe_thrall_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			# change to extort_puppet_perk later
+			has_perk = create_puppet_perk
+		}
+		scope:recipient = {
+			# this checks that they are your thrall
+			has_opinion_modifier = {
+				target = scope:actor
+				modifier = thrall_opinion_modifier
+			}
+			NOT = {
+				has_character_modifier = tithed_thrall_modifier
+			}
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = thralls_must_obey_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_character_modifier = {
+				modifier = receiving_thrall_tithe_modifier
+			}
+		}
+		scope:recipient = {
+			add_character_modifier = {
+				modifier = tithed_thrall_modifier
+			}
+		}
+	}
+}
+
 summon_thrall_to_war = {
 	category = interaction_category_diplomacy
 	desc = call_ally_interaction_desc

@@ -46,3 +46,26 @@ blood_curse_modifier = {
 	# positive_inactive_inheritance_chance = 0.4
 	# positive_random_genetic_chance = 4 # This will for instance cause a .2% chance to become 1%
 }
+
+tithed_thrall_modifier = {
+	icon = tithed_thrall
+	monthly_income = -5
+	# modifier = {
+	# 	name = councillor_steward_modifier
+	# 	monthly_income = 1
+	# 	scale = council_scaled_monthly_income
+	# }
+}
+
+receiving_thrall_tithe_modifier = {
+	icon = receiving_thrall_tithe
+	monthly_income = 5
+	stacking = yes
+}
+
+# research this later (it's a script value)
+# council_scaled_monthly_income = {
+# 	add = liege.highest_held_title_tier
+# 	subtract = 2
+# 	min = 0.5
+# }
