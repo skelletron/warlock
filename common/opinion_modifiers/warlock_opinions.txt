@@ -1,0 +1,4 @@
+cast_wall_of_bone_opinion_modifier = {
+	opinion = 40
+	years = 10
+}

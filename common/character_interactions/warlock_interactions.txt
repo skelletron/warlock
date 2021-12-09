@@ -333,6 +333,15 @@ cast_wall_of_bone = {
 			}
 		}
 		scope:recipient = {
+			if = {
+				limit = {
+					NOT = { this = scope:actor}
+				}
+				add_opinion = {
+					modifier = cast_wall_of_bone_opinion_modifier
+					target = scope:actor
+				}
+			}
 			hidden_effect = {
 				if = {
 					limit = { is_ruler = yes}
