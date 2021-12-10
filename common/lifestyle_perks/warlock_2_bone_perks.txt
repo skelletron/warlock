@@ -136,7 +136,7 @@ spawn_allied_horde_perk = {
 	character_modifier = {
 		# monthly_piety_gain_mult = 0.5
 		# monthly_piety = 0.2
-		army_maintenance_mult = -0.01
+		army_maintenance_mult = -0.1
 	}
 	
 	parent = raise_zombie_titans_perk
