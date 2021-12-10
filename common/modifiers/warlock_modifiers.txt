@@ -79,6 +79,11 @@ maintaining_thralls_modifier = {
 	stacking = yes
 }
 
+wall_of_bone_self_modifier = {
+	icon = wall_of_bone
+	additional_fort_level = 500
+}
+
 # research this later (it's a script value)
 # council_scaled_monthly_income = {
 # 	add = liege.highest_held_title_tier

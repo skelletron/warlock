@@ -343,6 +343,10 @@ cast_wall_of_bone = {
 				}
 			}
 			hidden_effect = {
+				add_character_modifier = {
+					modifier = wall_of_bone_self_modifier
+					years = wall_of_bone_years_duration
+				}
 				if = {
 					limit = { is_ruler = yes}
 					every_realm_province = {
