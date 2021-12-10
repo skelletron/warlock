@@ -178,7 +178,7 @@ placeholder_1_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
 	position = { 2 5.25 }
-	icon = trait_theologian
+	icon = trait_schemer
 
 	character_modifier = {
 		intrigue = 1
@@ -192,7 +192,7 @@ placeholder_2_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
 	position = { 4 5.25 }
-	icon = trait_theologian
+	icon = trait_avaricious
 
 	character_modifier = {
 		intrigue = 1
@@ -206,7 +206,7 @@ modify_collective_memory_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
 	position = { 0 5.25 }
-	icon = trait_theologian
+	icon = trait_diplomat
 
 	character_modifier = {
 		intrigue = 1

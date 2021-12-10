@@ -32,11 +32,23 @@
 	}
 }
 
+create_death_knight_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 2.5 0 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+}
+
 raise_undead_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
-	position = { 0 1.25 }
-	icon = trait_theologian
+	position = { 1.25 0.75 }
+	icon = node_learning
 
 	character_modifier = {
 		# monthly_piety_gain_mult = 0.5
@@ -44,4 +56,134 @@ raise_undead_perk = {
 	}
 
 	parent = wall_of_bone_perk
+	parent = create_death_knight_perk
+}
+
+create_skeletal_infiltrator_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 2.5 1.5 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = raise_undead_perk
+}
+
+create_lesser_lich_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 0 1.5 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = raise_undead_perk
+}
+
+raise_zombie_titans_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 1.25 2.25 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+
+	parent = create_skeletal_infiltrator_perk
+	parent = create_lesser_lich_perk
+}
+
+raise_undead_raiders_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 2.5 3 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = raise_zombie_titans_perk
+}
+
+spawn_allied_horde_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 0 3 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = raise_zombie_titans_perk
+}
+
+temp_bone_1_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 1.25 3.75 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+
+	parent = raise_undead_raiders_perk
+	parent = spawn_allied_horde_perk
+}
+
+temp_bone_2_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 2.5 4.5 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = temp_bone_1_perk
+}
+
+temp_bone_3_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 0 4.5 }
+	icon = node_learning
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = temp_bone_1_perk
+}
+
+temp_bone_4_perk = {
+	lifestyle = warlock_lifestyle
+	tree = bone
+	position = { 1.25 5.25 }
+	icon = trait_torturer
+
+	character_modifier = {
+		# monthly_piety_gain_mult = 0.5
+		monthly_piety = 0.2
+	}
+	
+	parent = temp_bone_2_perk
+	parent = temp_bone_3_perk
 }

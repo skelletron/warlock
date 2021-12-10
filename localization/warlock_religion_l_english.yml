@@ -124,6 +124,18 @@
 # Bone Perk Tree
  wall_of_bone_perk_name:0 "Wall of Bone"
  raise_undead_perk_name:0 "Raise Undead Horde"
+ create_death_knight_perk_name:0 "Create Deathknight"
+ raise_undead_perk_name:0 "Unleash Chaotic Horde"
+ create_skeletal_infiltrator_perk_name:0 "Create Skeletal Infiltrator"
+ create_lesser_lich_perk_name:0 "Create Lesser Lich"
+ raise_zombie_titans_perk_name:0 "Raise Zombie Titans"
+ raise_undead_raiders_perk_name:0 "Raise Undead Raiders"
+ spawn_allied_horde_perk_name:0 "Spawn Allied Horde"
+ temp_bone_1_perk_name:0 "Placeholder One"
+ temp_bone_2_perk_name:0 "Placeholder Two"
+ temp_bone_3_perk_name:0 "Placeholder Three"
+ temp_bone_4_perk_name:0 "Placeholder Four"
+
 
 # Blood Perk Tree
  skin_tailor_perk_name:0 "Skin Tailor"

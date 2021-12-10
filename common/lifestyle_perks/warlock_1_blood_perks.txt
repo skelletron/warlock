@@ -173,7 +173,7 @@ young_blood_perk = {
 dhampir_perk = {
 	lifestyle = warlock_lifestyle
 	tree = blood
-	position = { 2 5 }
+	position = { 2 5.25 }
 	icon = trait_overseer
 	# icon = node_martial
 
