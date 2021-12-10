@@ -509,7 +509,7 @@ dominate_thrall_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = warlock
-			has_perk = create_puppet_perk
+			has_perk = dominate_puppet_perk
 		}
 		scope:recipient = {
 			has_opinion_modifier = {
@@ -576,7 +576,7 @@ tithe_thrall_interaction = {
 		scope:actor = {
 			has_trait = warlock
 			# change to extort_puppet_perk later
-			has_perk = create_puppet_perk
+			has_perk = tithe_puppet_perk
 		}
 		scope:recipient = {
 			# this checks that they are your thrall
@@ -625,12 +625,14 @@ stop_tithing_thrall_interaction = {
 	ignores_pending_interaction_block = yes
 
 	is_shown = {
-		scope:actor = {
-			has_trait = warlock
-			# change to extort_puppet_perk later
-			has_perk = create_puppet_perk
-			has_character_modifier = receiving_thrall_tithe_modifier
-		}
+		# scope:actor = {
+		# 	# should be able to stop getting tithes even if stopped being warlock
+		# 	# has_trait = warlock
+
+		# 	# should be able to stop getting tithes even if lost skill points through respeccing
+		# 	# has_perk = create_puppet_perk
+		# 	# has_character_modifier = receiving_thrall_tithe_modifier
+		# }
 		scope:recipient = {
 			# this checks that they are your thrall
 			has_opinion_modifier = {
