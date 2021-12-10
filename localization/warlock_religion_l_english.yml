@@ -104,3 +104,34 @@
 
  interaction_category_warlock:0 "Spellcasting"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."
+
+# Mind Perk Tree
+ create_puppet_perk_name:0 "Create Thrall"
+ tithe_puppet_perk_name:0 "Tithe Thrall"
+ dominate_puppet_perk_name:0 "Dominate Thrall"
+ architect_the_mind_perk_name:0 "Architect the Mind"
+ weaponize_puppet_perk_name:0 "Weaponize Thrall"
+ psychic_jailbreak_perk_name:0 "Psychic Jailbreak"
+ mass_suggestion_perk_name:0 "Mass Geas"
+ sacrifice_thrall_perk_name:0 "Sacrifice Thrall"
+ pariahfy_perk_name:0 "Pariah-fy"
+ poison_the_well_perk_name:0 "Poison the Well"
+ melt_mind_perk_name:0 "Melt Mind"
+ placeholder_1_perk_name:0 "Placeholder One"
+ placeholder_2_perk_name:0 "Placeholder Two"
+ modify_collective_memory_perk_name:0 "Modify Collective Memory"
+
+# Bone Perk Tree
+ wall_of_bone_perk_name:0 "Wall of Bone"
+ raise_undead_perk_name:0 "Raise Undead Horde"
+
+# Blood Perk Tree
+ skin_tailor_perk_name:0 "Skin Tailor"
+ invigorate_perk_name:0 "Invigorate"
+ succubus_perk_name:0 "Succubus"
+ debloom_perk_name:0 "Debloom"
+ vein_snare_perk_name:0 "Vein Snare"
+ fountain_of_youth_perk_name:0 "Fountain of Youth"
+ dynasticide_perk_name:0 "Dynasticide"
+ young_blood_perk_name:0 "Young Blood"
+ dhampir_perk_name:0 "Dhampir"

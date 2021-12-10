@@ -2,7 +2,7 @@
 	lifestyle = warlock_lifestyle
 	tree = bone
 	position = { 0 0 }
-	icon = node_diplomacy
+	icon = node_learning
 
 	auto_selection_weight = {
 		value = 1000
