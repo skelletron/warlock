@@ -80,6 +80,35 @@ beseech_dark_coronation_decision = {
 
 }
 
+choose_familiar_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+
+	desc = choose_familiar_decision.desc
+	selection_tooltip = choose_familiar_decision.tt
+
+	is_shown = {
+		faith = faith:great_old_one
+		has_trait = warlock
+	}
+
+	is_valid = {
+		is_adult = yes
+	}
+
+	cost = {
+		piety = minor_piety_value
+	}
+
+	# cooldown = { years = 10 }
+	cooldown = { days = 1}
+
+	effect = {
+		custom_tooltip = choose_familiar_decision_effect.tt
+		trigger_event = warlock_decision.2001
+	}
+}
+
 spawn_undead_faction_decision = {
 	ai_check_interval = 0
 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"

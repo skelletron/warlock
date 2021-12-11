@@ -64,3 +64,265 @@ warlock_decision.1001 = {
 		flavor = warlock_decision.1001.b.flavor
 	}
 }
+
+warlock_decision.2001 = {
+	type = character_event
+	title = warlock_decision.2001.t
+	desc = warlock_decision.2001.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_zealous
+	}
+	trigger = {}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	#A begin the process
+	option = {
+		name = warlock_decision.2001.a
+		custom_tooltip = warlock_decision.2001.a.tt
+		trigger_event = warlock_decision.2002
+	}
+
+	#B abandon the process
+	option = {
+		name = warlock_decision.2001.b
+		flavor = warlock_decision.2001.b.flavor
+	}
+}
+
+# Question 1 : The Feast
+warlock_decision.2002 = {
+	type = character_event
+	title = warlock_decision.2002.t
+	desc = warlock_decision.2002.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_zealous
+	}
+	trigger = {}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	# Q: Say you're at a feast, with many important figures across the land in attendance. The banquet hall is decorated to perfection, and the food is sure to be mouthwatering. What's the first thing you'd do at such an event?
+
+	#A I'd schmooze with the most powerful people here. A feast is merely an excuse to make connections.
+	option = {
+		name = warlock_decision.2002.a
+		custom_tooltip = warlock_decision.2002.a.tt
+		set_variable = {
+			name = charismatic_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#B I'd use this opportunity to case the premises for my next heist. This ruler is sure to be the perfect target for my devious plots.
+	option = {
+		name = warlock_decision.2002.b
+		custom_tooltip = warlock_decision.2002.b.tt
+		set_variable = {
+			name = sneaky_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#C All I want to do is eat eat eat. It's not everyday that I get to join a feast!
+	option = {
+		name = warlock_decision.2002.c
+		custom_tooltip = warlock_decision.2002.c.tt
+		set_variable = {
+			name = gluttonous_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#D I'd hide myself away in the corner till the food comes. I don't really care for idle chitchat.
+	option = {
+		name = warlock_decision.2002.d
+		custom_tooltip = warlock_decision.2002.d.tt
+		set_variable = {
+			name = shy_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#E I'd admire the decor and take in the ambience of the event. Maybe I'll even elicit some interior design tips from whoever is responsible for decorating the banquet hall.
+	option = {
+		name = warlock_decision.2002.e
+		custom_tooltip = warlock_decision.2002.e.tt
+		set_variable = {
+			name = aesthetic_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#E My eyes would immediately be drawn to the most gorgeous guest in the room. I'd want to get to know them on a very personal level.
+	option = {
+		name = warlock_decision.2002.f
+		custom_tooltip = warlock_decision.2002.f.tt
+		set_variable = {
+			name = playful_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+
+	#E I don't believe it's in my best interests to reveal too much of my inner workings to you. I don't even know who or what you really are.
+	option = {
+		name = warlock_decision.2002.g
+		custom_tooltip = warlock_decision.2002.g.tt
+		set_variable = {
+			name = deceitful_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2003
+	}
+}
+
+# Question 2 : The Scandal
+warlock_decision.2003 = {
+	type = character_event
+	title = warlock_decision.2003.t
+	desc = warlock_decision.2003.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_zealous
+	}
+	trigger = {}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	# Q: Imagine a scenario where you are directly linked to a vile scandal that threatens not only your reputation, but your dynasty's reputation, and perhaps even your mandate to rule. What's the course of action you'd take to clear your name?
+
+	#A I'd execute any within my realm that dared to speak out against me. Any perpetrators outside of my grasp, I'd have murdered by assassins.
+	option = {
+		name = warlock_decision.2003.a
+		custom_tooltip = warlock_decision.2003.a.tt
+		set_variable = {
+			name = ruthless_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2004
+	}
+
+	#B Well that's what Black Magic is for, isn't it? I'd use magic to manipulate my detractors into fawning over me and singing my praises.
+	option = {
+		name = warlock_decision.2003.b
+		custom_tooltip = warlock_decision.2003.b.tt
+		set_variable = {
+			name = enchanting_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2004
+	}
+
+	#C Surely with my golden tongue, I could talk my way out of any such scandal. Besides, the greatest threats to my rule aren't petty lies, but concrete forces such as violence and famine.
+	option = {
+		name = warlock_decision.2003.c
+		custom_tooltip = warlock_decision.2003.c.tt
+		change_variable = {
+			name = charismatic_familiar
+			add = 1
+		}
+		trigger_event = warlock_decision.2004
+	}
+
+	#D I'd find the source of this rumourmill and charm them into retracting their bad, mean words.
+	option = {
+		name = warlock_decision.2003.d
+		custom_tooltip = warlock_decision.2003.d.tt
+		set_variable = {
+			name = playful_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2004
+
+	}
+
+	#E Fine, I'll play your game of questions. Let's say I'd start by buying off alibis that can confirm my recent whereabouts and actions. Then I'd forge documents that pin the accusations onto my most hated rival. Finally, I'd plant evidence that proves my second most hated rival is the source of these rumours.
+	option = {
+		name = warlock_decision.2003.e
+		custom_tooltip = warlock_decision.2003.e.tt
+		change_variable = {
+			name = deceitful_familiar
+			add = 1
+		}
+		trigger_event = warlock_decision.2004
+
+	}
+
+	#F My reputation is pristine, and my history is squeaky clean. Even if someone did try to frame me, my stellar reputation would render me impervious, and nobody would believe the lies.
+	option = {
+		name = warlock_decision.2003.f
+		custom_tooltip = warlock_decision.2003.f.tt
+		set_variable = {
+			name = regal_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2004
+
+	}
+
+	#G It is the fate of any prominent ruler to suffer under false accusations at some point. I'd like to say I would take the situation in stride, and use it as an opportunity to reflect on my actions and cleanse my life of unhealthy influences that affect my character.
+	option = {
+		name = warlock_decision.2003.g
+		custom_tooltip = warlock_decision.2003.g.tt
+		set_variable = {
+			name = serene_familiar
+			value = 1
+		}
+		trigger_event = warlock_decision.2004
+
+	}
+}
+
+
+warlock_decision.2004 = {
+	type = character_event
+	title = warlock_decision.2004.t
+	desc = warlock_decision.2004.desc
+	theme = faith
+	override_background = {
+		event_background = wilderness
+	}
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_zealous
+	}
+	trigger = {}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = {
+		warlock_familiar_effect = yes
+	}
+}

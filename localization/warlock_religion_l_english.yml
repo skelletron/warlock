@@ -48,6 +48,74 @@
  warlock_decision.1001.b:0 "I'm not ready for that kind of power yet."
  warlock_decision.1001.b.flavor:0 "I need to study and learn more before I can take on such a burden of power."
 
+# Choose familiar
+
+ choose_familiar_decision:0 "Summon your Familiar"
+ choose_familiar_decision.tt:0 "The first of the many gifts dedicated followers such as yourself shall receive."
+ choose_familiar_decision.desc:0 "#F I wonder what form my familiar will take#!"
+ choose_familiar_decision.desc.tt:0 "You might gain a helpful familiar"
+ choose_familiar_decision_effect.tt:0 "You look within your soul and begin channeling"
+ choose_familiar_decision_confirm:0 "Beckon your familiar to take shape"
+
+ warlock_decision.2001.t:0 "Summoning a Familiar"
+ warlock_decision.2001.desc:0 "The form your familiar takes is dependent on how you respond its questions. Answer carefully as you won't be able to change your familiar's form for a long time afterwards."
+ warlock_decision.2001.a:0 "I'm ready to begin."
+ warlock_decision.2001.a.tt:0 "You will begin the process"
+ warlock_decision.2001.b:0 "I don't have need for a familiar right now."
+ warlock_decision.2001.b.flavor:0 "On second thought, a familiar isn't what I need after all."
+
+ warlock_decision.2002.t:0 "Summoning a Familiar - The Feast"
+ warlock_decision.2002.desc:0 " #weak A formless mist begins pooling in front of you. Then a low voice coming from its direction speaks to you. #! \nGreetings master. I have answered your call, and all I ask in return is that you play a simple game of questions with me...\n#weak After a brief pause, the mist continues speaking. #! \nSay you're at a feast, with many important figures across the land in attendance. The banquet hall is decorated to perfection, and the food is sure to be mouthwatering. What's the first thing you'd do at such an event?"
+
+ warlock_decision.2002.a:0 "Schmooze"
+ warlock_decision.2002.a.tt:0 "I'd schmooze with the most powerful people here. A feast is merely an excuse to make connections."
+
+ warlock_decision.2002.b:0 "Plot"
+ warlock_decision.2002.b.tt:0 "I'd use this opportunity to case the premises for my next heist. This ruler is sure to be the perfect target for my devious plots."
+
+ warlock_decision.2002.c:0 "Eat"
+ warlock_decision.2002.c.tt:0 "All I want to do is eat eat eat. It's not everyday that I get to join a feast!"
+
+ warlock_decision.2002.d:0 "Hide"
+ warlock_decision.2002.d.tt:0 "I'd hide myself away in the corner till the food comes. I don't really care for idle chitchat."
+
+ warlock_decision.2002.e:0 "Admire"
+ warlock_decision.2002.e.tt:0 "I'd admire the decor and take in the ambience of the event. Maybe I'll even elicit some interior design tips from whoever is responsible for decorating the banquet hall."
+
+ warlock_decision.2002.f:0 "Flirt"
+ warlock_decision.2002.f.tt:0 "My eyes would immediately be drawn to the most gorgeous guest in the room. I'd want to get to know them on a very personal level."
+
+ warlock_decision.2002.g:0 "Refuse to Answer"
+ warlock_decision.2002.g.tt:0 "I don't believe it's in my best interests to reveal too much of my inner workings to you. I don't even know who or what you really are."
+
+ warlock_decision.2003.t:0 "Summoning a Familiar - The Scandal"
+ warlock_decision.2003.desc:0 "Imagine a scenario where you are directly linked to a vile scandal that threatens not only your reputation, but your dynasty's reputation, and perhaps even your mandate to rule. What's the course of action you'd take to clear your name?"
+
+ warlock_decision.2003.a:0 "Kill"
+ warlock_decision.2003.a.tt:0 "I'd execute any within my realm that dared to speak out against me. Any perpetrators outside of my grasp, I'd have murdered by assassins."
+
+ warlock_decision.2003.b:0 "Enchant"
+ warlock_decision.2003.b.tt:0 "Well that's what Black Magic is for, isn't it? I'd use magic to manipulate my detractors into fawning over me and singing my praises."
+
+ warlock_decision.2003.c:0 "Persuade"
+ warlock_decision.2003.c.tt:0 "Surely with my golden tongue, I could talk my way out of any such scandal. Besides, the greatest threats to my rule aren't petty lies, but concrete forces such as violence and famine."
+
+ warlock_decision.2003.d:0 "Charm"
+ warlock_decision.2003.d.tt:0 "I'd find the source of this rumourmill and charm them into retracting their bad, mean words."
+
+ warlock_decision.2003.e:0 "Forge"
+ warlock_decision.2003.e.tt:0 "I'd start by buying off alibis that can confirm my recent whereabouts and actions. Then I'd forge documents that pin the accusations onto my most hated rival. Finally, I'd plant evidence that proves my second most hated rival is the source of these rumours."
+
+ warlock_decision.2003.f:0 "Reject"
+ warlock_decision.2003.f.tt:0 "My reputation is pristine, and my history is squeaky clean. Even if someone did try to frame me, my stellar reputation would render me impervious, and nobody would believe the lies."
+
+ warlock_decision.2003.g:0 "meditate"
+ warlock_decision.2003.g.tt:0 "It is the fate of any prominent ruler to suffer under false accusations at some point. I'd like to say I would take the situation in stride, and use it as an opportunity to reflect on my actions and cleanse my life of unhealthy influences that affect my character."
+
+ warlock_decision.2004.t:0 "Summoning a Familiar - Familiar Takes Form"
+ warlock_decision.2004.desc:0 "Well met, master. I believe this form I've taken is well suited to helping you achieve your goals and aspirations."
+ warlock_decision.2004.a:0 "I believe we will get on well, new friend."
+
  warlock_lifestyle_name:0 "Warlock"
  warlock_lifestyle_desc:0 "Focus on defying the laws that other mortals live by, through the psychic powers gained by virtue of being a Warlock."
 
@@ -136,7 +204,6 @@
  temp_bone_3_perk_name:0 "Placeholder Three"
  temp_bone_4_perk_name:0 "Placeholder Four"
 
-
 # Blood Perk Tree
  skin_tailor_perk_name:0 "Skin Tailor"
  invigorate_perk_name:0 "Invigorate"
@@ -147,3 +214,8 @@
  dynasticide_perk_name:0 "Dynasticide"
  young_blood_perk_name:0 "Young Blood"
  dhampir_perk_name:0 "Dhampir"
+
+ trait_imp_familiar:0 "Ruby Imp Familiar"
+ trait_imp_familiar_desc:0 "This imp has a vibrant pink skin tone and mischievious eyes."
+
+ monthly_warlock_lifestyle_xp_gain_mult:0 "Monthly Warlock [lifestyle|E] Experience"

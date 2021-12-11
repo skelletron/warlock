@@ -1,0 +1,238 @@
+warlock_familiar_effect = {
+	random_list = {
+
+		# Charismatic
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:charismatic_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = imp_familiar
+				}
+				50 = {
+					add_trait = pomeranian_familiar
+				}
+			}
+		}
+
+		# Regal
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:regal_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = imp_familiar
+				}
+				50 = {
+					add_trait = frog_familiar
+				}
+				50 = {
+					add_trait = pomeranian_familiar
+				}
+				50 = {
+					add_trait = python_familiar
+				}
+			}
+		}
+
+		# Deceitful
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:deceitful_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = imp_familiar
+				}
+				50 = {
+					add_trait = gecko_familiar
+				}
+			}
+		}
+
+		# Playful
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:playful_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = monkey_familiar
+				}
+				50 = {
+					add_trait = gecko_familiar
+				}
+			}
+		}
+
+		# Enchanting
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:enchanting_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = crow_familiar
+				}
+				50 = {
+					add_trait = cat_familiar
+				}
+				50 = {
+					add_trait = moth_familiar
+				}
+			}
+		}
+
+		# Ruthless
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:ruthless_familiar
+				}
+			}
+			add_trait = monkey_familiar
+			# random_list = {
+			# 	50 = {
+			# 		add_trait = monkey_familiar
+			# 	}
+			# }
+		}
+
+		# Aesthetic
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:aesthetic_familiar
+				}
+			}
+			add_trait = pomeranian_familiar
+			# random_list = {
+			# 	50 = {
+			# 		add_trait = pomeranian_familiar
+			# 	}
+			# }
+		}
+
+		# Shy
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:shy_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = bat_familiar
+				}
+				50 = {
+					add_trait = cat_familiar
+				}
+				50 = {
+					add_trait = octopus_familiar
+				}
+				50 = {
+					add_trait = moth_familiar
+				}
+				50 = {
+					add_trait = gecko_familiar
+				}
+				50 = {
+					add_trait = frog_familiar
+				}
+			}
+		}
+
+		# Gluttonous
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:gluttonous_familiar
+				}
+			}
+			add_trait = pig_familiar
+			# random_list = {
+			# 	50 = {
+			# 		add_trait = pig_familiar
+			# 	}
+			# }
+		}
+
+		# Sneaky
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:sneaky_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = imp_familiar
+				}
+				50 = {
+					add_trait = gecko_familiar
+				}
+				50 = {
+					add_trait = bat_familiar
+				}
+			}
+		}
+
+		# Serene
+		1 = {
+			modifier = {
+				factor = {
+					value = 1
+					multiply = var:serene_familiar
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = octopus_familiar
+				}
+				50 = {
+					add_trait = moth_familiar
+				}
+				50 = {
+					add_trait = rat_familiar
+				}
+				50 = {
+					add_trait = axolotl_familiar
+				}
+				50 = {
+					add_trait = crow_familiar
+				}
+				50 = {
+					add_trait = owl_familiar
+				}
+				50 = {
+					add_trait = python_familiar
+				}
+				50 = {
+					add_trait = pig_familiar
+				}
+			}
+		}
+	}
+}

@@ -48,10 +48,150 @@ undead = {
 	ruler_designer_cost = 40
 }
 
-ruby_imp_familiar = {
+# Familiars
+
+cat_familiar = {
 	index = 866
+	life_expectancy = 9
+	intrigue = 2
+	hostile_scheme_resistance_add = 5
+
+	ruler_designer_cost = 120
+}
+
+octopus_familiar = {
+	index = 867
+	life_expectancy = 4
+	learning = 3
+	monthly_piety = 0.5
+
+	ruler_designer_cost = 120
+}
+
+moth_familiar = {
+	index = 868
+	intrigue = 1
+	learning = 1
+	hostile_scheme_resistance_add = 15
+	monthly_piety_gain_mult = 0.1
+
+	ruler_designer_cost = 120
+}
+
+imp_familiar = {
+	index = 869
 	intrigue = 2
 	diplomacy = 1
 	monthly_prestige_gain_mult = 0.05
 	hostile_scheme_power_add = 5
+
+	ruler_designer_cost = 120
+}
+
+rat_familiar = {
+	index = 870
+
+	learning = 1
+	stewardship = 2
+	tax_mult = 0.1
+
+	ruler_designer_cost = 120
+}
+
+monkey_familiar = {
+	index = 871
+	martial = 1
+	intrigue = 1
+	prowess = 4
+	stress_gain_mult = -0.1
+
+	ruler_designer_cost = 120
+}
+
+axolotl_familiar = {
+	index = 872
+	learning = 1
+	monthly_piety = 1
+	monthly_prestige = 1
+	general_opinion = 5
+
+	ruler_designer_cost = 120
+}
+
+crow_familiar = {
+	index = 873
+	intrigue = 3
+	learning = 3
+	tax_mult = 0.05
+
+	owned_hostile_scheme_success_chance_add = 0.05
+}
+
+owl_familiar = {
+	index = 874
+	learning = 7
+	monthly_warlock_lifestyle_xp_gain_mult = 0.2
+
+	ruler_designer_cost = 120
+}
+
+gecko_familiar = {
+	index = 875
+	intrigue = 3
+	hostile_scheme_resistance_add = 5
+	hostile_scheme_power_add = 5
+	owned_hostile_scheme_success_chance_add = 0.05
+
+	ruler_designer_cost = 120
+}
+
+frog_familiar = {
+	index = 876
+	diplomacy = 5
+	hostile_scheme_resistance_add = 5
+	stress_loss_mult = 0.1
+	stress_gain_mult = -0.1
+
+	ruler_designer_cost = 120
+}
+
+pomeranian_familiar = {
+	index = 877
+	diplomacy = 1
+	general_opinion = 5
+	attraction_opinion = 10
+	personal_scheme_power_add = 10
+	monthly_prestige = 1
+
+	ruler_designer_cost = 120
+}
+
+python_familiar = {
+	index = 878
+	intrigue = 2
+	monthly_prestige = 1
+	monthly_prestige = 1
+
+	ruler_designer_cost = 120
+}
+
+pig_familiar = {
+	index = 879
+	diplomacy = 1
+	martial = 1
+	stewardship = 1
+	intrigue = 1
+	learning = 1
+	prowess = 1
+
+	ruler_designer_cost = 120
+}
+
+bat_familiar = {
+	index = 880
+	intrigue = 5
+	hostile_scheme_resistance_add = 10
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	ruler_designer_cost = 120
 }
