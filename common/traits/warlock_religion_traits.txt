@@ -124,7 +124,7 @@ crow_familiar = {
 	learning = 3
 	tax_mult = 0.05
 
-	owned_hostile_scheme_success_chance_add = 0.05
+	owned_hostile_scheme_success_chance_add = 5
 }
 
 owl_familiar = {
@@ -140,7 +140,7 @@ gecko_familiar = {
 	intrigue = 3
 	hostile_scheme_resistance_add = 5
 	hostile_scheme_power_add = 5
-	owned_hostile_scheme_success_chance_add = 0.05
+	owned_hostile_scheme_success_chance_add = 5
 
 	ruler_designer_cost = 120
 }
