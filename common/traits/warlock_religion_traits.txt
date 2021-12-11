@@ -170,7 +170,7 @@ python_familiar = {
 	index = 878
 	intrigue = 2
 	monthly_prestige = 1
-	monthly_prestige = 1
+	monthly_piety = 1
 
 	ruler_designer_cost = 120
 }
