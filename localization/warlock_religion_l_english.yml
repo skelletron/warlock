@@ -250,3 +250,10 @@
  trait_imp_familiar_desc:0 "This imp has a vibrant pink skin tone and mischievious eyes."
 
  monthly_warlock_lifestyle_xp_gain_mult:0 "Monthly Warlock [lifestyle|E] Experience"
+
+# Familiar Helpful Events
+ familiar_collected_taxes_title:0 "Familiar Helps Collect Taxes"
+ familiar_collected_taxes_desc:0 "Your familiar has brought in additional taxes from the realm. Good familiar!"
+
+ familiar_earned_piety_title:0 "Familiar Helps Earn Piety"
+ familiar_earned_piety_desc:0 "Your familiar has generated extra piety through acts of faith. Good familiar!"

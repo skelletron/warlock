@@ -1,0 +1,14 @@
+on_birthday = {
+	on_actions = {
+		on_yearly_familiar_effect
+	}
+}
+
+on_yearly_familiar_effect = {
+	trigger = {
+		has_character_flag = has_familiar_flag
+	}
+	effect = {
+		generic_familiar_small_effect = yes
+	}
+}

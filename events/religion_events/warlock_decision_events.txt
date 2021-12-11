@@ -507,5 +507,8 @@ warlock_decision.2006 = {
 		name = warlock_decision.2006.a
 		custom_tooltip = warlock_decision.2006.a.tt
 		warlock_familiar_effect = yes
+
+		# for yearly familiar events
+		add_character_flag = has_familiar_flag
 	}
 }
