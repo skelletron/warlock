@@ -7,9 +7,11 @@ warlock = {
 	# education = yes
 
 	monthly_piety_gain_mult = 0.4
+	monthly_piety = 2
+	monthly_warlock_lifestyle_xp_gain_mult = 0.4
+
 	faith_conversion_piety_cost_mult = 2.0
 
-	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
 	
 	ruler_designer_cost = 40
 	
@@ -44,4 +46,12 @@ undead = {
 	no_prowess_loss_from_age = yes
 
 	ruler_designer_cost = 40
+}
+
+ruby_imp_familiar = {
+	index = 866
+	intrigue = 2
+	diplomacy = 1
+	monthly_prestige_gain_mult = 0.05
+	hostile_scheme_power_add = 5
 }
