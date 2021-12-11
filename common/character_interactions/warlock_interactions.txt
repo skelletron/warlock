@@ -489,13 +489,12 @@ release_thrall_interaction = {
 			if = {
 				limit = { has_character_modifier = tithed_thrall_modifier}
 				remove_character_modifier = tithed_thrall_modifier
+				scope:actor = {
+					remove_character_modifier = receiving_thrall_tithe_modifier
+				}
 			}
 		}
 		scope:actor = {
-			if = {
-				limit = { has_character_modifier = receiving_thrall_tithe_modifier }
-				remove_character_modifier = receiving_thrall_tithe_modifier
-			}
 			remove_character_modifier = maintaining_thralls_modifier
 		}
 	}
