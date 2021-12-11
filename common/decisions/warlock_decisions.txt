@@ -55,6 +55,9 @@ beseech_dark_coronation_decision = {
 
 	is_shown = {
 		faith = faith:great_old_one
+		NOT = {
+			has_trait = warlock
+		}
 	}
 
 	is_valid = {
