@@ -253,7 +253,19 @@
 
 # Familiar Helpful Events
  familiar_collected_taxes_title:0 "Familiar Helps Collect Taxes"
- familiar_collected_taxes_desc:0 "Your familiar has brought in additional taxes from the realm. Good familiar!"
+ familiar_collected_taxes_desc:0 "Your familiar has brought in additional taxes from the realm."
 
  familiar_earned_piety_title:0 "Familiar Helps Earn Piety"
- familiar_earned_piety_desc:0 "Your familiar has generated extra piety through acts of faith. Good familiar!"
+ familiar_earned_piety_desc:0 "Your familiar has generated extra piety through acts of faith."
+
+ familiar_casts_destress_spell_title:0 "Familiar Bestows Aura of Tranquility"
+ familiar_casts_destress_spell_desc:0 "Your familiar has blessed you with an aura of tranquility, that you may live out your days in serenity."
+
+ familiar_helped_destress_title:0 "Familiar Entertains You"
+ familiar_helped_destress_desc:0 "Playing games with your familiar has lifted your spirits, and the day seems that much brighter."
+
+ familiar_increases_tourism_title:0 "Familiar Increases Tourism"
+ familiar_increases_tourism_desc:0 "Nobles from near and far can be found relaxing at the luscious gardens and luxurious estates that your familiar has overseen construction on."
+
+ familiar_bestows_bewitching_aura_title:0 "Familiar Bestows Bewitching Aura"
+ familiar_bestows_bewitching_aura_desc:0 "You dazzle your guests with your brand new beauty, courtesy of your familiar."

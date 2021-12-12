@@ -90,3 +90,19 @@ wall_of_bone_self_modifier = {
 # 	subtract = 2
 # 	min = 0.5
 # }
+
+stress_free_life_modifier = {
+	icon = stress_free_life
+	stress_loss_mult = 0.25
+	stress_gain_mult = -0.25
+}
+
+increased_tourism_modifier = {
+	icon = stewardship_positive
+	tax_mult = 0.1
+}
+
+bewitching_modifier = {
+	icon = magic_positive
+	general_opinion = 15
+}

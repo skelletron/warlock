@@ -9,6 +9,7 @@ on_yearly_familiar_effect = {
 		has_character_flag = has_familiar_flag
 	}
 	effect = {
-		generic_familiar_small_effect = yes
+		# generic_familiar_small_effect = yes
+		aesthetic_familiar_small_effect = yes
 	}
 }
