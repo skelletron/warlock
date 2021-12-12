@@ -258,8 +258,8 @@
  familiar_earned_piety_title:0 "Familiar Helps Earn Piety"
  familiar_earned_piety_desc:0 "Your familiar has generated extra piety through acts of faith."
 
- familiar_casts_destress_spell_title:0 "Familiar Bestows Aura of Tranquility"
- familiar_casts_destress_spell_desc:0 "Your familiar has blessed you with an aura of tranquility, that you may live out your days in serenity."
+ familiar_bestows_aura_of_tranquility_title:0 "Familiar Bestows Aura of Tranquility"
+ familiar_bestows_aura_of_tranquility_desc:0 "Your familiar has blessed you with an aura of tranquility, that you may live out your days in serenity."
 
  familiar_helped_destress_title:0 "Familiar Entertains You"
  familiar_helped_destress_desc:0 "Playing games with your familiar has lifted your spirits, and the day seems that much brighter."
@@ -269,3 +269,8 @@
 
  familiar_bestows_bewitching_aura_title:0 "Familiar Bestows Bewitching Aura"
  familiar_bestows_bewitching_aura_desc:0 "You dazzle your guests with your brand new beauty, courtesy of your familiar."
+
+# Familiar Modifiers
+ stress_free_life_modifier:0 "Aura of Tranquility"
+ increased_tourism_modifier:0 "Increased Tourism"
+ bewitching_modifier:0 "Bewitching Aura"

@@ -59,11 +59,11 @@ aesthetic_familiar_small_effect = {
 						title = familiar_helped_destress_title
 						desc = familiar_helped_destress_desc
 						stress_impact = {
-							base = medium_stress_impact_loss
+							base = major_stress_impact_loss
 						}
 					}
 				}
-				50 = {
+				1 = {
 					# Stress Loss Modifier
 					send_interface_message = {
 						type = event_court_chaplain_task_good
@@ -73,6 +73,9 @@ aesthetic_familiar_small_effect = {
 							modifier = stress_free_life_modifier
 							days = 365
 						}
+						# stress_impact = {
+						# 	base = medium_stress_impact_loss
+						# }
 					}
 				}
 			}
