@@ -55,7 +55,7 @@ aesthetic_familiar_small_effect = {
 					}
 					# Lose Stress
 					send_interface_message = {
-						type = event_court_chaplain_task_good
+						type = event_familiar_destress_good
 						title = familiar_helped_destress_title
 						desc = familiar_helped_destress_desc
 						stress_impact = {
@@ -66,7 +66,7 @@ aesthetic_familiar_small_effect = {
 				1 = {
 					# Stress Loss Modifier
 					send_interface_message = {
-						type = event_court_chaplain_task_good
+						type = event_familiar_destress_good
 						title = familiar_bestows_aura_of_tranquility_title
 						desc = familiar_bestows_aura_of_tranquility_desc
 						add_character_modifier = {
@@ -100,7 +100,8 @@ aesthetic_familiar_small_effect = {
 		# Bewitching Modifier
 		50 = {
 			send_interface_message = {
-				type = event_chancellor_task_good
+				# type = event_chancellor_task_good
+				type = event_familiar_beauty_good
 				title = familiar_bestows_bewitching_aura_title
 				desc = familiar_bestows_bewitching_aura_desc
 				add_character_modifier = {

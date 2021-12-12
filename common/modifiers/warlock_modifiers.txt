@@ -104,5 +104,6 @@ increased_tourism_modifier = {
 
 bewitching_modifier = {
 	icon = magic_positive
-	general_opinion = 15
+	general_opinion = 10
+	attraction_opinion = 10
 }
