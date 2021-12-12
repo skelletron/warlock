@@ -1,4 +1,4 @@
-serene_familiar_small_effect = {
+﻿serene_familiar_small_effect = {
 	random_list = {
 
 		# 1

@@ -1,4 +1,4 @@
-namespace = create_minion
+﻿namespace = create_minion
 
 create_minion.1001 = {
 	type = character_event
@@ -26,11 +26,20 @@ create_minion.1001 = {
 		hidden_effect = {
 			scope:target = {
 				add_trait = undead
+				add_trait = deathknight
+
 				if = {
 					limit = {
 						is_ruler = yes
 					}
 					depose = yes
+				}
+
+				# faith = faith:great_old_one
+
+				add_opinion = {
+					modifier = deathknight_opinion_modifier
+					target = scope:owner
 				}
 
 				# set_variable = {

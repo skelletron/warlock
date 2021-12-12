@@ -1,4 +1,4 @@
-create_deathknight = {
+﻿create_deathknight = {
 	skill = intrigue
 	hostile = yes
 	# cooldown = { months = 2 }
@@ -14,7 +14,7 @@ create_deathknight = {
 	
 	allow = {
 		has_trait = warlock
-		has_perk = create_death_knight_perk
+		has_perk = create_deathknight_perk
 		# is_vampire_trigger = yes
 		#is_adult = yes
 		scope:target = { 

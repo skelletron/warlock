@@ -1280,10 +1280,11 @@ create_deathknight = {
 		scope:actor = {
 			AND = {
 				has_trait = warlock
-				has_perk = create_death_knight_perk
+				has_perk = create_deathknight_perk
 			}
 		}
 		scope:recipient = {
+			is_adult = yes
 			NOT = { scope:recipient = scope:actor }
 			NOT = {
 				has_trait = undead

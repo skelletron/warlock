@@ -5,7 +5,7 @@
 		fertility = 0.4
 	}
 
-	focus_id = 8000
+	focus_id = 15
 }
 
 bone_sculpting_focus = {
@@ -15,7 +15,7 @@ bone_sculpting_focus = {
 		learning = 10
 	}
 
-	focus_id = 8001
+	focus_id = 16
 }
 
 mind_breaking_focus = {
@@ -25,5 +25,5 @@ mind_breaking_focus = {
 		intrigue = 10
 	}
 
-	focus_id = 8002
+	focus_id = 17
 }

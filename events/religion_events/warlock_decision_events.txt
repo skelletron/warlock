@@ -151,15 +151,62 @@ warlock_decision.2003 = {
 		base = 1
 	}
 
+	immediate = {
+		set_variable = {
+			name = charismatic_familiar
+			value = 0
+		}
+		set_variable = {
+			name = regal_familiar
+			value = 0
+		}
+		set_variable = {
+			name = deceitful_familiar
+			value = 0
+		}
+		set_variable = {
+			name = playful_familiar
+			value = 0
+		}
+		set_variable = {
+			name = enchanting_familiar
+			value = 0
+		}
+		set_variable = {
+			name = ruthless_familiar
+			value = 0
+		}
+		set_variable = {
+			name = aesthetic_familiar
+			value = 0
+		}
+		set_variable = {
+			name = shy_familiar
+			value = 0
+		}
+		set_variable = {
+			name = gluttonous_familiar
+			value = 0
+		}
+		set_variable = {
+			name = sneaky_familiar
+			value = 0
+		}
+		set_variable = {
+			name = serene_familiar
+			value = 0
+		}
+	}
+
 	# Q: Say you're at a feast, with many important figures across the land in attendance. The banquet hall is decorated to perfection, and the food is sure to be mouthwatering. What's the first thing you'd do at such an event?
 
 	#A I'd schmooze with the most powerful people here. A feast is merely an excuse to make connections.
 	option = {
 		name = warlock_decision.2003.a
 		custom_tooltip = warlock_decision.2003.a.tt
-		set_variable = {
+		change_variable = {
 			name = charismatic_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -168,9 +215,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.b
 		custom_tooltip = warlock_decision.2003.b.tt
-		set_variable = {
+		change_variable = {
 			name = sneaky_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -179,9 +226,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.c
 		custom_tooltip = warlock_decision.2003.c.tt
-		set_variable = {
+		change_variable = {
 			name = gluttonous_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -190,9 +237,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.d
 		custom_tooltip = warlock_decision.2003.d.tt
-		set_variable = {
+		change_variable = {
 			name = shy_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -201,9 +248,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.e
 		custom_tooltip = warlock_decision.2003.e.tt
-		set_variable = {
+		change_variable = {
 			name = aesthetic_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -212,9 +259,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.f
 		custom_tooltip = warlock_decision.2003.f.tt
-		set_variable = {
+		change_variable = {
 			name = playful_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -223,9 +270,9 @@ warlock_decision.2003 = {
 	option = {
 		name = warlock_decision.2003.g
 		custom_tooltip = warlock_decision.2003.g.tt
-		set_variable = {
+		change_variable = {
 			name = deceitful_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2004
 	}
@@ -257,9 +304,9 @@ warlock_decision.2004 = {
 	option = {
 		name = warlock_decision.2004.a
 		custom_tooltip = warlock_decision.2004.a.tt
-		set_variable = {
+		change_variable = {
 			name = ruthless_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2005
 	}
@@ -268,9 +315,9 @@ warlock_decision.2004 = {
 	option = {
 		name = warlock_decision.2004.b
 		custom_tooltip = warlock_decision.2004.b.tt
-		set_variable = {
+		change_variable = {
 			name = enchanting_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2005
 	}
@@ -281,7 +328,7 @@ warlock_decision.2004 = {
 		custom_tooltip = warlock_decision.2004.c.tt
 		change_variable = {
 			name = charismatic_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2005
 	}
@@ -290,9 +337,9 @@ warlock_decision.2004 = {
 	option = {
 		name = warlock_decision.2004.d
 		custom_tooltip = warlock_decision.2004.d.tt
-		set_variable = {
+		change_variable = {
 			name = playful_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2005
 
@@ -304,7 +351,7 @@ warlock_decision.2004 = {
 		custom_tooltip = warlock_decision.2004.e.tt
 		change_variable = {
 			name = deceitful_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2005
 
@@ -314,9 +361,9 @@ warlock_decision.2004 = {
 	option = {
 		name = warlock_decision.2004.f
 		custom_tooltip = warlock_decision.2004.f.tt
-		set_variable = {
+		change_variable = {
 			name = regal_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2005
 
@@ -326,9 +373,9 @@ warlock_decision.2004 = {
 	option = {
 		name = warlock_decision.2004.g
 		custom_tooltip = warlock_decision.2004.g.tt
-		set_variable = {
+		change_variable = {
 			name = serene_familiar
-			value = 1
+			add = 1
 		}
 		trigger_event = warlock_decision.2005
 
@@ -364,11 +411,11 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.a.tt
 		change_variable = {
 			name = regal_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = sneaky_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -379,11 +426,11 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.b.tt
 		change_variable = {
 			name = serene_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = shy_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -394,15 +441,15 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.c.tt
 		change_variable = {
 			name = gluttonous_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = aesthetic_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = serene_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -413,15 +460,15 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.d.tt
 		change_variable = {
 			name = serene_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = regal_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = sneaky_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -432,11 +479,11 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.e.tt
 		change_variable = {
 			name = ruthless_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = regal_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -447,19 +494,19 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.f.tt
 		change_variable = {
 			name = deceitful_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = enchanting_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = sneaky_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = serene_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}
@@ -470,15 +517,15 @@ warlock_decision.2005 = {
 		custom_tooltip = warlock_decision.2005.g.tt
 		change_variable = {
 			name = regal_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = aesthetic_familiar
-			add = 1
+			add = 2
 		}
 		change_variable = {
 			name = serene_familiar
-			add = 1
+			add = 2
 		}
 		trigger_event = warlock_decision.2006
 	}

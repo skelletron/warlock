@@ -1,4 +1,4 @@
-event_familiar_beauty_good = {
+﻿event_familiar_beauty_good = {
 	icon = "sway_scheme"
 	title = event_message_title
 	desc = event_message_effect_and_text

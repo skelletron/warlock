@@ -1,4 +1,4 @@
-white_eyes = {
+﻿white_eyes = {
 	white_eyes = {
 		traits = { undead }
 		dna_modifiers = {

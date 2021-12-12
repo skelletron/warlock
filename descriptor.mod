@@ -1,8 +1,8 @@
-﻿version="0.1"
+version="0.1"
 tags={
 	"Alternative History"
 	"Gameplay"
 	"Religion"
 }
-name="warlock religion"
+name="Warlock"
 supported_version="1.4.4"

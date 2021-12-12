@@ -1,8 +1,12 @@
-cast_wall_of_bone_opinion_modifier = {
+﻿cast_wall_of_bone_opinion_modifier = {
 	opinion = 40
 	years = 10
 }
 
 thrall_opinion_modifier = {
+	opinion = 100
+}
+
+deathknight_opinion_modifier = {
 	opinion = 100
 }

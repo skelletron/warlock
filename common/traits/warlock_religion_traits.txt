@@ -48,6 +48,21 @@ undead = {
 	ruler_designer_cost = 40
 }
 
+deathknight = {
+	index = 767
+	minimum_age = 16
+	martial = 20
+	prowess = 20
+	commander = yes
+
+	tolerance_advantage_mod = 20
+
+	dread_baseline_add = 50
+	same_faith_opinion = 70
+
+	ruler_designer_cost = 120
+}
+
 # Familiars
 
 cat_familiar = {
@@ -199,25 +214,25 @@ bat_familiar = {
 # Rare familiars. Can only get them by reaching the end of the Game of Questions
 
 # turtle familiar maybe?
-rare_familiar_1 = {
-	index = 881
+# rare_familiar_1 = {
+# 	index = 881
 
-	learning = 1
-	life_expectancy = 5
-	additional_fort_level = 2
-	enemy_hostile_scheme_success_chance_add = -0.1
+# 	learning = 1
+# 	life_expectancy = 5
+# 	additional_fort_level = 2
+# 	enemy_hostile_scheme_success_chance_add = -0.1
 
-	ruler_designer_cost = 120
-}
+# 	ruler_designer_cost = 120
+# }
 
-rare_familiar_2 = {
-	index = 882
+# rare_familiar_2 = {
+# 	index = 882
 
-	marshal = 1
-	levy_size = 0.05
-	knight_limit = 1
-	tolerance_advantage_mod = 5
-	monthly_piety = 0.1
+# 	marshal = 1
+# 	levy_size = 0.05
+# 	knight_limit = 1
+# 	tolerance_advantage_mod = 5
+# 	monthly_piety = 0.1
 
-	ruler_designer_cost = 120
-}
+# 	ruler_designer_cost = 120
+# }

@@ -1,4 +1,4 @@
-wall_of_bone_modifier = {
+﻿wall_of_bone_modifier = {
 	icon = wall_of_bone
 	# defender_holding_advantage = normal_building_advantage_tier_8
 	# fort_level = normal_building_fort_level_tier_8

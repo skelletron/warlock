@@ -1,4 +1,4 @@
-warlock_familiar_effect = {
+﻿warlock_familiar_effect = {
 	random_list = {
 
 		# Charismatic

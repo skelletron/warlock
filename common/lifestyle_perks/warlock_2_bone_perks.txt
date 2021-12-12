@@ -33,7 +33,7 @@
 	}
 }
 
-create_death_knight_perk = {
+create_deathknight_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
 	position = { 2.5 0 }
@@ -61,7 +61,7 @@ raise_undead_perk = {
 	}
 
 	parent = wall_of_bone_perk
-	parent = create_death_knight_perk
+	parent = create_deathknight_perk
 }
 
 create_skeletal_infiltrator_perk = {

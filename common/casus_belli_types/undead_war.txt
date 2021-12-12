@@ -63,6 +63,13 @@
 				}
 			}
 		}
+
+		# every_sub_realm_county = {
+		# 	limit = {
+		# 		culture = $OLD_CULTURE$
+		# 	}
+		# 	set_county_culture = $NEW_CULTURE$
+		# }
 		# scope:recipient.capital_province.county = {
 		# 	change_county_control = -75
 		# }
