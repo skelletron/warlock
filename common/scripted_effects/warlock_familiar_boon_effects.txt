@@ -1,48 +1,7 @@
 serene_familiar_small_effect = {
 	random_list = {
 
-		# More Gold
-		50 = {
-			send_interface_message = {
-				type = event_steward_task_good
-				title = familiar_collected_taxes_title
-				desc = familiar_collected_taxes_desc
-				add_gold = 50
-				stress_impact = {
-					greedy = medium_stress_impact_loss
-				}
-			}
-		}
-
-		# More Piety
-		50 = {
-			send_interface_message = {
-				type = event_court_chaplain_task_good
-				title = familiar_earned_piety_title
-				desc = familiar_earned_piety_desc
-				add_piety = 50
-			}
-		}
-
-		# More Prestige
-		50 = {
-			send_interface_message = {
-				type = event_chancellor_task_good
-				title = familiar_earned_prestige_title
-				desc = familiar_earned_prestige_desc
-				add_prestige = 50
-			}
-		}
-
-		# Nothing Happens
-		50 = {
-
-		}
-	}
-}
-
-aesthetic_familiar_small_effect = {
-	random_list = {
+		# 1
 		# Stress Management
 		50 = {
 			random_list = {
@@ -71,7 +30,107 @@ aesthetic_familiar_small_effect = {
 						desc = familiar_bestows_aura_of_tranquility_desc
 						add_character_modifier = {
 							modifier = stress_free_life_modifier
-							days = 365
+							years = 1
+						}
+					}
+				}
+			}
+		}
+
+		# 2
+		# More Gold
+		50 = {
+			send_interface_message = {
+				type = event_steward_task_good
+				title = familiar_collected_taxes_title
+				desc = familiar_collected_taxes_desc
+				add_gold = medium_gold_value
+				stress_impact = {
+					greedy = medium_stress_impact_loss
+				}
+			}
+		}
+
+		# 3
+		# More Piety
+		50 = {
+			send_interface_message = {
+				type = event_court_chaplain_task_good
+				title = familiar_earned_piety_title
+				desc = familiar_earned_piety_desc
+				add_piety = medium_piety_value
+			}
+		}
+
+		# 4
+		# More Prestige
+		50 = {
+			send_interface_message = {
+				type = event_familiar_prestige_good
+				title = familiar_earned_prestige_title
+				desc = familiar_earned_prestige_desc
+				add_prestige = medium_prestige_value
+			}
+		}
+
+		# 5
+		# Learning and Piety Modifier
+		50 = {
+			send_interface_message = {
+				type = event_familiar_learning_good
+				title = familiar_bestows_aura_of_faith_title
+				desc = familiar_bestows_aura_of_faith_desc
+				add_character_modifier = {
+					modifier = aura_of_faith_modifier
+					years = 1
+				}
+				stress_impact = {
+					humble = medium_stress_impact_loss
+				}
+			}
+		}
+		
+		# 6
+		# Nothing Happens
+		50 = {
+
+		}
+	}
+}
+
+aesthetic_familiar_small_effect = {
+	random_list = {
+
+		# 1
+		# Stress Management
+		50 = {
+			random_list = {
+				1 = {
+					modifier = {
+						factor = {
+							value = 1
+							multiply = stress
+						}
+					}
+					# Lose Stress
+					send_interface_message = {
+						type = event_familiar_destress_good
+						title = familiar_helped_destress_title
+						desc = familiar_helped_destress_desc
+						stress_impact = {
+							base = major_stress_impact_loss
+						}
+					}
+				}
+				1 = {
+					# Stress Loss Modifier
+					send_interface_message = {
+						type = event_familiar_destress_good
+						title = familiar_bestows_aura_of_tranquility_title
+						desc = familiar_bestows_aura_of_tranquility_desc
+						add_character_modifier = {
+							modifier = stress_free_life_modifier
+							years = 1
 						}
 						# stress_impact = {
 						# 	base = medium_stress_impact_loss
@@ -81,6 +140,7 @@ aesthetic_familiar_small_effect = {
 			}
 		}
 
+		# 2
 		# Increased Taxes Modifier
 		50 = {
 			send_interface_message = {
@@ -89,7 +149,7 @@ aesthetic_familiar_small_effect = {
 				desc = familiar_increases_tourism_desc
 				add_character_modifier = {
 					modifier = increased_tourism_modifier
-					days = 365
+					years = 1
 				}
 				stress_impact = {
 					greedy = medium_stress_impact_loss
@@ -97,6 +157,7 @@ aesthetic_familiar_small_effect = {
 			}
 		}
 
+		# 3
 		# Bewitching Modifier
 		50 = {
 			send_interface_message = {
@@ -106,11 +167,37 @@ aesthetic_familiar_small_effect = {
 				desc = familiar_bestows_bewitching_aura_desc
 				add_character_modifier = {
 					modifier = bewitching_modifier
-					days = 365
+					years = 1
 				}
 			}
 		}
 
+		# 4
+		# More Prestige
+		50 = {
+			send_interface_message = {
+				type = event_familiar_prestige_good
+				title = familiar_earned_prestige_title
+				desc = familiar_earned_prestige_desc
+				add_prestige = medium_prestige_value
+			}
+		}
+
+		# 5
+		# Aura of Influence
+		50 = {
+			send_interface_message = {
+				type = event_familiar_beauty_good
+				title = familiar_bestows_aura_of_influence_title
+				desc = familiar_bestows_aura_of_influence_desc
+				add_character_modifier = {
+					modifier = aura_of_influence_modifier
+					years = 2
+				}
+			}
+		}
+
+		# 6
 		# Nothing Happens
 		50 = {
 

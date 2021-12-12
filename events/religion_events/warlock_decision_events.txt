@@ -510,5 +510,6 @@ warlock_decision.2006 = {
 
 		# for yearly familiar events
 		add_character_flag = has_familiar_flag
+		add_character_flag = has_generic_familiar_flag
 	}
 }

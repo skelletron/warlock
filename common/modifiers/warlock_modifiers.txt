@@ -107,3 +107,15 @@ bewitching_modifier = {
 	general_opinion = 10
 	attraction_opinion = 10
 }
+
+aura_of_faith_modifier = {
+	icon = learning_positive
+	learning = 1
+	monthly_piety = 0.1
+}
+
+aura_of_influence_modifier = {
+	icon = social_positive
+	personal_scheme_power_add = 5
+	owned_personal_scheme_success_chance_add = 10
+}

@@ -125,6 +125,8 @@ warlock_familiar_effect = {
 				}
 			}
 			add_trait = pomeranian_familiar
+			add_character_flag = has_aesthetic_familiar_flag
+
 			# random_list = {
 			# 	50 = {
 			# 		add_trait = pomeranian_familiar
@@ -210,27 +212,35 @@ warlock_familiar_effect = {
 			random_list = {
 				50 = {
 					add_trait = octopus_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = moth_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = rat_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = axolotl_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = crow_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = owl_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = python_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 				50 = {
 					add_trait = pig_familiar
+					add_character_flag = has_serene_familiar_flag
 				}
 			}
 		}

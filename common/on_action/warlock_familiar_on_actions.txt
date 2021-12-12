@@ -1,15 +1,47 @@
 on_birthday = {
 	on_actions = {
-		on_yearly_familiar_effect
+		on_yearly_serene_familiar_small_effect
+		on_yearly_aesthetic_familiar_small_effect
+		on_yearly_generic_familiar_small_effect
 	}
 }
 
-on_yearly_familiar_effect = {
+# on_yearly_familiar_effect = {
+# 	trigger = {
+# 		has_character_flag = has_familiar_flag
+# 	}
+# 	effect = {
+# 		# generic_familiar_small_effect = yes
+# 		aesthetic_familiar_small_effect = yes
+# 	}
+# }
+
+# Generic Testing
+on_yearly_generic_familiar_small_effect = {
 	trigger = {
-		has_character_flag = has_familiar_flag
+		has_character_flag = has_generic_familiar_flag
 	}
 	effect = {
-		# generic_familiar_small_effect = yes
+		aesthetic_familiar_small_effect = yes
+	}
+}
+
+# Serene Familiar
+on_yearly_serene_familiar_small_effect = {
+	trigger = {
+		has_character_flag = has_serene_familiar_flag
+	}
+	effect = {
+		serene_familiar_small_effect = yes
+	}
+}
+
+# Aesthetic Familiar
+on_yearly_aesthetic_familiar_small_effect = {
+	trigger = {
+		has_character_flag = has_aesthetic_familiar_flag
+	}
+	effect = {
 		aesthetic_familiar_small_effect = yes
 	}
 }

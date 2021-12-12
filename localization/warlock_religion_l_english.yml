@@ -256,7 +256,7 @@
  familiar_collected_taxes_desc:0 "Your familiar has brought in additional taxes from the realm."
 
  familiar_earned_piety_title:0 "Familiar Helps Earn Piety"
- familiar_earned_piety_desc:0 "Your familiar has generated extra piety through acts of faith."
+ familiar_earned_piety_desc:0 "Your familiar has generated extra piety by collecting magical gemstones."
 
  familiar_bestows_aura_of_tranquility_title:0 "Familiar Bestows Aura of Tranquility"
  familiar_bestows_aura_of_tranquility_desc:0 "Your familiar has blessed you with an aura of tranquility, that you may live out your days in serenity."
@@ -270,7 +270,18 @@
  familiar_bestows_bewitching_aura_title:0 "Familiar Bestows Bewitching Aura"
  familiar_bestows_bewitching_aura_desc:0 "You dazzle your guests with your brand new beauty, courtesy of your familiar."
 
+ familiar_earned_prestige_title:0 "Familiar Makes You Famous"
+ familiar_earned_prestige_desc:0 "Tales of your heroism are sung in taverns across the land, thanks to some enchantments your familiar has casted."
+
+ familiar_bestows_aura_of_faith_title:0 "Familiar Bestows Aura of Faith"
+ familiar_bestows_aura_of_faith_desc:0 "You hear the Great Old One with even greater clarity, due to the aura your familiar has blessed you with."
+
+ familiar_bestows_aura_of_influence_title:0 "Familiar Bestows Aura of Influence"
+ familiar_bestows_aura_of_influence_desc:0 "You've the ear of foreign Royals, and you've your own realm eating from the palm of your hand. Influence comes easy to you, with a little help from your familiar, that is."
+
 # Familiar Modifiers
  stress_free_life_modifier:0 "Aura of Tranquility"
  increased_tourism_modifier:0 "Increased Tourism"
  bewitching_modifier:0 "Bewitching Aura"
+ aura_of_faith_modifier:0 "Aura of Faith"
+ aura_of_influence_modifier:0 "Aura of Influence"
