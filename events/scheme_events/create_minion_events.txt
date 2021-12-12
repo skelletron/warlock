@@ -1,0 +1,58 @@
+namespace = create_minion
+
+create_minion.1001 = {
+	type = character_event
+	title = create_minion.1001.t
+	desc = create_minion.1001.desc
+	theme = minion
+
+	left_portrait = {
+		character = root
+		animation = angry
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	# immediate = {
+		
+	# }
+	option = {
+		name = create_minion.1001.a
+		custom_tooltip = create_minion.1001.a.tt
+
+		hidden_effect = {
+			scope:target = {
+				add_trait = undead
+				if = {
+					limit = {
+						is_ruler = yes
+					}
+					depose = yes
+				}
+
+				# set_variable = {
+				# 	name = age_aquired_immortality
+				# 	value = age
+				# }
+			}
+			scope:owner = {
+				add_courtier = scope:target
+			}
+		}
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+
+	option = {
+		name = create_minion.1001.b
+		custom_tooltip = create_minion.1001.b.tt
+
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+}

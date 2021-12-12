@@ -195,3 +195,29 @@ bat_familiar = {
 
 	ruler_designer_cost = 120
 }
+
+# Rare familiars. Can only get them by reaching the end of the Game of Questions
+
+# turtle familiar maybe?
+rare_familiar_1 = {
+	index = 881
+
+	learning = 1
+	life_expectancy = 5
+	additional_fort_level = 2
+	enemy_hostile_scheme_success_chance_add = -0.1
+
+	ruler_designer_cost = 120
+}
+
+rare_familiar_2 = {
+	index = 882
+
+	marshal = 1
+	levy_size = 0.05
+	knight_limit = 1
+	tolerance_advantage_mod = 5
+	monthly_piety = 0.1
+
+	ruler_designer_cost = 120
+}

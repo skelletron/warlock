@@ -1,0 +1,67 @@
+create_deathknight = {
+	skill = intrigue
+	hostile = yes
+	# cooldown = { months = 2 }
+	uses_agents = no
+	is_secret = yes
+	power_per_skill_point = 20
+	spymaster_power_per_skill_point = 1
+	resistance_per_skill_point = 1
+	spymaster_resistance_per_skill_point = 1
+	uses_resistance = yes
+	minimum_progress_chance = 95
+	maximum_progress_chance = 99
+	
+	allow = {
+		has_trait = warlock
+		has_perk = create_death_knight_perk
+		# is_vampire_trigger = yes
+		#is_adult = yes
+		scope:target = { 
+			is_adult = yes
+			NOT = {
+				has_trait = warlock
+			}
+		}
+	}
+	
+	valid = {
+		
+	}
+
+	base_success_chance = {
+		base = 95
+		#SCHEME OWNER#
+		compare_modifier = {
+			# desc = embrace_my_intrigue
+			desc = create_minion_my_intrigue
+			target = scope:owner
+			value = intrigue
+			multiplier = 2
+		}
+	}
+
+	on_ready = {
+		scheme_owner = {
+			# trigger_event = sire.100
+			trigger_event = create_minion.1001
+		}
+	}
+
+	on_invalidated = {
+	}
+
+	on_monthly = {
+		save_scope_as = scheme
+		scheme_owner = { save_scope_as = owner }
+		scheme_target = { save_scope_as = target }
+
+		# if = {
+		# 	limit = { scheme_owner.age >= 50 }
+		# 	scheme_owner = {
+		# 		trigger_event = elder_efficient_siring.100
+		# 	}
+		# }
+	}
+	success_desc = "SIRE_SUCCESS_DESC"
+}

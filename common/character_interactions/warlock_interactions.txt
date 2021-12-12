@@ -1267,6 +1267,43 @@ debug_gain_warlock_xp = {
 	}
 }
 
+create_deathknight = {
+	category = interaction_category_warlock
+	common_interaction = yes
+	scheme = create_deathknight
+	use_diplomatic_range = yes
+	ignores_pending_interaction_block = yes
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		scope:actor = {
+			AND = {
+				has_trait = warlock
+				has_perk = create_death_knight_perk
+			}
+		}
+		scope:recipient = {
+			NOT = { scope:recipient = scope:actor }
+			NOT = {
+				has_trait = undead
+				has_trait = warlock
+			}
+		}
+	}
+
+	on_accept = {
+		hidden_effect = {
+			scope:actor = {
+				start_scheme = {
+					type = create_deathknight
+					target = scope:recipient
+				}
+			}
+		}
+	}
+}
+
 		# # move into own interaction
 		# scope:recipient = {
 		# 	if = {
