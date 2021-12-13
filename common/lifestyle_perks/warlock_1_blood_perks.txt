@@ -163,7 +163,7 @@ dynasticide_perk = {
 	parent = vein_snare_perk
 }
 
-young_blood_perk = {
+temporal_resistance_perk = {
 	lifestyle = warlock_lifestyle
 	tree = blood
 	# position = { 4 2.5 }

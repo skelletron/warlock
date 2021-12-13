@@ -156,6 +156,81 @@ raise_undead = {
 	}
 }
 
+cast_temporal_resistance = {
+	category = interaction_category_warlock
+	desc = cast_temporal_resistance_interaction_desc
+	send_name = cast_temporal_resistance_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = temporal_resistance_perk
+		}
+		scope:recipient = {
+			# NOT = { this = scope:actor }
+			is_alive = yes
+			dynasty = {
+				NOT = {
+					has_dynasty_modifier = temporal_resistance_modifier
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_5_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			# text = auto_accept_interaction_ai
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+			# scope:recipient = {
+			# 	is_ai = yes
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_5_spell_cost_value
+			}
+		}
+		scope:recipient = {
+			hidden_effect = {
+				dynasty = {
+					every_dynasty_member = {
+						limit = {
+							NOT = { this = scope:actor }
+						}
+						add_opinion = {
+							modifier = cast_temporal_resistance_modifier
+							target = scope:actor
+						}
+					}
+				}
+			}
+			dynasty = {
+				add_dynasty_modifier = {
+					modifier = temporal_resistance_modifier
+				}
+			}
+		}
+	}
+}
+
 cast_dynasticide = {
 	category = interaction_category_warlock
 	desc = cast_dynasticide_interaction_desc
@@ -172,6 +247,11 @@ cast_dynasticide = {
 		scope:recipient = {
 			NOT = { this = scope:actor }
 			is_alive = yes
+			dynasty = {
+				NOT = {
+					has_dynasty_modifier = blood_curse_modifier
+				}
+			}
 		}
 	}
 

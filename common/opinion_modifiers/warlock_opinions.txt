@@ -3,6 +3,10 @@
 	years = 10
 }
 
+cast_temporal_resistance_modifier = {
+	opinion = 60
+}
+
 thrall_opinion_modifier = {
 	opinion = 100
 }

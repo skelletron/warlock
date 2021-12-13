@@ -187,11 +187,19 @@
  cast_debloom_interaction:0 "Cast Debloom"
  cast_debloom_interaction_desc:0 "Sever the metaphysical string that binds mother and unborn child, to prematurely end the pregnancy. Not only will this inflict stress and health penalties upon her, but it may even extend your own lifespan."
 
+ cast_temporal_resistance:0 "Bestow Temporal Resistance"
+ cast_temporal_resistance_interaction:0 "Bestow Temporal Resistance"
+ cast_temporal_resistance_interaction_desc:0 "Delay death among the target's dynasty members, at the cost of fertility."
+
  cast_vein_snare:0 "Cast Vein Snare"
  cast_vein_snare_interaction_desc:0 "Collapse the capillaries of your foe, causing them to suffer a major health debuff."
  cast_vein_snare_interaction:0 "Cast Vein Snare"
-#  vein_snare_victim_modifier:0 "Vein Snare Victim"
-#  vein_snare_victim_modifier_desc:0 "This character is the victim of a Vein Snare spell cast by an assailant unknown to them."
+
+# Blood Modifiers
+ temporal_resistance_modifier:0 "Temporal Resistance"
+
+# Opinion Modifiers
+ cast_temporal_resistance_modifier:0 "Blessed our Dynasty"
 
  level_6_vein_snare_victim_modifier:0 "Doomed Vein Snare Victim"
  level_6_vein_snare_victim_modifier_desc:0 "This character is the victim of a diabolical Vein Snare spell that will surely claim their life."
@@ -250,7 +258,7 @@
  vein_snare_perk_name:0 "Vein Snare"
  fountain_of_youth_perk_name:0 "Fountain of Youth"
  dynasticide_perk_name:0 "Dynasticide"
- young_blood_perk_name:0 "Young Blood"
+ temporal_resistance_perk_name:0 "Temporal Resistance"
  dhampir_perk_name:0 "Dhampir"
 
  trait_imp_familiar:0 "Ruby Imp Familiar"
