@@ -26,6 +26,50 @@ create_minion.1001 = {
 		# hidden_effect = {
 			random_list = {
 				100 = {
+					modifier = {
+						scope:target = {
+							is_ruler = yes
+						}
+						add = -20
+					}
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_empire
+						}
+						add = -75
+					}
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_kingdom
+						}
+						add = -70
+					}
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_duchy
+						}
+						add = -50
+					}
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_count
+						}
+						add = -30
+					}
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_barony
+						}
+						add = -10
+					}
+					modifier = {
+						scope:owner.intrigue > scope:target.intrigue
+						add = 15
+					}
+					modifier = {
+						scope:owner.learning > scope:target.learning
+						add = 15
+					}
 
 					scope:target = {
 						add_trait = undead
