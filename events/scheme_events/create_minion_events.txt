@@ -166,6 +166,40 @@ create_minion.1001 = {
 							}
 							set_character_faith = faith:great_old_one
 						}
+
+						# from send_child_to_clergy_effect
+						if = {
+							limit = {
+								is_married = yes
+							}
+							every_spouse = {
+								divorce = scope:target
+							}
+						}
+						if = {
+							limit = {
+								exists = betrothed
+							}
+							break_betrothal = betrothed
+						}
+						if = {
+							limit = {
+								is_concubine = yes
+							}
+							this.concubinist = {
+								remove_concubine = scope:target
+							}
+						}
+						if = {
+							limit = {
+								number_of_concubines > 0
+							}
+							every_concubine = {
+								scope:target = {
+									remove_concubine = prev
+								}
+							}
+						}
 		
 						# faith = faith:great_old_one
 		
