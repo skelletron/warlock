@@ -693,12 +693,49 @@ dominate_thrall_interaction = {
 	}
 }
 
-# scope:actor = {	
-# 	remove_hook = {
-# 		target = scope:recipient
-# 		type = house_head_hook
-# 	}
-# }
+convert_thrall_interaction = {
+	category = interaction_category_warlock
+	desc = convert_thrall_interaction_desc
+	send_name = convert_thrall_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = create_puppet_perk
+		}
+		scope:recipient = {
+			NOT = {
+				faith = faith:great_old_one
+			}
+			# this checks that they are your thrall
+			has_opinion_modifier = {
+				target = scope:actor
+				modifier = thrall_opinion_modifier
+			}
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = thralls_must_obey_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			# sets faith directly
+			# set_character_faith = faith:great_old_one
+
+			# converts faith, along with family and vassals potentially
+			set_character_faith_with_conversion = faith:great_old_one
+		}
+	}
+}
 
 tithe_thrall_interaction = {
 	category = interaction_category_warlock
@@ -1179,189 +1216,8 @@ summon_thrall_to_war = {
 	ai_will_do = {
 		# base = 100
 		base = 0
-		
-		# modifier = { # If the player is at war, do not bother them with offensive calls
-		# 	scope:target.casus_belli.primary_attacker = scope:actor
-		# 	scope:recipient = {
-		# 		is_ai = no
-		# 		any_character_war = {
-		# 			primary_defender = scope:recipient
-		# 		}
-		# 	}
-		# 	factor = 0
-		# }
-		
-		# modifier = { # Don't call players in against their heirs (they wouldn't accept the reverse situation... don't be a hypocrite)
-		# 	exists = scope:recipient.player_heir
-		# 	scope:recipient = {			
-		# 		is_ai = no
-		# 	}
-		# 	trigger_if = {
-		# 		limit = { scope:target.casus_belli.primary_defender = scope:actor }
-		# 		scope:target.casus_belli.primary_attacker = scope:recipient.player_heir
-		# 	}
-		# 	trigger_else = {
-		# 		scope:target.casus_belli.primary_defender = scope:recipient.player_heir
-		# 	}
-		# 	factor = 0
-		# }
-		
-		# modifier = { # Same with spouses
-		# 	scope:recipient = {			
-		# 		is_ai = no
-		# 	}
-		# 	trigger_if = {
-		# 		limit = { scope:target.casus_belli.primary_defender = scope:actor }
-		# 		any_spouse = {
-		# 			this = scope:target.casus_belli.primary_attacker
-		# 		}
-		# 	}
-		# 	trigger_else = {
-		# 		any_spouse = {
-		# 			this = scope:target.casus_belli.primary_defender
-		# 		}
-		# 	}
-		# 	factor = 0
-		# }
-		
-		# modifier = { # Don't call brand-new allies into old wars, at least until some time has elapsed.
-		# 	has_variable = delay_calling_recent_ally
-		# 	var:delay_calling_recent_ally = scope:recipient
-		# 	scope:target = {
-		# 		war_days >= 30
-		# 	}
-		# 	factor = 0
-
-		# }
-
-		# modifier = { # If the recipient is allied to both the attacker and the defender, the attacker shouldn't call
-		# 	scope:target.casus_belli.primary_attacker = scope:actor
-		# 	scope:target.casus_belli.primary_defender = {
-		# 		is_allied_to = scope:recipient
-		# 	}
-		# 	factor = 0
-		# }
 	}
 }
-
-# summon_thrall_to_war = {
-# 	category = interaction_category_warlock
-# 	desc = summon_thrall_to_war_interaction_desc
-# 	send_name = summon_thrall_to_war_interaction
-# 	use_diplomatic_range = yes
-# 	popup_on_receive = no
-# 	send_options_exclusive = no
-# 	ignores_pending_interaction_block = yes
-
-# 	is_shown = {
-# 		scope:actor = {
-# 			has_trait = warlock
-# 			has_perk = weaponize_puppet_perk
-# 			is_at_war = yes
-# 			NOT = {
-# 				this = scope:recipient
-# 			}
-# 		}
-# 		scope:recipient = {
-# 			# is_thrall_of = scope:actor
-# 			# see is_spouse_of for implementing mechanics
-# 			is_alive = yes
-# 			is_ruler = yes
-# 		}
-# 	}
-
-# 	# what does this do?
-# 	has_valid_target = {
-# 		exists = scope:target
-# 	}
-
-# 	is_valid_showing_failures_only = {
-		
-# 		scope:recipient = {
-# 			is_ruler = yes
-# 		}
-
-# 		# NAH, a warlock can ALWAYS call her thralls to battle
-# 		# Only War Leaders can call allies
-# 		# scope:actor = {
-# 		# 	custom_description = {
-# 		# 		text = must_be_war_leader
-# 		# 		any_character_war = {
-# 		# 			is_war_leader = scope:actor
-# 		# 		}
-# 		# 	}
-# 		# }
-
-# 		# Cannot call the same character multiple times
-# 		scope:actor = {
-# 			custom_description = {
-# 				text = cannot_call_same_character_multiple_times
-# 				subject = scope:recipient
-# 				any_character_war = {
-# 					ALL_FALSE = {
-# 						was_called = scope:recipient
-# 						is_participant = scope:recipient
-# 					}
-# 				}
-# 			}
-# 		}
-
-# 		# can_potentially_call_ally_trigger = {
-# 		# 	WARRIOR = scope:actor
-# 		# 	JOINER = scope:recipient
-# 		# }
-# 	}
-
-# 	can_be_picked = {
-# 		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
-
-# 		scope:target = {
-# 			is_war_leader = scope:actor
-
-# 			# not already in target war
-# 			custom_description = {
-# 				text = join_war_interaction_already_in_target_war
-# 				NOR = {
-# 					any_war_attacker = { this = scope:recipient }
-# 					any_war_defender = { this = scope:recipient }
-# 				}
-# 			}
-# 		}
-# 	}
-
-# 	auto_accept = {
-# 		custom_description = {
-# 			text = thralls_cannot_stray_auto_accept_interaction
-# 			object = scope:recipient
-# 		}
-# 	}
-
-# 	on_accept = {
-# 		call_ally_interaction_effect = yes
-
-# 		save_scope_value_as = {
-# 			name = call_ally_interaction
-# 			value = yes
-# 		}
-# 	}
-
-# 	on_decline = {
-		
-# 	}
-
-# 	on_auto_accept = {
-# 		call_ally_interaction_effect = yes
-
-# 		save_scope_value_as = {
-# 			name = call_ally_interaction
-# 			value = yes
-# 		}
-# 	}
-
-# 	ai_accept = {
-# 		base = 100
-# 	}
-# }
 
 debug_gain_warlock_xp = {
 	category = interaction_category_warlock
