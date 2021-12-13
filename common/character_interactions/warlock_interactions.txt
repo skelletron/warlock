@@ -1305,6 +1305,88 @@ create_deathknight = {
 	}
 }
 
+cast_debloom = {
+	category = interaction_category_warlock
+	desc = cast_debloom_interaction_desc
+	send_name = cast_debloom_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = debloom_perk
+		}
+		scope:recipient = {
+			# Can give self abortion
+			# NOT = { this = scope:actor }
+			is_alive = yes
+			is_pregnant = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_1_spell_cost_value
+		# scope:actor.piety >= 5
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_1_spell_cost_value
+			}
+			hidden_effect = {
+				random_list = {
+					# Get 1 extra year of life
+					50 = {
+						add_character_modifier = {
+							modifier = stolen_life_force
+						}
+					}
+					# Nothing happens
+					50 = {}
+				}
+			}
+		}
+		# Vanilla Miscarriage Event
+		scope:recipient = { trigger_event = birth.3001 }
+
+		# This stresses the mother out
+		scope:recipient = {
+			hidden_effect = {
+				add_character_modifier = {
+					modifier = debloomed_modifier
+					years = 5
+				}
+				stress_impact = {
+					base = medium_stress_impact_gain
+					humble = major_stress_impact_gain
+					compassionate = major_stress_impact_gain
+					stubborn = major_stress_impact_gain
+					just = major_stress_impact_gain
+					paranoid = major_stress_impact_gain
+				}
+			}
+		}
+	}
+}
+
 		# # move into own interaction
 		# scope:recipient = {
 		# 	if = {

@@ -84,6 +84,19 @@ wall_of_bone_self_modifier = {
 	additional_fort_level = 500
 }
 
+debloomed_modifier = {
+	icon = health_negative
+	health = -2
+	fertility = -0.2
+	stress_gain_mult = 0.2
+}
+
+stolen_life_force = {
+	icon = drink_positive
+	life_expectancy = 1
+	stacking = yes
+}
+
 # research this later (it's a script value)
 # council_scaled_monthly_income = {
 # 	add = liege.highest_held_title_tier
