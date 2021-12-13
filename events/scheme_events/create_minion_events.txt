@@ -7,13 +7,13 @@ create_minion.1001 = {
 	theme = minion
 
 	left_portrait = {
-		character = root
-		animation = angry
+		character = scope:owner
+		animation = personality_dishonorable
 	}
 
 	right_portrait = {
 		character = scope:target
-		animation = shock
+		animation = worry
 	}
 
 	# immediate = {
@@ -23,7 +23,7 @@ create_minion.1001 = {
 		name = create_minion.1001.a
 		custom_tooltip = create_minion.1001.a.tt
 
-		# hidden_effect = {
+		hidden_effect = {
 			random_list = {
 				100 = {
 
@@ -178,24 +178,31 @@ create_minion.1001 = {
 						# 	name = age_aquired_immortality
 						# 	value = age
 						# }
+
+						scope:scheme = {
+							end_scheme = yes
+						}
 					}
+
 					scope:owner = {
 						add_courtier = scope:target
+					}
+
+					scope:owner = {
+						trigger_event = create_minion.1002
 					}
 				}
 	
 				# Failure
 				100 = {
-	
+					scope:scheme = {
+						end_scheme = yes
+					}
+					scope:owner = {
+						trigger_event = create_minion.1003
+					}
 				}
 			}
-		# }
-
-
-
-
-		scope:scheme = {
-			end_scheme = yes
 		}
 	}
 
@@ -206,5 +213,57 @@ create_minion.1001 = {
 		scope:scheme = {
 			end_scheme = yes
 		}
+	}
+}
+
+# Successfully Created Deathknight
+create_minion.1002 = {
+	type = character_event
+	title = create_minion.1002.t
+	desc = create_minion.1002.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = admiration
+	}
+
+	option = {
+		name = create_minion.1002.a
+		custom_tooltip = create_minion.1002.a.tt
+		# scope:scheme = {
+		# 	end_scheme = yes
+		# }
+	}
+}
+
+# Failed to Create Deathknight
+create_minion.1003 = {
+	type = character_event
+	title = create_minion.1003.t
+	desc = create_minion.1003.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = boredom
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = personality_honorable
+	}
+
+	option = {
+		name = create_minion.1003.a
+		custom_tooltip = create_minion.1003.a.tt
+		# scope:scheme = {
+		# 	end_scheme = yes
+		# }
 	}
 }
