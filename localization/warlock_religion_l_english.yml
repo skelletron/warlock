@@ -285,3 +285,9 @@
  bewitching_modifier:0 "Bewitching Aura"
  aura_of_faith_modifier:0 "Aura of Faith"
  aura_of_influence_modifier:0 "Aura of Influence"
+
+# Schemes
+PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
+
+create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
+create_minion_my_learning:0 "My Learning vs Their Learning"

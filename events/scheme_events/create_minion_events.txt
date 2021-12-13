@@ -23,43 +23,57 @@ create_minion.1001 = {
 		name = create_minion.1001.a
 		custom_tooltip = create_minion.1001.a.tt
 
-		hidden_effect = {
-			scope:target = {
-				add_trait = undead
-				add_trait = deathknight
+		# hidden_effect = {
+			random_list = {
+				100 = {
 
-				if = {
-					limit = {
-						is_ruler = yes
-					}
-					depose = yes
-				}
-
-				if = {
-					limit = {
-						NOT = {
-							faith = faith:great_old_one
+					scope:target = {
+						add_trait = undead
+						add_trait = deathknight
+		
+						if = {
+							limit = {
+								is_ruler = yes
+							}
+							depose = yes
 						}
+		
+						if = {
+							limit = {
+								NOT = {
+									faith = faith:great_old_one
+								}
+							}
+							set_character_faith = faith:great_old_one
+						}
+		
+						# faith = faith:great_old_one
+		
+						add_opinion = {
+							modifier = deathknight_opinion_modifier
+							target = scope:owner
+						}
+		
+						# set_variable = {
+						# 	name = age_aquired_immortality
+						# 	value = age
+						# }
 					}
-					set_character_faith = faith:great_old_one
+					scope:owner = {
+						add_courtier = scope:target
+					}
 				}
-
-				# faith = faith:great_old_one
-
-				add_opinion = {
-					modifier = deathknight_opinion_modifier
-					target = scope:owner
+	
+				# Failure
+				100 = {
+	
 				}
+			}
+		# }
 
-				# set_variable = {
-				# 	name = age_aquired_immortality
-				# 	value = age
-				# }
-			}
-			scope:owner = {
-				add_courtier = scope:target
-			}
-		}
+
+
+
 		scope:scheme = {
 			end_scheme = yes
 		}
