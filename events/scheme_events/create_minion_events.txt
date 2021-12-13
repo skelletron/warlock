@@ -26,46 +26,122 @@ create_minion.1001 = {
 		# hidden_effect = {
 			random_list = {
 				100 = {
+
+					# Negative Modifiers
+
+					# Ruler
 					modifier = {
 						scope:target = {
 							is_ruler = yes
 						}
 						add = -20
 					}
+					# Has Empire
 					modifier = {
 						scope:target = {
 							highest_held_title_tier = tier_empire
 						}
 						add = -75
 					}
+					# Has Kingdom
 					modifier = {
 						scope:target = {
 							highest_held_title_tier = tier_kingdom
 						}
 						add = -70
 					}
+					# Has Duchy
 					modifier = {
 						scope:target = {
 							highest_held_title_tier = tier_duchy
 						}
 						add = -50
 					}
+					# Has County
 					modifier = {
 						scope:target = {
 							highest_held_title_tier = tier_count
 						}
 						add = -30
 					}
+					# Has Barony
 					modifier = {
 						scope:target = {
 							highest_held_title_tier = tier_barony
 						}
 						add = -10
 					}
+
+					# Spouse of Ruler
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+
+							# primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -10
+					}
+					# Spouse has Empire
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -40
+					}
+					# Spouse has Kingdom
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_kingdom
+						}
+						add = -35
+					}
+					# Spouse has Duchy
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_duchy
+						}
+						add = -25
+					}
+					# Spouse has County
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_county
+						}
+						add = -15
+					}
+					# Spouse has Barony
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_barony
+						}
+						add = -5
+					}
+
+					# Positive Modifiers
+
+					# Intrigue
 					modifier = {
 						scope:owner.intrigue > scope:target.intrigue
 						add = 15
 					}
+					# Learning
 					modifier = {
 						scope:owner.learning > scope:target.learning
 						add = 15
