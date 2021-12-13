@@ -90,6 +90,9 @@ choose_familiar_decision = {
 	is_shown = {
 		faith = faith:great_old_one
 		has_trait = warlock
+		NOT = {
+			has_character_flag = has_familiar_flag
+		}
 	}
 
 	is_valid = {

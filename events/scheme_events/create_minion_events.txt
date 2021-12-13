@@ -35,6 +35,15 @@ create_minion.1001 = {
 					depose = yes
 				}
 
+				if = {
+					limit = {
+						NOT = {
+							faith = faith:great_old_one
+						}
+					}
+					set_character_faith = faith:great_old_one
+				}
+
 				# faith = faith:great_old_one
 
 				add_opinion = {
