@@ -8,12 +8,12 @@ create_minion.1001 = {
 
 	left_portrait = {
 		character = scope:owner
-		animation = personality_dishonorable
+		animation = personality_zealous
 	}
 
 	right_portrait = {
 		character = scope:target
-		animation = worry
+		animation = paranoia
 	}
 
 	# immediate = {
@@ -230,7 +230,7 @@ create_minion.1002 = {
 
 	right_portrait = {
 		character = scope:target
-		animation = admiration
+		animation = war_over_win
 	}
 
 	option = {

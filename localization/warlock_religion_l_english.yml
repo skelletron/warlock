@@ -287,7 +287,29 @@
  aura_of_influence_modifier:0 "Aura of Influence"
 
 # Schemes
-PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
+ PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
 
-create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
-create_minion_my_learning:0 "My Learning vs Their Learning"
+ create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
+ create_minion_my_learning:0 "My Learning vs Their Learning"
+
+ create_minion.1001:0 "To Create a Deathknight"
+ create_minion.1001.t:0 "To Create a Deathknight"
+ create_minion.1001.desc:0 "The ritual is finally ready. I place the gemstone in the middle of a magic circle, which was drawn with the blood of a goat. \n\nI chant an ominous verse from the Eldernomicon while boring my eyes into the gemstone. It starts rattling violently, before beginning to hover in the air and pulse with a purple glow. I hold in my mind's eye the image of my target, and scatter their hair upon the blood circle. \n\nA final offering is required - that of a pristine sword, fit for a noble undead warrior. I let it slip from my grasp and it clangs on the ground. \n\nWith one last prayer, my spell will be complete..."
+
+ create_minion.1001.a:0 "I pray for a moment that feels as long as a lifetime."
+ create_minion.1001.a.tt:0 "Oh Great Old One, who blesses the null planes with the glory of magic, who expands with endless agony and love. Let the Deathknight I call for be summoned at my feet, so it may serve me in your name."
+
+ create_minion.1001.b:0 "Wait! Now is not the time."
+ create_minion.1001.b.tt:0 "I will find a better way to serve my Lord, in time."
+
+ create_minion.1002:0 "Deathknight Created"
+ create_minion.1002.t:0 "Deathknight Created"
+ create_minion.1002.desc:0 "I open my eyes and see that my target has been summoned to me, and it is forever changed. \n\nMy new minion shudders awake, as if it has been asleep its whole life. It stands proudly before me, all traces of resistance washed away. \n\nNow in undeath, it shall serve me dutifully in the name of the Great Old One."
+ create_minion.1002.a:0 "Come forth, my minion. I dub thee Deathknight!"
+ create_minion.1002.a.tt:0 "My new Deathknight is ready and willing to serve for all eternity."
+
+ create_minion.1003:0 "Failed to Create Deathknight"
+ create_minion.1003.t:0 "Failed to Create Deathknight"
+ create_minion.1003.desc:0 "Unfortunately, I've missed my mark, and the target lives to see another day. Was I not serving the Great Old One dutifully? How could my Lord allow this to happen?"
+ create_minion.1003.a:0 "Perhaps it was not meant to be."
+ create_minion.1003.a.tt:0 "I will continue on, as I must, in service of the Great Old One."
