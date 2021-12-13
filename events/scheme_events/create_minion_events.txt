@@ -60,7 +60,7 @@ create_minion.1001 = {
 					# Has County
 					modifier = {
 						scope:target = {
-							highest_held_title_tier = tier_count
+							highest_held_title_tier = tier_county
 						}
 						add = -30
 					}

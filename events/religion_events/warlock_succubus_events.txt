@@ -1,0 +1,33 @@
+namespace = succubus
+
+succubus.1001 = {
+	type = character_event
+	title = succubus.1001.t
+	desc = succubus.1001.desc
+	theme = default
+	left_portrait = scope:recipient
+
+	immediate = {
+		if = {
+			limit = { is_female = yes }
+			save_scope_as = mother
+			scope:recipient = { save_scope_as = father }
+		}
+
+		else = {
+			save_scope_as = father
+			scope:recipient = { save_scope_as = mother }
+		}
+	}
+
+	#Normal pregnancy
+	option = {
+		name = succubus.1001.a
+		
+		scope:mother = {
+			make_pregnant = {
+				father = scope:father
+			}
+		}
+	}
+}
