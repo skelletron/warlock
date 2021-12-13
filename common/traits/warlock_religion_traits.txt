@@ -60,6 +60,9 @@ deathknight = {
 	dread_baseline_add = 50
 	same_faith_opinion = 70
 
+	can_inherit_from_dynasty = no
+	blocks_from_claim_inheritance_from_dynasty = yes
+
 	ruler_designer_cost = 120
 }
 
