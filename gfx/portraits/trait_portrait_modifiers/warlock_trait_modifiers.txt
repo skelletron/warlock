@@ -82,7 +82,7 @@ undead_gauntness = {
 undead_spindly = {
 	undead_spindly = {
 		traits = {
-			undead
+			# undead
 		}
 		dna_modifiers = {
 			morph = {
