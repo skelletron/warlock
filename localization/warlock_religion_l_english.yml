@@ -182,6 +182,11 @@
 #  FACTION_UNDEAD_NAME:0 "Undead Rabble"
 #  FACTION_UNDEAD_TITLE_NAME:0 "Undead Revolt"
 
+# Blood Spells
+ cast_debloom:0 "Cast Debloom"
+ cast_debloom_interaction:0 "Cast Debloom"
+ cast_debloom_interaction_desc:0 "Sever the metaphysical string that binds mother and unborn child, to prematurely end the pregnancy. Not only will this inflict stress and health penalties upon her, but it may even extend your own lifespan."
+
  cast_vein_snare:0 "Cast Vein Snare"
  cast_vein_snare_interaction_desc:0 "Collapse the capillaries of your foe, causing them to suffer a major health debuff."
  cast_vein_snare_interaction:0 "Cast Vein Snare"
@@ -200,6 +205,8 @@
  level_2_vein_snare_victim_modifier_desc:0 "This character is the victim of a Vein Snare spell, but has largely resisted its effects."
  level_1_vein_snare_victim_modifier:0 "Triumphant Vein Snare Victim"
  level_1_vein_snare_victim_modifier_desc:0 "This character was the target of a pitifully weak Vein Snare spell, and has all but laughed off its effects."
+
+
 
  interaction_category_warlock:0 "Spellcasting"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."
