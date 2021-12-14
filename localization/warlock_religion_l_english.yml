@@ -437,7 +437,7 @@
  undead_became_stronger_4_title:0 "Minion becomes Greater Undead"
  undead_became_stronger_4_desc:0 "Your minion has ascended from the rank of Major Undead to Greater Undead."
 
-Effect Localizations DOESN'T WORK
+
  GAINS_WARLOCK_LIFESTYLE_XP:2 "Gains $VALUE|V0$ Warlock [lifestyle|E] Experience"
  GAINED_WARLOCK_LIFESTYLE_XP:2 "Gained $VALUE|V0$ Warlock [lifestyle|E] Experience"
  I_GAIN_WARLOCK_LIFESTYLE_XP:2 "You gain $VALUE|V0$ Warlock [lifestyle|E] Experience"
