@@ -840,6 +840,7 @@ stop_tithing_thrall_interaction = {
 		}
 		scope:recipient = {
 			remove_character_modifier = tithed_thrall_modifier
+			remove_character_flag = being_tithed_flag
 		}
 	}
 }
