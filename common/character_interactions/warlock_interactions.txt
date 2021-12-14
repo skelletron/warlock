@@ -1252,7 +1252,7 @@ debug_gain_warlock_xp = {
 
 	on_accept = {
 		scope:recipient = {
-			add_warlock_lifestyle_xp = monumental_lifestyle_experience
+			add_warlock_lifestyle_xp = monumental_lifestyle_xp
 		}
 	}
 }

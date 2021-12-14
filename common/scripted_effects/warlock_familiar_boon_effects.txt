@@ -204,3 +204,26 @@ aesthetic_familiar_small_effect = {
 		}
 	}
 }
+
+# Play with Familiar Decision/Event
+find_treasure_with_familiar = {
+	send_interface_message = {
+		type = event_steward_task_good
+		title = found_treasure_with_familiar_title
+		desc = found_treasure_with_familiar_desc
+		add_gold = massive_gold_value
+		stress_impact = {
+			greedy = major_stress_impact_loss
+		}
+	}
+}
+
+gain_diplomacy_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_diplomacy_good
+
+		title = gain_diplomacy_experience_with_familiar_title
+		desc = gain_diplomacy_experience_with_familiar_desc
+		add_diplomacy_lifestyle_xp = major_lifestyle_xp
+	}
+}

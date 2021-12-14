@@ -1,0 +1,74 @@
+namespace = familiar
+
+# Play with familiar
+familiar.1001 = {
+	type = character_event
+	title = familiar.1001.t
+	desc = familiar.1001.desc
+	theme = default
+	override_background = {
+		event_background = garden
+	}
+	left_portrait = scope:actor
+
+	option = {
+		name = familiar.1001.a
+		custom_tooltip = familiar.1001.a_1.tt
+		custom_tooltip = familiar.1001.a_2.tt
+		hidden_effect = {
+			stress_impact = {
+				base = major_stress_impact_loss
+			}
+			random_list = {
+				50 = {
+					find_treasure_with_familiar = yes
+				}
+				50 = {
+
+				}
+			}
+		}
+	}
+
+	option = {
+		name = familiar.1001.b
+		custom_tooltip = familiar.1001.b_1.tt
+		custom_tooltip = familiar.1001.b_2.tt
+		
+		hidden_effect = {
+			stress_impact = {
+				base = minor_stress_impact_loss
+				patient = medium_stress_impact_loss
+				diligent = medium_stress_impact_loss
+			}
+			random_list = {
+				10 = {
+					add_warlock_lifestyle_xp = major_lifestyle_xp
+				}
+				
+				10 = {
+					add_marshal_lifestyle_xp = major_lifestyle_xp
+				}
+
+				10 = {
+					# add_diplomacy_lifestyle_xp = major_lifestyle_xp
+					gain_diplomacy_experience_with_familiar = yes
+				}
+
+				10 = {
+					add_stewardship_lifestyle_xp = major_lifestyle_xp
+				}
+
+				10 = {
+					add_intrigue_lifestyle_xp = major_lifestyle_xp
+				}
+
+				10 = {
+					add_learning_lifestyle_xp = major_lifestyle_xp
+				}
+
+				40 = {}
+			}
+		}
+	}
+}

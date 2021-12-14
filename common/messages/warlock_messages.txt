@@ -33,3 +33,12 @@ event_familiar_prestige_good = {
 	style = good
 	soundeffect = @msg_good_soundeffect
 }
+
+event_familiar_diplomacy_good = {
+	icon = "diplomacy"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}

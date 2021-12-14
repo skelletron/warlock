@@ -345,6 +345,31 @@
  aura_of_faith_modifier:0 "Aura of Faith"
  aura_of_influence_modifier:0 "Aura of Influence"
 
+# Familiar Flavour Decisions/Events
+
+# Play with Familiar
+ play_with_familiar_decision:0 "Play with Familiar"
+ play_with_familiar.desc:0 "Let's play together, Master!"
+ play_with_familiar.tt:0 "Destress by spending quality time together with your familiar"
+ play_with_familiar_a_effect.tt:0 "You will lose stress"
+ play_with_familiar_b_effect.tt:0 "You might gain lifestyle experience"
+ play_with_familiar_decision_confirm:0 "Alright, let's play together!"
+ familiar.1001:0 "Play with Familiar"
+ familiar.1001.t:0 "Play with Familiar"
+ familiar.1001.desc:0 "You and your familiar decide to do a fun activity together. Will you play hide and seek, solve a puzzle, or just relax in the garden?"
+ familiar.1001.a:0 "Play Hide and Seek"
+ familiar.1001.a_1.tt:0 "You will lose a medium amount of [stress|E]"
+ familiar.1001.a_2.tt:0 "You might find something valuable"
+ found_treasure_with_familiar_title:0 "Found Treasure with Familiar"
+ found_treasure_with_familiar_desc:0 "You found treasure while playing with your familiar!"
+ familiar.1001.b:0 "Solve a Puzzle"
+ familiar.1001.b_1.tt:0 "You will lose a small amount of [stress|E]"
+ familiar.1001.b_2.tt:0 "You might gain [lifestyle|E] Experience"
+ gain_diplomacy_experience_with_familiar:0 "Improved Diplomacy with Familiar"
+ gain_diplomacy_experience_with_familiar_title:0 "Improved Diplomacy with Familiar"
+ gain_diplomacy_experience_with_familiar_desc:0 "You both learned something new while solving the puzzle together!"
+
+
 # Schemes
  PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
 
@@ -372,3 +397,11 @@
  create_minion.1003.desc:0 "Unfortunately, I've missed my mark, and the target lives to see another day. Was I not serving the Great Old One dutifully? How could my Lord allow this to happen?"
  create_minion.1003.a:0 "Perhaps it was not meant to be."
  create_minion.1003.a.tt:0 "I will continue on, as I must, in service of the Great Old One."
+
+# Effect Localizations DOESN'T WORK
+#  GAINS_WARLOCK_LIFESTYLE_XP:2 "Gains $VALUE|V0$ [warlock_lifestyle|E] Experience"
+#  GAINED_WARLOCK_LIFESTYLE_XP:2 "Gained $VALUE|V0$ [warlock_lifestyle|E] Experience"
+#  I_GAIN_WARLOCK_LIFESTYLE_XP:2 "You gain $VALUE|V0$ [warlock_lifestyle|E] Experience"
+#  I_GAINED_WARLOCK_LIFESTYLE_XP:2 "You gained $VALUE|V0$ [warlock_lifestyle|E] Experience"
+#  TARGET_GAINS_WARLOCK_LIFESTYLE_XP:2 "[CHARACTER.GetShortUIName|U] gains $VALUE|V0$ [warlock_lifestyle|E] Experience"
+#  TARGET_GAINED_WARLOCK_LIFESTYLE_XP:2 "[CHARACTER.GetShortUIName|U] gained $VALUE|V0$ [warlock_lifestyle|E] Experience"
