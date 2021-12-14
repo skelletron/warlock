@@ -794,6 +794,7 @@ tithe_thrall_interaction = {
 			add_character_modifier = {
 				modifier = tithed_thrall_modifier
 			}
+			add_character_flag = being_tithed_flag
 		}
 	}
 }

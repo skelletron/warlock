@@ -12,15 +12,21 @@ on_check_thrall_status = {
 		this = {
 			save_scope_as = dead_thrall
 		}
-		
+		scope:dead_thrall = {
+			if = {
+				limit = {
+					has_character_flag = being_tithed_flag
+				}
+				var:warlock_master = {
+					remove_character_modifier = receiving_thrall_tithe_modifier
+				}
+			}
+		}
 		var:warlock_master = {
 			send_interface_message = {
-				# type = character_has_died
 				type = event_thrall_dies_bad
 				title = thrall_dies_title
 				desc = thrall_dies_desc
-				# desc = thrall_death_management.pinned.desc
-				# left_icon = scope:dead_character
 				left_icon = scope:dead_thrall
 			}
 		}
