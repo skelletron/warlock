@@ -48,26 +48,8 @@ undead = {
 	ruler_designer_cost = 40
 }
 
-deathknight = {
-	index = 767
-	minimum_age = 16
-	martial = 20
-	prowess = 20
-	commander = yes
-
-	tolerance_advantage_mod = 20
-
-	dread_baseline_add = 50
-	same_faith_opinion = 70
-
-	can_inherit_from_dynasty = no
-	blocks_from_claim_inheritance_from_dynasty = yes
-
-	ruler_designer_cost = 120
-}
-
 undead_01 = {
-	index = 768
+	index = 767
 	minimum_age = 0
 	diplomacy = -7
 	martial = -7
@@ -87,7 +69,7 @@ undead_01 = {
 }
 
 undead_02 = {
-	index = 769
+	index = 768
 	minimum_age = 0
 	diplomacy = -5
 	martial = -5
@@ -107,7 +89,7 @@ undead_02 = {
 }
 
 undead_03 = {
-	index = 770
+	index = 769
 	minimum_age = 0
 	diplomacy = -3
 	martial = -3
@@ -127,7 +109,7 @@ undead_03 = {
 }
 
 undead_04 = {
-	index = 771
+	index = 770
 	minimum_age = 0
 	diplomacy = -1
 	martial = -1
@@ -146,6 +128,23 @@ undead_04 = {
 	ruler_designer_cost = 80
 }
 
+deathknight = {
+	index = 771
+	minimum_age = 16
+	martial = 20
+	prowess = 20
+	commander = yes
+
+	tolerance_advantage_mod = 20
+
+	dread_baseline_add = 50
+	same_faith_opinion = 70
+
+	can_inherit_from_dynasty = no
+	blocks_from_claim_inheritance_from_dynasty = yes
+
+	ruler_designer_cost = 120
+}
 
 # Familiars
 
