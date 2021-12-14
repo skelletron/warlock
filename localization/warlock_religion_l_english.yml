@@ -358,12 +358,12 @@
  familiar.1001.t:0 "Play with Familiar"
  familiar.1001.desc:0 "You and your familiar decide to do a fun activity together. Will you play hide and seek, solve a puzzle, or just relax in the garden?"
  familiar.1001.a:0 "Play Hide and Seek"
- familiar.1001.a_1.tt:0 "You will lose a medium amount of [stress|E]"
+ familiar.1001.a_1.tt:0 "You will lose some [stress|E]"
  familiar.1001.a_2.tt:0 "You might find something valuable"
  found_treasure_with_familiar_title:0 "Found Treasure with Familiar"
  found_treasure_with_familiar_desc:0 "You found treasure while playing with your familiar!"
  familiar.1001.b:0 "Solve a Puzzle"
- familiar.1001.b_1.tt:0 "You will lose a small amount of [stress|E]"
+ familiar.1001.b_1.tt:0 "You will lose some [stress|E]"
  familiar.1001.b_2.tt:0 "You might gain [lifestyle|E] Experience"
 # lifestyle xp gained from puzzle
  gain_martial_experience_with_familiar:0 "Improved Martial with Familiar"
@@ -386,7 +386,7 @@
  gain_warlock_experience_with_familiar_desc:0 "You both learned something new while solving the puzzle together!"
 # relaxed in garden
  familiar.1001.c:0 "Relax in Garden"
- familiar.1001.c_1.tt:0 "You will lose a medium amount of [stress|E]"
+ familiar.1001.c_1.tt:0 "You will lose some [stress|E]"
  familiar.1001.c_2.tt:0 "You will gain a [modifier|E] that helps reduce stress for 5 years"
  relax_in_garden_with_familiar:0 "You Had a Relaxing Day Together"
  relax_in_garden_with_familiar_title:0 "You Had a Relaxing Day Together"

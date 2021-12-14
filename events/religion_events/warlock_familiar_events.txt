@@ -16,15 +16,15 @@ familiar.1001 = {
 		custom_tooltip = familiar.1001.a_1.tt
 		custom_tooltip = familiar.1001.a_2.tt
 		hidden_effect = {
-			stress_impact = {
-				base = major_stress_impact_loss
-			}
+
 			random_list = {
 				50 = {
 					find_treasure_with_familiar = yes
 				}
 				50 = {
-
+					stress_impact = {
+						base = major_stress_impact_loss
+					}
 				}
 			}
 		}
@@ -36,11 +36,6 @@ familiar.1001 = {
 		custom_tooltip = familiar.1001.b_2.tt
 		
 		hidden_effect = {
-			stress_impact = {
-				base = minor_stress_impact_loss
-				patient = medium_stress_impact_loss
-				diligent = medium_stress_impact_loss
-			}
 			random_list = {
 				10 = {
 					gain_warlock_experience_with_familiar = yes
@@ -66,7 +61,11 @@ familiar.1001 = {
 					gain_learning_experience_with_familiar = yes
 				}
 
-				40 = {}
+				40 = {
+					stress_impact = {
+						base = minor_stress_impact_loss
+					}
+				}
 			}
 		}
 	}

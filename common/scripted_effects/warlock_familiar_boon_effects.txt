@@ -213,6 +213,7 @@ find_treasure_with_familiar = {
 		desc = found_treasure_with_familiar_desc
 		add_gold = massive_gold_value
 		stress_impact = {
+			base = major_stress_impact_loss
 			greedy = major_stress_impact_loss
 		}
 	}
@@ -224,6 +225,13 @@ gain_martial_experience_with_familiar = {
 
 		title = gain_martial_experience_with_familiar_title
 		desc = gain_martial_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_martial_lifestyle_xp = major_lifestyle_xp
 	}
 }
@@ -234,6 +242,14 @@ gain_diplomacy_experience_with_familiar = {
 
 		title = gain_diplomacy_experience_with_familiar_title
 		desc = gain_diplomacy_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			gregarious = minor_stress_impact_loss
+			honest = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_diplomacy_lifestyle_xp = major_lifestyle_xp
 	}
 }
@@ -244,6 +260,14 @@ gain_stewardship_experience_with_familiar = {
 
 		title = gain_stewardship_experience_with_familiar_title
 		desc = gain_stewardship_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			temperate = minor_stress_impact_loss
+			just = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_stewardship_lifestyle_xp = major_lifestyle_xp
 	}
 }
@@ -254,6 +278,13 @@ gain_intrigue_experience_with_familiar = {
 
 		title = gain_intrigue_experience_with_familiar_title
 		desc = gain_intrigue_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_intrigue_lifestyle_xp = major_lifestyle_xp
 	}
 }
@@ -264,6 +295,14 @@ gain_learning_experience_with_familiar = {
 
 		title = gain_learning_experience_with_familiar_title
 		desc = gain_learning_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			humble = minor_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_learning_lifestyle_xp = major_lifestyle_xp
 	}
 }
@@ -274,6 +313,15 @@ gain_warlock_experience_with_familiar = {
 
 		title = gain_warlock_experience_with_familiar_title
 		desc = gain_warlock_experience_with_familiar_desc
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			patient = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			humble = minor_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
 		add_warlock_lifestyle_xp = major_lifestyle_xp
 	}
 }
