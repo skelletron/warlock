@@ -1,6 +1,9 @@
 ﻿white_eyes = {
 	white_eyes = {
-		traits = { undead }
+		traits = {
+			undead
+			greater_undead
+		}
 		dna_modifiers = {
 			color = {
 				gene = eye_color
@@ -19,7 +22,10 @@
 
 white_hair = {
 	white_hair = {
-		traits = { undead }
+		traits = {
+			undead
+			greater_undead
+		}
 		dna_modifiers = {
 			color = {
 				gene = hair_color
@@ -40,6 +46,7 @@ undead_gauntness = {
 	undead_gauntness = {
 		traits = {
 			undead
+			greater_undead
 			# pneumonic
 			# ill
 		}
@@ -122,7 +129,7 @@ undead_spindly = {
 deathknight = {
 	deathknight = {
 		traits = {
-				deathknight
+			deathknight
 		}
 		dna_modifiers = {
 			morph = {

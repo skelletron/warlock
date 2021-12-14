@@ -18,7 +18,10 @@
 			modifier = {
 				add = 100
 				AND = {
-					has_trait = undead
+					OR = {
+						has_trait = undead
+						has_trait = greater_undead
+					}
 				}
 			}
 		}
@@ -56,6 +59,7 @@ visual_traits_wounded_1 = {
 					has_trait = wounded_1
 					has_character_flag = wounded_look_1_flag
 					has_trait = undead
+					has_trait = greater_undead
 				}
 				should_show_disturbing_portrait_modifiers = yes
 			}
@@ -81,6 +85,7 @@ undead_hair = {
 				AND = {
 					OR = {
 						has_trait = undead
+						has_trait = greater_undead
 					}
 				}
 			}
@@ -106,6 +111,7 @@ undead_beard = {
 				AND = {
 					OR = {
 						has_trait = undead
+						has_trait = greater_undead
 					}
 				}
 			}

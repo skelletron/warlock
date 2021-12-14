@@ -1,0 +1,30 @@
+on_birthday = {
+	on_actions = {
+		on_yearly_update_years_as_undead
+		on_yearly_check_undead_transformation_potential
+	}
+}
+
+on_yearly_update_years_as_undead = {
+	trigger = {
+		has_variable = years_as_undead
+	}
+	effect = {
+		change_variable = {
+			name = years_as_undead
+			add = 1
+		}
+	}
+}
+
+on_yearly_check_undead_transformation_potential = {
+	trigger = {
+		has_variable = years_as_undead
+		var:years_as_undead = 1
+		has_trait = undead
+	}
+	effect = {
+		remove_trait = undead
+		add_trait = greater_undead
+	}
+}

@@ -208,10 +208,15 @@ create_minion.1001 = {
 							target = scope:owner
 						}
 		
-						# set_variable = {
-						# 	name = age_aquired_immortality
-						# 	value = age
-						# }
+						# variables for turning into greater undead later
+						set_variable = {
+							name = age_became_undead
+							value = age
+						}
+						set_variable = {
+							name = years_as_undead
+							value = 0
+						}
 
 						scope:scheme = {
 							end_scheme = yes
