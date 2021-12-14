@@ -218,6 +218,16 @@ find_treasure_with_familiar = {
 	}
 }
 
+gain_martial_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_martial_good
+
+		title = gain_martial_experience_with_familiar_title
+		desc = gain_martial_experience_with_familiar_desc
+		add_martial_lifestyle_xp = major_lifestyle_xp
+	}
+}
+
 gain_diplomacy_experience_with_familiar = {
 	send_interface_message = {
 		type = event_familiar_diplomacy_good
@@ -225,5 +235,45 @@ gain_diplomacy_experience_with_familiar = {
 		title = gain_diplomacy_experience_with_familiar_title
 		desc = gain_diplomacy_experience_with_familiar_desc
 		add_diplomacy_lifestyle_xp = major_lifestyle_xp
+	}
+}
+
+gain_stewardship_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_stewardship_good
+
+		title = gain_stewardship_experience_with_familiar_title
+		desc = gain_stewardship_experience_with_familiar_desc
+		add_stewardship_lifestyle_xp = major_lifestyle_xp
+	}
+}
+
+gain_intrigue_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_intrigue_good
+
+		title = gain_intrigue_experience_with_familiar_title
+		desc = gain_intrigue_experience_with_familiar_desc
+		add_intrigue_lifestyle_xp = major_lifestyle_xp
+	}
+}
+
+gain_learning_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_learning_good
+
+		title = gain_learning_experience_with_familiar_title
+		desc = gain_learning_experience_with_familiar_desc
+		add_learning_lifestyle_xp = major_lifestyle_xp
+	}
+}
+
+gain_warlock_experience_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_warlock_good
+
+		title = gain_warlock_experience_with_familiar_title
+		desc = gain_warlock_experience_with_familiar_desc
+		add_warlock_lifestyle_xp = major_lifestyle_xp
 	}
 }

@@ -43,28 +43,27 @@ familiar.1001 = {
 			}
 			random_list = {
 				10 = {
-					add_warlock_lifestyle_xp = major_lifestyle_xp
+					gain_warlock_experience_with_familiar = yes
 				}
 				
 				10 = {
-					add_marshal_lifestyle_xp = major_lifestyle_xp
+					gain_martial_experience_with_familiar = yes
 				}
 
 				10 = {
-					# add_diplomacy_lifestyle_xp = major_lifestyle_xp
 					gain_diplomacy_experience_with_familiar = yes
 				}
 
 				10 = {
-					add_stewardship_lifestyle_xp = major_lifestyle_xp
+					gain_stewardship_experience_with_familiar = yes
 				}
 
 				10 = {
-					add_intrigue_lifestyle_xp = major_lifestyle_xp
+					gain_intrigue_experience_with_familiar = yes
 				}
 
 				10 = {
-					add_learning_lifestyle_xp = major_lifestyle_xp
+					gain_learning_experience_with_familiar = yes
 				}
 
 				40 = {}

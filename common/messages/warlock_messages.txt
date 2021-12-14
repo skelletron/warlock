@@ -34,8 +34,53 @@ event_familiar_prestige_good = {
 	soundeffect = @msg_good_soundeffect
 }
 
+event_familiar_martial_good = {
+	icon = "martial"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}
+
 event_familiar_diplomacy_good = {
 	icon = "diplomacy"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}
+
+event_familiar_stewardship_good = {
+	icon = "stewardship"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}
+
+event_familiar_intrigue_good = {
+	icon = "intrigue"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}
+
+event_familiar_learning_good = {
+	icon = "learning"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}
+
+event_familiar_warlock_good = {
+	icon = "spy_master"
 	title = event_message_title
 	desc = event_message_effect_and_text
 	tooltip = task_generic_notification_tooltip
