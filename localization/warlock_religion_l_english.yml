@@ -261,10 +261,54 @@
  temporal_resistance_perk_name:0 "Temporal Resistance"
  dhampir_perk_name:0 "Dhampir"
 
- trait_imp_familiar:0 "Ruby Imp Familiar"
- trait_imp_familiar_desc:0 "This imp has a vibrant pink skin tone and mischievious eyes."
-
  monthly_warlock_lifestyle_xp_gain_mult:0 "Monthly Warlock [lifestyle|E] Experience"
+
+# Familiars
+
+ trait_cat_familiar:0 "Twin Tailed Cat Familiar"
+ trait_cat_familiar_desc:0 "This adorable ball of black fluff sports two tails and a luscious coat."
+
+ trait_octopus_familiar:0 "Fae-Touched Dumbo Octopus Familiar"
+ trait_octopus_familiar_desc:0 "This fae touched aquatic creature has a magical luminance and adorable elephantine ears."
+
+ trait_moth_familiar:0 "Lunar Moth Familiar"
+ trait_moth_familiar_desc:0 "This moth is larger and fluffier than most, and its antennae form an elegant crescent shape."
+
+ trait_imp_familiar:0 "Ruby Imp Familiar"
+ trait_imp_familiar_desc:0 "This imp has a dusty purple skin tone and mischievious eyes."
+
+ trait_rat_familiar:0 "Baby Blue Rat Familiar"
+ trait_rat_familiar_desc:0 "This rat has fluffy fur that's blue like a sunny sky."
+
+ trait_monkey_familiar:0 "Bat Winged Monkey Familiar"
+ trait_monkey_familiar_desc:0 "This monkey can soar the skies with its striking bat-like wings; its getup includes a cute pirate eyepatch."
+
+ trait_axolotl_familiar:0 "Haloed Axolotl Familiar"
+ trait_axolotl_familiar_desc:0 "This pink axolotl has a crown made of light floating above its head."
+
+ trait_crow_familiar:0 "Horned Raven-Crow Familiar"
+ trait_crow_familiar_desc:0 "This intelligent raven and crow hybrid has devil-like horns protruding from its crown."
+
+ trait_owl_familiar:0 "Four Winged Owl Familiar"
+ trait_owl_familiar_desc:0 "This magnificent owl has two sets of wings."
+
+ trait_gecko_familiar:0 "Dragonfly Gecko Familiar"
+ trait_gecko_familiar_desc:0 "This gecko has the dainty wings of a dragonfly, which are somehow able to lift it into the air."
+
+ trait_frog_familiar:0 "Rainbow Frog Pair Familiars"
+ trait_frog_familiar_desc:0 "These colourful frogs come in a pair, and are always there to keep you, and each other company."
+
+ trait_pomeranian_familiar:0 "Colour Changing Pomeranian Familiar"
+ trait_pomeranian_familiar_desc:0 "This cute pomeranian's coat is often changing colours without rhyme or reason."
+
+ trait_python_familiar:0 "Albino Python Familiar"
+ trait_python_familiar_desc:0 "This elegant python has knowing red eyes and smooth pearlescant scales."
+
+ trait_pig_familiar:0 "Angelic Baby Pig Familiar"
+ trait_pig_familiar_desc:0 "This angelic baby pig is as cute as a button, and has a life loving spirit."
+
+ trait_bat_familiar:0 "Fluffy Marbled Bat Familiar"
+ trait_bat_familiar_desc:0 "This bat has a unique marbled texture to its fluffy coat."
 
 # Familiar Helpful Events
  familiar_collected_taxes_title:0 "Familiar Helps Collect Taxes"
