@@ -31,12 +31,12 @@ warlock = {
 undead = {
 	index = 766
 	minimum_age = 0
-	diplomacy = -7
-	martial = -7
-	stewardship = -7
-	intrigue = -7
-	learning = -7
-	prowess = -7
+	diplomacy = -9
+	martial = -9
+	stewardship = -9
+	intrigue = -9
+	learning = -9
+	prowess = -9
 
 	immortal = yes
 	attraction_opinion = -20
@@ -69,6 +69,46 @@ deathknight = {
 undead_01 = {
 	index = 768
 	minimum_age = 0
+	diplomacy = -7
+	martial = -7
+	stewardship = -7
+	intrigue = -7
+	learning = -7
+	prowess = -7
+
+	immortal = yes
+	attraction_opinion = -20
+	general_opinion = -20
+	can_have_children = no
+	good = yes
+	no_prowess_loss_from_age = yes
+
+	ruler_designer_cost = 80
+}
+
+undead_02 = {
+	index = 769
+	minimum_age = 0
+	diplomacy = -5
+	martial = -5
+	stewardship = -5
+	intrigue = -5
+	learning = -5
+	prowess = -5
+
+	immortal = yes
+	attraction_opinion = -20
+	general_opinion = -20
+	can_have_children = no
+	good = yes
+	no_prowess_loss_from_age = yes
+
+	ruler_designer_cost = 80
+}
+
+undead_03 = {
+	index = 770
+	minimum_age = 0
 	diplomacy = -3
 	martial = -3
 	stewardship = -3
@@ -86,55 +126,15 @@ undead_01 = {
 	ruler_designer_cost = 80
 }
 
-undead_02 = {
-	index = 769
-	minimum_age = 0
-	diplomacy = 1
-	martial = 1
-	stewardship = 1
-	intrigue = 1
-	learning = 1
-	prowess = 1
-
-	immortal = yes
-	attraction_opinion = -20
-	general_opinion = -20
-	can_have_children = no
-	good = yes
-	no_prowess_loss_from_age = yes
-
-	ruler_designer_cost = 80
-}
-
-undead_03 = {
-	index = 770
-	minimum_age = 0
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	prowess = 5
-
-	immortal = yes
-	attraction_opinion = -20
-	general_opinion = -20
-	can_have_children = no
-	good = yes
-	no_prowess_loss_from_age = yes
-
-	ruler_designer_cost = 80
-}
-
 undead_04 = {
 	index = 771
 	minimum_age = 0
-	diplomacy = 9
-	martial = 9
-	stewardship = 9
-	intrigue = 9
-	learning = 9
-	prowess = 9
+	diplomacy = -1
+	martial = -1
+	stewardship = -1
+	intrigue = -1
+	learning = -1
+	prowess = -1
 
 	immortal = yes
 	attraction_opinion = -20

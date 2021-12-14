@@ -420,6 +420,13 @@
  create_minion.1003.a:0 "Perhaps it was not meant to be."
  create_minion.1003.a.tt:0 "I will continue on, as I must, in service of the Great Old One."
 
+# Undead trait
+ trait_undead:0 "Petty Undead"
+ trait_undead_01:0 "Minor Undead"
+ trait_undead_02:0 "Middling Undead"
+ trait_undead_03:0 "Major Undead"
+ trait_undead_04:0 "Greater Undead"
+
 # Undead rank up
  undead_became_stronger_1_title:0 "Minion becomes Minor Undead"
  undead_became_stronger_1_desc:0 "Your minion has ascended from the rank of Petty Undead to Minor Undead."
