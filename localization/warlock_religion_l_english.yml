@@ -439,7 +439,9 @@
 
 # Thrall dies
  thrall_dies_title:0 "Thrall has Died"
- thrall_dies_desc:0 "Your dutiful thrall has passed onto the other side. Perhaps the Great Old One will favour their soul."
+ thrall_dies_desc:0 "Your dutiful thrall, [dead_thrall.GetFullNameNoTooltip], has passed onto the other side. Perhaps the Great Old One will favour their soul."
+
+#  death_management.pinned.desc:2 "A person of interest to you, [dead_character.GetFullNameNoTooltip], [dead_character.GetDeathReason]."
 
  GAINS_WARLOCK_LIFESTYLE_XP:2 "Gains $VALUE|V0$ Warlock [lifestyle|E] Experience"
  GAINED_WARLOCK_LIFESTYLE_XP:2 "Gained $VALUE|V0$ Warlock [lifestyle|E] Experience"

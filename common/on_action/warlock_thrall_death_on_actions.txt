@@ -9,11 +9,19 @@ on_check_thrall_status = {
 		has_variable = warlock_master
 	}
 	effect = {
+		this = {
+			save_scope_as = dead_thrall
+		}
+		
 		var:warlock_master = {
 			send_interface_message = {
-					type = event_thrall_dies_bad
-					title = thrall_dies_title
-					desc = thrall_dies_desc
+				# type = character_has_died
+				type = event_thrall_dies_bad
+				title = thrall_dies_title
+				desc = thrall_dies_desc
+				# desc = thrall_death_management.pinned.desc
+				# left_icon = scope:dead_character
+				left_icon = scope:dead_thrall
 			}
 		}
 	}

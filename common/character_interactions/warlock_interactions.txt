@@ -576,7 +576,7 @@ create_thrall_spell = {
 					name = warlock_master
 					value = scope:actor
 				}
-				add_to_list = warlock_thralls
+				# add_to_list = warlock_thralls
 			}
 		}
 	}
