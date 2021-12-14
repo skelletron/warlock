@@ -20,7 +20,10 @@
 				AND = {
 					OR = {
 						has_trait = undead
-						has_trait = greater_undead
+						has_trait = undead_01
+						has_trait = undead_02
+						has_trait = undead_03
+						has_trait = undead_04
 					}
 				}
 			}
@@ -59,7 +62,10 @@ visual_traits_wounded_1 = {
 					has_trait = wounded_1
 					has_character_flag = wounded_look_1_flag
 					has_trait = undead
-					has_trait = greater_undead
+					has_trait = undead_01
+					has_trait = undead_02
+					has_trait = undead_03
+					has_trait = undead_04
 				}
 				should_show_disturbing_portrait_modifiers = yes
 			}
@@ -85,7 +91,10 @@ undead_hair = {
 				AND = {
 					OR = {
 						has_trait = undead
-						has_trait = greater_undead
+						has_trait = undead_01
+						has_trait = undead_02
+						has_trait = undead_03
+						has_trait = undead_04
 					}
 				}
 			}
@@ -111,7 +120,10 @@ undead_beard = {
 				AND = {
 					OR = {
 						has_trait = undead
-						has_trait = greater_undead
+						has_trait = undead_01
+						has_trait = undead_02
+						has_trait = undead_03
+						has_trait = undead_04
 					}
 				}
 			}

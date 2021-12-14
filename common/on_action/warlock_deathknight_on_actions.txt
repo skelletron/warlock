@@ -1,7 +1,10 @@
 on_birthday = {
 	on_actions = {
 		on_yearly_update_years_as_undead
-		on_yearly_check_undead_transformation_potential
+		on_yearly_check_undead_transformation_potential_1
+		on_yearly_check_undead_transformation_potential_2
+		on_yearly_check_undead_transformation_potential_3
+		on_yearly_check_undead_transformation_potential_4
 	}
 }
 
@@ -17,7 +20,7 @@ on_yearly_update_years_as_undead = {
 	}
 }
 
-on_yearly_check_undead_transformation_potential = {
+on_yearly_check_undead_transformation_potential_1 = {
 	trigger = {
 		has_variable = years_as_undead
 		var:years_as_undead = 1
@@ -25,6 +28,42 @@ on_yearly_check_undead_transformation_potential = {
 	}
 	effect = {
 		remove_trait = undead
-		add_trait = greater_undead
+		add_trait = undead_01
+	}
+}
+
+on_yearly_check_undead_transformation_potential_2 = {
+	trigger = {
+		has_variable = years_as_undead
+		var:years_as_undead = 2
+		has_trait = undead_01
+	}
+	effect = {
+		remove_trait = undead_01
+		add_trait = undead_02
+	}
+}
+
+on_yearly_check_undead_transformation_potential_3 = {
+	trigger = {
+		has_variable = years_as_undead
+		var:years_as_undead = 3
+		has_trait = undead_02
+	}
+	effect = {
+		remove_trait = undead_02
+		add_trait = undead_03
+	}
+}
+
+on_yearly_check_undead_transformation_potential_4 = {
+	trigger = {
+		has_variable = years_as_undead
+		var:years_as_undead = 4
+		has_trait = undead_03
+	}
+	effect = {
+		remove_trait = undead_03
+		add_trait = undead_04
 	}
 }

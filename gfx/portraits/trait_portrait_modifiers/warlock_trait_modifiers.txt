@@ -2,7 +2,10 @@
 	white_eyes = {
 		traits = {
 			undead
-			greater_undead
+			undead_01
+			undead_02
+			undead_03
+			undead_04
 		}
 		dna_modifiers = {
 			color = {
@@ -24,7 +27,10 @@ white_hair = {
 	white_hair = {
 		traits = {
 			undead
-			greater_undead
+			undead_01
+			undead_02
+			undead_03
+			undead_04
 		}
 		dna_modifiers = {
 			color = {
@@ -46,7 +52,10 @@ undead_gauntness = {
 	undead_gauntness = {
 		traits = {
 			undead
-			greater_undead
+			undead_01
+			undead_02
+			undead_03
+			undead_04
 			# pneumonic
 			# ill
 		}

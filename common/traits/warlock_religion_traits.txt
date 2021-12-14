@@ -31,12 +31,12 @@ warlock = {
 undead = {
 	index = 766
 	minimum_age = 0
-	diplomacy = -4
-	martial = -4
-	stewardship = -4
-	intrigue = -4
-	learning = -4
-	prowess = -4
+	diplomacy = -7
+	martial = -7
+	stewardship = -7
+	intrigue = -7
+	learning = -7
+	prowess = -7
 
 	immortal = yes
 	attraction_opinion = -20
@@ -66,15 +66,15 @@ deathknight = {
 	ruler_designer_cost = 120
 }
 
-greater_undead = {
+undead_01 = {
 	index = 768
 	minimum_age = 0
-	diplomacy = -2
-	martial = -2
-	stewardship = -2
-	intrigue = -2
-	learning = -2
-	prowess = -2
+	diplomacy = -3
+	martial = -3
+	stewardship = -3
+	intrigue = -3
+	learning = -3
+	prowess = -3
 
 	immortal = yes
 	attraction_opinion = -20
@@ -85,6 +85,67 @@ greater_undead = {
 
 	ruler_designer_cost = 80
 }
+
+undead_02 = {
+	index = 769
+	minimum_age = 0
+	diplomacy = 1
+	martial = 1
+	stewardship = 1
+	intrigue = 1
+	learning = 1
+	prowess = 1
+
+	immortal = yes
+	attraction_opinion = -20
+	general_opinion = -20
+	can_have_children = no
+	good = yes
+	no_prowess_loss_from_age = yes
+
+	ruler_designer_cost = 80
+}
+
+undead_03 = {
+	index = 770
+	minimum_age = 0
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	immortal = yes
+	attraction_opinion = -20
+	general_opinion = -20
+	can_have_children = no
+	good = yes
+	no_prowess_loss_from_age = yes
+
+	ruler_designer_cost = 80
+}
+
+undead_04 = {
+	index = 771
+	minimum_age = 0
+	diplomacy = 9
+	martial = 9
+	stewardship = 9
+	intrigue = 9
+	learning = 9
+	prowess = 9
+
+	immortal = yes
+	attraction_opinion = -20
+	general_opinion = -20
+	can_have_children = no
+	good = yes
+	no_prowess_loss_from_age = yes
+
+	ruler_designer_cost = 80
+}
+
 
 # Familiars
 
