@@ -87,3 +87,12 @@ event_familiar_warlock_good = {
 	style = good
 	soundeffect = @msg_good_soundeffect
 }
+
+event_deathknight_improves_good = {
+	icon = "marshal_job"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = good
+	soundeffect = @msg_good_soundeffect
+}

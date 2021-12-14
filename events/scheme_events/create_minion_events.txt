@@ -217,6 +217,10 @@ create_minion.1001 = {
 							name = years_as_undead
 							value = 0
 						}
+						set_variable = {
+							name = warlock_master
+							value = scope:owner
+						}
 
 						scope:scheme = {
 							end_scheme = yes
