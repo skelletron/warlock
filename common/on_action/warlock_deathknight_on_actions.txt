@@ -23,7 +23,8 @@ on_yearly_update_years_as_undead = {
 on_yearly_check_undead_transformation_potential_1 = {
 	trigger = {
 		has_variable = years_as_undead
-		var:years_as_undead = 1
+		# var:years_as_undead = 5
+		var:years_as_undead = 1 # Testing
 		has_trait = undead
 	}
 	effect = {
@@ -42,7 +43,9 @@ on_yearly_check_undead_transformation_potential_1 = {
 on_yearly_check_undead_transformation_potential_2 = {
 	trigger = {
 		has_variable = years_as_undead
-		var:years_as_undead = 2
+		# var:years_as_undead = 15
+		var:years_as_undead = 2 # Testing
+
 		has_trait = undead_01
 	}
 	effect = {
@@ -61,7 +64,9 @@ on_yearly_check_undead_transformation_potential_2 = {
 on_yearly_check_undead_transformation_potential_3 = {
 	trigger = {
 		has_variable = years_as_undead
-		var:years_as_undead = 3
+		# var:years_as_undead = 35
+		var:years_as_undead = 3 # Testing
+
 		has_trait = undead_02
 	}
 	effect = {
@@ -80,7 +85,8 @@ on_yearly_check_undead_transformation_potential_3 = {
 on_yearly_check_undead_transformation_potential_4 = {
 	trigger = {
 		has_variable = years_as_undead
-		var:years_as_undead = 4
+		# var:years_as_undead = 75
+		var:years_as_undead = 4 # Testing
 		has_trait = undead_03
 	}
 	effect = {

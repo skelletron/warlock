@@ -38,6 +38,11 @@ undead = {
 	learning = -9
 	prowess = -9
 
+	health = 0.25
+	negate_health_penalty_add = 0.25
+
+	dread_baseline_add = 5
+
 	immortal = yes
 	attraction_opinion = -20
 	general_opinion = -20
@@ -57,6 +62,12 @@ undead_01 = {
 	intrigue = -7
 	learning = -7
 	prowess = -7
+
+	health = 0.5
+	negate_health_penalty_add = 0.5
+
+	dread_baseline_add = 10
+
 
 	immortal = yes
 	attraction_opinion = -20
@@ -78,6 +89,11 @@ undead_02 = {
 	learning = -5
 	prowess = -5
 
+	health = 1
+	negate_health_penalty_add = 1
+
+	dread_baseline_add = 15
+
 	immortal = yes
 	attraction_opinion = -20
 	general_opinion = -20
@@ -97,6 +113,11 @@ undead_03 = {
 	intrigue = -3
 	learning = -3
 	prowess = -3
+
+	health = 2
+	negate_health_penalty_add = 2
+
+	dread_baseline_add = 20
 
 	immortal = yes
 	attraction_opinion = -20
@@ -118,6 +139,11 @@ undead_04 = {
 	learning = -1
 	prowess = -1
 
+	health = 4
+	negate_health_penalty_add = 4
+
+	dread_baseline_add = 25
+
 	immortal = yes
 	attraction_opinion = -20
 	general_opinion = -20
@@ -134,6 +160,8 @@ deathknight = {
 	martial = 20
 	prowess = 20
 	commander = yes
+
+	stress_gain_mult = -0.9
 
 	tolerance_advantage_mod = 20
 
