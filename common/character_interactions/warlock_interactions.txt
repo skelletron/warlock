@@ -568,6 +568,15 @@ create_thrall_spell = {
 				}
 				add_character_flag = { flag = is_thrall_flag }
 				add_character_modifier = { modifier = dulled_sense_of_self }
+				# set_variable = {
+				# 	name = warlock_master
+				# 	value = scope:actor
+				# }
+				set_variable = {
+					name = warlock_master
+					value = scope:actor
+				}
+				add_to_list = warlock_thralls
 			}
 		}
 	}

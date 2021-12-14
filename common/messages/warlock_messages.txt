@@ -96,3 +96,12 @@ event_deathknight_improves_good = {
 	style = good
 	soundeffect = @msg_good_soundeffect
 }
+
+event_thrall_dies_bad = {
+	icon = "death_unknown"
+	title = event_message_title
+	desc = event_message_effect_and_text
+	tooltip = task_generic_notification_tooltip
+	style = bad
+	soundeffect = @msg_bad_soundeffect
+}

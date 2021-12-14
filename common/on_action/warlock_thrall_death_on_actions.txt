@@ -1,0 +1,20 @@
+on_death = {
+	on_actions = {
+		on_check_thrall_status
+	}
+}
+
+on_check_thrall_status = {
+	trigger = {
+		has_variable = warlock_master
+	}
+	effect = {
+		var:warlock_master = {
+			send_interface_message = {
+					type = event_thrall_dies_bad
+					title = thrall_dies_title
+					desc = thrall_dies_desc
+			}
+		}
+	}
+}

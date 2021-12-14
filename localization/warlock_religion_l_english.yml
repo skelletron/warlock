@@ -437,6 +437,9 @@
  undead_became_stronger_4_title:0 "Minion becomes Greater Undead"
  undead_became_stronger_4_desc:0 "Your minion has ascended from the rank of Major Undead to Greater Undead."
 
+# Thrall dies
+ thrall_dies_title:0 "Thrall has Died"
+ thrall_dies_desc:0 "Your dutiful thrall has passed onto the other side. Perhaps the Great Old One will favour their soul."
 
  GAINS_WARLOCK_LIFESTYLE_XP:2 "Gains $VALUE|V0$ Warlock [lifestyle|E] Experience"
  GAINED_WARLOCK_LIFESTYLE_XP:2 "Gained $VALUE|V0$ Warlock [lifestyle|E] Experience"
