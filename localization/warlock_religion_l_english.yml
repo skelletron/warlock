@@ -384,6 +384,13 @@
  gain_warlock_experience_with_familiar:0 "Improved Warlock ability with Familiar"
  gain_warlock_experience_with_familiar_title:0 "Improved Warlock ability with Familiar"
  gain_warlock_experience_with_familiar_desc:0 "You both learned something new while solving the puzzle together!"
+# relaxed in garden
+ familiar.1001.c:0 "Relax in Garden"
+ familiar.1001.c_1.tt:0 "You will lose a medium amount of [stress|E]"
+ familiar.1001.c_2.tt:0 "You will gain a [modifier|E] that helps reduce stress for 5 years"
+ relax_in_garden_with_familiar:0 "You Had a Relaxing Day Together"
+ relax_in_garden_with_familiar_title:0 "You Had a Relaxing Day Together"
+ relax_in_garden_with_familiar_desc:0 "Together you shared amusing conversation, exchanged personal anecdotes, and pondered the unending vastness of the Great Old One."
 
 # Schemes
  PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."

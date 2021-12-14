@@ -277,3 +277,20 @@ gain_warlock_experience_with_familiar = {
 		add_warlock_lifestyle_xp = major_lifestyle_xp
 	}
 }
+
+relax_in_garden_with_familiar = {
+	send_interface_message = {
+		type = event_familiar_destress_good
+
+		title = relax_in_garden_with_familiar_title
+		desc = relax_in_garden_with_familiar_desc
+
+		stress_impact = {
+			base = major_stress_impact_loss
+		}
+		add_character_modifier = {
+			modifier = stress_free_life_modifier
+			years = 5
+		}
+	}
+}

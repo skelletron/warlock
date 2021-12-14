@@ -70,4 +70,13 @@ familiar.1001 = {
 			}
 		}
 	}
+
+	option = {
+		name = familiar.1001.c
+		custom_tooltip = familiar.1001.c_1.tt
+		custom_tooltip = familiar.1001.c_2.tt
+		hidden_effect = {
+			relax_in_garden_with_familiar = yes
+		}
+	}
 }
