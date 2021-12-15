@@ -639,7 +639,7 @@ raise_undead_platoon_spell = {
 create_thrall = {
 	category = interaction_category_warlock
 	common_interaction = yes
-	scheme = create_thrall
+	scheme = create_thrall_scheme
 	use_diplomatic_range = yes
 	ignores_pending_interaction_block = yes
 	auto_accept = yes
@@ -676,10 +676,10 @@ create_thrall = {
 }
 
 # later on make this cost 0 piety and call it debug_create_thrall
-create_thrall_spell = {
+debug_create_thrall = {
 	category = interaction_category_warlock
-	desc = create_thrall_spell_interaction_desc
-	send_name = create_thrall_spell_interaction
+	desc = debug_create_thrall_interaction_desc
+	send_name = debug_create_thrall_interaction
 	use_diplomatic_range = yes
 	popup_on_receive = no
 	send_options_exclusive = no
@@ -709,9 +709,9 @@ create_thrall_spell = {
 		}
 	}
 
-	is_valid_showing_failures_only = {
-		scope:actor.piety >= level_3_spell_cost_value
-	}
+	# is_valid_showing_failures_only = {
+	# 	scope:actor.piety >= level_3_spell_cost_value
+	# }
 
 	auto_accept = {
 		custom_description = {
@@ -726,10 +726,10 @@ create_thrall_spell = {
 
 	on_accept = {
 		scope:actor = {
-			add_piety = {
-				value = 0
-				subtract = level_3_spell_cost_value
-			}
+			# add_piety = {
+			# 	value = 0
+			# 	subtract = level_3_spell_cost_value
+			# }
 			add_character_modifier = { modifier = maintaining_thralls_modifier }
 		}
 

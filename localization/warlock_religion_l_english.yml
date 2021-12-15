@@ -402,6 +402,7 @@
  relax_in_garden_with_familiar_desc:0 "Together you shared amusing conversation, exchanged personal anecdotes, and pondered the unending vastness of the Great Old One."
 
 # Schemes
+# Create Deathknight
  PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
 
  create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
@@ -428,6 +429,15 @@
  create_minion.1003.desc:0 "Unfortunately, I've missed my mark, and the target lives to see another day. Was I not serving the Great Old One dutifully? How could my Lord allow this to happen?"
  create_minion.1003.a:0 "Perhaps it was not meant to be."
  create_minion.1003.a.tt:0 "I will continue on, as I must, in service of the Great Old One."
+
+# Create Thrall
+ create_thrall:0 "Create Thrall"
+ create_thrall_scheme:0 "Create Thrall"
+ create_thrall_my_intrigue:0 "My Intrigue vs Their Intrigue"
+ create_thrall_my_learning:0 "My Learning vs Their Learning"
+
+ create_thrall.1001:0 "Create Thrall"
+ create_thrall.1001.t:0 "To Enthrall a Pawn"
 
 # Undead trait
  trait_undead:0 "Petty Undead"
