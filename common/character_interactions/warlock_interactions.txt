@@ -695,6 +695,7 @@ create_thrall_spell = {
 
 		hidden_effect = {
 			scope:recipient = {
+				add_character_flag = { flag = joining_faction_block }
 				add_opinion = {
 					modifier = thrall_opinion_modifier
 					target = scope:actor
@@ -763,6 +764,7 @@ release_thrall_interaction = {
 			remove_character_modifier = dulled_sense_of_self
 			remove_character_flag = is_thrall_flag
 			remove_variable = warlock_master
+			remove_character_flag = joining_faction_block
 			if = {
 				limit = { has_character_modifier = tithed_thrall_modifier}
 				remove_character_modifier = tithed_thrall_modifier
