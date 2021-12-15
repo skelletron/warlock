@@ -546,7 +546,20 @@ raise_undead_platoon_spell = {
 			}
 		}
 		scope:recipient = {
-			# custom_tooltip = raise_undead_platoon_spell_tooltip
+			if = {
+				limit = {
+					NOT = {
+						this = scope:actor
+					}
+				}
+				add_opinion = {
+					modifier = gave_undead_troops_opinion_modifier
+					target = scope:actor
+				}
+			}
+		}
+
+		scope:recipient = {
 			spawn_army = {
 				uses_supply = no
 				inheritable = no

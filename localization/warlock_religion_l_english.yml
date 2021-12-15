@@ -222,6 +222,7 @@
  undead_platoon_fighters:0 "Screaming Agony"
  undead_platoon_siegers:0 "The Rocksliders"
  undead_platoon_casters:0 "Whispering Death"
+ gave_undead_troops_opinion_modifier:0 "Granted Undead Troops"
 
  interaction_category_warlock:0 "Spellcasting"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."

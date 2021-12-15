@@ -3,6 +3,11 @@
 	years = 10
 }
 
+gave_undead_troops_opinion_modifier = {
+	opinion = 40
+	years = 10
+}
+
 cast_temporal_resistance_modifier = {
 	opinion = 60
 }
