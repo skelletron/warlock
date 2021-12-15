@@ -207,6 +207,26 @@ create_minion.1001 = {
 								}
 							}
 						}
+
+						# Probably redundant since they become landless
+						# Leave faction / Destroy if leader
+						# if = {
+						# 	limit = {
+						# 		is_a_faction_member = yes
+						# 	}
+						# 	leave_faction_with_cooldown_effect = {
+						# 		FACTION = scope:faction
+						# 		YEARS = 20
+						# 	}
+						# }
+						# if = {
+						# 	limit = {
+						# 		is_a_faction_leader = yes
+						# 	}
+						# 	joined_faction = {
+						# 		destroy_faction = yes
+						# 	}
+						# }
 		
 						# faith = faith:great_old_one
 		
