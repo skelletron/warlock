@@ -663,6 +663,15 @@ create_thrall = {
 		}
 	}
 
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			can_start_scheme = {
+				type = create_deathknight
+				target = scope:recipient
+			}
+		}
+	}
+
 	on_accept = {
 		hidden_effect = {
 			scope:actor = {
@@ -1623,6 +1632,15 @@ create_deathknight = {
 			NOT = {
 				has_trait = undead
 				has_trait = warlock
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			can_start_scheme = {
+				type = create_deathknight
+				target = scope:recipient
 			}
 		}
 	}
