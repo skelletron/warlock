@@ -148,3 +148,156 @@
 	}
 	success_desc = "SIRE_SUCCESS_DESC"
 }
+
+create_thrall_scheme = {
+	skill = intrigue
+	hostile = yes
+	# cooldown = { months = 2 }
+	uses_agents = no
+	is_secret = yes
+
+	power_per_skill_point = 2.0
+	resistance_per_skill_point = 1.75
+	spymaster_power_per_skill_point = 1
+	spymaster_resistance_per_skill_point = 1
+	uses_resistance = yes
+	minimum_progress_chance = 50
+	maximum_progress_chance = 99
+
+	minimum_success = 5
+	maximum_secrecy = 85
+	maximum_success = 85
+	
+	allow = {
+		has_trait = warlock
+		has_perk = create_puppet_perk
+		# is_vampire_trigger = yes
+		#is_adult = yes
+		scope:target = { 
+			is_adult = yes
+			NOT = {
+				has_trait = warlock
+				has_trait = undead
+				has_trait = deathknight
+			}
+		}
+	}
+	
+	valid = {
+		
+	}
+
+	base_success_chance = {
+		base = 0
+
+		# hostile_scheme_base_chance_modifier = yes
+
+		compare_modifier = {
+			desc = create_minion_my_intrigue
+			target = scope:owner
+			value = intrigue
+			multiplier = 1.2
+		}
+
+		compare_modifier = {
+			desc = create_minion_my_learning
+			target = scope:owner
+			value = learning
+			multiplier = 1.2
+		}
+
+		# Heads of Faith are Resistant
+		modifier = {
+			add = -25
+			desc = "PROTECTED_HEAD_OF_FAITH"
+			scope:target = {
+				faith = {
+					has_doctrine = doctrine_spiritual_head
+				}
+				faith = {
+					exists = religious_head
+					religious_head = {
+						this = scope:target
+					}
+				}
+			}
+		}
+
+		# Rulers are Resistant
+		first_valid = {
+			modifier = {
+				add = -25
+				desc = "PROTECTED_EMPERORS"
+
+				scope:target = {
+					is_ruler = yes
+					highest_held_title_tier = tier_empire
+				}
+			}
+			modifier = {
+				add = -20
+				desc = "PROTECTED_KINGS"
+
+				scope:target = {
+					is_ruler = yes
+					highest_held_title_tier = tier_kingdom
+				}
+			}
+			modifier = {
+				add = -15
+				desc = "PROTECTED_DUKES"
+
+				scope:target = {
+					is_ruler = yes
+					highest_held_title_tier = tier_duchy
+				}
+			}
+			modifier = {
+				add = -15
+				desc = "PROTECTED_COUNTS"
+
+				scope:target = {
+					is_ruler = yes
+					highest_held_title_tier = tier_county
+				}
+			}
+		}
+
+		#SCHEME OWNER#
+		# compare_modifier = {
+		# 	# desc = embrace_my_intrigue
+		# 	desc = create_minion_my_intrigue
+		# 	target = scope:owner
+		# 	value = intrigue
+		# 	multiplier = 2
+		# }
+	}
+
+	is_secret = yes
+	base_secrecy = 10
+
+	on_ready = {
+		scheme_owner = {
+			# trigger_event = sire.100
+			trigger_event = create_thrall.1001
+		}
+	}
+
+	on_invalidated = {
+	}
+
+	on_monthly = {
+		# hostile_scheme_discovery_chance_effect = yes
+		save_scope_as = scheme
+		scheme_owner = { save_scope_as = owner }
+		scheme_target = { save_scope_as = target }
+
+		# if = {
+		# 	limit = { scheme_owner.age >= 50 }
+		# 	scheme_owner = {
+		# 		trigger_event = elder_efficient_siring.100
+		# 	}
+		# }
+	}
+	success_desc = "SIRE_SUCCESS_DESC"
+}

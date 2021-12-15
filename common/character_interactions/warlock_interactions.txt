@@ -635,7 +635,47 @@ raise_undead_platoon_spell = {
 # can_invalidate_interaction = bool				# If yes then when the AI picks an interaction it will do the full can send this entire interaction check instead of the more performance saving checking of recipient refusal and ai will do, use with care and profile it
 # }
 
-# later on turn this into a ritual (scheme)
+# RITUAL (SCHEME) version
+create_thrall = {
+	category = interaction_category_warlock
+	common_interaction = yes
+	scheme = create_thrall
+	use_diplomatic_range = yes
+	ignores_pending_interaction_block = yes
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		scope:actor = {
+			AND = {
+				has_trait = warlock
+				has_perk = create_puppet_perk
+			}
+		}
+		scope:recipient = {
+			is_adult = yes
+			NOT = { scope:recipient = scope:actor }
+			NOT = {
+				has_trait = undead
+				has_trait = deathknight
+				has_trait = warlock
+			}
+		}
+	}
+
+	on_accept = {
+		hidden_effect = {
+			scope:actor = {
+				start_scheme = {
+					type = create_thrall_scheme
+					target = scope:recipient
+				}
+			}
+		}
+	}
+}
+
+# later on make this cost 0 piety and call it debug_create_thrall
 create_thrall_spell = {
 	category = interaction_category_warlock
 	desc = create_thrall_spell_interaction_desc

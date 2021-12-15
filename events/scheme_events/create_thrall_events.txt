@@ -1,0 +1,272 @@
+namespace = create_thrall
+
+create_thrall.1001 = {
+	type = character_event
+	title = create_thrall.1001.t
+	desc = create_thrall.1001.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = paranoia
+	}
+
+	# immediate = {
+		
+	# }
+	option = {
+		name = create_thrall.1001.a
+		custom_tooltip = create_thrall.1001.a.tt
+
+		scope:owner = {
+			add_piety = {
+				value = 0
+				subtract = level_2_spell_cost_value
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				100 = {
+
+					# Negative Modifiers
+
+					# Ruler
+					modifier = {
+						scope:target = {
+							is_ruler = yes
+						}
+						add = -20
+					}
+					# Has Empire
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_empire
+						}
+						add = -75
+					}
+					# Has Kingdom
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_kingdom
+						}
+						add = -70
+					}
+					# Has Duchy
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_duchy
+						}
+						add = -50
+					}
+					# Has County
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_county
+						}
+						add = -30
+					}
+					# Has Barony
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_barony
+						}
+						add = -10
+					}
+
+					# Spouse of Ruler
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+
+							# primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -10
+					}
+					# Spouse has Empire
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -40
+					}
+					# Spouse has Kingdom
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_kingdom
+						}
+						add = -35
+					}
+					# Spouse has Duchy
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_duchy
+						}
+						add = -25
+					}
+					# Spouse has County
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_county
+						}
+						add = -15
+					}
+					# Spouse has Barony
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_barony
+						}
+						add = -5
+					}
+
+					# Positive Modifiers
+
+					# Intrigue
+					modifier = {
+						scope:owner.intrigue > scope:target.intrigue
+						add = 15
+					}
+					# Learning
+					modifier = {
+						scope:owner.learning > scope:target.learning
+						add = 15
+					}
+
+					scope:target = {
+
+						# Leave faction / Destroy if leader
+						if = {
+							limit = {
+								is_a_faction_member = yes
+							}
+							leave_faction_with_cooldown_effect = {
+								FACTION = scope:faction
+								YEARS = 20
+							}
+						}
+						if = {
+							limit = {
+								is_a_faction_leader = yes
+							}
+							joined_faction = {
+								destroy_faction = yes
+							}
+						}
+
+						add_character_modifier = { modifier = dulled_sense_of_self }
+
+
+						add_opinion = {
+							modifier = thrall_opinion_modifier
+							target = scope:owner
+						}
+		
+						set_variable = {
+							name = warlock_master
+							value = scope:owner
+						}
+						
+						add_character_flag = { flag = joining_faction_block }
+						add_character_flag = is_thrall_flag
+
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+
+					scope:owner = {
+						add_character_modifier = { modifier = maintaining_thralls_modifier }
+						trigger_event = create_thrall.1002
+					}
+				}
+	
+				# Failure
+				100 = {
+					scope:scheme = {
+						end_scheme = yes
+					}
+					scope:owner = {
+						trigger_event = create_thrall.1003
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = create_thrall.1001.b
+		custom_tooltip = create_thrall.1001.b.tt
+
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+}
+
+# Successfully Created Thrall
+create_thrall.1002 = {
+	type = character_event
+	title = create_thrall.1002.t
+	desc = create_thrall.1002.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = war_over_win
+	}
+
+	option = {
+		name = create_thrall.1002.a
+		custom_tooltip = create_thrall.1002.a.tt
+	}
+}
+
+# Failed to Create Thrall
+create_thrall.1003 = {
+	type = character_event
+	title = create_thrall.1003.t
+	desc = create_thrall.1003.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = boredom
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = personality_honorable
+	}
+
+	option = {
+		name = create_thrall.1003.a
+		custom_tooltip = create_thrall.1003.a.tt
+	}
+}
