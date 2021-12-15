@@ -502,6 +502,125 @@ cast_wall_of_bone = {
 	}
 }
 
+# Raise Undead Platoon (spell)
+raise_undead_platoon_spell = {
+	category = interaction_category_warlock
+	desc = raise_undead_platoon_spell_interaction_desc
+	send_name = raise_undead_platoon_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = raise_zombie_titans_perk
+		}
+		scope:recipient = {
+			is_ruler = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_2_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_2_spell_cost_value
+			}
+		}
+		scope:recipient = {
+			spawn_army = {
+				uses_supply = no
+				inheritable = no
+				name = undead_platoon_fighters
+				# levies = {
+				# 	value = {
+				# 		value = scope:recipient.max_military_strength
+				# 		multiply = 2
+				# 	}
+				# }
+				men_at_arms = {
+					type = death_knights
+					stacks = 2
+				}
+				men_at_arms = {
+					type = skeletal_berzerkers
+					stacks = 2
+				}
+				men_at_arms = {
+					type = dread_cavalry
+					stacks = 2
+				}
+				location = scope:recipient.capital_province
+			}
+		}
+		scope:recipient = {
+			spawn_army = {
+				uses_supply = no
+				inheritable = no
+				name = undead_platoon_siegers
+				men_at_arms = {
+					type = zombie_titans
+					stacks = 1
+				}
+				men_at_arms = {
+					type = undead_rammers
+					stacks = 1
+				}
+				men_at_arms = {
+					type = acid_belchers
+					stacks = 1
+				}
+				location = scope:recipient.capital_province
+			}
+		}
+		scope:recipient = {
+			spawn_army = {
+				uses_supply = no
+				inheritable = no
+				name = undead_platoon_casters
+				men_at_arms = {
+					type = skeletal_black_mages
+					stacks = 4
+				}
+				men_at_arms = {
+					type = skeletal_grey_mages
+					stacks = 2
+				}
+				location = scope:recipient.capital_province
+			}
+		}
+	}
+}
+
+# send_option = {										# Adds an option
+# is_shown = trigger								# Is option shown
+# is_valid = trigger								# Is option selectable
+# current_description = desc						# Tooltip
+# flag = flag_name								# If selected then scope:flag_name will be set to yes
+# localization = loc_key							# Loc_key for option label
+# starts_enabled = trigger						# Trigger for whether this should be on when the window opens. If not defined, defaults to off
+# can_be_changed = trigger						# Trigger for whether this option can be changed from its default
+# can_invalidate_interaction = bool				# If yes then when the AI picks an interaction it will do the full can send this entire interaction check instead of the more performance saving checking of recipient refusal and ai will do, use with care and profile it
+# }
+
 # later on turn this into a ritual (scheme)
 create_thrall_spell = {
 	category = interaction_category_warlock
