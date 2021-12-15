@@ -1011,14 +1011,14 @@ summon_thrall_to_war = {
 		# scope:recipient = {
 		# 	is_allied_to = scope:actor
 		# }
-		scope:actor = { #If you can call them as a House Member then do that
-			NOT = {
-				is_character_interaction_valid = {
-					recipient = scope:recipient
-					interaction = call_house_member_to_war_interaction
-				}
-			}
-		}
+		# scope:actor = { #If you can call them as a House Member then do that
+		# 	NOT = {
+		# 		is_character_interaction_valid = {
+		# 			recipient = scope:recipient
+		# 			interaction = call_house_member_to_war_interaction
+		# 		}
+		# 	}
+		# }
 	}
 	
 	has_valid_target = {
@@ -1234,128 +1234,14 @@ summon_thrall_to_war = {
 	}
 	
 	ai_accept = {
-		base = 20
+		base = 2000
 
-		modifier = {  # Refuse call against Heir
-			add = -1000
-			exists = scope:recipient.player_heir
-			trigger_if = {
-				limit = { scope:target.casus_belli.primary_defender = scope:actor }
-				scope:target.casus_belli.primary_attacker = scope:recipient.player_heir
-			}
-			trigger_else = {
-				scope:target.casus_belli.primary_defender = scope:recipient.player_heir
-			}
-			desc = WONT_FIGHT_HEIR_REASON
-		}
-
-		modifier = {  # Refuse call against Spouse
-			add = -1000
-			scope:recipient = {
-				trigger_if = {
-					limit = { scope:target.casus_belli.primary_defender = scope:actor }
-					any_spouse = {
-						this = scope:target.casus_belli.primary_attacker
-					}
-				}
-				trigger_else = {
-					any_spouse = {
-						this = scope:target.casus_belli.primary_defender
-					}
-				}
-				
-			}
-			desc = WONT_FIGHT_SPOUSE_REASON
-		}
-
-		opinion_modifier = { # Opinion Factor
-			who = scope:recipient
-			opinion_target = scope:actor
-			multiplier = 1.0
-			desc = AI_OPINION_REASON
-		}
-
-		# Honor factor
-		ai_value_modifier = {
-			ai_honor = 1
-			min = 0
-		}
-
-		modifier = {  # Tends to join defensive wars
-			add = 50
-			scope:target.casus_belli.primary_defender = scope:actor
-			desc = DEFENSIVE_WAR_REASON
-		}
-
-		compare_modifier = { # Likes fighting infidels
-			trigger = {
-				scope:recipient.faith = scope:actor.faith
-				OR = {
-					AND = {
-						scope:target.casus_belli.primary_attacker = {
-							this = scope:actor
-							faith = {
-								faith_hostility_level = {
-									target = scope:target.casus_belli.primary_defender.faith
-									value >= religious_cb_enabled_hostility_level
-								}
-							}
-						}
-					}
-					AND = {
-						scope:target.casus_belli.primary_defender = {
-							this = scope:actor
-							faith = {
-								faith_hostility_level = {
-									target = scope:target.casus_belli.primary_defender.faith
-									value >= religious_cb_enabled_hostility_level
-								}
-							}
-						}
-					}
-				}
-			}
-			target = scope:recipient
-			value = ai_zeal
-			desc = "ZEAL_AGAINST_INFIDELS"
-			min = 0
-			multiplier = 0.5
-		}
-
-		modifier = {  # Reluctant to attack another ally
-			add = -50
-			scope:target.casus_belli.primary_attacker = scope:actor
-			scope:recipient = {
-				is_allied_to = scope:target.casus_belli.primary_defender
-			}
-			desc = ATTACK_ON_ALLY_REASON
-		}
-
-		modifier = {  # Reluctant to defend against another ally
-			add = -25
-			scope:target.casus_belli.primary_defender = scope:actor
-			scope:recipient = {
-				is_allied_to = scope:target.casus_belli.primary_attacker
-			}
-			desc = WAR_WITH_ALLY_REASON
-		}
-
-		modifier = {  # Reluctant to join wars against religious brethren.
-			add = -50
-			NOT = { scope:recipient.faith = scope:actor.faith }
-			scope:target.casus_belli.primary_attacker = scope:actor
-			scope:target.casus_belli.primary_defender.faith = scope:recipient.faith
-			scope:target.casus_belli.war = {
-				OR = {
-					using_cb = minor_religious_war
-					using_cb = religious_war
-					using_cb = major_religious_war
-					using_cb = undirected_great_holy_war
-					using_cb = directed_great_holy_war
-				}
-			}
-			desc = WONT_ATTACK_RELIGIOUS_BRETHREN_REASON
-		}
+		# opinion_modifier = { # Opinion Factor
+		# who = scope:recipient
+		# opinion_target = scope:actor
+		# multiplier = 1.0
+		# desc = AI_OPINION_REASON
+		# }
 	}
 
 	# Score above 0 means the AI will call this ally. Note that DESIRED_WAR_SIDE_STRENGTH still applies and can prevent calling the ally
@@ -1364,7 +1250,6 @@ summon_thrall_to_war = {
 		base = 0
 	}
 }
-
 
 summon_minion_to_war = {
 	category = interaction_category_diplomacy
@@ -1597,12 +1482,12 @@ summon_minion_to_war = {
 	ai_accept = {
 		base = 2000
 
-		opinion_modifier = { # Opinion Factor
-			who = scope:recipient
-			opinion_target = scope:actor
-			multiplier = 1.0
-			desc = AI_OPINION_REASON
-		}
+		# opinion_modifier = { # Opinion Factor
+		# 	who = scope:recipient
+		# 	opinion_target = scope:actor
+		# 	multiplier = 1.0
+		# 	desc = AI_OPINION_REASON
+		# }
 	}
 
 	# Score above 0 means the AI will call this ally. Note that DESIRED_WAR_SIDE_STRENGTH still applies and can prevent calling the ally
