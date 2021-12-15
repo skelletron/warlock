@@ -20,8 +20,8 @@
 	allowed_in_hired_troops = no
 
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 10
 	ai_quality = { value = culture_ai_weight_skirmishers }
@@ -52,8 +52,8 @@ dread_cavalry = {
 	allowed_in_hired_troops = no
 
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 10
 	ai_quality = { value = culture_ai_weight_heavy_cavalry }
@@ -84,8 +84,8 @@ death_knights = {
 	allowed_in_hired_troops = no
 
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 20
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
@@ -115,8 +115,8 @@ skeletal_berzerkers = {
 	allowed_in_hired_troops = no
 
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 20
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
@@ -141,8 +141,8 @@ zombie_titans = {
 	low_maintenance_cost = { }
 	high_maintenance_cost = { }
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 2
 	allowed_in_hired_troops = no
@@ -167,8 +167,8 @@ undead_rammers = {
 	low_maintenance_cost = { }
 	high_maintenance_cost = { }
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 5
 	allowed_in_hired_troops = no
@@ -193,8 +193,8 @@ acid_belchers = {
 	low_maintenance_cost = { }
 	high_maintenance_cost = { }
 
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 50
 	allowed_in_hired_troops = no
@@ -229,8 +229,8 @@ skeletal_black_mages = {
 	low_maintenance_cost = { }
 	high_maintenance_cost = { }
 	
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 20
 	allowed_in_hired_troops = no
@@ -263,8 +263,8 @@ skeletal_grey_mages = {
 	low_maintenance_cost = { }
 	high_maintenance_cost = { }
 	
-	mercenary_fallback = yes
-	holy_order_fallback = yes
+	mercenary_fallback = no
+	holy_order_fallback = no
 	
 	stack = 20
 	allowed_in_hired_troops = no
@@ -306,8 +306,8 @@ skeletal_grey_mages = {
 # 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 # 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
-# 	mercenary_fallback = yes
-# 	holy_order_fallback = yes
+# 	mercenary_fallback = no
+# 	holy_order_fallback = no
 	
 # 	stack = 100
 # 	ai_quality = { value = culture_ai_weight_heavy_infantry }
@@ -365,8 +365,8 @@ skeletal_grey_mages = {
 # 	low_maintenance_cost = { gold = bowmen_low_maint_cost }
 # 	high_maintenance_cost = { gold = bowmen_high_maint_cost }
 	
-# 	mercenary_fallback = yes
-# 	holy_order_fallback = yes
+# 	mercenary_fallback = no
+# 	holy_order_fallback = no
 	
 # 	stack = 100
 # 	ai_quality = { value = culture_ai_weight_archers }
