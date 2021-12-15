@@ -1404,9 +1404,9 @@ summon_minion_to_war = {
 	}	
 
 	has_valid_target_showing_failures_only = {
-		scope:target = {
-			is_war_leader = scope:actor
-		}
+		# scope:target = {
+		# 	is_war_leader = scope:actor
+		# }
 
 		joiner_not_already_in_another_war_with_any_target_war_participants_trigger = {
 			WARRIOR = scope:actor
