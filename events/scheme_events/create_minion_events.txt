@@ -221,6 +221,7 @@ create_minion.1001 = {
 							name = warlock_master
 							value = scope:owner
 						}
+						add_character_flag = { flag = joining_faction_block }
 
 						scope:scheme = {
 							end_scheme = yes
