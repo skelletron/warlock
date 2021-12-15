@@ -403,6 +403,7 @@
 
 # Schemes
 # Create Deathknight
+ create_deathknight:0 "Create Deathknight"
  PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
 
  create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
@@ -433,11 +434,32 @@
 # Create Thrall
  create_thrall:0 "Create Thrall"
  create_thrall_scheme:0 "Create Thrall"
+ create_thrall_scheme_action:0 "Enthrall"
+ create_thrall_scheme_desc:0 "In the name of the Great Old One, I will ensare the mind of [SCHEME.GetTarget.GetShortUINameNoTooltip] and bend [SCHEME.GetTarget.GetHerHim] to my will."
  create_thrall_my_intrigue:0 "My Intrigue vs Their Intrigue"
  create_thrall_my_learning:0 "My Learning vs Their Learning"
+ CREATE_THRALL_SUCCESS:0 "[TARGET_CHARACTER.GetShortUIName|U] will become your dutiful thrall."
 
  create_thrall.1001:0 "Create Thrall"
  create_thrall.1001.t:0 "To Enthrall a Pawn"
+ create_thrall.1001.desc:0 "Those ignorant days that [target.GetShortUINameNoTooltip] used to enjoy will soon be lost to time, as I take [target.GetHerHis] weak mind and corrupt it beyond repair. Only then can the Great Old One shine its healing light upon [target.GetHerHis] broken soul."
+ create_thrall.1001.a:0 "Open your mind, [target.GetShortUINameNoTooltip], and submit!"
+ create_thrall.1001.b:0 "Wait! I have a better plan for this one..."
+ create_thrall.1001.a.tt:0 "You will attempt to enthrall [target.GetShortUINameNoTooltip]"
+ create_thrall.1001.b.tt:0 "You will stop the ritual"
+
+ create_thrall.1002:0 "Thrall Created"
+ create_thrall.1002.t:0 "Thrall Created"
+ create_thrall.1002.desc:0 "Now [target.GetShortUINameNoTooltip] will forever rest under my thumb. All things that were [target.GetHerHis] shall now be ours, and we shall make use of them masterfully."
+#  create_thrall.1002.a:0 "There there, rest your weary mind within this psychic cocoon"
+ create_thrall.1002.a:0 "Today, I have done the work of the Lord"
+ create_thrall.1002.a.tt:0 "There there, rest your weary mind... You won't be troubled by pesky thoughts and desires anymore."
+
+ create_thrall.1003:0 "Failed to Create Thrall"
+ create_thrall.1003.t:0 "Failed to Create Thrall"
+ create_thrall.1003.desc:0 "It seems [target.GetShortUINameNoTooltip]'s mind was harder to penetrate than anticipated. I can only pray that this outcome was yet another of the mysterious workings of the Great Old One."
+ create_thrall.1003.a:0 "May the Lord show me mercy for my failure today"
+ create_thrall.1003.a.tt:0 "A dutiful servant never rests. Onto the next, and the next, for the Great Old One!"
 
 # Undead trait
  trait_undead:0 "Petty Undead"

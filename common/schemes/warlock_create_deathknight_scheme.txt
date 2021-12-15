@@ -146,5 +146,5 @@
 		# 	}
 		# }
 	}
-	success_desc = "SIRE_SUCCESS_DESC"
+	success_desc = "CREATE_DEATHKNIGHT_SUCCESS"
 }

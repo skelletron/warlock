@@ -132,5 +132,5 @@ create_thrall_scheme = {
 		scheme_owner = { save_scope_as = owner }
 		scheme_target = { save_scope_as = target }
 	}
-	success_desc = "SIRE_SUCCESS_DESC"
+	success_desc = "CREATE_THRALL_SUCCESS"
 }
