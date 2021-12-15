@@ -23,6 +23,13 @@ create_minion.1001 = {
 		name = create_minion.1001.a
 		custom_tooltip = create_minion.1001.a.tt
 
+		scope:owner = {
+			add_piety = {
+				value = 0
+				subtract = level_2_spell_cost_value
+			}
+		}
+
 		hidden_effect = {
 			random_list = {
 				100 = {
