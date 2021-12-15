@@ -693,6 +693,25 @@ create_thrall_spell = {
 			add_character_modifier = { modifier = maintaining_thralls_modifier }
 		}
 
+		scope:recipient = {
+			if = {
+				limit = {
+					is_a_faction_member = yes
+				}
+				leave_faction_with_cooldown_effect = {
+					FACTION = scope:faction
+					YEARS = 20
+				}
+			}
+			if = {
+				limit = {
+					is_a_faction_leader = yes
+				}
+				joined_faction = {
+					destroy_faction = yes
+				}
+			}
+		}
 		hidden_effect = {
 			scope:recipient = {
 				add_character_flag = { flag = joining_faction_block }
