@@ -533,7 +533,7 @@ raise_undead_platoon_spell = {
 
 	auto_accept = {
 		custom_description = {
-			text = stealthy_auto_accept_interaction
+			text = helpful_auto_accept_interaction
 			object = scope:recipient
 		}
 	}
@@ -546,6 +546,7 @@ raise_undead_platoon_spell = {
 			}
 		}
 		scope:recipient = {
+			# custom_tooltip = raise_undead_platoon_spell_tooltip
 			spawn_army = {
 				uses_supply = no
 				inheritable = no

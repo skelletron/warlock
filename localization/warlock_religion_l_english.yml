@@ -214,10 +214,18 @@
  level_1_vein_snare_victim_modifier:0 "Triumphant Vein Snare Victim"
  level_1_vein_snare_victim_modifier_desc:0 "This character was the target of a pitifully weak Vein Snare spell, and has all but laughed off its effects."
 
-
+# Bone Spells
+ raise_undead_platoon_spell:0 "Raise Undead Platoon"
+ raise_undead_platoon_spell_interaction_desc:0 "Raise a platoon of elite undead warriors and spellcasters who will serve your target dutifully."
+ raise_undead_platoon_spell_interaction:0 "Raise Undead Platoon"
+ raise_undead_platoon_spell_tooltip:0 "sss"
+ undead_platoon_fighters:0 "Screaming Agony"
+ undead_platoon_siegers:0 "The Rocksliders"
+ undead_platoon_casters:0 "Whispering Death"
 
  interaction_category_warlock:0 "Spellcasting"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."
+ helpful_auto_accept_interaction:0 "[TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is happy to accept a boon like this from you."
 
 # Mind Perk Tree
  create_puppet_perk_name:0 "Create Thrall"
