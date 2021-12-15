@@ -166,7 +166,9 @@ deathknight = {
 	minimum_age = 16
 	martial = 20
 	prowess = 20
-	commander = yes
+
+	# I think this makes ai characters able to get it by default
+	# commander = yes
 
 	stress_gain_mult = -0.9
 
@@ -177,6 +179,9 @@ deathknight = {
 
 	can_inherit_from_dynasty = no
 	blocks_from_claim_inheritance_from_dynasty = yes
+
+	inherit_chance = 0
+	random_creation = 0
 
 	# ruler_designer_cost = 120
 	shown_in_ruler_designer = no
