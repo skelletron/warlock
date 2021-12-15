@@ -1017,7 +1017,9 @@ summon_thrall_to_war = {
 		scope:actor = {
 			is_at_war = yes
 			has_trait = warlock
-			has_perk = weaponize_puppet_perk
+			# we want the player to see that they could call them if they got the perk
+			# has_perk = weaponize_puppet_perk
+			has_perk = create_puppet_perk
 		}
 
 		scope:recipient = {
@@ -1060,6 +1062,9 @@ summon_thrall_to_war = {
 	
 	is_valid_showing_failures_only = {
 		
+		scope:actor = {
+			has_perk = weaponize_puppet_perk
+		}
 		scope:recipient = {
 			is_ruler = yes
 		}
