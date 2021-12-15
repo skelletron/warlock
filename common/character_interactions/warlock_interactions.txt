@@ -1365,6 +1365,253 @@ summon_thrall_to_war = {
 	}
 }
 
+
+summon_minion_to_war = {
+	category = interaction_category_diplomacy
+	desc = call_ally_interaction_desc
+	interface_priority = 60
+	interface = call_ally
+	special_interaction = call_ally_interaction
+	popup_on_receive = yes
+	pause_on_receive = yes
+
+	greeting = positive
+	notification_text = CALL_ALLY_NOTIFICATION
+
+	is_shown = {
+		scope:actor = {
+			is_at_war = yes
+			has_trait = warlock
+			has_perk = create_deathknight_perk
+		}
+
+		scope:recipient = {
+			# this checks that they are your thrall
+			has_opinion_modifier = {
+				target = scope:actor
+				modifier = deathknight_opinion_modifier
+			}
+		}
+
+		# dont need to be allied to a thrall to summon them to war
+		# scope:recipient = {
+		# 	is_allied_to = scope:actor
+		# }
+	}
+	
+	has_valid_target = {
+		exists = scope:target
+	}	
+
+	has_valid_target_showing_failures_only = {
+		scope:target = {
+			is_war_leader = scope:actor
+		}
+
+		joiner_not_already_in_another_war_with_any_target_war_participants_trigger = {
+			WARRIOR = scope:actor
+			JOINER = scope:recipient
+		}
+	}
+
+	
+	is_valid_showing_failures_only = {
+		
+		scope:recipient = {
+			is_ruler = yes
+		}
+
+		# NOPE: A minion is merely an extension of their master. Any war the master is in the minion can join
+		# Only War Leaders can call allies
+		# scope:actor = {
+		# 	custom_description = {
+		# 		text = must_be_war_leader
+		# 		any_character_war = {
+		# 			is_war_leader = scope:actor
+		# 		}
+		# 	}
+		# }
+
+		# Cannot call the same character multiple times
+		scope:actor = {
+			custom_description = {
+				text = cannot_call_same_character_multiple_times
+				subject = scope:recipient
+				any_character_war = {
+					ALL_FALSE = {
+						was_called = scope:recipient
+						is_participant = scope:recipient
+					}
+				}
+			}
+		}
+
+		# this makes it so vassals can't call lieges to war and lieges can't call vassals to war
+		# can_potentially_call_ally_trigger = {
+		# 	WARRIOR = scope:actor
+		# 	JOINER = scope:recipient
+		# }
+
+	}
+
+	can_be_picked = {
+
+		# what does this do?
+		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
+
+		# If a minion somehow is called into a war against the master, 1 flick of the wrist solves that quick
+		# scope:target = {
+		# 	is_war_leader = scope:actor
+
+		# 	# not already in target war
+		# 	custom_description = {
+		# 		text = join_war_interaction_already_in_target_war
+		# 		NOR = {
+		# 			any_war_attacker = { this = scope:recipient }
+		# 			any_war_defender = { this = scope:recipient }
+		# 		}
+		# 	}
+		# }
+	}
+
+	on_auto_accept = {
+		scope:recipient = {
+			trigger_event = call_ally.0001
+		}
+	}
+		
+	on_accept = {
+		call_ally_interaction_effect = yes
+
+		save_scope_value_as = {
+			name = call_ally_interaction
+			value = yes
+		}
+
+		scope:actor = {
+			hidden_effect = { #To nudge friendship
+				if = {
+					limit = {
+						NOR = {
+							has_relation_friend = scope:recipient
+							has_relation_potential_friend = scope:recipient
+						}
+					}
+					set_relation_potential_friend = scope:recipient
+				}
+			}
+			trigger_event = call_ally.0100
+		}
+	}
+	
+	on_decline = {
+		#The war could theoretically end on the day the decline is sent
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = {
+				if = {
+					limit = {
+						is_attacker = scope:actor
+					}
+					scope:actor = {
+						add_opinion = {
+							modifier = rejected_call_to_offensive_war
+							target = scope:recipient
+						}
+					}
+					scope:recipient = {
+						add_prestige_experience = major_prestige_loss
+					}
+				}
+				else = {
+					scope:actor = {
+						add_opinion = {
+							modifier = rejected_call_to_defensive_war
+							target = scope:recipient
+						}
+					}
+					scope:recipient = {
+						add_prestige_experience = massive_prestige_loss
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { was_called = scope:recipient }
+						}
+						set_called_to = scope:recipient
+					}
+				}
+			}
+			scope:actor = {
+				trigger_event = call_ally.0101
+			}
+		}
+	}
+
+	auto_accept = {
+		OR = {
+			# Always accept a call from a Spouse
+			custom_description = {
+				text = "recipient_is_spouse"
+				subject = scope:actor
+				object = scope:recipient
+				scope:recipient = {
+					is_spouse_of = scope:actor
+					is_ai = yes
+				}
+			}
+			# Always accept a call from the Heir
+			custom_description = {
+				text = "is_recipients_player_heir"
+				subject = scope:actor
+				object = scope:recipient
+				
+				exists = scope:recipient.player_heir
+				scope:recipient = {
+					player_heir = scope:actor
+					is_close_or_extended_family_of = scope:actor # Only for family
+					is_ai = yes
+				}
+			}
+			# Always accept a call from the one you are heir of
+			custom_description = {
+				text = "is_player_heir"
+				subject = scope:recipient
+				object = scope:actor
+
+				exists = scope:actor.player_heir
+				scope:actor.player_heir = scope:recipient
+				scope:actor = { # Shouldn't be able to force your liege to join just because you've not got any family...
+					is_close_or_extended_family_of = scope:recipient
+				}
+				scope:recipient = {
+					is_ai = yes
+				}
+			}
+		}
+	}
+	
+	ai_accept = {
+		base = 2000
+
+		opinion_modifier = { # Opinion Factor
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 1.0
+			desc = AI_OPINION_REASON
+		}
+	}
+
+	# Score above 0 means the AI will call this ally. Note that DESIRED_WAR_SIDE_STRENGTH still applies and can prevent calling the ally
+	ai_will_do = {
+		# base = 100
+		base = 0
+	}
+}
+
 debug_gain_warlock_xp = {
 	category = interaction_category_warlock
 	desc = debug_gain_warlock_xp_desc
