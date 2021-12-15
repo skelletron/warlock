@@ -68,7 +68,7 @@ beseech_dark_coronation_decision = {
 		piety = minor_piety_value
 	}
 
-	cooldown = { years = 10 }
+	cooldown = { years = 1 }
 
 	effect = {
 		custom_tooltip = beseech_dark_coronation_decision_effect.tt
@@ -104,7 +104,7 @@ choose_familiar_decision = {
 	}
 
 	# cooldown = { years = 10 }
-	cooldown = { years = 1}
+	cooldown = { years = 1 }
 
 	effect = {
 		custom_tooltip = choose_familiar_decision_effect.tt
@@ -133,7 +133,7 @@ play_with_familiar_decision = {
 		# piety = minor_piety_value
 	}
 
-	cooldown = { days = 1 }
+	cooldown = { years = 5 }
 
 	effect = {
 		custom_tooltip = play_with_familiar_a_effect.tt
