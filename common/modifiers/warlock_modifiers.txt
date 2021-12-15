@@ -103,6 +103,7 @@ debloomed_modifier = {
 stolen_life_force = {
 	icon = drink_positive
 	life_expectancy = 1
+	health = 0.01
 	stacking = yes
 }
 
