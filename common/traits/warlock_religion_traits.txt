@@ -12,8 +12,10 @@ warlock = {
 
 	faith_conversion_piety_cost_mult = 2.0
 
+	same_faith_opinion = 40
 	
-	ruler_designer_cost = 40
+	# ruler_designer_cost = 40
+	shown_in_ruler_designer = no
 	
 	desc = {
 		first_valid = {
@@ -50,7 +52,8 @@ undead = {
 	good = yes
 	no_prowess_loss_from_age = yes
 
-	ruler_designer_cost = 40
+	# ruler_designer_cost = 40
+	shown_in_ruler_designer = no
 }
 
 undead_01 = {
@@ -76,7 +79,8 @@ undead_01 = {
 	good = yes
 	no_prowess_loss_from_age = yes
 
-	ruler_designer_cost = 80
+	# ruler_designer_cost = 80
+	shown_in_ruler_designer = no
 }
 
 undead_02 = {
@@ -101,7 +105,8 @@ undead_02 = {
 	good = yes
 	no_prowess_loss_from_age = yes
 
-	ruler_designer_cost = 80
+	# ruler_designer_cost = 80
+	shown_in_ruler_designer = no
 }
 
 undead_03 = {
@@ -126,7 +131,8 @@ undead_03 = {
 	good = yes
 	no_prowess_loss_from_age = yes
 
-	ruler_designer_cost = 80
+	# ruler_designer_cost = 80
+	shown_in_ruler_designer = no
 }
 
 undead_04 = {
@@ -151,7 +157,8 @@ undead_04 = {
 	good = yes
 	no_prowess_loss_from_age = yes
 
-	ruler_designer_cost = 80
+	# ruler_designer_cost = 80
+	shown_in_ruler_designer = no
 }
 
 deathknight = {
@@ -171,7 +178,8 @@ deathknight = {
 	can_inherit_from_dynasty = no
 	blocks_from_claim_inheritance_from_dynasty = yes
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 # Familiars
@@ -182,7 +190,8 @@ cat_familiar = {
 	intrigue = 2
 	hostile_scheme_resistance_add = 5
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 octopus_familiar = {
@@ -191,7 +200,8 @@ octopus_familiar = {
 	learning = 3
 	monthly_piety = 0.5
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 moth_familiar = {
@@ -201,7 +211,8 @@ moth_familiar = {
 	hostile_scheme_resistance_add = 15
 	monthly_piety_gain_mult = 0.1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 imp_familiar = {
@@ -211,7 +222,8 @@ imp_familiar = {
 	monthly_prestige_gain_mult = 0.05
 	hostile_scheme_power_add = 5
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 rat_familiar = {
@@ -221,7 +233,8 @@ rat_familiar = {
 	stewardship = 2
 	tax_mult = 0.1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 monkey_familiar = {
@@ -231,7 +244,8 @@ monkey_familiar = {
 	prowess = 4
 	stress_gain_mult = -0.1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 axolotl_familiar = {
@@ -241,7 +255,8 @@ axolotl_familiar = {
 	monthly_prestige = 1
 	general_opinion = 5
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 crow_familiar = {
@@ -251,6 +266,7 @@ crow_familiar = {
 	tax_mult = 0.05
 
 	owned_hostile_scheme_success_chance_add = 5
+	shown_in_ruler_designer = no
 }
 
 owl_familiar = {
@@ -258,7 +274,8 @@ owl_familiar = {
 	learning = 7
 	monthly_warlock_lifestyle_xp_gain_mult = 0.2
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 gecko_familiar = {
@@ -268,7 +285,8 @@ gecko_familiar = {
 	hostile_scheme_power_add = 5
 	owned_hostile_scheme_success_chance_add = 5
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 frog_familiar = {
@@ -278,7 +296,8 @@ frog_familiar = {
 	stress_loss_mult = 0.1
 	stress_gain_mult = -0.1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 pomeranian_familiar = {
@@ -289,7 +308,8 @@ pomeranian_familiar = {
 	personal_scheme_power_add = 10
 	monthly_prestige = 1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 python_familiar = {
@@ -298,7 +318,8 @@ python_familiar = {
 	monthly_prestige = 1
 	monthly_piety = 1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 pig_familiar = {
@@ -310,7 +331,8 @@ pig_familiar = {
 	learning = 1
 	prowess = 1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 bat_familiar = {
@@ -319,7 +341,8 @@ bat_familiar = {
 	hostile_scheme_resistance_add = 10
 	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
 
-	ruler_designer_cost = 120
+	# ruler_designer_cost = 120
+	shown_in_ruler_designer = no
 }
 
 # Rare familiars. Can only get them by reaching the end of the Game of Questions
