@@ -20,6 +20,12 @@
 on_yearly_generic_familiar_small_effect = {
 	trigger = {
 		has_character_flag = has_generic_familiar_flag
+
+		# So that serene and aesthetic familiars won't give double boons per year
+		NOT = {
+			has_character_flag = has_serene_familiar_flag
+			has_character_flag = has_aesthetic_familiar_flag
+		}
 	}
 	effect = {
 		aesthetic_familiar_small_effect = yes
