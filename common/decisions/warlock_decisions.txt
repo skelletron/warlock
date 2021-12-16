@@ -142,6 +142,49 @@ play_with_familiar_decision = {
 	}
 }
 
+commit_mass_sacrifice_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
+
+	desc = commit_mass_sacrifice.desc
+	# selection_tooltip = commit_mass_sacrifice.tt
+
+	is_shown = {
+		faith = faith:great_old_one
+		# has_trait = warlock
+		is_ruler = yes
+	}
+
+	is_valid = {
+		is_adult = yes
+		# NOT = {
+		# 	has_trait = compassionate
+		# }
+	}
+
+	cost = {
+		# actual cost
+		# gold = medium_gold_value
+	}
+
+
+
+	# actual cooldown
+	# cooldown = { years = 10 }
+	# testing cooldown
+	cooldown = { days = 1 }
+
+
+	effect = {
+		save_scope_as = sacrificer
+		trigger_event = realm.1001
+
+		# custom_tooltip = commit_mass_sacrifice_a_effect.tt
+		# custom_tooltip = commit_mass_sacrifice_b_effect.tt
+		# trigger_event = familiar.1001
+	}
+}
+
 # spawn_undead_faction_decision = {
 # 	ai_check_interval = 0
 # 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"

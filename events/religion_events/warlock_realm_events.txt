@@ -1,0 +1,145 @@
+namespace = realm
+
+realm.1001 = {
+	type = character_event
+	title = realm.1001.t
+	desc = realm.1001.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:sacrificer
+		animation = personality_zealous
+	}
+
+	# Sacrifice the unbelievers
+	option = {
+		name = realm.1001.a
+		custom_tooltip = realm.1001.a_1.tt
+		custom_tooltip = realm.1001.a_2.tt
+		custom_tooltip = realm.1001.a_3.tt
+
+		add_piety = {
+			value = massive_piety_value
+		}
+		add_character_modifier = {
+			modifier = burned_the_heathens
+			years = 10
+		}
+		stress_impact = {
+			zealous = major_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+		}
+		hidden_effect = {
+			every_sub_realm_county = {
+				change_county_control = -5
+			}
+		}
+	}
+
+	# Sacrifice the unbelievers and undesirables (they are believers but may be beggars, criminals, etc)
+	option = {
+		name = realm.1001.b
+		custom_tooltip = realm.1001.b_1.tt
+		custom_tooltip = realm.1001.b_2.tt
+		custom_tooltip = realm.1001.b_3.tt
+
+		add_piety = {
+			value = massive_piety_value
+			multiply = 1.5
+		}
+		add_character_modifier = {
+			modifier = burned_the_lowest_citizens
+			years = 10
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			callous = major_stress_impact_loss
+			sadistic = major_stress_impact_loss
+			compassionate = major_stress_impact_gain
+		}
+		hidden_effect = {
+			every_sub_realm_county = {
+				change_county_control = -25
+			}
+		}
+	}
+
+	# Sacrifice indiscriminately
+	option = {
+		name = realm.1001.c
+		custom_tooltip = realm.1001.c_1.tt
+		custom_tooltip = realm.1001.c_2.tt
+		custom_tooltip = realm.1001.c_3.tt
+		
+		# Only Dukes or Higher have the resources to sacrifice so many lives
+		trigger = {
+			NOT = {
+				OR = {
+					highest_held_title_tier = tier_county
+					highest_held_title_tier = tier_barony
+				}
+			}
+		}
+
+		add_piety = {
+			value = massive_piety_value
+			multiply = 3
+		}
+		add_character_modifier = {
+			modifier = burned_the_people
+			years = 10
+		}
+		stress_impact = {
+			base = major_stress_impact_gain
+			compassionate = massive_stress_impact_gain
+		}
+		hidden_effect = {
+			every_sub_realm_county = {
+				change_county_control = -70
+			}
+		}
+	}
+
+	# Don't sacrifice after all
+	option = {
+		name = realm.1001.d
+
+		custom_tooltip = realm.1001.d_1.tt
+		custom_tooltip = realm.1001.d_2.tt
+
+		add_character_modifier = {
+			modifier = spared_captives_from_burning
+			years = 10
+		}
+
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			sadistic = medium_stress_impact_gain
+			compassionate = major_stress_impact_loss
+		}
+	}
+
+	# immediate = {
+	# 	if = {
+	# 		limit = { is_female = yes }
+	# 		save_scope_as = mother
+	# 		scope:recipient = { save_scope_as = father }
+	# 	}
+
+	# 	else = {
+	# 		save_scope_as = father
+	# 		scope:recipient = { save_scope_as = mother }
+	# 	}
+	# }
+
+	#Normal pregnancy
+	# option = {
+	# 	name = realm.1001.a
+		
+	# 	scope:mother = {
+	# 		make_pregnant = {
+	# 			father = scope:father
+	# 		}
+	# 	}
+	# }
+}
