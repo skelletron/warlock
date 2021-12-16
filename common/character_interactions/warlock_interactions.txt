@@ -1634,6 +1634,7 @@ create_deathknight = {
 			NOT = { scope:recipient = scope:actor }
 			NOT = {
 				has_trait = undead
+				has_trait = deathknight
 				has_trait = warlock
 				has_character_flag = is_thrall_flag
 			}
