@@ -32,7 +32,7 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 
 	traits = {
-		virtues = { zealous humble sadistic }
+		virtues = { zealous humble sadistic warlock }
 		sins = { lazy gluttonous }
 	}
 
