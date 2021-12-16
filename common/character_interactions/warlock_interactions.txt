@@ -660,6 +660,9 @@ create_thrall = {
 				has_trait = deathknight
 				has_trait = warlock
 			}
+			NOT = {
+				has_character_flag = is_thrall_flag
+			}
 		}
 	}
 
