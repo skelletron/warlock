@@ -192,7 +192,7 @@
 			color = { 0.6 0.2 0.3 }
 			reformed_icon = great_old_one
 
-			doctrine = unreformed_faith_doctrine
+			# doctrine = unreformed_faith_doctrine
 
 			holy_site = paderborn
 			holy_site = hiiumaa
