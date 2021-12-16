@@ -20,7 +20,7 @@ revoke_minion_title_interaction = {
 	ai_min_reply_days = 1
 	ai_max_reply_days = 2
 
-	on_decline_summary = general_rebellion_decline_summary
+	# on_decline_summary = general_rebellion_decline_summary
 
 	# actor character giving the titles
 	# recipient character receiving the titles
@@ -181,7 +181,7 @@ revoke_minion_title_interaction = {
 	}
 
 	on_accept = {
-		revoke_title_interaction_effect = yes
+		revoke_minion_title_interaction_effect = yes
 
 		save_scope_value_as = {
 			name = revoke_title_interaction
