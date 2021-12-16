@@ -666,7 +666,7 @@ create_thrall = {
 	is_valid_showing_failures_only = {
 		scope:actor = {
 			can_start_scheme = {
-				type = create_deathknight
+				type = create_thrall
 				target = scope:recipient
 			}
 		}
