@@ -1175,7 +1175,7 @@ summon_thrall_to_war = {
 	can_be_picked = {
 
 		# what does this do?
-		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
+		# can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
 
 		scope:target = {
 			# is_war_leader = scope:actor
@@ -1420,7 +1420,7 @@ summon_minion_to_war = {
 	can_be_picked = {
 
 		# what does this do?
-		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
+		# can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
 
 		# If a minion somehow is called into a war against the master, 1 flick of the wrist solves that quick
 		# scope:target = {
