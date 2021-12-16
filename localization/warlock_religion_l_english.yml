@@ -450,7 +450,7 @@
 
  create_thrall.1002:0 "Thrall Created"
  create_thrall.1002.t:0 "Thrall Created"
- create_thrall.1002.desc:0 "Now [target.GetShortUINameNoTooltip] will forever rest under my thumb. All things that were [target.GetHerHis] shall now be ours, and we shall make use of them masterfully."
+ create_thrall.1002.desc:0 "Now [target.GetShortUINameNoTooltip] will forever rest under my thumb. All things that were [target.GetHerHis] shall now be ours, and we shall make use of those things masterfully."
 #  create_thrall.1002.a:0 "There there, rest your weary mind within this psychic cocoon"
  create_thrall.1002.a:0 "Today, I have done the work of the Lord"
  create_thrall.1002.a.tt:0 "There there, rest your weary mind... You won't be troubled by pesky thoughts and desires anymore."
