@@ -1101,9 +1101,9 @@ summon_thrall_to_war = {
 	}	
 
 	has_valid_target_showing_failures_only = {
-		scope:target = {
-			is_war_leader = scope:actor
-		}
+		# scope:target = {
+		# 	is_war_leader = scope:actor
+		# }
 
 		joiner_not_already_in_another_war_with_any_target_war_participants_trigger = {
 			WARRIOR = scope:actor
@@ -1122,14 +1122,14 @@ summon_thrall_to_war = {
 		}
 
 		# Only War Leaders can call allies
-		scope:actor = {
-			custom_description = {
-				text = must_be_war_leader
-				any_character_war = {
-					is_war_leader = scope:actor
-				}
-			}
-		}
+		# scope:actor = {
+		# 	custom_description = {
+		# 		text = must_be_war_leader
+		# 		any_character_war = {
+		# 			is_war_leader = scope:actor
+		# 		}
+		# 	}
+		# }
 
 		# Cannot call the same character multiple times
 		scope:actor = {
@@ -1178,7 +1178,7 @@ summon_thrall_to_war = {
 		can_join_war_liege_vassal_check_trigger = { WARRIOR = scope:actor JOINER = scope:recipient }
 
 		scope:target = {
-			is_war_leader = scope:actor
+			# is_war_leader = scope:actor
 
 			# not already in target war
 			custom_description = {
