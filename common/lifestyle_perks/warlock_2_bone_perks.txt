@@ -64,19 +64,23 @@ raise_undead_perk = {
 	parent = create_deathknight_perk
 }
 
-create_skeletal_infiltrator_perk = {
+raise_zombie_titans_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
+	# position = { 1.25 2.25 }
 	position = { 2.5 1.5 }
 	icon = node_learning
 
 	character_modifier = {
 		# monthly_piety_gain_mult = 0.5
 		# monthly_piety = 0.2
-		intrigue_per_piety_level = 1
+		levy_size = 0.1
+		knight_effectiveness_mult = 0.1
 	}
-	
+
 	parent = raise_undead_perk
+	# parent = create_skeletal_infiltrator_perk
+	# parent = create_lesser_lich_perk
 }
 
 create_lesser_lich_perk = {
@@ -95,19 +99,20 @@ create_lesser_lich_perk = {
 	parent = raise_undead_perk
 }
 
-raise_zombie_titans_perk = {
+create_skeletal_infiltrator_perk = {
 	lifestyle = warlock_lifestyle
 	tree = bone
+	# position = { 2.5 1.5 }
 	position = { 1.25 2.25 }
 	icon = node_learning
 
 	character_modifier = {
 		# monthly_piety_gain_mult = 0.5
 		# monthly_piety = 0.2
-		levy_size = 0.1
-		knight_effectiveness_mult = 0.1
+		intrigue_per_piety_level = 1
 	}
-
+	
+	# parent = raise_undead_perk
 	parent = create_skeletal_infiltrator_perk
 	parent = create_lesser_lich_perk
 }
@@ -124,7 +129,8 @@ raise_undead_raiders_perk = {
 		skirmishers_damage_mult = 0.1
 	}
 	
-	parent = raise_zombie_titans_perk
+	parent = create_skeletal_infiltrator_perk
+	# parent = raise_zombie_titans_perk
 }
 
 spawn_allied_horde_perk = {
