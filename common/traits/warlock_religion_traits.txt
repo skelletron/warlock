@@ -10,9 +10,10 @@ warlock = {
 	monthly_piety = 2
 	monthly_warlock_lifestyle_xp_gain_mult = 0.4
 
-	faith_conversion_piety_cost_mult = 2.0
+	faith_conversion_piety_cost_mult = 9
 
 	same_faith_opinion = 40
+	different_faith_opinion = -60
 	
 	# ruler_designer_cost = 40
 	shown_in_ruler_designer = no
