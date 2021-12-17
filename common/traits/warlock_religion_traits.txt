@@ -382,7 +382,7 @@ bat_familiar = {
 # 	ruler_designer_cost = 120
 # }
 
-eldritch_beauty_1 = {
+eldritch_beauty_01 = {
 	index = 1069
 
 	diplomacy_per_piety_level = 1

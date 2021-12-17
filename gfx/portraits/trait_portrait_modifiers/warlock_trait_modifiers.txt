@@ -329,7 +329,7 @@ vampiric_beauty = {
 				# beauty_good_1
 				# beauty_good_2
 				# beauty_good_3
-				eldritch_beauty_1
+				eldritch_beauty_01
 		}
 		dna_modifiers = {
 			morph = {
