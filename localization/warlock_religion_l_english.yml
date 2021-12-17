@@ -227,6 +227,14 @@
  cast_vein_snare_interaction_desc:0 "Collapse the capillaries of your foe, causing them to suffer a major health debuff."
  cast_vein_snare_interaction:0 "Cast Vein Snare"
 
+# Blood Traits
+ trait_eldritch_beauty_01:0 "Eldritch Beauty"
+#  trait_eldritch_beauty_01_desc:0 "This character understands that worship of the Great Old One is the only true way to bring out their inner beauty."
+ trait_eldritch_beauty_01_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] understands that worship of the Great Old One is the only true way to bring out [ROOT.GetCharacter.GetHerHis] inner beauty."
+#  trait_eldritch_beauty_01_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] understands that worship of the Great Old One is the only true way to bring out [ROOT.GetCharacter.GetHerHis] inner beauty."
+#  trait_beauty_good_3_desc:0 "Enthralling, mesmerizing, and lovely; this character outshines most with their beauty."
+#  trait_beauty_good_3_character_desc:0 "Enthralling, mesmerizing, and lovely; [ROOT.GetCharacter.GetFirstNameNoTooltip] outshines most with [ROOT.GetCharacter.GetHerHis] beauty."
+
 # Blood Modifiers
  temporal_resistance_modifier:0 "Temporal Resistance"
 
