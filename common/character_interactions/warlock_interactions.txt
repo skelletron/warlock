@@ -635,6 +635,66 @@ raise_undead_platoon_spell = {
 # can_invalidate_interaction = bool				# If yes then when the AI picks an interaction it will do the full can send this entire interaction check instead of the more performance saving checking of recipient refusal and ai will do, use with care and profile it
 # }
 
+# Mind Tree
+
+mass_suggestion_spell = {
+	category = interaction_category_warlock
+	desc = mass_suggestion_spell_interaction_desc
+	send_name = mass_suggestion_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = mass_suggestion_perk
+		}
+		scope:recipient = {
+			is_ruler = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		# scope:actor.piety >= level_3_spell_cost_value
+		NOT = {
+			is_ruler = yes
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = stealthy_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			every_courtier_or_guest = {
+				add_to_list = courtiers_to_geas
+			}
+		}
+		every_in_list = {
+			list = courtiers_to_geas
+			save_scope_as = current_courtier
+			scope:actor = {
+				add_hook = {
+					target = scope:current_courtier
+					type = loyalty_hook
+					# type = geas_hook
+				}
+			}
+		}
+	}
+}
+
 # RITUAL (SCHEME) version
 create_thrall = {
 	category = interaction_category_warlock
