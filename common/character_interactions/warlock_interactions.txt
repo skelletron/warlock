@@ -637,6 +637,64 @@ raise_undead_platoon_spell = {
 
 # Mind Tree
 
+skin_tailor_spell = {
+	category = interaction_category_warlock
+	desc = mass_suggestion_spell_interaction_desc
+	send_name = mass_suggestion_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = skin_tailor_perk
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_1_spell_cost_value
+		scope:recipient = {
+			NOT = {
+				has_trait = warlock
+			}
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = helpful_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_1_spell_cost_value
+			}
+		}
+		scope:recipient = {
+			if = {
+				limit = {
+					NOT = {
+						has_trait = eldritch_beauty_01
+					}
+				}
+				add_trait = eldritch_beauty_01
+			}
+		}
+	}
+}
+
 mass_suggestion_spell = {
 	category = interaction_category_warlock
 	desc = mass_suggestion_spell_interaction_desc
