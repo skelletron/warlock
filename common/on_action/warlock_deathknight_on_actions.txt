@@ -28,6 +28,7 @@ on_yearly_check_undead_transformation_potential_1 = {
 		has_trait = undead
 	}
 	effect = {
+		save_scope_as = minion
 		remove_trait = undead
 		add_trait = undead_01
 		set_immortal_age = var:age_became_undead
@@ -35,6 +36,7 @@ on_yearly_check_undead_transformation_potential_1 = {
 			send_interface_message = {
 				type = event_deathknight_improves_good
 				title = undead_became_stronger_1_title
+				right_icon = scope:minion
 				desc = undead_became_stronger_1_desc
 			}
 		}
@@ -50,6 +52,7 @@ on_yearly_check_undead_transformation_potential_2 = {
 		has_trait = undead_01
 	}
 	effect = {
+		save_scope_as = minion
 		remove_trait = undead_01
 		add_trait = undead_02
 		set_immortal_age = var:age_became_undead
@@ -57,6 +60,7 @@ on_yearly_check_undead_transformation_potential_2 = {
 			send_interface_message = {
 				type = event_deathknight_improves_good
 				title = undead_became_stronger_2_title
+				right_icon = scope:minion
 				desc = undead_became_stronger_2_desc
 			}
 		}
@@ -72,6 +76,7 @@ on_yearly_check_undead_transformation_potential_3 = {
 		has_trait = undead_02
 	}
 	effect = {
+		save_scope_as = minion
 		remove_trait = undead_02
 		add_trait = undead_03
 		set_immortal_age = var:age_became_undead
@@ -79,6 +84,7 @@ on_yearly_check_undead_transformation_potential_3 = {
 			send_interface_message = {
 				type = event_deathknight_improves_good
 				title = undead_became_stronger_3_title
+				right_icon = scope:minion
 				desc = undead_became_stronger_3_desc
 			}
 		}
@@ -93,6 +99,7 @@ on_yearly_check_undead_transformation_potential_4 = {
 		has_trait = undead_03
 	}
 	effect = {
+		save_scope_as = minion
 		remove_trait = undead_03
 		add_trait = undead_04
 		set_immortal_age = var:age_became_undead
@@ -100,6 +107,7 @@ on_yearly_check_undead_transformation_potential_4 = {
 			send_interface_message = {
 				type = event_deathknight_improves_good
 				title = undead_became_stronger_4_title
+				right_icon = scope:minion
 				desc = undead_became_stronger_4_desc
 			}
 		}

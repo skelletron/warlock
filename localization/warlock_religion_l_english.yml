@@ -502,13 +502,15 @@
 
 # Undead rank up
  undead_became_stronger_1_title:0 "Minion becomes Minor Undead"
- undead_became_stronger_1_desc:0 "Your minion has ascended from the rank of Petty Undead to Minor Undead."
+ undead_became_stronger_1_desc:0 "Your Deathknight, [minion.GetShortUINameNoTooltip], has ascended from the rank of Petty Undead to Minor Undead."
+#  undead_became_stronger_1_desc:0 "Your Deathknight, [minion.GetName( minion )|LV], has ascended from the rank of Petty Undead to Minor Undead."
+# [TRAIT.GetName( GetNullCharacter )|LV]
  undead_became_stronger_2_title:0 "Minion becomes Middling Undead"
- undead_became_stronger_2_desc:0 "Your minion has ascended from the rank of Minor Undead to Middling Undead."
+ undead_became_stronger_2_desc:0 "Your Deathknight, [minion.GetShortUINameNoTooltip] has ascended from the rank of Minor Undead to Middling Undead."
  undead_became_stronger_3_title:0 "Minion becomes Major Undead"
- undead_became_stronger_3_desc:0 "Your minion has ascended from the rank of Middling Undead to Major Undead."
+ undead_became_stronger_3_desc:0 "Your Deathknight, [minion.GetShortUINameNoTooltip] has ascended from the rank of Middling Undead to Major Undead."
  undead_became_stronger_4_title:0 "Minion becomes Greater Undead"
- undead_became_stronger_4_desc:0 "Your minion has ascended from the rank of Major Undead to Greater Undead."
+ undead_became_stronger_4_desc:0 "Your Deathknight, [minion.GetShortUINameNoTooltip] has ascended from the rank of Major Undead to Greater Undead."
 
 # Thrall dies
  thrall_dies_title:0 "Thrall has Died"
