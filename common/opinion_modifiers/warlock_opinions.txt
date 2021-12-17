@@ -19,3 +19,9 @@ thrall_opinion_modifier = {
 deathknight_opinion_modifier = {
 	opinion = 1000
 }
+
+gease_opinion_modifier = {
+	opinion = 50
+	decaying = yes
+	years = 10
+}

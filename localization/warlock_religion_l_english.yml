@@ -232,6 +232,7 @@
 
 # Opinion Modifiers
  cast_temporal_resistance_modifier:0 "Blessed our Dynasty"
+ gease_opinion_modifier:0 "Under Geas"
 
  level_6_vein_snare_victim_modifier:0 "Doomed Vein Snare Victim"
  level_6_vein_snare_victim_modifier_desc:0 "This character is the victim of a diabolical Vein Snare spell that will surely claim their life."
@@ -248,7 +249,7 @@
 
 # Bone Spells
  raise_undead_platoon_spell:0 "Raise Undead Platoon"
- raise_undead_platoon_spell_interaction_desc:0 "Raise a platoon of elite undead warriors and spellcasters who will serve your target dutifully."
+ raise_undead_platoon_spell_interaction_desc:0 "Raise a platoon of elite undead warriors and spellcasters who will serve your target dutifully"
  raise_undead_platoon_spell_interaction:0 "Raise Undead Platoon"
  raise_undead_platoon_spell_tooltip:0 "sss"
  undead_platoon_fighters:0 "Screaming Agony"
@@ -259,6 +260,15 @@
  interaction_category_warlock:0 "Spellcasting"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."
  helpful_auto_accept_interaction:0 "[TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is happy to accept a boon like this from you."
+
+# Mind Spells
+ mass_suggestion_spell:0 "Cast Mass Geas"
+ mass_suggestion_spell_interaction:0 "Cast Mass Geas"
+ mass_suggestion_spell_interaction_desc:0 "Use your mind bending powers to instill a psychic loyalty in every courtier and guest of this ruler"
+
+# Hooks
+ geas_hook:0 "Geas"
+ dominate_thrall_hook:0 "Dominated Thrall"
 
 # Mind Perk Tree
  create_puppet_perk_name:0 "Create Thrall"

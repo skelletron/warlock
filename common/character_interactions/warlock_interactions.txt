@@ -696,6 +696,10 @@ mass_suggestion_spell = {
 					type = geas_hook
 				}
 			}
+			add_opinion = {
+				modifier = gease_opinion_modifier
+				target = scope:actor
+			}
 		}
 	}
 }
