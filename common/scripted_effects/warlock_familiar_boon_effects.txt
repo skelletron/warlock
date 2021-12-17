@@ -232,7 +232,7 @@ gain_martial_experience_with_familiar = {
 			brave = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_martial_lifestyle_xp = major_lifestyle_xp
+		add_martial_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
@@ -250,7 +250,7 @@ gain_diplomacy_experience_with_familiar = {
 			honest = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_diplomacy_lifestyle_xp = major_lifestyle_xp
+		add_diplomacy_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
@@ -268,7 +268,7 @@ gain_stewardship_experience_with_familiar = {
 			just = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_stewardship_lifestyle_xp = major_lifestyle_xp
+		add_stewardship_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
@@ -285,7 +285,7 @@ gain_intrigue_experience_with_familiar = {
 			cynical = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_intrigue_lifestyle_xp = major_lifestyle_xp
+		add_intrigue_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
@@ -303,7 +303,7 @@ gain_learning_experience_with_familiar = {
 			zealous = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_learning_lifestyle_xp = major_lifestyle_xp
+		add_learning_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
@@ -322,7 +322,7 @@ gain_warlock_experience_with_familiar = {
 			zealous = minor_stress_impact_loss
 			diligent = minor_stress_impact_loss
 		}
-		add_warlock_lifestyle_xp = major_lifestyle_xp
+		add_warlock_lifestyle_xp = monumental_lifestyle_xp
 	}
 }
 
