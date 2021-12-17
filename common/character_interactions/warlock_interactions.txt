@@ -639,8 +639,8 @@ raise_undead_platoon_spell = {
 
 skin_tailor_spell = {
 	category = interaction_category_warlock
-	desc = mass_suggestion_spell_interaction_desc
-	send_name = mass_suggestion_spell_interaction
+	desc = skin_tailor_spell_interaction_desc
+	send_name = skin_tailor_spell_interaction
 	use_diplomatic_range = yes
 	popup_on_receive = no
 	send_options_exclusive = no
@@ -657,13 +657,29 @@ skin_tailor_spell = {
 		scope:actor = {
 			NOT = { is_imprisoned = yes}
 		}
+		scope:recipient = {
+			OR = {
+				NOT = {
+					has_trait = warlock
+				}
+				this = scope:actor
+			}
+		}
 	}
 
 	is_valid_showing_failures_only = {
 		scope:actor.piety >= level_1_spell_cost_value
+		# scope:recipient = {
+		# 	NOT = {
+		# 		has_trait = warlock
+		# 	}
+		# }
 		scope:recipient = {
-			NOT = {
-				has_trait = warlock
+			OR = {
+				NOT = {
+					has_trait = warlock
+				}
+				this = scope:actor
 			}
 		}
 	}
