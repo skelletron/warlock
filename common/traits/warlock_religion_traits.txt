@@ -167,6 +167,8 @@ deathknight = {
 	martial = 20
 	prowess = 20
 
+	immortal = yes
+
 	# I think this makes ai characters able to get it by default
 	# commander = yes
 
