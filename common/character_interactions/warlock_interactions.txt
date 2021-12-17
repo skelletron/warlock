@@ -650,9 +650,9 @@ mass_suggestion_spell = {
 			has_trait = warlock
 			has_perk = mass_suggestion_perk
 		}
-		scope:recipient = {
-			is_ruler = yes
-		}
+		# scope:recipient = {
+		# 	is_ruler = yes
+		# }
 	}
 
 	is_valid = {
@@ -662,8 +662,8 @@ mass_suggestion_spell = {
 	}
 
 	is_valid_showing_failures_only = {
-		# scope:actor.piety >= level_3_spell_cost_value
-		NOT = {
+		scope:actor.piety >= level_4_spell_cost_value
+		scope:recipient = {
 			is_ruler = yes
 		}
 	}
@@ -676,6 +676,12 @@ mass_suggestion_spell = {
 	}
 
 	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_4_spell_cost_value
+			}
+		}
 		scope:recipient = {
 			every_courtier_or_guest = {
 				add_to_list = courtiers_to_geas
