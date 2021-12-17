@@ -157,6 +157,7 @@ commit_mass_sacrifice_decision = {
 
 	is_valid = {
 		is_adult = yes
+		faith = faith:great_old_one
 		# NOT = {
 		# 	has_trait = compassionate
 		# }
@@ -164,15 +165,15 @@ commit_mass_sacrifice_decision = {
 
 	cost = {
 		# actual cost
-		# gold = medium_gold_value
+		gold = medium_gold_value
 	}
 
 
 
 	# actual cooldown
-	# cooldown = { years = 10 }
+	cooldown = { years = 10 }
 	# testing cooldown
-	cooldown = { days = 1 }
+	# cooldown = { days = 1 }
 
 
 	effect = {

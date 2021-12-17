@@ -483,7 +483,11 @@
  thrall_dies_desc:0 "Your dutiful thrall, [dead_thrall.GetFullNameNoTooltip], has passed onto the other side. Perhaps the Great Old One will favour their soul."
 
 # Realm Decisions
+ commit_mass_sacrifice_decision:0 "Burn Your Citizens for the Eldritch Lord"
+ commit_mass_sacrifice.desc:0 "The time has come to take drastic measures, and I will shoulder the burden by sacrificing my own people. May the Great Old One keep their souls, and recognize my piety."
  realm.1001.t:0 "A Sacrifice for the Greater Good"
+ commit_mass_sacrifice_decision_tooltip:0 "You will earn massive amounts of [piety|E] at the cost of the stability within your [realm|E]"
+ commit_mass_sacrifice_decision_confirm:0 "Burn them at the Stake!"
  realm.1001.desc:0 "Desperate times call for desperate measures. With this sacrifice I make upon my own land, I will prove an even greater devotion to the Great Old One, and earn the favour I need to crush my opponents.\n\nI look down upon the poor souls chained before me. My order of Cultists have apprehended victims from all walks of life.\n\n#weak \"This hurts me more than it hurts you, I promise.\"#! Doubt and horror are spelled across their faces.\n\nNow to decide who lives and who dies..."
  realm.1001.a:0 "Sacrifice the unbelievers"
  realm.1001.a_1.tt:0 "You only will sacrifice the unbelievers"
