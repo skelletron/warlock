@@ -1,0 +1,81 @@
+﻿# Duchy of Burgundy
+warlock_chalon = {
+	county = c_chalon
+
+	character_modifier = {
+		name = warlock_holy_site_chalon_effect_name
+		intrigue_per_piety_level = 1
+	}
+}
+
+# Dauphinate of Provence
+warlock_provence = {
+	county = c_provence
+
+	character_modifier = {
+		name = warlock_holy_site_provence_effect_name
+		max_hostile_schemes_add = 1
+	}
+}
+
+# Duchy of Holland
+warlock_holland = {
+	county = c_holland
+
+	character_modifier = {
+		name = warlock_holy_site_holland_effect_name
+		knight_limit = 2
+	}
+}
+
+# Duchy of Cornwall
+warlock_devon = {
+	county = c_devon
+
+	character_modifier = {
+		name = warlock_holy_site_devon_effect_name
+		learning_per_piety_level = 1
+	}
+}
+
+# Duchy of Transylvania
+warlock_feher = {
+	county = c_feher
+
+	character_modifier = {
+		name = warlock_holy_site_feher_effect_name
+		life_expectancy = 20
+		attraction_opinion = 10
+	}
+}
+
+# Duchy of Bohemia
+warlock_praha = {
+	county = c_praha
+
+	character_modifier = {
+		name = warlock_holy_site_praha_effect_name
+		domain_limit = 2
+	}
+}
+
+# Duchy of Epeiros
+warlock_epeiros = {
+	county = c_epeiros
+
+	character_modifier = {
+		name = warlock_holy_site_epeiros_effect_name
+		domain_tax_mult = 0.1
+		levy_size = 0.1
+	}
+}
+
+# Duchy of Slavonia
+warlock_zagorje = {
+	county = c_zagorje
+
+	character_modifier = {
+		name = warlock_holy_site_zagorje_effect_name
+		different_faith_opinion = 30
+	}
+}

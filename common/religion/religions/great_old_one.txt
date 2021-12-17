@@ -194,11 +194,34 @@
 
 			# doctrine = unreformed_faith_doctrine
 
-			holy_site = paderborn
-			holy_site = hiiumaa
-			holy_site = khotan
-			holy_site = sinai
-			holy_site = haridwar
+			# holy_site = paderborn
+			# holy_site = hiiumaa
+			# holy_site = khotan
+			# holy_site = sinai
+			# holy_site = haridwar
+
+			# Duchy of Burgundy
+			holy_site = warlock_chalon
+			
+			# Dauphinate of Provence
+			holy_site = warlock_provence
+			
+			# Duchy of Holland
+			holy_site = warlock_holland
+			
+			# Duchy of Cornwall
+			holy_site = warlock_devon
+
+			# Duchy of Transylvania
+			holy_site = warlock_feher
+			
+			# Duchy of Bohemia
+			holy_site = warlock_praha
+
+			holy_site = warlock_epeiros
+
+			# Duchy of Slavonia
+			holy_site = warlock_zagorje
 
 			#Generic pagan tenets
 			doctrine = tenet_pursuit_of_power

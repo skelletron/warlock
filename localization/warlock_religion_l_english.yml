@@ -9,6 +9,38 @@
  great_old_one_adherent:0 "Cultist"
  great_old_one_adherent_plural:0 "Cultists"
  great_old_one_religion_desc:0 "Heralders of the End Times take up arms and welcome the beginning of a new world by ushering in the end of this one."
+
+# Holy Sites
+
+# Required holy site localization keys
+# holy_site_<name>_name
+# holy_site_<name>_effect_name
+# holy_site_<name>_effects # this one seems optional
+
+ holy_site_warlock_chalon_name:0 "Chalon"
+ holy_site_warlock_chalon_effect_name:0 "From [holy_site|E] #weak ($holy_site_warlock_chalon_name$)#!"
+
+ holy_site_warlock_provence_name:0 "Provence"
+ holy_site_warlock_provence_effect_name:0 "From [holy_site|E] #weak ($holy_site_warlock_provence_name$)#!"
+
+ holy_site_warlock_holland_name:0 "Holland"
+ holy_site_warlock_holland_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_holland_name$)#!"
+
+ holy_site_warlock_devon_name:0 "Devon"
+ holy_site_warlock_devon_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_devon_name$)#!"
+
+ holy_site_warlock_feher_name:0 "Fehér"
+ holy_site_warlock_feher_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_feher_name$)#!"
+
+ holy_site_warlock_praha_name:0 "Praha"
+ holy_site_warlock_praha_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_praha_name$)#!"
+
+ holy_site_warlock_epeiros_name:0 "Epeiros"
+ holy_site_warlock_epeiros_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_epeiros_name$)#!"
+
+ holy_site_warlock_zagorje_name:0 "Zagorje"
+ holy_site_warlock_zagorje_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_zagorje_name$)#!"
+
  building_type_warlock_gemstone_01:0 "Elder Nexus"
  building_type_warlock_gemstone_01_desc:1 "Powerful crystals such as these draw in aether from the surrounding environment, converting them into mana for use in magical rituals."
  building_warlock_gemstone_01:1 "Ragged Gemstone Circle"
