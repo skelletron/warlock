@@ -687,8 +687,7 @@ mass_suggestion_spell = {
 			scope:actor = {
 				add_hook = {
 					target = scope:current_courtier
-					type = loyalty_hook
-					# type = geas_hook
+					type = geas_hook
 				}
 			}
 		}
@@ -958,13 +957,13 @@ dominate_thrall_interaction = {
 					}
 					remove_hook = {
 						target = scope:recipient
-						type = loyalty_hook
+						type = dominate_thrall_hook
 					}
 				}
 			}
 			add_hook = {
 				target = scope:recipient
-				type = loyalty_hook
+				type = dominate_thrall_hook
 			}
 		}
 	}

@@ -1,0 +1,7 @@
+geas_hook = {
+	expiration_days = 3650
+}
+
+dominate_thrall_hook = {
+	strong = yes
+}
