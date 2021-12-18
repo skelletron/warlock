@@ -95,7 +95,6 @@ revoke_minion_title_interaction = {
 			# }
 		}
 		scope:recipient = {
-			vassal
 			is_vassal_or_below_of = scope:actor
 			is_diplomatically_available = yes
 			# NOT = { has_strong_hook = scope:actor }
