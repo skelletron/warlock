@@ -113,7 +113,7 @@ create_skeletal_infiltrator_perk = {
 	}
 	
 	# parent = raise_undead_perk
-	parent = create_skeletal_infiltrator_perk
+	parent = raise_zombie_titans_perk
 	parent = create_lesser_lich_perk
 }
 
@@ -145,6 +145,7 @@ spawn_allied_horde_perk = {
 		army_maintenance_mult = -0.1
 	}
 	
+	parent = create_skeletal_infiltrator_perk
 	parent = raise_zombie_titans_perk
 }
 
