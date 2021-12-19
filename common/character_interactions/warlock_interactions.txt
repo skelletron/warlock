@@ -707,6 +707,54 @@ skin_tailor_spell = {
 			}
 			else_if = {
 				limit = {
+					has_trait = disfigured
+				}
+				remove_trait = disfigured
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_7_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = dwarf
+				}
+				remove_trait = dwarf
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_5_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = inbred
+				}
+				remove_trait = inbred
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_6_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = one_legged
+				}
+				remove_trait = one_legged
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_8_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
 					has_trait = clubfooted
 				}
 				remove_trait = clubfooted
@@ -731,42 +779,6 @@ skin_tailor_spell = {
 			}
 			else_if = {
 				limit = {
-					has_trait = dwarf
-				}
-				remove_trait = dwarf
-				scope:actor = {
-					add_piety = {
-						value = 0
-						subtract = level_5_spell_cost_value
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_trait = giant
-				}
-				remove_trait = giant
-				scope:actor = {
-					add_piety = {
-						value = 0
-						subtract = level_5_spell_cost_value
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_trait = inbred
-				}
-				remove_trait = inbred
-				scope:actor = {
-					add_piety = {
-						value = 0
-						subtract = level_6_spell_cost_value
-					}
-				}
-			}
-			else_if = {
-				limit = {
 					has_trait = weak
 				}
 				remove_trait = weak
@@ -782,18 +794,6 @@ skin_tailor_spell = {
 					has_trait = spindly
 				}
 				remove_trait = spindly
-				scope:actor = {
-					add_piety = {
-						value = 0
-						subtract = level_2_spell_cost_value
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_trait = albino
-				}
-				remove_trait = albino
 				scope:actor = {
 					add_piety = {
 						value = 0
@@ -864,6 +864,54 @@ skin_tailor_spell = {
 					add_piety = {
 						value = 0
 						subtract = level_1_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = scarred
+				}
+				remove_trait = scarred
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = one_eyed
+				}
+				remove_trait = one_eyed
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_6_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = albino
+				}
+				remove_trait = albino
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = giant
+				}
+				remove_trait = giant
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_5_spell_cost_value
 					}
 				}
 			}
