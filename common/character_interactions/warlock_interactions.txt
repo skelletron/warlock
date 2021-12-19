@@ -707,6 +707,14 @@ skin_tailor_spell = {
 				}
 				add_trait = eldritch_beauty_01
 			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_trait = eldritch_strength_01
+					}
+				}
+				add_trait = eldritch_strength_01
+			}
 		}
 	}
 }

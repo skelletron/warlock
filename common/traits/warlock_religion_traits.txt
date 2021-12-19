@@ -403,3 +403,24 @@ eldritch_beauty_01 = {
 	random_creation = 0
 	shown_in_ruler_designer = no
 }
+
+eldritch_strength_01 = {
+	index = 1070
+
+	prowess_per_piety_level = 2
+	health = 1
+	dread_baseline_add = 25
+	attraction_opinion = 10
+	no_prowess_loss_from_age = yes
+
+	# genetic_constraint_all = beauty_3
+	# genetic_constraint_men = male_beauty_3
+	# genetic_constraint_women = female_beauty_3
+	# forced_portrait_age_index = 1 # old_beauty_1
+
+	good = yes
+
+	inherit_chance = 0
+	random_creation = 0
+	shown_in_ruler_designer = no
+}
