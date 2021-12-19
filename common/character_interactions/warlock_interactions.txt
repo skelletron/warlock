@@ -635,6 +635,8 @@ raise_undead_platoon_spell = {
 # can_invalidate_interaction = bool				# If yes then when the AI picks an interaction it will do the full can send this entire interaction check instead of the more performance saving checking of recipient refusal and ai will do, use with care and profile it
 # }
 
+
+
 # Mind Tree
 
 skin_tailor_spell = {
@@ -668,12 +670,6 @@ skin_tailor_spell = {
 	}
 
 	is_valid_showing_failures_only = {
-		# scope:actor.piety >= level_1_spell_cost_value
-		# scope:recipient = {
-		# 	NOT = {
-		# 		has_trait = warlock
-		# 	}
-		# }
 		scope:recipient = {
 			OR = {
 				NOT = {
@@ -681,6 +677,10 @@ skin_tailor_spell = {
 				}
 				this = scope:actor
 			}
+		}
+
+		scope:actor = {
+			piety >= scope:recipient.skin_tailor_minimum_spell_cost
 		}
 	}
 
@@ -701,7 +701,7 @@ skin_tailor_spell = {
 				scope:actor = {
 					add_piety = {
 						value = 0
-						subtract = level_3_spell_cost_value
+						subtract = level_4_spell_cost_value
 					}
 				}
 			}
@@ -773,7 +773,7 @@ skin_tailor_spell = {
 				scope:actor = {
 					add_piety = {
 						value = 0
-						subtract = level_2_spell_cost_value
+						subtract = level_3_spell_cost_value
 					}
 				}
 			}
@@ -797,7 +797,7 @@ skin_tailor_spell = {
 				scope:actor = {
 					add_piety = {
 						value = 0
-						subtract = level_2_spell_cost_value
+						subtract = level_3_spell_cost_value
 					}
 				}
 			}
@@ -899,7 +899,7 @@ skin_tailor_spell = {
 				scope:actor = {
 					add_piety = {
 						value = 0
-						subtract = level_2_spell_cost_value
+						subtract = level_3_spell_cost_value
 					}
 				}
 			}

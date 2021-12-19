@@ -8,3 +8,106 @@ level_5_spell_cost_value = 500
 level_6_spell_cost_value = 600
 level_7_spell_cost_value = 700
 level_8_spell_cost_value = 800
+
+skin_tailor_minimum_spell_cost = {
+	value = 0
+	if = {
+		limit = {
+			has_trait = scaly
+		}
+		add = level_4_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = disfigured
+		}
+		add = level_7_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = dwarf
+		}
+		add = level_5_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = inbred
+		}
+		add = level_6_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = one_legged
+		}
+		add = level_8_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = clubfooted
+		}
+		add = level_2_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = hunchbacked
+		}
+		add = level_3_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = weak
+		}
+		add = level_2_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = spindly
+		}
+		add = level_3_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_trait = physique_bad_3
+				has_trait = physique_bad_2
+				has_trait = physique_bad_1
+			}
+		}
+		add = level_4_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_trait = eldritch_beauty_01
+					has_trait = eldritch_strength_01
+				}
+			}
+		}
+		add = level_1_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = scarred
+		}
+		add = level_2_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = one_eyed
+		}
+		add = level_6_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = albino
+		}
+		add = level_3_spell_cost_value
+	}
+	else_if = {
+		limit = {
+			has_trait = giant
+		}
+		add = level_5_spell_cost_value
+	}
+}
