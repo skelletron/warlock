@@ -701,6 +701,60 @@ skin_tailor_spell = {
 		scope:recipient = {
 			if = {
 				limit = {
+					has_trait = scaly
+				}
+				remove_trait = scaly
+			}
+			else_if = {
+				limit = {
+					has_trait = clubfooted
+				}
+				remove_trait = clubfooted
+			}
+			else_if = {
+				limit = {
+					has_trait = hunchbacked
+				}
+				remove_trait = hunchbacked
+			}
+			else_if = {
+				limit = {
+					has_trait = dwarf
+				}
+				remove_trait = dwarf
+			}
+			else_if = {
+				limit = {
+					has_trait = giant
+				}
+				remove_trait = giant
+			}
+			else_if = {
+				limit = {
+					has_trait = inbred
+				}
+				remove_trait = inbred
+			}
+			else_if = {
+				limit = {
+					has_trait = weak
+				}
+				remove_trait = weak
+			}
+			else_if = {
+				limit = {
+					has_trait = spindly
+				}
+				remove_trait = spindly
+			}
+			else_if = {
+				limit = {
+					has_trait = albino
+				}
+				remove_trait = albino
+			}
+			else_if = {
+				limit = {
 					NOT = {
 						has_trait = eldritch_beauty_01
 					}
