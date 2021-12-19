@@ -668,7 +668,7 @@ skin_tailor_spell = {
 	}
 
 	is_valid_showing_failures_only = {
-		scope:actor.piety >= level_1_spell_cost_value
+		# scope:actor.piety >= level_1_spell_cost_value
 		# scope:recipient = {
 		# 	NOT = {
 		# 		has_trait = warlock
@@ -692,66 +692,114 @@ skin_tailor_spell = {
 	}
 
 	on_accept = {
-		scope:actor = {
-			add_piety = {
-				value = 0
-				subtract = level_1_spell_cost_value
-			}
-		}
 		scope:recipient = {
 			if = {
 				limit = {
 					has_trait = scaly
 				}
 				remove_trait = scaly
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_3_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = clubfooted
 				}
 				remove_trait = clubfooted
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = hunchbacked
 				}
 				remove_trait = hunchbacked
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = dwarf
 				}
 				remove_trait = dwarf
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_5_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = giant
 				}
 				remove_trait = giant
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_5_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = inbred
 				}
 				remove_trait = inbred
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_6_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = weak
 				}
 				remove_trait = weak
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = spindly
 				}
 				remove_trait = spindly
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = albino
 				}
 				remove_trait = albino
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_2_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -759,6 +807,12 @@ skin_tailor_spell = {
 				}
 				remove_trait = physique_bad_3
 				add_trait = physique_bad_2
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_4_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -766,12 +820,24 @@ skin_tailor_spell = {
 				}
 				remove_trait = physique_bad_2
 				add_trait = physique_bad_1
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_4_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
 					has_trait = physique_bad_1
 				}
 				remove_trait = physique_bad_1
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_4_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -780,6 +846,12 @@ skin_tailor_spell = {
 					}
 				}
 				add_trait = eldritch_beauty_01
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_1_spell_cost_value
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -788,6 +860,12 @@ skin_tailor_spell = {
 					}
 				}
 				add_trait = eldritch_strength_01
+				scope:actor = {
+					add_piety = {
+						value = 0
+						subtract = level_1_spell_cost_value
+					}
+				}
 			}
 		}
 	}
