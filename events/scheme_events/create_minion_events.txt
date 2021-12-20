@@ -222,6 +222,10 @@ create_minion.1001 = {
 						}
 						set_immortal_age = age
 						set_variable = {
+							name = preferred_immortal_age
+							value = age
+						}
+						set_variable = {
 							name = years_as_undead
 							value = 0
 						}
@@ -474,7 +478,13 @@ create_minion.1001 = {
 							name = age_became_undead
 							value = age
 						}
-						set_immortal_age = age
+
+						set_immortal_age = colourful_haired_immortal_age
+						set_variable = {
+							name = preferred_immortal_age
+							value = colourful_haired_immortal_age
+						}
+
 						set_variable = {
 							name = years_as_undead
 							value = 0
@@ -722,7 +732,11 @@ create_minion.1001 = {
 							name = age_became_undead
 							value = age
 						}
-						set_immortal_age = age
+						set_immortal_age = colourful_haired_immortal_age
+						set_variable = {
+							name = preferred_immortal_age
+							value = colourful_haired_immortal_age
+						}
 						set_variable = {
 							name = years_as_undead
 							value = 0

@@ -111,3 +111,16 @@ skin_tailor_minimum_spell_cost = {
 		add = level_5_spell_cost_value
 	}
 }
+
+colourful_haired_immortal_age = {
+	value = 0
+	if = {
+		limit = {
+			age <= 35
+		}
+		add = age
+	}
+	else = {
+		add = 35
+	}
+}
