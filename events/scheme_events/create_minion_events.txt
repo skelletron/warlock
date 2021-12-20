@@ -493,7 +493,7 @@ create_minion.1001 = {
 					}
 
 					scope:owner = {
-						trigger_event = create_minion.1002
+						trigger_event = create_minion.1004
 					}
 				}
 	
@@ -560,5 +560,28 @@ create_minion.1003 = {
 		# scope:scheme = {
 		# 	end_scheme = yes
 		# }
+	}
+}
+
+# Successfully Created Overlord
+create_minion.1004 = {
+	type = character_event
+	title = create_minion.1004.t
+	desc = create_minion.1004.desc
+	theme = minion
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = war_over_win
+	}
+
+	option = {
+		name = create_minion.1004.a
+		custom_tooltip = create_minion.1004.a.tt
 	}
 }
