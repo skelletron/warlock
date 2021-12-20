@@ -195,6 +195,31 @@ deathknight = {
 	shown_in_ruler_designer = no
 }
 
+overlord = {
+	index = 772
+	minimum_age = 16
+	martial = 20
+	stewardship = 20
+
+	immortal = yes
+
+	stress_gain_mult = -0.9
+
+	dread_baseline_add = 30
+	same_faith_opinion = 40
+	vassal_opinion = 10
+
+	can_inherit_from_dynasty = no
+	blocks_from_claim_inheritance_from_dynasty = yes
+
+	inherit_chance = 0
+	random_creation = 0
+
+	no_prowess_loss_from_age = yes
+
+	shown_in_ruler_designer = no
+}
+
 # Familiars
 
 cat_familiar = {

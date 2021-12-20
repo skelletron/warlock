@@ -48,6 +48,28 @@ white_hair = {
 	}
 }
 
+red_hair = {
+	red_hair = {
+		traits = {
+			overlord
+		}
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				x = 0.016
+				y = 0.0
+			}
+		}
+	}
+}
+
+
 undead_gauntness = {
 	undead_gauntness = {
 		traits = {
@@ -81,18 +103,6 @@ undead_gauntness = {
 			}
 		}
 	}
-	# replace_non_distrubing_traits = {
-	# 	base = illness
-	# 	trigger = {
-	# 		should_show_disturbing_portrait_modifiers = no
-	# 	}
-	# 	traits = {
-	# 		bubonic_plague
-	# 		smallpox
-	# 		great_pox
-	# 		lovers_pox
-	# 	}
-	# }
 }
 
 undead_spindly = {
@@ -139,6 +149,7 @@ deathknight = {
 	deathknight = {
 		traits = {
 			deathknight
+			overlord
 		}
 		dna_modifiers = {
 			morph = {
@@ -323,8 +334,8 @@ deathknight = {
 	}
 }
 
-vampiric_beauty = {
-	vampiric_beauty = {
+undead_beauty = {
+	undead_beauty = {
 		traits = {
 				# beauty_good_1
 				# beauty_good_2
@@ -463,6 +474,22 @@ vampiric_beauty = {
 				gene = gene_neck_width
 				value = -0.5
 				# template = spindly
+			}
+		}
+	}
+}
+
+overlord = {
+	overlord = {
+		traits = {
+			overlord
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_eye_patch
+				template = eye_patch
+				value = 0.5
 			}
 		}
 	}
