@@ -235,8 +235,8 @@ pale_bishop = {
 	learning = 20
 	learning_per_piety_level = 3
 	monthly_piety = 3
-	enemy_hostile_scheme_success_chance_add = -40
-	hostile_scheme_resistance_add = 0.2
+	enemy_hostile_scheme_success_chance_add = -20
+	hostile_scheme_resistance_add = 10
 
 	immortal = yes
 
