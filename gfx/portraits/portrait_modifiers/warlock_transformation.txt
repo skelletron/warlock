@@ -149,8 +149,47 @@ beardless = {
 				AND = {
 					OR = {
 						has_trait = pale_bishop
+						has_trait = overlord
 					}
 				}
+			}
+		}
+	}
+}
+
+# a bit disturbing on the pale bishop for some reason
+severely_wounded_undead = {
+	usage = game
+	wounded_2 = {
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_wounded
+				value = 1.0
+				# value = 0.5
+				# value = 0.25
+				# value = 0.01
+				template = wounded_2
+			}
+			accessory = {
+				mode = modify				
+				gene = eye_accessory
+				template = bloodshot_eyes
+				value = 0.5
+				# value = 0.25
+				# value = 0.125
+			}
+
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					# has_trait = pale_bishop
+					# has_trait = overlord
+				}
+				should_show_disturbing_portrait_modifiers = yes
 			}
 		}
 	}

@@ -131,45 +131,45 @@ undead_gauntness = {
 	}
 }
 
-undead_spindly = {
-	undead_spindly = {
-		traits = {
-			# undead
-		}
-		dna_modifiers = {
-			morph = {
-				mode = add
-				gene = gene_spindly
-				value = 1.0
-				template = spindly
-			}
-			morph = {
-				mode = modify
-				gene = gene_neck_width
-				value = -0.5
-				# template = spindly
-			}
-			morph = {
-				mode = modify
-				gene = gene_height
-				value = 0.1
-				# template = spindly
-			}
-			morph = {
-				mode = modify_multiply
-				gene = gene_bs_body_type
-				value = 0.6
-				# template = spindly
-			}
-			morph = {
-				mode = modify_multiply
-				gene = gene_bs_body_shape
-				value = 0.5
-				# template = spindly
-			}
-		}
-	}
-}
+# undead_spindly = {
+# 	undead_spindly = {
+# 		traits = {
+# 			# undead
+# 		}
+# 		dna_modifiers = {
+# 			morph = {
+# 				mode = add
+# 				gene = gene_spindly
+# 				value = 1.0
+# 				template = spindly
+# 			}
+# 			morph = {
+# 				mode = modify
+# 				gene = gene_neck_width
+# 				value = -0.5
+# 				# template = spindly
+# 			}
+# 			morph = {
+# 				mode = modify
+# 				gene = gene_height
+# 				value = 0.1
+# 				# template = spindly
+# 			}
+# 			morph = {
+# 				mode = modify_multiply
+# 				gene = gene_bs_body_type
+# 				value = 0.6
+# 				# template = spindly
+# 			}
+# 			morph = {
+# 				mode = modify_multiply
+# 				gene = gene_bs_body_shape
+# 				value = 0.5
+# 				# template = spindly
+# 			}
+# 		}
+# 	}
+# }
 
 # deathknight appearance
 deathknight = {
