@@ -1703,7 +1703,7 @@ summon_minion_to_war = {
 			# this checks that they are your thrall
 			has_opinion_modifier = {
 				target = scope:actor
-				modifier = deathknight_opinion_modifier
+				modifier = undead_minion_opinion_modifier
 			}
 		}
 
@@ -1964,10 +1964,10 @@ debug_gain_warlock_xp = {
 	}
 }
 
-create_deathknight = {
+create_undead_minion = {
 	category = interaction_category_warlock
 	common_interaction = yes
-	scheme = create_deathknight
+	scheme = create_undead_minion_scheme
 	use_diplomatic_range = yes
 	ignores_pending_interaction_block = yes
 	auto_accept = yes
@@ -1986,6 +1986,7 @@ create_deathknight = {
 			NOT = {
 				has_trait = undead
 				has_trait = deathknight
+				has_trait = overlord
 				has_trait = warlock
 				has_character_flag = is_thrall_flag
 			}
@@ -1995,7 +1996,7 @@ create_deathknight = {
 	is_valid_showing_failures_only = {
 		scope:actor = {
 			can_start_scheme = {
-				type = create_deathknight
+				type = create_undead_minion_scheme
 				target = scope:recipient
 			}
 		}
@@ -2005,7 +2006,7 @@ create_deathknight = {
 		hidden_effect = {
 			scope:actor = {
 				start_scheme = {
-					type = create_deathknight
+					type = create_undead_minion_scheme
 					target = scope:recipient
 				}
 			}

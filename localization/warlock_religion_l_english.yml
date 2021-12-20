@@ -306,7 +306,7 @@
  raise_zombie_titans_perk_name:0 "Raise Undead Platoon"
  raise_undead_raiders_perk_name:0 "Raise Undead Raiders"
  spawn_allied_horde_perk_name:0 "Spawn Allied Horde"
- temp_bone_1_perk_name:0 "Placeholder One"
+ temp_bone_1_perk_name:0 "Create Advanced Undead"
  temp_bone_2_perk_name:0 "Placeholder Two"
  temp_bone_3_perk_name:0 "Placeholder Three"
  temp_bone_4_perk_name:0 "Placeholder Four"
@@ -455,7 +455,7 @@
 
 # Schemes
 # Create Deathknight
- create_deathknight:0 "Create Deathknight"
+ create_undead_minion:0 "Create Undead Minion"
  PROTECTED_HEAD_OF_FAITH:0 "Heads of Faith have massive retinues that protect them."
 
  create_minion_my_intrigue:0 "My Intrigue vs Their Intrigue"
@@ -470,6 +470,9 @@
 
  create_minion.1001.b:0 "Wait! Now is not the time."
  create_minion.1001.b.tt:0 "I will find a better way to serve my Lord, in time."
+
+create_minion.1001.c:0 "This one shall be my Overlord."
+create_minion.1001.c.tt:0 "They may become an Overlord"
 
  create_minion.1002:0 "Deathknight Created"
  create_minion.1002.t:0 "Deathknight Created"
@@ -519,6 +522,8 @@
  trait_undead_02:0 "Middling Undead"
  trait_undead_03:0 "Major Undead"
  trait_undead_04:0 "Greater Undead"
+ trait_deathknight:0 "Deathknight"
+ trait_overlord:0 "Overlord"
 
 # Undead rank up
  undead_became_stronger_1_title:0 "Minion becomes Minor Undead"

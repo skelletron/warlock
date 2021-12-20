@@ -33,10 +33,10 @@ revoke_minion_title_interaction = {
 			is_landed = yes
 			# should be shown but be disabled for indirect vassals
 			target_is_liege_or_above = scope:actor
-			has_trait = deathknight
+			# has_trait = deathknight
 			has_opinion_modifier = {
 				target = scope:actor
-				modifier = deathknight_opinion_modifier
+				modifier = undead_minion_opinion_modifier
 			}
 		}
 
@@ -538,14 +538,14 @@ invite_minion_to_court_interaction = {
 			has_trait = warlock
 		}
 		scope:recipient = {
-			has_trait = deathknight
+			# has_trait = deathknight # should be enough just to have undead_minion_opinion_modifier
 			has_opinion_modifier = {
 				target = scope:actor
-				modifier = deathknight_opinion_modifier
+				modifier = undead_minion_opinion_modifier
 			}
 			NOR = {
 				is_courtier_of = scope:actor
-				is_foreign_court_guest = yes
+				# is_foreign_court_guest = yes
 				AND = {
 					exists = host
 					host = scope:actor

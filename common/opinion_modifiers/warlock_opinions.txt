@@ -16,7 +16,7 @@ thrall_opinion_modifier = {
 	opinion = 1000
 }
 
-deathknight_opinion_modifier = {
+undead_minion_opinion_modifier = {
 	opinion = 1000
 }
 

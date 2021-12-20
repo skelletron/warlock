@@ -19,6 +19,8 @@ create_minion.1001 = {
 	# immediate = {
 		
 	# }
+
+	# Deathknight
 	option = {
 		name = create_minion.1001.a
 		custom_tooltip = create_minion.1001.a.tt
@@ -207,31 +209,9 @@ create_minion.1001 = {
 								}
 							}
 						}
-
-						# Probably redundant since they become landless
-						# Leave faction / Destroy if leader
-						# if = {
-						# 	limit = {
-						# 		is_a_faction_member = yes
-						# 	}
-						# 	leave_faction_with_cooldown_effect = {
-						# 		FACTION = scope:faction
-						# 		YEARS = 20
-						# 	}
-						# }
-						# if = {
-						# 	limit = {
-						# 		is_a_faction_leader = yes
-						# 	}
-						# 	joined_faction = {
-						# 		destroy_faction = yes
-						# 	}
-						# }
-		
-						# faith = faith:great_old_one
 		
 						add_opinion = {
-							modifier = deathknight_opinion_modifier
+							modifier = undead_minion_opinion_modifier
 							target = scope:owner
 						}
 		
@@ -278,12 +258,255 @@ create_minion.1001 = {
 		}
 	}
 
+	# Abandon
 	option = {
 		name = create_minion.1001.b
 		custom_tooltip = create_minion.1001.b.tt
 
 		scope:scheme = {
 			end_scheme = yes
+		}
+	}
+
+	# Overlord
+	option = {
+		name = create_minion.1001.c
+		custom_tooltip = create_minion.1001.c.tt
+
+		trigger = {
+			has_perk = temp_bone_1_perk
+		}
+
+		scope:owner = {
+			add_piety = {
+				value = 0
+				subtract = level_4_spell_cost_value
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				100 = {
+
+					# Negative Modifiers
+
+					# Ruler
+					modifier = {
+						scope:target = {
+							is_ruler = yes
+						}
+						add = -20
+					}
+					# Has Empire
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_empire
+						}
+						add = -75
+					}
+					# Has Kingdom
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_kingdom
+						}
+						add = -70
+					}
+					# Has Duchy
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_duchy
+						}
+						add = -50
+					}
+					# Has County
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_county
+						}
+						add = -30
+					}
+					# Has Barony
+					modifier = {
+						scope:target = {
+							highest_held_title_tier = tier_barony
+						}
+						add = -10
+					}
+
+					# Spouse of Ruler
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+
+							# primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -10
+					}
+					# Spouse has Empire
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_empire
+						}
+						add = -40
+					}
+					# Spouse has Kingdom
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_kingdom
+						}
+						add = -35
+					}
+					# Spouse has Duchy
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_duchy
+						}
+						add = -25
+					}
+					# Spouse has County
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_county
+						}
+						add = -15
+					}
+					# Spouse has Barony
+					modifier = {
+						scope:target = {
+							is_landed = no
+							exists = primary_spouse
+							primary_spouse = { is_landed = yes }
+							primary_spouse.highest_held_title_tier = tier_barony
+						}
+						add = -5
+					}
+
+					# Positive Modifiers
+
+					# Intrigue
+					modifier = {
+						scope:owner.intrigue > scope:target.intrigue
+						add = 15
+					}
+					# Learning
+					modifier = {
+						scope:owner.learning > scope:target.learning
+						add = 15
+					}
+
+					scope:target = {
+						add_trait = undead
+						add_trait = overlord
+		
+						if = {
+							limit = {
+								is_ruler = yes
+							}
+							depose = yes
+						}
+		
+						if = {
+							limit = {
+								NOT = {
+									faith = faith:great_old_one
+								}
+							}
+							set_character_faith = faith:great_old_one
+						}
+
+						# from send_child_to_clergy_effect
+						if = {
+							limit = {
+								is_married = yes
+							}
+							every_spouse = {
+								divorce = scope:target
+							}
+						}
+						if = {
+							limit = {
+								exists = betrothed
+							}
+							break_betrothal = betrothed
+						}
+						if = {
+							limit = {
+								is_concubine = yes
+							}
+							this.concubinist = {
+								remove_concubine = scope:target
+							}
+						}
+						if = {
+							limit = {
+								number_of_concubines > 0
+							}
+							every_concubine = {
+								scope:target = {
+									remove_concubine = prev
+								}
+							}
+						}
+		
+						add_opinion = {
+							modifier = undead_minion_opinion_modifier
+							target = scope:owner
+						}
+		
+						# variables for turning into greater undead later
+						set_variable = {
+							name = age_became_undead
+							value = age
+						}
+						set_immortal_age = age
+						set_variable = {
+							name = years_as_undead
+							value = 0
+						}
+						set_variable = {
+							name = warlock_master
+							value = scope:owner
+						}
+						add_character_flag = { flag = joining_faction_block }
+
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+
+					scope:owner = {
+						add_courtier = scope:target
+					}
+
+					scope:owner = {
+						trigger_event = create_minion.1002
+					}
+				}
+	
+				# Failure
+				100 = {
+					scope:scheme = {
+						end_scheme = yes
+					}
+					scope:owner = {
+						trigger_event = create_minion.1003
+					}
+				}
+			}
 		}
 	}
 }

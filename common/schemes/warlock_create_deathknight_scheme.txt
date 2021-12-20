@@ -1,4 +1,4 @@
-﻿create_deathknight = {
+﻿create_undead_minion_scheme = {
 	skill = intrigue
 	hostile = yes
 	# cooldown = { months = 2 }
@@ -26,6 +26,13 @@
 			is_adult = yes
 			NOT = {
 				has_trait = warlock
+				has_trait = undead
+				has_trait = undead_01
+				has_trait = undead_02
+				has_trait = undead_03
+				has_trait = undead_04
+				has_trait = deathknight
+				has_trait = overlord
 			}
 		}
 	}

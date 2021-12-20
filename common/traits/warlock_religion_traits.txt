@@ -198,21 +198,23 @@ deathknight = {
 overlord = {
 	index = 772
 	minimum_age = 16
-	martial = 15
-	stewardship = 15
-	prowess = 10
+	martial = 20
+	stewardship = 20
+	prowess = 15
 
 	immortal = yes
 
 	stress_gain_mult = -0.9
 
 	levy_size = 0.2
+	intimidated_vassal_tax_contribution_add = 0.2
+	intimidated_vassal_levy_contribution_add = 0.2
 
 	monthly_county_control_change_factor = 0.2
 	domain_limit = 3
 	vassal_limit = 1
 
-	dread_baseline_add = 30
+	dread_baseline_add = 60
 	same_faith_opinion = 40
 	vassal_opinion = 10
 
