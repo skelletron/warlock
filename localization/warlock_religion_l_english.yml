@@ -482,8 +482,8 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  create_minion.1002.a.tt:0 "My new Deathknight is ready and willing to serve for all eternity."
 
 # Failure
- create_minion.1003:0 "Failed to Create Deathknight"
- create_minion.1003.t:0 "Failed to Create Deathknight"
+ create_minion.1003:0 "Failed to Create Undead"
+ create_minion.1003.t:0 "Failed to Create Undead"
  create_minion.1003.desc:0 "Unfortunately, I've missed my mark, and the target lives to see another day. Was I not serving the Great Old One dutifully? How could my Lord allow this to happen?"
  create_minion.1003.a:0 "Perhaps it was not meant to be."
  create_minion.1003.a.tt:0 "I will continue on, as I must, in service of the Great Old One."
