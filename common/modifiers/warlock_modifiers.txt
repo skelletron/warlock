@@ -88,6 +88,17 @@ maintaining_thralls_modifier = {
 	stacking = yes
 }
 
+transferring_piety_modifier = {
+	icon = piety_negative
+	monthly_piety = -1
+}
+
+receiving_piety_modifier = {
+	icon = piety_positive
+	monthly_piety = 1
+	stacking = yes
+}
+
 wall_of_bone_self_modifier = {
 	icon = wall_of_bone
 	additional_fort_level = 500

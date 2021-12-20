@@ -546,6 +546,10 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  undead_became_stronger_4_title:0 "Minion becomes Greater Undead"
  undead_became_stronger_4_desc:0 "Your Undead Minion, [minion.GetShortUINameNoTooltip] has ascended from the rank of Major Undead to Greater Undead."
 
+# Undead minion dies
+ undead_minion_dies_title:0 "Undead Minion has Perished"
+ undead_minion_dies_desc:0 "Your undead servant, [dead_undead_minion.GetFullNameNoTooltip], has perished from this world, and their body has dissolved into the wind. May the Great Old One keep their soul."
+
 # Thrall dies
  thrall_dies_title:0 "Thrall has Died"
  thrall_dies_desc:0 "Your dutiful thrall, [dead_thrall.GetFullNameNoTooltip], has passed onto the other side. Perhaps the Great Old One will favour their soul."

@@ -130,3 +130,28 @@ undead_beard = {
 		}
 	}
 }
+
+beardless = {
+	beardless = {
+		dna_modifiers = {
+			accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+		}
+		outfit_tags = { bald }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				AND = {
+					OR = {
+						has_trait = pale_bishop
+					}
+				}
+			}
+		}
+	}
+}

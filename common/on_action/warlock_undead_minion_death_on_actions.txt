@@ -1,0 +1,35 @@
+on_death = {
+	on_actions = {
+		on_check_undead_minion_status
+	}
+}
+
+on_check_undead_minion_status = {
+	trigger = {
+		has_variable = warlock_master
+		has_character_flag = is_undead_minion_flag
+	}
+	effect = {
+		this = {
+			save_scope_as = dead_undead_minion
+		}
+		scope:dead_undead_minion = {
+			if = {
+				limit = {
+					has_trait = pale_bishop
+				}
+				var:warlock_master = {
+					remove_character_modifier = receiving_piety_modifier
+				}
+			}
+		}
+		var:warlock_master = {
+			send_interface_message = {
+				type = event_thrall_dies_bad
+				title = undead_minion_dies_title
+				desc = undead_minion_dies_desc
+				left_icon = scope:dead_undead_minion
+			}
+		}
+	}
+}

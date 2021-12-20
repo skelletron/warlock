@@ -63,12 +63,38 @@ red_hair = {
 				mode = replace
 					
 				x = 0.016
+				# y = 0.0
 				y = 0.0
 			}
 		}
 	}
 }
 
+cyan_hair = {
+	cyan_hair = {
+		traits = {
+			pale_bishop
+		}
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				# x = 0.012
+				# x = 0.004
+				x = 0.012
+
+				# y = 0.01
+				y = 0.0
+				# y = 0.01 # this make it super blue, use it for the shadow fiend?
+			}
+		}
+	}
+}
 
 undead_gauntness = {
 	undead_gauntness = {
@@ -145,6 +171,7 @@ undead_spindly = {
 	}
 }
 
+# deathknight appearance
 deathknight = {
 	deathknight = {
 		traits = {
@@ -341,6 +368,7 @@ undead_beauty = {
 				# beauty_good_2
 				# beauty_good_3
 				eldritch_beauty_01
+				pale_bishop
 		}
 		dna_modifiers = {
 			morph = {
@@ -489,6 +517,22 @@ overlord = {
 				mode = add				
 				gene = special_headgear_eye_patch
 				template = eye_patch
+				value = 0.5
+			}
+		}
+	}
+}
+
+pale_bishop = {
+	pale_bishop = {
+		traits = {
+			pale_bishop
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_blindfold
+				template = blindfold
 				value = 0.5
 			}
 		}
