@@ -88,6 +88,12 @@ maintaining_thralls_modifier = {
 	stacking = yes
 }
 
+psychic_armaments_modifier = {
+	icon = martial_positive
+	knight_limit = 1
+	stacking = yes
+}
+
 transferring_piety_modifier = {
 	icon = piety_negative
 	monthly_piety = -1

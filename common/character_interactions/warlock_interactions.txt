@@ -979,8 +979,71 @@ mass_suggestion_spell = {
 				}
 			}
 			add_opinion = {
-				modifier = gease_opinion_modifier
+				modifier = geased_opinion_modifier
 				target = scope:actor
+			}
+		}
+	}
+}
+
+psychic_armaments_spell = {
+	category = interaction_category_warlock
+	desc = psychic_armaments_spell_interaction_desc
+	send_name = psychic_armaments_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = psychic_armaments_perk
+		}
+		scope:recipient = {
+			is_ruler = yes
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_2_spell_cost_value
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = helpful_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_2_spell_cost_value
+			}
+		}
+		scope:recipient = {
+			add_character_modifier = {
+				modifier = psychic_armaments_modifier
+				years = 3
+			}
+			if = {
+				limit = {
+					NOT = {
+						this = scope:actor
+					}
+				}
+				add_opinion = {
+					modifier = cast_psychic_armaments_opinion_modifier
+					target = scope:actor
+				}
 			}
 		}
 	}

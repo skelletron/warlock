@@ -193,7 +193,7 @@ melt_mind_perk = {
 	parent = pariahfy_perk
 }
 
-placeholder_1_perk = {
+psychic_armaments_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
 	position = { 2 5.25 }

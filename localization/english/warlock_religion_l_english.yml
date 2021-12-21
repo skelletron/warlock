@@ -242,7 +242,9 @@
 
 # Opinion Modifiers
  cast_temporal_resistance_modifier:0 "Blessed our Dynasty"
- gease_opinion_modifier:0 "Under Geas"
+ geased_opinion_modifier:0 "Under Geas"
+ cast_psychic_armaments_opinion_modifier:0 "Bestowed Psychic Armaments"
+
 
  level_6_vein_snare_victim_modifier:0 "Doomed Vein Snare Victim"
  level_6_vein_snare_victim_modifier_desc:0 "This character is the victim of a diabolical Vein Snare spell that will surely claim their life."
@@ -292,7 +294,7 @@
  pariahfy_perk_name:0 "Pariah-fy"
  poison_the_well_perk_name:0 "Poison the Well"
  melt_mind_perk_name:0 "Melt Mind"
- placeholder_1_perk_name:0 "Placeholder One"
+ psychic_armaments_perk_name:0 "Psychic Armaments"
  placeholder_2_perk_name:0 "Placeholder Two"
  modify_collective_memory_perk_name:0 "Modify Collective Memory"
 
