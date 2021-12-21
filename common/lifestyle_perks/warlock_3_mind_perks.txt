@@ -200,10 +200,8 @@ psychic_armaments_perk = {
 	icon = trait_schemer
 
 	character_modifier = {
-		# intrigue = 1
-		# monthly_piety = 0.1
-		# monthly_piety = 0.5
-		tyranny_gain_mult = -0.1
+		knight_effectiveness_mult = 0.4
+		knight_limit = 1
 	}
 
 	parent = poison_the_well_perk
@@ -218,7 +216,7 @@ placeholder_2_perk = {
 	character_modifier = {
 		# intrigue = 1
 		# monthly_piety = 0.1
-		monthly_piety = 0.5
+		tyranny_gain_mult = -0.1
 	}
 
 	parent = poison_the_well_perk
