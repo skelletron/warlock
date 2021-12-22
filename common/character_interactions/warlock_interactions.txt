@@ -1049,6 +1049,154 @@ psychic_armaments_spell = {
 	}
 }
 
+graft_intellect_spell = {
+	category = interaction_category_warlock
+	desc = graft_intellect_spell_interaction_desc
+	send_name = graft_intellect_spell_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_perk = placeholder_2_perk
+
+		}
+		scope:recipient = {
+			NOT = {
+				has_trait = warlock
+				this = scope:actor
+			}
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor.piety >= level_3_spell_cost_value
+		scope:actor = {
+			NOT = {
+				has_trait = intellect_bad_3
+			}
+		}
+		scope:recipient = {
+			NOT = {
+				has_trait = intellect_good_3
+			}
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = helpful_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			add_piety = {
+				value = 0
+				subtract = level_3_spell_cost_value
+			}
+			# Genius becomes Intelligent
+			if = {
+				limit = {
+					has_trait = intellect_good_3
+				}
+				remove_trait = intellect_good_3
+				add_trait = intellect_good_2
+			}
+			# Intelligent becomes Quick
+			else_if = {
+				limit = {
+					has_trait = intellect_good_2
+				}
+				remove_trait = intellect_good_2
+				add_trait = intellect_good_1
+			}
+			# Quick is lost
+			else_if = {
+				limit = {
+					has_trait = intellect_good_1
+				}
+				remove_trait = intellect_good_1
+			}
+			# Stupid is added
+			else_if = {
+				limit = {
+					has_trait = intellect_bad_1
+				}
+				remove_trait = intellect_bad_1
+				add_trait = intellect_bad_2
+			}
+			# Imbecile is added
+			else_if = {
+				limit = {
+					has_trait = intellect_bad_2
+				}
+				remove_trait = intellect_bad_2
+				add_trait = intellect_bad_3
+			}
+			# Slow is added
+			else = {
+				add_trait = intellect_bad_1
+			}
+		}
+		scope:recipient = {
+			# Intelligent becomes Genius
+			if = {
+				limit = {
+					has_trait = intellect_good_2
+				}
+				remove_trait = intellect_good_2
+				add_trait = intellect_good_3
+			}
+			# Quick becomes Intelligent
+			else_if = {
+				limit = {
+					has_trait = intellect_good_1
+				}
+				remove_trait = intellect_good_1
+				add_trait = intellect_good_2
+			}
+			# Slow is lost
+			else_if = {
+				limit = {
+					has_trait = intellect_bad_1
+				}
+				remove_trait = intellect_bad_1
+			}
+			# Stupid becomes slow
+			else_if = {
+				limit = {
+					has_trait = intellect_bad_2
+				}
+				remove_trait = intellect_bad_2
+				add_trait = intellect_bad_1
+			}
+			# Imbecile becomes stupid
+			else_if = {
+				limit = {
+					has_trait = intellect_bad_3
+				}
+				remove_trait = intellect_bad_3
+				add_trait = intellect_bad_2
+			}
+			# Quick is added
+			else = {
+				add_trait = intellect_good_1
+			}
+		}
+	}
+}
+
 # RITUAL (SCHEME) version
 create_thrall = {
 	category = interaction_category_warlock
