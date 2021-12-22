@@ -207,7 +207,7 @@ psychic_armaments_perk = {
 	parent = poison_the_well_perk
 }
 
-placeholder_2_perk = {
+bend_intellect_perk = {
 	lifestyle = warlock_lifestyle
 	tree = mind
 	position = { 4 5.25 }
