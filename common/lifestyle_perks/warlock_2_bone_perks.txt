@@ -46,6 +46,27 @@ create_deathknight_perk = {
 		knight_limit = 1
 		monthly_piety_gain_per_knight_add = 0.1
 	}
+	
+	auto_selection_weight = {
+		value = 1000
+		if = {
+			limit = {
+				has_focus = bone_sculpting_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					can_start_new_lifestyle_tree_trigger = no
+					NOT = {
+						has_trait = warlock
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
 raise_undead_perk = {
