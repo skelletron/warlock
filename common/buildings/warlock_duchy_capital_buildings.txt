@@ -17,8 +17,8 @@
 		county.duchy.holder = county.holder
 		county.holder.faith = faith:great_old_one
 	}
-	# show_disabled = yes
-	show_disabled = no
+	show_disabled = yes
+	# show_disabled = no
 	
 	cost_gold = expensive_building_tier_2_cost
 	cost_piety = 200
@@ -29,6 +29,7 @@
 				value = massive_piety_gain
 				multiply = 2
 			}
+			add_warlock_lifestyle_xp = monumental_lifestyle_xp
 		}
 		county.holder.faith = { change_fervor = 5 }
 	}
