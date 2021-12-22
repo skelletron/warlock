@@ -1,0 +1,15 @@
+﻿l_english:
+ TITLE_NAME:0 "$NAME$"
+ TITLE_TIERED_NAME:0 "$TIER|U$ of $NAME$"
+ TITLE_CLAN_TIERED_NAME:0 "the $NAME$ $TIER|U$"
+ TITLE_CLAN_TIERED_WITH_UNDERLYING_NAME:0 "the $NAME$ $TIER|U$ #F ($TIER|U$ of $BASE_NAME$) #!"
+ TITLE_TIER_AS_NAME:0 "$TIER|U$"
+
+ e_warlock: "Warlock Confederacy"
+ k_warlock: "Warlock Queendom"
+ d_warlock: "Warlock Duchy"
+ c_warlock: "Warlock County"
+ b_warlock: "a"
+ b_warlock_2: "b"
+ b_warlock_3: "c"
+ b_warlock_4: "d"

@@ -1,4 +1,8 @@
-﻿e_warlock = {
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+e_warlock = {
 	# ff5dc1
 	color = { 255 94 193 }
 	color2 = { 255 255 255 }
@@ -50,41 +54,69 @@
 			
 			capital = c_warlock
 	
-			cultural_names = {
-				# anglo_saxon = cn_east_seaxe
-				# old_saxon = cn_east_seaxe
-			}
+			cultural_names = {}
 
 			c_warlock = {
 				color = { 255 14 163 }
 				color2 = { 255 255 255 }
 	
-				cultural_names = {
-					# anglo_saxon = cn_middle_seaxe
-					# old_saxon = cn_middle_seaxe
-				}
+				cultural_names = {}
 				
-				b_warlock = {
-					province = 9660
+				b_warlock_3 = {
+					province = 9663
+
+					color = { 130 67 231 }
+					color2 = { 255 255 255 }
+
+					cultural_names = {}
+				}
+				b_warlock_2 = {
+					province = 9662
 
 					color = { 255 14 163 }
 					color2 = { 255 255 255 }
+
+					cultural_names = {}
+				}
+				b_warlock_5 = {
+					province = 9665
+
+					color = { 130 67 231 }
+					color2 = { 255 255 255 }
+
+					cultural_names = {}
+				}
+			}
+
+			c_warlock_1 = {
+				color = { 177 78 151 }
+				color2 = { 255 255 255 }
 	
-					cultural_names = {
-						# anglo_saxon = cn_lunden
-						# old_saxon = cn_lunden
-						
-						# roman = cn_londinium
-						
-						# welsh = cn_llundein
-						# cornish = cn_llundein
-						# breton = cn_llundein
-						# cumbrian = cn_llundein
-						# pictish = cn_llundein
-						
-						# norman = cn_londres
-						# scottish = cn_lunnon
-					}
+				cultural_names = {}
+
+				b_warlock = {
+					province = 9660
+
+					color = { 143 27 114 }
+					color2 = { 255 255 255 }
+
+					cultural_names = {}
+				}
+				b_warlock_4 = {
+					province = 9664
+
+					color = { 143 27 114 }
+					color2 = { 255 255 255 }
+
+					cultural_names = {}
+				}
+				b_warlock_6 = {
+					province = 9666
+
+					color = { 143 27 114 }
+					color2 = { 255 255 255 }
+
+					cultural_names = {}
 				}
 			}
 		}
