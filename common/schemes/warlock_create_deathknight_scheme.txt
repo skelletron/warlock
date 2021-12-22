@@ -14,8 +14,8 @@
 	maximum_progress_chance = 99
 
 	minimum_success = 5
-	maximum_secrecy = 85
-	maximum_success = 85
+	maximum_secrecy = 100
+	maximum_success = 60
 	
 	allow = {
 		has_trait = warlock
@@ -33,6 +33,7 @@
 				has_trait = undead_04
 				has_trait = deathknight
 				has_trait = overlord
+				has_trait = pale_bishop
 			}
 		}
 	}
@@ -50,14 +51,14 @@
 			desc = create_minion_my_intrigue
 			target = scope:owner
 			value = intrigue
-			multiplier = 1.2
+			multiplier = 1.1
 		}
 
 		compare_modifier = {
 			desc = create_minion_my_learning
 			target = scope:owner
 			value = learning
-			multiplier = 1.2
+			multiplier = 1.1
 		}
 
 		# Heads of Faith are Resistant
@@ -80,7 +81,7 @@
 		# Rulers are Resistant
 		first_valid = {
 			modifier = {
-				add = -25
+				add = -55
 				desc = "PROTECTED_EMPERORS"
 
 				scope:target = {
@@ -89,7 +90,7 @@
 				}
 			}
 			modifier = {
-				add = -20
+				add = -45
 				desc = "PROTECTED_KINGS"
 
 				scope:target = {
@@ -98,7 +99,7 @@
 				}
 			}
 			modifier = {
-				add = -15
+				add = -25
 				desc = "PROTECTED_DUKES"
 
 				scope:target = {
