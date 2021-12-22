@@ -1,0 +1,82 @@
+﻿corrupted_cathedral_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		# culture = {
+		# 	has_innovation = innovation_manorialism
+		# }
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+		county.holder.faith = faith:great_old_one
+	}
+	# show_disabled = yes
+	show_disabled = no
+	
+	cost_gold = expensive_building_tier_2_cost
+	cost_piety = 200
+	
+	on_complete = {
+		county.holder = {
+			add_piety = {
+				value = massive_piety_gain
+				multiply = 2
+			}
+		}
+		county.holder.faith = { change_fervor = 5 }
+	}
+	
+	character_modifier = {
+		learning_per_piety_level = 2
+		monthly_piety = 5
+		monthly_income = 2
+		same_faith_opinion = 10
+	}
+
+	# character_modifier = {
+	# 	monthly_prestige_gain_mult = 0.05
+	# 	stress_loss_mult = 0.15
+	# 	owned_hostile_scheme_success_chance_add = 5
+	# 	owned_personal_scheme_success_chance_add = 5
+	# }
+	
+	# duchy_capital_county_modifier = {
+	# 	monthly_county_control_change_factor = 0.2
+	# 	monthly_county_control_change_add = 0.2
+	# }
+	
+	# next_building = leisure_palace_02
+
+	type_icon = "icon_building_warlock_cathedral.dds"
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0
+	}
+	# ai_value = {
+	# 	base = 10
+		
+	# 	modifier = { # This type of Duchy Capital Building should be more rare
+	# 		add = 10
+	# 		scope:holder = {
+	# 			OR = { # Suitable personality; cares a lot about their image or reclusive
+	# 				has_trait = arrogant
+	# 				has_trait = deceitful
+	# 				has_trait = paranoid
+	# 				has_trait = shy
+	# 				has_trait = lazy
+	# 				has_trait = reclusive
+	# 				has_trait = profligate
+	# 			}
+	# 		}
+	# 	}
+	# }
+}
