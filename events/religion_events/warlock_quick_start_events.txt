@@ -17,12 +17,12 @@ quick_start.1001 = {
 					is_independent_ruler = no
 				}
 				setup_vassal_protections = yes
-				convert_every_vassal = yes
-				add_trait = warlock
-				add_warlock_lifestyle_xp = {
-					value = monumental_lifestyle_xp
-					multiply = 5
-				}
+			}
+			convert_every_vassal = yes
+			add_trait = warlock
+			add_warlock_lifestyle_xp = {
+				value = monumental_lifestyle_xp
+				multiply = 5
 			}
 			add_piety = {
 				value = massive_piety_gain
@@ -36,11 +36,24 @@ quick_start.1001 = {
 	# I am a religious minority with protections
 	option = {
 		name = quick_start.1001.b
+		hidden_effect = {
+			set_character_faith_with_conversion = faith:great_old_one
+			if = {
+				limit = {
+					is_independent_ruler = no
+				}
+				setup_vassal_protections = yes
+			}
+			convert_every_vassal = yes
+		}
+
+		add_character_flag = quick_start_done
 	}
 
 	# I remain as I am (Vanilla)
 	option = {
 		name = quick_start.1001.c
 		
+		add_character_flag = quick_start_done
 	}
 }
