@@ -2,3 +2,12 @@ setup_vassal_protections = {
 	vassal_contract_set_obligation_level = { type = religious_rights level = 1 }
 	vassal_contract_set_obligation_level = { type = title_revocation_rights level = 1}
 }
+
+convert_every_vassal = {
+	every_vassal_or_below = {
+		set_character_faith_with_conversion = faith:great_old_one
+	}
+	every_courtier_or_guest = {
+		set_character_faith_with_conversion = faith:great_old_one
+	}
+}

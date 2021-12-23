@@ -16,6 +16,7 @@ quick_start.1001 = {
 				is_independent_ruler = no
 			}
 			setup_vassal_protections = yes
+			convert_every_vassal = yes
 			add_trait = warlock
 			add_warlock_lifestyle_xp = {
 				value = monumental_lifestyle_xp
