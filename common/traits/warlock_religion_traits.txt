@@ -338,7 +338,7 @@ crow_familiar = {
 	index = 873
 	intrigue = 3
 	learning = 3
-	tax_mult = 0.05
+	monthly_income_mult = 0.1
 
 	owned_hostile_scheme_success_chance_add = 5
 	shown_in_ruler_designer = no
