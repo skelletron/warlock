@@ -10,6 +10,25 @@
  great_old_one_adherent_plural:0 "Cultists"
  great_old_one_religion_desc:0 "Heralders of the End Times take up arms and welcome the beginning of a new world by ushering in the end of this one."
 
+# Quick Start
+ quick_start_decision:0 "Choose your Start"
+ quick_start_decision_tooltip:0 "You will choose your starting circumstances in relation to religion, status, and more"
+ quick_start_decision.desc:0 "Choose your origin, and your current standing within the world. Are you an established Warlock who has already proven themself to the Great Old One? Or are you a Cultist who secured the right to practice their faith, even as a religious minority? Or are you simply as you are now? You will only get to make this decision once per lifetime, so think carefully."
+ quick_start_decision_confirm:0 "I've made up my mind"
+
+ quick_start.1001.a:0 "I am an established Warlock."
+ quick_start.1001.a_1.tt:0 "You and all your subjects are Cultists"
+ quick_start.1001.a_2.tt:0 "You have religious rights protection and title revocation protection"
+ quick_start.1001.a_3.tt:0 "You are a wise Warlock with many skill points ready to spend"
+ quick_start.1001.a_4.tt:0 "You have a large amount of Piety due to your devoted lifestyle"
+
+ quick_start.1001.b:0 "I am a faithful Cultist."
+ quick_start.1001.b_1.tt:0 "You and all your subjects are Cultists"
+ quick_start.1001.b_2.tt:0 "You have religious rights protection and title revocation protection"
+
+ quick_start.1001.c:0 "I am as I am now."
+ quick_start.1001.c.tt:0 "Nothing is different for you"
+
 # Holy Sites
 
 # Required holy site localization keys

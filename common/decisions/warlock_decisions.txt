@@ -190,6 +190,8 @@ quick_start_decision = {
 	ai_check_interval = 0
 	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
 
+	desc = quick_start_decision.desc
+
 	is_shown = {
 		NOT = {
 			faith = faith:great_old_one

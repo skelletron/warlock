@@ -10,6 +10,16 @@ quick_start.1001 = {
 	# I am an established warlock with minority protections
 	option = {
 		name = quick_start.1001.a
+		custom_tooltip = quick_start.1001.a_1.tt
+		if = {
+			limit = {
+				is_independent_ruler = no
+			}
+			custom_tooltip = quick_start.1001.a_2.tt
+		}
+		custom_tooltip = quick_start.1001.a_3.tt
+		custom_tooltip = quick_start.1001.a_4.tt
+
 		hidden_effect = {
 			set_character_faith_with_conversion = faith:great_old_one
 			if = {
@@ -36,6 +46,14 @@ quick_start.1001 = {
 	# I am a religious minority with protections
 	option = {
 		name = quick_start.1001.b
+		custom_tooltip = quick_start.1001.b_1.tt
+		if = {
+			limit = {
+				is_independent_ruler = no
+			}
+			custom_tooltip = quick_start.1001.b_2.tt
+		}
+
 		hidden_effect = {
 			set_character_faith_with_conversion = faith:great_old_one
 			if = {
@@ -53,6 +71,7 @@ quick_start.1001 = {
 	# I remain as I am (Vanilla)
 	option = {
 		name = quick_start.1001.c
+		custom_tooltip = quick_start.1001.c.tt
 		
 		add_character_flag = quick_start_done
 	}
