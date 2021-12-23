@@ -18,3 +18,9 @@ undead_wreckage_modifier = {
 	build_prestige_cost = 0.5
 	build_piety_cost = 0.5
 }
+
+arch_cultist_blessings_modifier = {
+	icon = piety_positive
+	county_opinion_add = 15
+	development_growth_factor = 0.1
+}

@@ -7,7 +7,6 @@
 	}
 	
 	can_construct_showing_failures_only = {
-		
 		# culture = {
 		# 	has_innovation = innovation_manorialism
 		# }
@@ -31,13 +30,13 @@
 			}
 			add_warlock_lifestyle_xp = monumental_lifestyle_xp
 		}
-		county.holder.faith = { change_fervor = 5 }
+		county.holder.faith = { change_fervor = 1 }
 	}
 	
 	character_modifier = {
-		learning_per_piety_level = 2
-		monthly_piety = 5
-		monthly_income = 2
+		learning_per_piety_level = 1
+		monthly_piety = 2
+		monthly_income = 1
 		same_faith_opinion = 10
 	}
 
@@ -53,7 +52,7 @@
 	# 	monthly_county_control_change_add = 0.2
 	# }
 	
-	# next_building = leisure_palace_02
+	next_building = corrupted_cathedral_02
 
 	type_icon = "icon_building_warlock_cathedral.dds"
 	
@@ -80,4 +79,145 @@
 	# 		}
 	# 	}
 	# }
+}
+
+corrupted_cathedral_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		# culture = {
+		# 	has_innovation = innovation_windmills
+		# }
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+		county.holder.faith = faith:great_old_one
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_3_cost
+	cost_piety = 250
+	
+	on_complete = {
+		county.holder = {
+			every_sub_realm_county = {
+				change_county_control = 15
+			}
+		}
+		county = {
+			add_county_modifier = {
+				modifier = arch_cultist_blessings_modifier
+				years = 5
+			}
+		}
+		county.holder.faith = { change_fervor = 1 }
+	}
+
+	character_modifier = {
+		# monthly_prestige_gain_mult = 0.1
+		# stress_loss_mult = 0.25
+		# owned_hostile_scheme_success_chance_add = 10
+		# owned_personal_scheme_success_chance_add = 10
+		learning_per_piety_level = 2
+		monthly_piety = 3
+		monthly_income = 1.5
+		monthly_prestige_gain_mult = 0.05
+		same_faith_opinion = 15
+		development_growth_factor = 0.1
+	}
+	
+	duchy_capital_county_modifier = {
+		monthly_county_control_change_factor = 0.15
+		monthly_county_control_change_add = 0.1
+		# monthly_county_control_change_factor = 0.4
+		# monthly_county_control_change_add = 0.3
+	}
+	
+	next_building = corrupted_cathedral_03
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0
+		# base = 20
+		# modifier = {
+		# 	factor = 2
+		# 	scope:holder.capital_province = this
+		# }
+	}
+}
+
+corrupted_cathedral_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		# culture = {
+		# 	has_innovation = innovation_cranes
+		# }
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+		county.holder.faith = faith:great_old_one
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_4_cost
+	cost_piety = 300
+
+	on_complete = {
+		county.holder = {
+			every_sub_realm_county = {
+				change_county_control = 25
+			}
+		}
+		county.holder = {
+			add_character_modifier = {
+				modifier = elder_evangelist_modifier
+				years = 5
+			}
+		}
+		county.holder.faith = { change_fervor = 1 }
+	}
+	
+	character_modifier = {
+		learning_per_piety_level = 3
+		monthly_piety = 4
+		monthly_income = 2
+		monthly_prestige_gain_mult = 0.1
+		same_faith_opinion = 20
+		development_growth_factor = 0.2
+		monthly_warlock_lifestyle_xp_gain_mult = 0.2
+		monthly_piety_from_buildings_mult = 0.1
+	}
+	
+	duchy_capital_county_modifier = {
+		# monthly_piety_from_buildings_mult = 1
+		monthly_county_control_change_factor = 0.3
+		monthly_county_control_change_add = 0.2
+	}
+	
+	type = duchy_capital
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	ai_value = {
+		base = 0
+		# base = 20
+		# modifier = {
+		# 	factor = 2
+		# 	scope:holder.capital_province = this
+		# }
+	}
 }
