@@ -1,0 +1,44 @@
+namespace = quick_start
+
+quick_start.1001 = {
+	type = character_event
+	title = quick_start.1001.t
+	desc = quick_start.1001.desc
+	theme = default
+	left_portrait = owner
+
+	# I am an established warlock with minority protections
+	option = {
+		name = quick_start.1001.a
+		# effect = {
+		# 	vassal_contract_set_obligation_level = {
+		# 		type = religious_rights
+		# 		level = 1
+		# 	}
+		# 	vassal_contract_set_obligation_level = {
+		# 		type = title_revocation_rights
+		# 		level = 1
+		# 	}
+		# }
+		set_character_faith_with_conversion = faith:great_old_one
+		if = {
+			limit = {
+				is_independent_ruler = no
+			}
+			# vassal_contract_set_obligation_level = { type = feudal_government_levies level = 3 }
+			setup_vassal_protections = yes
+		}
+		add_character_flag = quick_start_done
+	}
+
+	# I am a religious minority with protections
+	option = {
+		name = quick_start.1001.b
+	}
+
+	# I remain as I am (Vanilla)
+	option = {
+		name = quick_start.1001.c
+		
+	}
+}

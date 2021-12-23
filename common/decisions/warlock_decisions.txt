@@ -186,6 +186,33 @@ commit_mass_sacrifice_decision = {
 	}
 }
 
+quick_start_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
+
+	is_shown = {
+		NOT = {
+			faith = faith:great_old_one
+			has_trait = warlock
+			has_character_flag = quick_start_done
+		}
+
+	}
+
+	is_valid = {
+		is_adult = yes
+		NOT = {
+			faith = faith:great_old_one
+			has_trait = warlock
+		}
+	}
+
+	effect = {
+		save_scope_as = owner
+		trigger_event = quick_start.1001
+	}
+}
+
 # spawn_undead_faction_decision = {
 # 	ai_check_interval = 0
 # 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
