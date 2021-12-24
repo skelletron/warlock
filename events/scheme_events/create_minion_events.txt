@@ -156,6 +156,25 @@ create_minion.1001 = {
 						add = 15
 					}
 
+					# Vassal or Courtier
+
+					modifier = {
+						scope:target = {
+							OR = {
+								is_vassal_or_below_of = scope:owner
+								is_courtier_of = scope:owner
+							}
+						}
+						add = 15
+					}
+
+					modifier = {
+						scope:target = {
+							is_imprisoned_by = scope:owner
+						}
+						add = 30
+					}
+
 					scope:target = {
 						add_trait = undead
 						add_trait = deathknight
@@ -414,6 +433,25 @@ create_minion.1001 = {
 						add = 15
 					}
 
+					# Vassal or Courtier
+
+					modifier = {
+						scope:target = {
+							OR = {
+								is_vassal_or_below_of = scope:owner
+								is_courtier_of = scope:owner
+							}
+						}
+						add = 15
+					}
+
+					modifier = {
+						scope:target = {
+							is_imprisoned_by = scope:owner
+						}
+						add = 30
+					}
+
 					scope:target = {
 						add_trait = undead
 						add_trait = overlord
@@ -662,6 +700,25 @@ create_minion.1001 = {
 					modifier = {
 						scope:owner.learning > scope:target.learning
 						add = 15
+					}
+
+					# Vassal or Courtier
+
+					modifier = {
+						scope:target = {
+							OR = {
+								is_vassal_or_below_of = scope:owner
+								is_courtier_of = scope:owner
+							}
+						}
+						add = 15
+					}
+
+					modifier = {
+						scope:target = {
+							is_imprisoned_by = scope:owner
+						}
+						add = 30
 					}
 
 					scope:target = {
