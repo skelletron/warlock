@@ -1,4 +1,4 @@
-revoke_minion_title_interaction = {
+﻿revoke_minion_title_interaction = {
 
 	category = interaction_category_vassal
 	common_interaction = yes
