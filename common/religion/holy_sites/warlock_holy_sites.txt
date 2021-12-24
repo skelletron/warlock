@@ -79,3 +79,15 @@ warlock_zagorje = {
 		different_faith_opinion = 30
 	}
 }
+
+# Duchy of Essex
+warlock_london = {
+	county = c_middlesex
+	barony = b_london
+
+	character_modifier = {
+		name = warlock_holy_site_london_effect_name
+		embarkation_cost_mult = -0.25
+		naval_movement_speed_mult = 0.25
+	}
+}

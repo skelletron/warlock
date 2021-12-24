@@ -223,6 +223,9 @@
 			# Duchy of Slavonia
 			holy_site = warlock_zagorje
 
+			# Duchy of Essex
+			holy_site = warlock_london
+
 			#Generic pagan tenets
 			doctrine = tenet_pursuit_of_power
 			doctrine = tenet_human_sacrifice

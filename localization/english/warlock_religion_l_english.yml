@@ -62,6 +62,9 @@
  holy_site_warlock_zagorje_name:0 "Zagorje"
  holy_site_warlock_zagorje_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_zagorje_name$)#!"
 
+ holy_site_warlock_london_name:0 "London"
+ holy_site_warlock_london_effect_name:0 "From [holy_site|E] #weak ($warlock_holy_site_london_name$)#!"
+
  building_type_warlock_gemstone_01:0 "Elder Nexus"
  building_type_warlock_gemstone_01_desc:1 "Powerful crystals such as these draw in aether from the surrounding environment, converting them into mana for use in magical rituals."
  building_warlock_gemstone_01:1 "Ragged Gemstone Circle"
