@@ -1,0 +1,3 @@
+become_duke_of_darkness_effect = {
+	add_trait = duke_of_darkness
+}

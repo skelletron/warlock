@@ -243,7 +243,9 @@ summon_great_old_one.1009 = {
 		name = summon_great_old_one.1009.a
 		custom_tooltip = summon_great_old_one.1009.a_1.tt
 		hidden_effect = {
-			become_duke_of_darkness_effect = yes
+			scope:owner = {
+				become_duke_of_darkness_effect = yes
+			}
 		}
 		trigger_event = summon_great_old_one.1010
 	}
