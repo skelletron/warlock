@@ -11,26 +11,119 @@ summon_great_old_one.1001 = {
 		name = summon_great_old_one.1001.a
 		custom_tooltip = summon_great_old_one.1001.a_1.tt
 
+
 		hidden_effect = {
-			every_living_character = {
-				if = {
-					limit = {
-						NOT = {
-							faith = faith:great_old_one
-						}
-					}
-					add_to_list = people_to_damn
-					# add_character_modifier = { modifier = level_5_vein_snare_victim_modifier years = 10 }
-				}
-			}
-			every_in_list = {
-				list = people_to_damn
-				save_scope_as = current_person
-				scope:current_person = {
-					add_character_modifier = { modifier = level_5_vein_snare_victim_modifier days = 1000 }
-				}
-			}
+			damn_unbelievers_effect = yes
+
+			trigger_event = summon_great_old_one.1002
 		}
+	}
+}
+
+summon_great_old_one.1002 = {
+	type = character_event
+	title = summon_great_old_one.1002.t
+	desc = summon_great_old_one.1002.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:damned_ruler
+		animation = sick
+	}
+
+	immediate = {
+		random_in_list = {
+			list = damned_rulers
+			save_scope_as = damned_ruler
+		}
+		scope:damned_ruler = {
+			remove_from_list = damned_rulers
+		}
+	}
+
+	option = {
+		name = summon_great_old_one.1002.a
+		custom_tooltip = summon_great_old_one.1002.a_1.tt
+		# hidden_effect = {
+			scope:damned_ruler = {
+				death = {
+					death_reason = death_great_old_one_smited
+					killer = scope:owner
+				}
+			}
+		# }
+		trigger_event = summon_great_old_one.1003
+	}
+}
+
+summon_great_old_one.1003 = {
+	type = character_event
+	title = summon_great_old_one.1003.t
+	desc = summon_great_old_one.1003.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:damned_ruler
+		animation = sick
+	}
+
+	immediate = {
+		random_in_list = {
+			list = damned_rulers
+			save_scope_as = damned_ruler
+		}
+		scope:damned_ruler = {
+			remove_from_list = damned_rulers
+		}
+	}
+
+	option = {
+		name = summon_great_old_one.1003.a
+		custom_tooltip = summon_great_old_one.1003.a_1.tt
+		# hidden_effect = {
+			scope:damned_ruler = {
+				death = {
+					death_reason = death_great_old_one_smited
+					killer = scope:owner
+				}
+			}
+		# }
+		trigger_event = summon_great_old_one.1004
+	}
+}
+
+summon_great_old_one.1004 = {
+	type = character_event
+	title = summon_great_old_one.1004.t
+	desc = summon_great_old_one.1004.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:damned_ruler
+		animation = sick
+	}
+
+	immediate = {
+		random_in_list = {
+			list = damned_rulers
+			save_scope_as = damned_ruler
+		}
+		scope:damned_ruler = {
+			remove_from_list = damned_rulers
+		}
+	}
+
+	option = {
+		name = summon_great_old_one.1004.a
+		custom_tooltip = summon_great_old_one.1004.a_1.tt
+		# hidden_effect = {
+			scope:damned_ruler = {
+				death = {
+					death_reason = death_great_old_one_smited
+					killer = scope:owner
+				}
+			}
+		# }
 	}
 }
 

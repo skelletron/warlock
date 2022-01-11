@@ -1,0 +1,4 @@
+death_great_old_one_smited = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}

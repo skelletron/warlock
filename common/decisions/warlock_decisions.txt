@@ -247,6 +247,8 @@ summon_great_old_one_decision = {
 	cost = {
 		# actual cost
 		piety = 100000
+		# test cost
+		# piety = 50
 	}
 
 	effect = {
