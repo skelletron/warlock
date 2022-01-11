@@ -215,6 +215,46 @@ quick_start_decision = {
 	}
 }
 
+summon_great_old_one_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
+
+	desc = quick_start_decision.desc
+
+	is_shown = {
+		faith = faith:great_old_one
+		is_adult = yes
+		NOT = {
+			has_character_flag = summoned_great_old_one_flag
+		}
+	}
+
+	is_valid = {
+		# is_adult = yes
+		# faith = faith:great_old_one
+		has_trait = warlock
+		has_perk = dhampir_perk
+		has_perk = temp_bone_4_perk
+		has_perk = modify_collective_memory_perk
+		has_perk = psychic_armaments_perk
+		has_perk = bend_intellect_perk
+		faith:great_old_one = {
+			holy_sites_controlled >= 8
+			num_county_followers >= 400
+		}
+	}
+
+	cost = {
+		# actual cost
+		piety = 100000
+	}
+
+	effect = {
+		save_scope_as = owner
+		trigger_event = summon_great_old_one.1001
+	}
+}
+
 # spawn_undead_faction_decision = {
 # 	ai_check_interval = 0
 # 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"

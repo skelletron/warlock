@@ -1,0 +1,132 @@
+namespace = summon_great_old_one
+
+summon_great_old_one.1001 = {
+	type = character_event
+	title = summon_great_old_one.1001.t
+	desc = summon_great_old_one.1001.desc
+	theme = default
+	left_portrait = owner
+
+	option = {
+		name = summon_great_old_one.1001.a
+		custom_tooltip = summon_great_old_one.1001.a_1.tt
+
+		hidden_effect = {
+			every_living_character = {
+				if = {
+					limit = {
+						NOT = {
+							faith = faith:great_old_one
+						}
+					}
+					add_to_list = people_to_damn
+					# add_character_modifier = { modifier = level_5_vein_snare_victim_modifier years = 10 }
+				}
+			}
+			every_in_list = {
+				list = people_to_damn
+				save_scope_as = current_person
+				scope:current_person = {
+					add_character_modifier = { modifier = level_5_vein_snare_victim_modifier days = 1000 }
+				}
+			}
+		}
+	}
+}
+
+# scope:recipient = {
+# 	every_courtier_or_guest = {
+# 		add_to_list = courtiers_to_geas
+# 	}
+# }
+# every_in_list = {
+# 	list = courtiers_to_geas
+# 	save_scope_as = current_courtier
+# 	scope:actor = {
+# 		add_hook = {
+# 			target = scope:current_courtier
+# 			type = geas_hook
+# 		}
+# 	}
+# 	add_opinion = {
+# 		modifier = geased_opinion_modifier
+# 		target = scope:actor
+# 	}
+# }
+
+# quick_start.1001 = {
+# 	type = character_event
+# 	title = quick_start.1001.t
+# 	desc = quick_start.1001.desc
+# 	theme = default
+# 	left_portrait = owner
+
+# 	# I am an established warlock with minority protections
+# 	option = {
+# 		name = quick_start.1001.a
+# 		custom_tooltip = quick_start.1001.a_1.tt
+# 		if = {
+# 			limit = {
+# 				is_independent_ruler = no
+# 			}
+# 			custom_tooltip = quick_start.1001.a_2.tt
+# 		}
+# 		custom_tooltip = quick_start.1001.a_3.tt
+# 		custom_tooltip = quick_start.1001.a_4.tt
+
+# 		hidden_effect = {
+# 			set_character_faith_with_conversion = faith:great_old_one
+# 			if = {
+# 				limit = {
+# 					is_independent_ruler = no
+# 				}
+# 				setup_vassal_protections = yes
+# 			}
+# 			convert_every_vassal = yes
+# 			add_trait = warlock
+# 			add_warlock_lifestyle_xp = {
+# 				value = monumental_lifestyle_xp
+# 				multiply = 5
+# 			}
+# 			add_piety = {
+# 				value = massive_piety_gain
+# 				multiply = 2
+# 			}
+# 		}
+
+# 		add_character_flag = quick_start_done
+# 	}
+
+# 	# I am a religious minority with protections
+# 	option = {
+# 		name = quick_start.1001.b
+# 		custom_tooltip = quick_start.1001.b_1.tt
+# 		if = {
+# 			limit = {
+# 				is_independent_ruler = no
+# 			}
+# 			custom_tooltip = quick_start.1001.b_2.tt
+# 		}
+
+# 		hidden_effect = {
+# 			set_character_faith_with_conversion = faith:great_old_one
+# 			if = {
+# 				limit = {
+# 					is_independent_ruler = no
+# 				}
+# 				setup_vassal_protections = yes
+# 			}
+# 			convert_every_vassal = yes
+# 		}
+
+# 		add_character_flag = quick_start_done
+# 	}
+
+# 	# I remain as I am (Vanilla)
+# 	option = {
+# 		name = quick_start.1001.c
+# 		custom_tooltip = quick_start.1001.c.tt
+		
+# 		add_character_flag = quick_start_done
+# 	}
+# }
