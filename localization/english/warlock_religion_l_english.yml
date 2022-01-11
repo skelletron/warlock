@@ -546,7 +546,7 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
 
  create_thrall.1002:0 "Thrall Created"
  create_thrall.1002.t:0 "Thrall Created"
- create_thrall.1002.desc:0 "Now [target.GetShortUINameNoTooltip] will forever rest under my thumb. All things that were [target.GetHerHis] shall now be ours, and we shall make use of those things masterfully."
+ create_thrall.1002.desc:0 "Now [target.GetShortUINameNoTooltip] will forever rest under my thumb. All things that were [target.GetHersHis] shall now be ours, and we shall make use of those things masterfully."
 #  create_thrall.1002.a:0 "There there, rest your weary mind within this psychic cocoon"
  create_thrall.1002.a:0 "Today, I have done the work of the Lord"
  create_thrall.1002.a.tt:0 "There there, rest your weary mind... You won't be troubled by pesky thoughts and desires anymore."
@@ -594,7 +594,7 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  commit_mass_sacrifice_decision_confirm:0 "Burn them at the Stake!"
  realm.1001.desc:0 "Desperate times call for desperate measures. With this sacrifice I make upon my own land, I will prove an even greater devotion to the Great Old One, and earn the favour I need to crush my opponents.\n\nI look down upon the poor souls chained before me. My order of Cultists have apprehended victims from all walks of life.\n\n#weak \"This hurts me more than it hurts you, I promise.\"#! Doubt and horror are spelled across their faces.\n\nNow to decide who lives and who dies..."
  realm.1001.a:0 "Sacrifice the unbelievers"
- realm.1001.a_1.tt:0 "You only will sacrifice the unbelievers"
+ realm.1001.a_1.tt:0 "You will only sacrifice the unbelievers"
  realm.1001.a_2.tt:0 "These subjects of mine have had chance after chance to see the grace of our Eldritch Lord, and still they cling to their heathen ways. They have chosen to put their own sympathies above the needs of all within this realm, and for that I must punish them."
  realm.1001.a_3.tt:0 "Your entire realm will have a minor [control|E] loss"
  realm.1001.b:0 "Sacrifice the lowest in our land"
