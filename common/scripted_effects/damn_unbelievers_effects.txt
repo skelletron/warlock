@@ -1,4 +1,4 @@
-damn_unbelievers_effect = {
+create_damned_lists_effect = {
 	every_living_character = {
 		if = {
 			limit = {
@@ -15,19 +15,14 @@ damn_unbelievers_effect = {
 					faith = faith:great_old_one
 				}
 				is_ruler = yes
+				is_adult = yes
+				age >= 18
 				OR = {
 					highest_held_title_tier = tier_kingdom
 					highest_held_title_tier = tier_empire
 				}
 			}
 			add_to_list = damned_rulers
-		}
-	}
-	every_in_list = {
-		list = people_to_damn
-		save_scope_as = current_person
-		scope:current_person = {
-			add_character_modifier = { modifier = level_6_vein_snare_victim_modifier days = 1000 }
 		}
 	}
 }

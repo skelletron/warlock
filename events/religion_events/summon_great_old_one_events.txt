@@ -5,7 +5,10 @@ summon_great_old_one.1001 = {
 	title = summon_great_old_one.1001.t
 	desc = summon_great_old_one.1001.desc
 	theme = default
-	left_portrait = owner
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
 
 	option = {
 		name = summon_great_old_one.1001.a
@@ -13,7 +16,7 @@ summon_great_old_one.1001 = {
 
 
 		hidden_effect = {
-			damn_unbelievers_effect = yes
+			create_damned_lists_effect = yes
 
 			trigger_event = summon_great_old_one.1002
 		}
@@ -27,31 +30,13 @@ summon_great_old_one.1002 = {
 	theme = default
 
 	left_portrait = {
-		character = scope:damned_ruler
-		animation = sick
-	}
-
-	immediate = {
-		random_in_list = {
-			list = damned_rulers
-			save_scope_as = damned_ruler
-		}
-		scope:damned_ruler = {
-			remove_from_list = damned_rulers
-		}
+		character = scope:owner
+		animation = personality_zealous
 	}
 
 	option = {
 		name = summon_great_old_one.1002.a
 		custom_tooltip = summon_great_old_one.1002.a_1.tt
-		# hidden_effect = {
-			scope:damned_ruler = {
-				death = {
-					death_reason = death_great_old_one_smited
-					killer = scope:owner
-				}
-			}
-		# }
 		trigger_event = summon_great_old_one.1003
 	}
 }
@@ -63,31 +48,13 @@ summon_great_old_one.1003 = {
 	theme = default
 
 	left_portrait = {
-		character = scope:damned_ruler
-		animation = sick
-	}
-
-	immediate = {
-		random_in_list = {
-			list = damned_rulers
-			save_scope_as = damned_ruler
-		}
-		scope:damned_ruler = {
-			remove_from_list = damned_rulers
-		}
+		character = scope:owner
+		animation = personality_zealous
 	}
 
 	option = {
 		name = summon_great_old_one.1003.a
 		custom_tooltip = summon_great_old_one.1003.a_1.tt
-		# hidden_effect = {
-			scope:damned_ruler = {
-				death = {
-					death_reason = death_great_old_one_smited
-					killer = scope:owner
-				}
-			}
-		# }
 		trigger_event = summon_great_old_one.1004
 	}
 }
@@ -99,6 +66,30 @@ summon_great_old_one.1004 = {
 	theme = default
 
 	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	option = {
+		name = summon_great_old_one.1004.a
+		custom_tooltip = summon_great_old_one.1004.a_1.tt
+
+		trigger_event = summon_great_old_one.1005
+	}
+}
+
+summon_great_old_one.1005 = {
+	type = character_event
+	title = summon_great_old_one.1005.t
+	desc = summon_great_old_one.1005.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
 		character = scope:damned_ruler
 		animation = sick
 	}
@@ -114,16 +105,182 @@ summon_great_old_one.1004 = {
 	}
 
 	option = {
-		name = summon_great_old_one.1004.a
-		custom_tooltip = summon_great_old_one.1004.a_1.tt
-		# hidden_effect = {
+		name = summon_great_old_one.1005.a
+		custom_tooltip = summon_great_old_one.1005.a_1.tt
+		hidden_effect = {
 			scope:damned_ruler = {
 				death = {
 					death_reason = death_great_old_one_smited
 					killer = scope:owner
 				}
 			}
-		# }
+		}
+		trigger_event = summon_great_old_one.1006
+	}
+}
+
+summon_great_old_one.1006 = {
+	type = character_event
+	title = summon_great_old_one.1006.t
+	desc = summon_great_old_one.1006.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:damned_ruler
+		animation = sick
+	}
+
+	immediate = {
+		random_in_list = {
+			list = damned_rulers
+			save_scope_as = damned_ruler
+		}
+		scope:damned_ruler = {
+			remove_from_list = damned_rulers
+		}
+	}
+
+	option = {
+		name = summon_great_old_one.1006.a
+		custom_tooltip = summon_great_old_one.1006.a_1.tt
+		hidden_effect = {
+			scope:damned_ruler = {
+				death = {
+					death_reason = death_great_old_one_smited
+					killer = scope:owner
+				}
+			}
+		}
+		trigger_event = summon_great_old_one.1007
+	}
+}
+
+summon_great_old_one.1007 = {
+	type = character_event
+	title = summon_great_old_one.1007.t
+	desc = summon_great_old_one.1007.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:damned_ruler
+		animation = sick
+	}
+
+	immediate = {
+		random_in_list = {
+			list = damned_rulers
+			save_scope_as = damned_ruler
+		}
+		scope:damned_ruler = {
+			remove_from_list = damned_rulers
+		}
+	}
+
+	option = {
+		name = summon_great_old_one.1007.a
+		custom_tooltip = summon_great_old_one.1007.a_1.tt
+		hidden_effect = {
+			scope:damned_ruler = {
+				death = {
+					death_reason = death_great_old_one_smited
+					killer = scope:owner
+				}
+			}
+		}
+		trigger_event = summon_great_old_one.1008
+	}
+}
+
+summon_great_old_one.1008 = {
+	type = character_event
+	title = summon_great_old_one.1008.t
+	desc = summon_great_old_one.1008.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	option = {
+		name = summon_great_old_one.1008.a
+		custom_tooltip = summon_great_old_one.1008.a_1.tt
+		hidden_effect = {
+			every_in_list = {
+				list = people_to_damn
+				save_scope_as = current_person
+				scope:current_person = {
+					add_character_modifier = { modifier = level_6_vein_snare_victim_modifier days = 1000 }
+				}
+			}
+		}
+		trigger_event = summon_great_old_one.1009
+	}
+}
+
+summon_great_old_one.1009 = {
+	type = character_event
+	title = summon_great_old_one.1009.t
+	desc = summon_great_old_one.1009.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	option = {
+		name = summon_great_old_one.1009.a
+		custom_tooltip = summon_great_old_one.1009.a_1.tt
+		hidden_effect = {
+			become_duke_of_darkness_effect = yes
+		}
+		trigger_event = summon_great_old_one.1010
+	}
+}
+
+summon_great_old_one.1010 = {
+	type = character_event
+	title = summon_great_old_one.1010.t
+	desc = summon_great_old_one.1010.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	option = {
+		name = summon_great_old_one.1010.a
+		custom_tooltip = summon_great_old_one.1010.a_1.tt
+		trigger_event = summon_great_old_one.1011
+	}
+}
+
+summon_great_old_one.1011 = {
+	type = character_event
+	title = summon_great_old_one.1011.t
+	desc = summon_great_old_one.1011.desc
+	theme = default
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	option = {
+		name = summon_great_old_one.1011.a
+		custom_tooltip = summon_great_old_one.1011.a_1.tt
 	}
 }
 

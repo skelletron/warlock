@@ -618,6 +618,51 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  spared_captives_from_burning_desc:0 "Showed mercy to the captives who otherwise would have been burned at the stake for the Great Old One"
 
 
+# Summon Great Old One
+ summon_great_old_one.1001.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1001.desc:0 "\"On your word, High Warlock, we are ready...\" the Arch Cultist looks at me expectantly."
+ summon_great_old_one.1001.a:0 "Let us begin."
+ summon_great_old_one.1001.a_1.tt:0 "You will attempt to summon the Great Old One to your plane."
+
+ summon_great_old_one.1002.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1002.desc:0 "As the High Warlock, I lead the rites. With my approval, the Arch Cultist unsheathes a golden ceremonial dagger, and presents it to the first High Cultist in line. The High Cultists circle around the brazier, chanting in low voices. One by one, a High Cultist slits their palm and offers their blood into the brazier. Their voices rise in pitch and volume with each offering. I nod to the rest of the participants, who begin to join the chanting."
+
+ summon_great_old_one.1003.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1003.desc:0 "Purple fire now burns in the brazier, and all the gathered crystals begin to rattle and rise up. We are all calling for the Great Old One now. Bless our null plane we say, our barren, sinful world. \n\nFog begins to seep out of every nearby crevice, its shape like tendrils of a leviathan. Then the night darkens even more than I thought possible. The stars can no longer be seen, and a swirl of clouds churn above us like a whirlpool in the sky. This is the portal we have toiled for, for years and years on end. The culmination of all our most fervent wishes."
+
+ summon_great_old_one.1004.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1004.desc:0 "From moment to moment, looking up to the portal, the images it shows are changing. I see a face that should frighten me, but it does not, for I know who, what this is - our Lord. It is coming through the portal in the sky now. All of the cultists link arms now, so as not to get swept away by the force that descends upon us."
+
+ summon_great_old_one.1005.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1005.desc:0 "The Great Old One's voice now booms all around us. I am compelled to stare into its many black eyes, even as the beginnings of terror grip me. \n\n\"I am Xrrthuu, Cosmic Maker, but you know me as the Great Old One. I am pleased with you, my Cultists, my Chosen. Now witness my power.\"\n\nThen a figure in ethereal chains is revealed from the mist. Before us quivers [damned_ruler.GetFullNameNoTooltip], bleeding from [damned_ruler.GetHerHis] eyes and coughing up black bile. [damned_ruler.GetSheHe|U] looks at us through bloody eyes, pleading to be saved.\n\n\"Now die, insect.\" booms the Great Old One, as [damned_ruler.GetFirstNameNoTooltip] collapses and dies, writhing in agony."
+
+ summon_great_old_one.1006.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1006.desc:0 "Another damned one appears from the mist. I recognize [damned_ruler.GetHerHim] as the pitiful [damned_ruler.GetFullNameNoTooltip]. [damned_ruler.GetSheHe|U] cries out weakly for us to help [damned_ruler.GetHerHim]. \n\n\"Now die, vermin.\" the Great Old One commands [damned_ruler.GetFirstNameNoTooltip] to die, and so [damned_ruler.GetSheHe] dies."
+
+ summon_great_old_one.1007.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1007.desc:0 "Yet more heathens are summoned to die. Among them, [damned_ruler.GetFullNameNoTooltip] stands out to me. [damned_ruler.GetSheHe|U] locks eyes with me for a mere moment before the Great Old One's command echos around us. \n\n\"Now die, parasite.\"\n\nAs quickly as [damned_ruler.GetFirstNameNoTooltip] is summoned, is [damned_ruler.GetHerHis] life taken from [damned_ruler.GetHerHim]. We all watch in disdain as [damned_ruler.GetSheHe] spasms violently, before becoming totally motionless in a heap on the ground."
+
+ summon_great_old_one.1008.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1008.desc:0 "\"Now that you have witnessed a small demonstration of my power, I will show you an even greater one. Watch as every living unbeliever in your plane is struck with mine own vengeance.\n\nSee them die in droves, and know my mercy, for you will not taste such agony, my faithful Cultists.\""
+ summon_great_old_one.1008.a_1.tt:0 "Every single non Cultist will be Vein Snared."
+
+ summon_great_old_one.1009.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1009.desc:0 "Then, every eye of the Great Old One locks onto me. \n\n\"There is one more task to perform here, before I leave this world.\n\nFear not, for my light always shines upon you, Cultists.\n\nYou will know this to be true, as my Chosen, [owner.GetFirstNameNoTooltip], becomes your Duchess of Darkness, and guides the denizens of your plane for eternity.\n\nIt falls upon [owner.GetHerHim] now to grant you every protection and every blessing.\n\nBe at peace, my faithful Cultists. You will always feel me, all around you.\""
+ summon_great_old_one.1009.a_1.tt:0 "You will become a Duchess of Darkness, nearly a God, tasked to rule over this plane forevermore."
+
+ summon_great_old_one.1010.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1010.desc:0 "Suddenly, a river of voices flows through my mind, as time itself seems to slow.\n\nAre these prayers from fellow Cultists I'm hearing? Is time indeed slowing? Answers rush to me. Things I couldn't know before, are now plain as day, as if every secret of the universe was the simplest thing.\n\nYes, I can now hear their prayers. I can answer them on behalf of the Great Old One. And no, it is not time that slows, merely my perception of it.\n\nAm I immortal now? Yes, I am. I know this to be true, as I know every other truth of this and many other worlds. I can go anywhere, be anything.\n\nI am nearly a God."
+
+ summon_great_old_one.1011.t:0 "Summoning of the Great Old One"
+ summon_great_old_one.1011.desc:0 "This is the knowledge I sought, the power I fought for.\n\nI am recognized by our Eldritch Lord, and from now until time itself ceases to be, I shall serve as the Duchess of Darkness, shepherding this plane to greater heights, and bringing about an eternal era of prosperity.\n\nMy work, it seems, has only just begun."
+
+# Event Deaths
+
+# this localization doesn't work yet for some reason
+#  death_great_old_one_smited:0 "was smited by the Great Old One"
+#  death_great_old_one_smited_killer:0 "was smited by the Great Old One, after being marked for death by [TARGET_CHARACTER.GetUIName] during the Summoning Ceremony"
+
+
  GAINS_WARLOCK_LIFESTYLE_XP:2 "Gains $VALUE|V0$ Warlock [lifestyle|E] Experience"
  GAINED_WARLOCK_LIFESTYLE_XP:2 "Gained $VALUE|V0$ Warlock [lifestyle|E] Experience"
  I_GAIN_WARLOCK_LIFESTYLE_XP:2 "You gain $VALUE|V0$ Warlock [lifestyle|E] Experience"
