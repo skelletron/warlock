@@ -1,4 +1,6 @@
 ﻿l_english:
+ trait_duke_of_darkness:0 "Duke of Darkness"
+
  trait_warlock:0 "Warlock"
  trait_warlock_desc:0 "The Heralder of the End Times has established their position within the ranks of the cultists of the Great Old One, and has been conferred the title of Warlock and all that it entails."
  trait_warlock_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has established their position within the ranks of the cultists of the Great Old One, and has been conferred the title of Warlock and all that it entails."
