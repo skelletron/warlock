@@ -49,3 +49,8 @@ interaction_category_warlock = {
 	index = 8
 	desc = "SPELLCASTING_ACTIONS"
 }
+
+interaction_category_duke_of_darkness = {
+	index = 9
+	desc = "DUKE_OF_DARKNESS_ACTIONS"
+}

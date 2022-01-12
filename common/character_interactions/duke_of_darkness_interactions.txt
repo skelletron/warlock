@@ -1,0 +1,46 @@
+gift_bottled_soul = {
+	category = interaction_category_duke_of_darkness
+	desc = gift_bottled_soul_interaction_desc
+	send_name = gift_bottled_soul_interaction
+	use_diplomatic_range = yes
+	popup_on_receive = no
+	send_options_exclusive = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		scope:actor = {
+			has_trait = warlock
+			has_trait = duke_of_darkness
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			NOT = { is_imprisoned = yes}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			has_character_modifier = bottled_soul_modifier
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = helpful_auto_accept_interaction
+			object = scope:recipient
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			remove_character_modifier = bottled_soul_modifier
+		}
+		scope:recipient = {
+			add_character_modifier = {
+				modifier = bottled_soul_modifier
+			}
+		}
+	}
+}

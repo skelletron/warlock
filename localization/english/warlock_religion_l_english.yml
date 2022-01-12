@@ -293,6 +293,8 @@
  gave_undead_troops_opinion_modifier:0 "Granted Undead Troops"
 
  interaction_category_warlock:0 "Spellcasting"
+interaction_category_duke_of_darkness:0 "Holy Powers"
+#  DUKE_OF_DARKNESS_ACTIONS:0 "Duke of Darkness Spells"
  stealthy_auto_accept_interaction:0 "You cast this spell from afar, so [TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is none the wiser."
  helpful_auto_accept_interaction:0 "[TARGET_CHARACTER.GetTitledFirstNameNoTooltip] is happy to accept a boon like this from you."
 
