@@ -83,7 +83,7 @@ hear_prayers.1001 = {
 		scope:owner = {
 			add_piety = {
 				value = 0
-				subtract = 600
+				subtract = scope:cultist.answer_prayer_cost
 			}
 		}
 	}

@@ -671,6 +671,7 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
 
  hear_prayers_decision:0 "Hear Cultist Prayers"
  hear_prayers_decision_confirm:0 "Answer them"
+ hear_prayers_decision_tooltip:0 "Hear the prayers of your fellow cultists on behalf of the Great Old One"
  hear_prayers_decision.desc:0 "You will listen closely to the prayers of your fellow Cultists, and bless those who you deem worthy."
 
  hear_prayers.1001.t:0 "Hearing Cultist Prayers"

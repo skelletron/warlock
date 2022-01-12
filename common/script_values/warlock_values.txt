@@ -138,3 +138,25 @@ number_of_children = {
 		add = 1
 	}
 }
+
+answer_prayer_cost = {
+	value = 0
+	if = {
+		limit = {
+			has_character_flag = ugly_cultist_flag
+		}
+		add = 800
+	}
+	else_if = {
+		limit = {
+			has_character_flag = vengeful_cultist_flag
+		}
+		add = 600
+	}
+	else_if = {
+		limit = {
+			has_character_flag = greedy_cultist_flag
+		}
+		add = 200
+	}
+}

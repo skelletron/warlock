@@ -264,6 +264,8 @@ hear_prayers_decision = {
 
 	desc = hear_prayers_decision.desc
 
+	cooldown = { years = 1 }
+
 	is_shown = {
 		faith = faith:great_old_one
 		is_adult = yes
