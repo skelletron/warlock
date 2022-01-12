@@ -308,6 +308,10 @@
  psychic_armaments_modifier:0 "Psychic Armaments"
  psychic_armaments_modifier_desc:0 "New knights have been outfitted with psychic weaponry and armour."
 
+# Duke of Darkness Modifiers
+ bottled_soul_modifier:0 "Bottled Soul"
+ bottled_soul_modifier_desc:0 "The delicious soul of a sentient being, skillfully harvested during their final moments. Merely being in possession of this artifact extends its holder's life. It's also used as a valuable form of currency within the Transplanar Empire of the Great Old One."
+
 # Hooks
  geas_hook:0 "Geas"
  dominate_thrall_hook:0 "Dominated Thrall"

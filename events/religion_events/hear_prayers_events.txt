@@ -135,6 +135,9 @@ hear_prayers.1002 = {
 				}
 			}
 		}
+		add_character_modifier = {
+			modifier = bottled_soul_modifier
+		}
 	}
 
 	# Extension via Child Sacrifice
@@ -156,6 +159,9 @@ hear_prayers.1002 = {
 				}
 				reap_soul_child_effect = yes
 			}
+		}
+		add_character_modifier = {
+			modifier = bottled_soul_modifier
 		}
 	}
 
