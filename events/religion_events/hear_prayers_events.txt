@@ -22,6 +22,14 @@ hear_prayers.1001 = {
 				}
 				desc = hear_prayers.1001.desc_rivalry
 			}
+			triggered_desc = {
+				trigger = {
+					scope:cultist = {
+						has_character_flag = greedy_cultist_flag
+					}
+				}
+				desc = hear_prayers.1001.desc_greedy
+			}
 			desc = hear_prayers.1001.desc
 		}
 	}
@@ -61,6 +69,17 @@ hear_prayers.1001 = {
 				name = indebted_duke_of_darkness
 				value = scope:owner
 			}
+			if = {
+				limit = {
+					has_character_flag = greedy_cultist_flag
+				}
+				scope:owner = {
+					pay_short_term_gold = {
+						target = scope:cultist
+						gold = 1000
+					}
+				}
+			}
 		}
 	}
 
@@ -83,7 +102,7 @@ hear_prayers.1002 = {
 
 	right_portrait = {
 		character = scope:cultist
-		animation = beg
+		animation = paranoia
 	}
 
 	immediate = {

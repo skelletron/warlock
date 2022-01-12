@@ -5,6 +5,13 @@
 			OR = {
 				num_of_relation_rival >= 1
 				has_trait = beauty_bad
+				AND = {
+					is_ruler = yes
+					OR = {
+						gold <= 0
+						has_trait = greedy
+					}
+				}
 			}
 			age >= 18
 		}
@@ -21,6 +28,18 @@
 				num_of_relation_rival >= 1
 			}
 			add_character_flag = vengeful_cultist_flag
+		}
+		else_if = {
+			limit = {
+				AND = {
+					is_ruler = yes
+					OR = {
+						gold <= 0
+						has_trait = greedy
+					}
+				}
+			}
+			add_character_flag = greedy_cultist_flag
 		}
 	}
 }
@@ -65,11 +84,31 @@ answer_prayer_effect = {
 		add_character_modifier = {
 			# modifier = indebted_vengeful_modifier
 			modifier = indebted_to_duke_of_darkness_modifier
-			years = 10
+			years = 7
 			# days = 5
 		}
 	}
-	add_character_flag = indebted_flag
+	else_if = {
+		limit = {
+			has_character_flag = greedy_cultist_flag
+		}
+		# save_scope_as = greedy_cultist
+
+		# receive_money_effect = yes
+		# var:indebted_duke_of_darkness = {
+		# 	pay_short_term_gold = {
+		# 		target = scope:greedy_cultist
+		# 		gold = 1000
+		# 	}
+		# }
+		add_character_modifier = {
+			modifier = indebted_to_duke_of_darkness_modifier
+			years = 9
+			# days = 5
+		}
+	}
+
+	# add_character_flag = indebted_flag
 }
 
 reap_soul_child_effect = {
@@ -99,6 +138,20 @@ take_money_effect = {
 		gold = massive_gold_value
 	}
 }
+
+# receive_money_effect = {
+# 	# save_scope_as = payer
+# 	save_scope_as = receiver
+# 	var:indebted_duke_of_darkness = {
+# 		save_scope_as = payer
+# 	}
+# 	scope:payer = {
+# 		pay_short_term_gold = {
+# 			target = scope:receiver
+# 			gold = 1000
+# 		}
+# 	}
+# }
 
 # reap_soul_child_effect = {
 # 	any_child = {
