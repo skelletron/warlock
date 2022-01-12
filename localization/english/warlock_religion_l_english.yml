@@ -254,12 +254,14 @@
 # Blood Traits
  trait_eldritch_beauty_01:0 "Eldritch Beauty"
 #  trait_eldritch_beauty_01_desc:0 "This character understands that worship of the Great Old One is the only true way to bring out their inner beauty."
- trait_eldritch_beauty_01_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] understands that worship of the Great Old One is the only true way to bring out [ROOT.GetCharacter.GetHerHis] inner beauty."
+ trait_eldritch_beauty_01_desc:0 "This character understands that worship of the Great Old One is the only true way to bring out their inner beauty."
+ trait_eldritch_beauty_01_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] understands that worship of the Great Old One is the only true way to bring out [ROOT.GetCharacter.GetHerHis] inner beauty."
 #  trait_eldritch_beauty_01_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] understands that worship of the Great Old One is the only true way to bring out [ROOT.GetCharacter.GetHerHis] inner beauty."
 #  trait_beauty_good_3_desc:0 "Enthralling, mesmerizing, and lovely; this character outshines most with their beauty."
 #  trait_beauty_good_3_character_desc:0 "Enthralling, mesmerizing, and lovely; [ROOT.GetCharacter.GetFirstNameNoTooltip] outshines most with [ROOT.GetCharacter.GetHerHis] beauty."
  trait_eldritch_strength_01:0 "Eldritch Strength"
  trait_eldritch_strength_01_desc:0 "What nature witholds, the Great Old One provides. [ROOT.GetCharacter.GetFirstNameNoTooltip] is a shining example of this truth."
+ trait_eldritch_strength_01_character_desc:0 "What nature witholds, the Great Old One provides. This character is a shining example of this truth."
 
 # Blood Modifiers
  temporal_resistance_modifier:0 "Temporal Resistance"
@@ -313,6 +315,9 @@ interaction_category_duke_of_darkness:0 "Holy Powers"
 # Duke of Darkness Modifiers
  bottled_soul_modifier:0 "Bottled Soul"
  bottled_soul_modifier_desc:0 "The delicious soul of a sentient being, skillfully harvested during their final moments. Merely being in possession of this artifact extends its holder's life. It's also used as a valuable form of currency within the Transplanar Empire of the Great Old One."
+ indebted_to_duke_of_darkness_modifier:0 "A Debt Owed"
+ indebted_to_duke_of_darkness_modifier_desc:0 "This character has made a dark deal, and will someday have to pay the price for it."
+ indebted_to_duke_of_darkness_modifier_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has made a dark deal, and will someday have to pay the price for it."
 
 # Hooks
  geas_hook:0 "Geas"
@@ -664,8 +669,11 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
 
 # Hear Prayers
 
+ hear_prayers_decision:0 "Hear Cultist Prayers"
+ hear_prayers_decision_confirm:0 "Answer them"
  hear_prayers_decision.desc:0 "You will listen closely to the prayers of your fellow Cultists, and bless those who you deem worthy."
 
+ hear_prayers.1001.t:0 "Hearing Cultist Prayers"
  hear_prayers.1001.desc_intro:0 "Your Dark Grace, I kneel before you and humbly ask that you grant a fervent wish of mine.\n\n"
  hear_prayers.1001.desc_ugly:0 "I wish to be made beautiful and lovely, so that all in the land may adore me."
  hear_prayers.1001.desc_rivalry:0 "I wish for your Dark Grace to get rid of a most hated rival of mine."
