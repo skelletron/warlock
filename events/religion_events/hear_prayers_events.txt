@@ -88,17 +88,13 @@ hear_prayers.1002 = {
 
 	immediate = {
 		save_scope_as = owner
-		# scope:owner = {
-		# 	var:current_debtor = {
-		# 		save_scope_as = cultist
-		# 	}
-		# }
 		random_in_list = {
 			list = indebted_cultists
 			save_scope_as = cultist
 		}
 		scope:cultist = {
 			remove_from_list = indebted_cultists
+			# has_children_util_effect = yes
 		}
 	}
 
@@ -122,6 +118,12 @@ hear_prayers.1002 = {
 		name = hear_prayers.1002.b
 		custom_tooltip = hear_prayers.1002.b_1.tt
 
+		trigger = {
+			scope:cultist = {
+				number_of_children >= 1
+			}
+		}
+
 		hidden_effect = {
 			scope:cultist = {
 				add_character_modifier = {
@@ -129,9 +131,6 @@ hear_prayers.1002 = {
 					years = 10
 				}
 				reap_soul_child_effect = yes
-				# any_child = {
-					
-				# }
 			}
 		}
 	}

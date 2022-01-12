@@ -19,21 +19,6 @@ on_yearly_check_debt = {
 			add_to_list = indebted_cultists
 
 			var:indebted_duke_of_darkness = {
-				# if = {
-				# 	limit = {
-				# 		has_variable = current_debtor
-				# 	}
-				# 	change_variable = {
-				# 		name = current_debtor
-				# 		value = indebted_cultist
-				# 	}
-				# }
-				# else = {
-				# 	set_variable = {
-				# 		name = current_debtor
-				# 		value = indebted_cultist
-				# 	}
-				# }
 				trigger_event = hear_prayers.1002
 			}
 		}

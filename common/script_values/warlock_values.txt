@@ -127,3 +127,14 @@ colourful_haired_immortal_age = {
 		add = 35
 	}
 }
+
+number_of_children = {
+	value = 0
+	every_child = {
+		limit = {
+			age >= 1
+			is_alive = yes
+		}
+		add = 1
+	}
+}

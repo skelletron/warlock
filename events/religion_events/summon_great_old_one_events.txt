@@ -271,18 +271,8 @@ summon_great_old_one.1009 = {
 					holder = scope:new_duchess
 					change = scope:change
 				}
-				# set_title_name = ye_olde_title
-				
-				# set_title_name = duke_of_darkness_title
-				# set_title_article = TITLE_ARTICLE_LOC_KEY
-				# set_title_adjective = TITLE_ADJECTIVE_LOC_KEY
 			}
 			resolve_title_and_vassal_change = scope:change
-			# primary_title = {
-			# 	set_title_name = duke_of_darkness_title
-			# 	set_title_article = TITLE_ARTICLE_LOC_KEY
-			# 	set_title_adjective = TITLE_ADJECTIVE_LOC_KEY
-			# }
 		}
 		trigger_event = summon_great_old_one.1010
 	}
