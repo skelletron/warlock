@@ -20,7 +20,7 @@
 			limit = {
 				num_of_relation_rival >= 1
 			}
-			add_character_flag = hateful_cultist_flag
+			add_character_flag = vengeful_cultist_flag
 		}
 	}
 }
@@ -35,5 +35,22 @@ answer_prayer_effect = {
 		remove_trait = beauty_bad_2
 		remove_trait = beauty_bad_3
 		add_trait = eldritch_beauty_01
+	}
+	# Vengeful
+	else_if = {
+		limit = {
+			has_character_flag = vengeful_cultist_flag
+		}
+		save_scope_as = vengeful_cultist
+		random_relation = {
+			type = rival
+			save_scope_as = rival_to_kill
+		}
+		scope:rival_to_kill = {
+			death = {
+				death_reason = death_duel
+				killer = scope:vengeful_cultist
+			}
+		}
 	}
 }
