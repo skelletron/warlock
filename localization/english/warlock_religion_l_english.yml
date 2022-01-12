@@ -260,8 +260,8 @@
 #  trait_beauty_good_3_desc:0 "Enthralling, mesmerizing, and lovely; this character outshines most with their beauty."
 #  trait_beauty_good_3_character_desc:0 "Enthralling, mesmerizing, and lovely; [ROOT.GetCharacter.GetFirstNameNoTooltip] outshines most with [ROOT.GetCharacter.GetHerHis] beauty."
  trait_eldritch_strength_01:0 "Eldritch Strength"
- trait_eldritch_strength_01_desc:0 "What nature witholds, the Great Old One provides. [ROOT.GetCharacter.GetFirstNameNoTooltip] is a shining example of this truth."
- trait_eldritch_strength_01_character_desc:0 "What nature witholds, the Great Old One provides. This character is a shining example of this truth."
+ trait_eldritch_strength_01_character_desc:0 "What nature witholds, the Great Old One provides. [ROOT.GetCharacter.GetFirstNameNoTooltip] is a shining example of this truth."
+ trait_eldritch_strength_01_desc:0 "What nature witholds, the Great Old One provides. This character is a shining example of this truth."
 
 # Blood Modifiers
  temporal_resistance_modifier:0 "Temporal Resistance"
