@@ -12,6 +12,11 @@
 						has_trait = greedy
 					}
 				}
+				AND = {
+					is_ruler = yes
+					highest_held_title_tier >= tier_county
+					age >= 50
+				}
 			}
 			age >= 18
 		}
@@ -40,6 +45,14 @@
 				}
 			}
 			add_character_flag = greedy_cultist_flag
+		}
+		else_if = {
+			limit = {
+				is_ruler = yes
+				highest_held_title_tier >= tier_county
+				age >= 50
+			}
+			add_character_flag = elderly_cultist_flag
 		}
 	}
 }
@@ -88,24 +101,31 @@ answer_prayer_effect = {
 			# days = 5
 		}
 	}
+	# Greedy
 	else_if = {
 		limit = {
 			has_character_flag = greedy_cultist_flag
 		}
-		# save_scope_as = greedy_cultist
-
-		# receive_money_effect = yes
-		# var:indebted_duke_of_darkness = {
-		# 	pay_short_term_gold = {
-		# 		target = scope:greedy_cultist
-		# 		gold = 1000
-		# 	}
-		# }
 		add_character_modifier = {
 			modifier = indebted_to_duke_of_darkness_modifier
 			years = 9
 			# days = 5
 		}
+	}
+	# Elderly
+	else_if = {
+		limit = {
+			has_character_flag = elderly_cultist_flag
+		}
+		add_character_modifier = {
+			modifier = indebted_to_duke_of_darkness_modifier
+			years = 21
+		}
+		# add_character_modifier = {
+		# 	modifier = eternal_youth_modifier
+		# }
+		add_trait = eternal_youth
+		set_immortal_age = 25
 	}
 
 	# add_character_flag = indebted_flag

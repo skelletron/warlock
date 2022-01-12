@@ -159,4 +159,10 @@ answer_prayer_cost = {
 		}
 		add = 200
 	}
+	else_if = {
+		limit = {
+			has_character_flag = elderly_cultist_flag
+		}
+		add = 2000
+	}
 }

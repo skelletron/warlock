@@ -1,5 +1,7 @@
 ﻿l_english:
  trait_duke_of_darkness:0 "Duke of Darkness"
+ trait_eternal_youth:0 "Eternal Youth"
+ trait_eternal_youth_desc:0 "Long life, but at what cost?"
 
  trait_warlock:0 "Warlock"
  trait_warlock_desc:0 "The Heralder of the End Times has established their position within the ranks of the cultists of the Great Old One, and has been conferred the title of Warlock and all that it entails."
@@ -681,6 +683,7 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  hear_prayers.1001.desc_ugly:0 "I wish to be made beautiful and lovely, so that all in the land may adore me."
  hear_prayers.1001.desc_rivalry:0 "I wish for your Dark Grace to get rid of a most hated rival of mine."
  hear_prayers.1001.desc_greedy:0 "I wish to be rich beyond measure."
+ hear_prayers.1001.desc_elderly:0 "I wish to be young forever, so I may continue to maintain the rule of my land and peoples."
 
  hear_prayers.1001.a:0 "Very well, but know that everything has its price."
  hear_prayers.1001.a_1.tt:0 "You will grant [cultist.GetUINamePossessive] wish, and come to collect your toll many years down the line."

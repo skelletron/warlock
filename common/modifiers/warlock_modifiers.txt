@@ -128,8 +128,14 @@ bottled_soul_modifier = {
 	icon = drink_positive
 	life_expectancy = 20
 	health = 0.05
+	monthly_piety = 0.1
 	stacking = yes
 }
+
+# eternal_youth_modifier = {
+# 	icon = health_positive
+# 	immortal = yes
+# }
 
 # research this later (it's a script value)
 # council_scaled_monthly_income = {

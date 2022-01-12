@@ -30,6 +30,14 @@ hear_prayers.1001 = {
 				}
 				desc = hear_prayers.1001.desc_greedy
 			}
+			triggered_desc = {
+				trigger = {
+					scope:cultist = {
+						has_character_flag = elderly_cultist_flag
+					}
+				}
+				desc = hear_prayers.1001.desc_elderly
+			}
 			desc = hear_prayers.1001.desc
 		}
 	}
@@ -155,7 +163,7 @@ hear_prayers.1002 = {
 			scope:cultist = {
 				add_character_modifier = {
 					modifier = indebted_to_duke_of_darkness_modifier
-					years = 10
+					years = 12
 				}
 				reap_soul_child_effect = yes
 			}
