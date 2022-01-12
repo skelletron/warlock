@@ -200,3 +200,15 @@ elder_evangelist_modifier = {
 	monthly_piety_from_buildings_mult = 0.15
 	tyranny_gain_mult = -0.2
 }
+
+indebted_beautiful_modifier = {
+	icon = piety_negative
+}
+
+indebted_vengeful_modifier = {
+	icon = piety_negative
+}
+
+indebted_to_duke_of_darkness_modifier = {
+	icon = piety_negative
+}

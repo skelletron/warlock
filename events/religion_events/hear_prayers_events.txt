@@ -17,7 +17,7 @@ hear_prayers.1001 = {
 			triggered_desc = {
 				trigger = {
 					scope:cultist = {
-						has_character_flag = hateful_cultist_flag
+						has_character_flag = vengeful_cultist_flag
 					}
 				}
 				desc = hear_prayers.1001.desc_rivalry
@@ -54,13 +54,73 @@ hear_prayers.1001 = {
 		custom_tooltip = hear_prayers.1001.a_1.tt
 
 		scope:cultist = {
-			add_to_list = indebted_cultists
+			# add_to_list = indebted_cultists
+			add_character_flag = indebted_flag
 			answer_prayer_effect = yes
+			set_variable = {
+				name = indebted_duke_of_darkness
+				value = scope:owner
+			}
 		}
 	}
 
 	option = {
 		name = hear_prayers.1001.b
 		custom_tooltip = hear_prayers.1001.b_1.tt
+	}
+}
+
+hear_prayers.1002 = {
+	type = character_event
+	title = hear_prayers.1002.t
+	desc = hear_prayers.1002.desc
+	theme = faith
+
+	left_portrait = {
+		character = scope:owner
+		animation = personality_zealous
+	}
+
+	right_portrait = {
+		character = scope:cultist
+		animation = beg
+	}
+
+	immediate = {
+		save_scope_as = owner
+		# scope:owner = {
+		# 	var:current_debtor = {
+		# 		save_scope_as = cultist
+		# 	}
+		# }
+		random_in_list = {
+			list = indebted_cultists
+			save_scope_as = cultist
+		}
+		scope:cultist = {
+			remove_from_list = indebted_cultists
+		}
+	}
+
+	# Pay
+	option = {
+		name = hear_prayers.1002.a
+		custom_tooltip = hear_prayers.1002.a_1.tt
+		hidden_effect = {
+			scope:cultist = {
+				remove_character_flag = indebted_flag
+			}
+		}
+	}
+
+	# Extension
+	option = {
+		name = hear_prayers.1002.b
+		custom_tooltip = hear_prayers.1002.b_1.tt
+		hidden_effect = {
+			scope:cultist = {
+				remove_character_flag = indebted_flag
+			}
+		}
 	}
 }

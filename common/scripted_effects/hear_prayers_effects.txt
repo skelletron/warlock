@@ -35,6 +35,13 @@ answer_prayer_effect = {
 		remove_trait = beauty_bad_2
 		remove_trait = beauty_bad_3
 		add_trait = eldritch_beauty_01
+
+		# Collection Setup
+		add_character_modifier = {
+			# modifier = indebted_beautiful_modifier
+			modifier = indebted_to_duke_of_darkness_modifier
+			years = 2
+		}
 	}
 	# Vengeful
 	else_if = {
@@ -52,5 +59,13 @@ answer_prayer_effect = {
 				killer = scope:vengeful_cultist
 			}
 		}
+
+		# Collection Setup
+		add_character_modifier = {
+			# modifier = indebted_vengeful_modifier
+			modifier = indebted_to_duke_of_darkness_modifier
+			years = 2
+		}
 	}
+	add_character_flag = indebted_flag
 }
