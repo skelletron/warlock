@@ -664,6 +664,15 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  hear_prayers.1002.t:0 "Coming to Collect"
  hear_prayers.1002.desc:0 "[cultist.GetFullNameNoTooltip], I am here to remind you that your time has come. Years ago, I granted you a boon that you must now repay. #F \n\nNow to decide how this Cultist shall repay my generosity...#!"
 
+ hear_prayers.1002.a:0 "I will reap your soul as payment."
+ hear_prayers.1002.a_1.tt:0 "[cultist.GetFullNameNoTooltip] will be sacrificed by you."
+
+ hear_prayers.1002.b:0 "I will reap the soul of your child as an extension fee."
+ hear_prayers.1002.b_1.tt:0 "One of [cultist.GetFullNameNoTooltip]'s children will be sacrificed by you."
+
+ hear_prayers.1002.c:0 "I will take your earthly possessions as an extension fee."
+ hear_prayers.1002.c_1.tt:0 "You will take [cultist.GetFullNameNoTooltip]'s gold."
+
 # Duke of Darkness Title
 # <title_name>
 # <title_name>_adj

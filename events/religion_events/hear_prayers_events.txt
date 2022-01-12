@@ -141,6 +141,12 @@ hear_prayers.1002 = {
 		name = hear_prayers.1002.c
 		custom_tooltip = hear_prayers.1002.c_1.tt
 
+		trigger = {
+			scope:cultist = {
+				gold >= massive_gold_value
+			}
+		}
+
 		hidden_effect = {
 			scope:cultist = {
 				add_character_modifier = {
