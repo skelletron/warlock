@@ -40,7 +40,7 @@ answer_prayer_effect = {
 		add_character_modifier = {
 			# modifier = indebted_beautiful_modifier
 			modifier = indebted_to_duke_of_darkness_modifier
-			years = 2
+			years = 1
 		}
 	}
 	# Vengeful
@@ -64,8 +64,47 @@ answer_prayer_effect = {
 		add_character_modifier = {
 			# modifier = indebted_vengeful_modifier
 			modifier = indebted_to_duke_of_darkness_modifier
-			years = 2
+			years = 1
 		}
 	}
 	add_character_flag = indebted_flag
 }
+
+reap_soul_child_effect = {
+	save_scope_as = cultist
+	random_living_character = {
+		limit = {
+			is_child_of = scope:cultist
+		}
+		save_scope_as = victim_to_reap
+		scope:victim_to_reap = {
+			death = {
+				death_reason = death_sacrificed_to_gods
+				killer = scope:cultist.var:indebted_duke_of_darkness
+			}
+		}
+	}
+}
+
+
+# reap_soul_child_effect = {
+# 	any_child = {
+# 		add_to_list = potential_souls_list
+# 	}
+# 	random_in_list = {
+# 		list = potential_souls_list
+# 		save_scope_as = soul_to_reap
+# 	}
+# 	scope:soul_to_reap = {
+# 		death = {
+# 			death_reason = death_duel
+# 			killer = var:indebted_duke_of_darkness
+# 		}
+# 	}
+# }
+
+# has_children_util_effect = {
+# 	every_child = {
+# 		add_to_list = children_list
+# 	}
+# }

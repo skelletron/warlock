@@ -661,6 +661,8 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  hear_prayers.1001.desc_ugly:0 "I wish to be made beautiful and lovely, so that all in the land may adore me."
  hear_prayers.1001.desc_rivalry:0 "I wish for your Dark Grace to get rid of a most hated rival of mine."
 
+ hear_prayers.1002.t:0 "Coming to Collect"
+ hear_prayers.1002.desc:0 "[cultist.GetFullNameNoTooltip], I am here to remind you that your time has come. Years ago, I granted you a boon that you must now repay. #F \n\nNow to decide how this Cultist shall repay my generosity...#!"
 
 # Duke of Darkness Title
 # <title_name>

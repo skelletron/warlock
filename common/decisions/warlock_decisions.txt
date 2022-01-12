@@ -226,6 +226,7 @@ summon_great_old_one_decision = {
 		is_adult = yes
 		NOT = {
 			has_character_flag = summoned_great_old_one_flag
+			has_trait = duke_of_darkness
 		}
 	}
 

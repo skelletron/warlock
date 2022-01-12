@@ -117,9 +117,17 @@ hear_prayers.1002 = {
 	option = {
 		name = hear_prayers.1002.b
 		custom_tooltip = hear_prayers.1002.b_1.tt
+
 		hidden_effect = {
 			scope:cultist = {
-				remove_character_flag = indebted_flag
+				add_character_modifier = {
+					modifier = indebted_to_duke_of_darkness_modifier
+					years = 1
+				}
+				reap_soul_child_effect = yes
+				# any_child = {
+					
+				# }
 			}
 		}
 	}
