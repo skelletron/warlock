@@ -657,6 +657,9 @@ create_minion.1001.c.tt:0 "Mighty King Malfegathor of the Will, who cows the unb
  summon_great_old_one.1011.desc:0 "This is the knowledge I sought, the power I fought for.\n\nI am recognized by our Eldritch Lord, and from now until time itself ceases to be, I shall serve as the Duchess of Darkness, shepherding this plane to greater heights, and bringing about an eternal era of prosperity.\n\nMy work, it seems, has only just begun."
 
 # Hear Prayers
+
+ hear_prayers_decision.desc:0 "You will listen closely to the prayers of your fellow Cultists, and bless those who you deem worthy."
+
  hear_prayers.1001.desc_intro:0 "Your Dark Grace, I kneel before you and humbly ask that you grant a fervent wish of mine.\n\n"
  hear_prayers.1001.desc_ugly:0 "I wish to be made beautiful and lovely, so that all in the land may adore me."
  hear_prayers.1001.desc_rivalry:0 "I wish for your Dark Grace to get rid of a most hated rival of mine."

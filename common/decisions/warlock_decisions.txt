@@ -278,6 +278,10 @@ hear_prayers_decision = {
 	is_valid = {
 	}
 
+	is_valid_showing_failures_only = {
+		piety >= 600
+	}
+
 	effect = {
 		save_scope_as = owner
 		trigger_event = hear_prayers.1001

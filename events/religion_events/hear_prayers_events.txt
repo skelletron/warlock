@@ -60,7 +60,6 @@ hear_prayers.1001 = {
 	option = {
 		name = hear_prayers.1001.a
 		custom_tooltip = hear_prayers.1001.a_1.tt
-
 		scope:cultist = {
 			# add_to_list = indebted_cultists
 			add_character_flag = indebted_flag
@@ -79,6 +78,12 @@ hear_prayers.1001 = {
 						gold = 1000
 					}
 				}
+			}
+		}
+		scope:owner = {
+			add_piety = {
+				value = 0
+				subtract = 600
 			}
 		}
 	}
