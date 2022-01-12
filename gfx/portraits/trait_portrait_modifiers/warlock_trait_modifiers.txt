@@ -23,6 +23,26 @@
 	}
 }
 
+violet_eyes = {
+	violet_eyes = {
+		traits = { duke_of_darkness }
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				x = 0.004
+				y = 0.0
+			}
+		}
+	}
+}
+
+
 white_hair = {
 	white_hair = {
 		traits = {
@@ -95,6 +115,37 @@ cyan_hair = {
 		}
 	}
 }
+
+violet_hair = {
+	violet_hair = {
+		traits = {
+			duke_of_darkness
+		}
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				# template = hair_color
+				#mode = add			#not supported for color genes
+				#mode = replace		#overwrite this gene with palette coordinates specified here
+				#mode = modify		#adds x and y to the dna-gene's values
+				mode = replace
+					
+				# x = 0.012
+				# x = 0.004
+
+				x = 0.004
+				y = 0.0
+				# x = 0.012
+
+				# # y = 0.01
+				# y = 0.0
+				# y = 0.01 # this make it super blue, use it for the shadow fiend?
+			}
+		}
+	}
+}
+
+
 
 undead_gauntness = {
 	undead_gauntness = {
@@ -368,6 +419,7 @@ undead_beauty = {
 				# beauty_good_2
 				# beauty_good_3
 				eldritch_beauty_01
+				duke_of_darkness
 				pale_bishop
 		}
 		dna_modifiers = {

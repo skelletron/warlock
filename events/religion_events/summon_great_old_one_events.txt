@@ -245,7 +245,44 @@ summon_great_old_one.1009 = {
 		hidden_effect = {
 			scope:owner = {
 				become_duke_of_darkness_effect = yes
+				set_immortal_age = 25
 			}
+		}
+		scope:owner = {
+			create_dynamic_title = {
+				tier = empire
+				name = "Eldritch Regency of Terra Null"
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = scope:new_duchess.capital_province.county
+				set_landless_title = yes
+				set_destroy_on_succession = yes
+				set_delete_on_destroy = yes
+				set_no_automatic_claims = yes
+				set_definitive_form = yes
+				set_can_be_named_after_dynasty = no
+
+				change_title_holder = {
+					holder = scope:new_duchess
+					change = scope:change
+				}
+				# set_title_name = ye_olde_title
+				
+				# set_title_name = duke_of_darkness_title
+				# set_title_article = TITLE_ARTICLE_LOC_KEY
+				# set_title_adjective = TITLE_ADJECTIVE_LOC_KEY
+			}
+			resolve_title_and_vassal_change = scope:change
+			# primary_title = {
+			# 	set_title_name = duke_of_darkness_title
+			# 	set_title_article = TITLE_ARTICLE_LOC_KEY
+			# 	set_title_adjective = TITLE_ADJECTIVE_LOC_KEY
+			# }
 		}
 		trigger_event = summon_great_old_one.1010
 	}
