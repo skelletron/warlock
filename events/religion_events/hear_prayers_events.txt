@@ -1,0 +1,66 @@
+namespace = hear_prayers
+
+hear_prayers.1001 = {
+	type = character_event
+	title = hear_prayers.1001.t
+	desc = {
+		desc = hear_prayers.1001.desc_intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:cultist = {
+						has_character_flag = ugly_cultist_flag
+					}
+				}
+				desc = hear_prayers.1001.desc_ugly
+			}
+			triggered_desc = {
+				trigger = {
+					scope:cultist = {
+						has_character_flag = hateful_cultist_flag
+					}
+				}
+				desc = hear_prayers.1001.desc_rivalry
+			}
+			desc = hear_prayers.1001.desc
+		}
+	}
+
+	theme = faith
+
+	left_portrait = {
+		character = scope:owner
+		animation = flirtation
+	}
+
+	right_portrait = {
+		character = scope:cultist
+		animation = beg
+	}
+
+	immediate = {
+		find_cultist = yes
+		random_in_list = {
+			list = praying_cultists
+			save_scope_as = cultist
+		}
+		scope:cultist = {
+			remove_from_list = praying_cultists
+		}
+	}
+
+	option = {
+		name = hear_prayers.1001.a
+		custom_tooltip = hear_prayers.1001.a_1.tt
+
+		scope:cultist = {
+			add_to_list = indebted_cultists
+			answer_prayer_effect = yes
+		}
+	}
+
+	option = {
+		name = hear_prayers.1001.b
+		custom_tooltip = hear_prayers.1001.b_1.tt
+	}
+}

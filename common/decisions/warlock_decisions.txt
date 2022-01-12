@@ -219,7 +219,7 @@ summon_great_old_one_decision = {
 	ai_check_interval = 0
 	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
 
-	desc = quick_start_decision.desc
+	desc = summon_great_old_one_decision.desc
 
 	is_shown = {
 		faith = faith:great_old_one
@@ -246,14 +246,40 @@ summon_great_old_one_decision = {
 
 	cost = {
 		# actual cost
-		piety = 100000
+		# piety = 100000
 		# test cost
-		# piety = 50
+		piety = 50
 	}
 
 	effect = {
 		save_scope_as = owner
 		trigger_event = summon_great_old_one.1001
+	}
+}
+
+hear_prayers_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_activity.dds"
+
+	desc = hear_prayers_decision.desc
+
+	is_shown = {
+		faith = faith:great_old_one
+		is_adult = yes
+		# has_character_flag = summoned_great_old_one_flag
+		has_trait = warlock
+		has_trait = duke_of_darkness
+		# NOT = {
+		# 	has_character_flag = summoned_great_old_one_flag
+		# }
+	}
+
+	is_valid = {
+	}
+
+	effect = {
+		save_scope_as = owner
+		trigger_event = hear_prayers.1001
 	}
 }
 
