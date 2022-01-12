@@ -102,18 +102,22 @@ hear_prayers.1002 = {
 		}
 	}
 
-	# Pay
+	# Pay Ultimate price
 	option = {
 		name = hear_prayers.1002.a
 		custom_tooltip = hear_prayers.1002.a_1.tt
 		hidden_effect = {
 			scope:cultist = {
 				remove_character_flag = indebted_flag
+				death = {
+					death_reason = death_sacrificed_to_gods
+					killer = scope:owner
+				}
 			}
 		}
 	}
 
-	# Extension
+	# Extension via Child Sacrifice
 	option = {
 		name = hear_prayers.1002.b
 		custom_tooltip = hear_prayers.1002.b_1.tt
@@ -122,12 +126,28 @@ hear_prayers.1002 = {
 			scope:cultist = {
 				add_character_modifier = {
 					modifier = indebted_to_duke_of_darkness_modifier
-					years = 1
+					years = 10
 				}
 				reap_soul_child_effect = yes
 				# any_child = {
 					
 				# }
+			}
+		}
+	}
+
+	# Extension via Earthly Possessions
+	option = {
+		name = hear_prayers.1002.c
+		custom_tooltip = hear_prayers.1002.c_1.tt
+
+		hidden_effect = {
+			scope:cultist = {
+				add_character_modifier = {
+					modifier = indebted_to_duke_of_darkness_modifier
+					years = 7
+				}
+				take_money_effect = yes
 			}
 		}
 	}

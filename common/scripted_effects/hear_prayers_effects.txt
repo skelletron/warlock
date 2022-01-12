@@ -40,7 +40,8 @@ answer_prayer_effect = {
 		add_character_modifier = {
 			# modifier = indebted_beautiful_modifier
 			modifier = indebted_to_duke_of_darkness_modifier
-			years = 1
+			years = 10
+			# days = 5
 		}
 	}
 	# Vengeful
@@ -64,7 +65,8 @@ answer_prayer_effect = {
 		add_character_modifier = {
 			# modifier = indebted_vengeful_modifier
 			modifier = indebted_to_duke_of_darkness_modifier
-			years = 1
+			years = 10
+			# days = 5
 		}
 	}
 	add_character_flag = indebted_flag
@@ -86,6 +88,16 @@ reap_soul_child_effect = {
 	}
 }
 
+take_money_effect = {
+	save_scope_as = cultist
+	var:indebted_duke_of_darkness = {
+		save_scope_as = collector
+	}
+	pay_short_term_gold = {
+		target = scope:collector
+		gold = massive_gold_value
+	}
+}
 
 # reap_soul_child_effect = {
 # 	any_child = {
