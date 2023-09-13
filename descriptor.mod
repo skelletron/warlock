@@ -1,6 +1,7 @@
-version="0.1"
+version="0.2"
 tags={
 	"Alternative History"
 }
-name="warlock_dev"
+name="SkelletronWarlock"
 supported_version="1.4.4"
+path="mod/SkelletronWarlock"
