@@ -4,6 +4,10 @@ Learn how to become a warlock - a servant of an eldritch horror or cosmic entity
 
 **Recommended game version:** `1.4.4`. It may work on newer versions, but this is unsupported.
 
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 ## Features
 
 As a warlock, you will gain access to the following schools of magic:
@@ -51,10 +55,9 @@ Manual install [instructions](https://ck3.paradoxwikis.com/Modding#Installing_mo
 
 - Copy the mod's folder to `Documents\Paradox Interactive\Crusader Kings III\mod`
 
-## Publish Mod
+## To do:
 
-Instructions to publish mod to Steam Workshop [here](https://ck3.paradoxwikis.com/Modding#Uploading.2Fupdating_a_mod).
-
-## to do:
-
-- Decision localization
+- Implement final perks on the Bone tree:
+	+ [bone tree: implement placeholder two](https://github.com/skelletron/warlock/issues/1)
+	+ [bone tree: implement placeholder three](https://github.com/skelletron/warlock/issues/2)
+	+ [bone tree: implement placeholder four](https://github.com/skelletron/warlock/issues/3)

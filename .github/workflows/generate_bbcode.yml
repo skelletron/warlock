@@ -1,0 +1,44 @@
+name: Generate BBCode
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  outf: README.bbc
+  readmef: README.md
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if the README.md file has changed
+        id: file_changed
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep "README.md"; then
+            echo "::set-output name=changed::true"
+          else
+            echo "::set-output name=changed::false"
+          fi
+
+      - name: Checkout code
+        if: steps.file_changed.outputs.changed == 'true'
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Install markdown_to_bbcodenm tool
+        run: dotnet tool install -g Converter.MarkdownToBBCodeNM.Tool
+
+      - name: Convert README.md to README.bbc
+        run: markdown_to_bbcodesteam -i "README.md" -o "${{ env.outf }}"
+
+      - name: Archive README.bbc
+        uses: actions/upload-artifact@v2
+        with:
+          name: bbcode-artifact
+          path: ${{ env.outf }}
