@@ -13,17 +13,7 @@ jobs:
   convert:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if the README.md file has changed
-        id: file_changed
-        run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep "README.md"; then
-            echo "::set-output name=changed::true"
-          else
-            echo "::set-output name=changed::false"
-          fi
-
       - name: Checkout code
-        if: steps.file_changed.outputs.changed == 'true'
         uses: actions/checkout@v3
 
       - name: Setup .NET Core
@@ -32,7 +22,7 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Install markdown_to_bbcodenm tool
-        run: dotnet tool install -g Converter.MarkdownToBBCodeNM.Tool
+        run: dotnet tool install -g Converter.MarkdownToBBCodeSteam.Tool
 
       - name: Convert README.md to README.bbc
         run: markdown_to_bbcodesteam -i "README.md" -o "${{ env.outf }}"
