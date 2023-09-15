@@ -14,11 +14,13 @@ Message from Cheb Gonaz:
 >
 > Skelletron has since moved on from CK3 modding and I don't have much time to invest into improving/maintaining this mod but I'll do my best. If you can help, please fork the [repository](https://github.com/skelletron/warlock) and make your changes and create a pull request for me to look at and approve.
 
-If you encounter problems, please open an [issue]() on the [repository](https://github.com/skelletron/warlock).
+If you encounter problems, please open an [issue](https://github.com/skelletron/warlock/issues) on the [repository](https://github.com/skelletron/warlock).
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+![by-nc-sa-4.0](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Features
 
