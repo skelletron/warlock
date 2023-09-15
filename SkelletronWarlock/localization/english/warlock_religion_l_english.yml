@@ -20,6 +20,7 @@
  quick_start_decision.desc:0 "Choose your origin, and your current standing within the world. Are you an established Warlock who has already proven themself to the Great Old One? Or are you a Cultist who secured the right to practice their faith, even as a religious minority? Or are you simply as you are now? You will only get to make this decision once per lifetime, so think carefully."
  quick_start_decision_confirm:0 "I've made up my mind"
 
+ quick_start.1001.t:0 "The next dawn..."
  quick_start.1001.desc:0 "You awaken at dawn to the sound of birds chirping, their lives so small in comparison to your own, yet they are content. You ponder the decisions that have led you to become the person you are today. Who are you, what do you believe in, and what do you value?"
 
  quick_start.1001.a:0 "I am an established Warlock."
