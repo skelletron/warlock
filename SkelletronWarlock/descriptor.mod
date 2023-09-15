@@ -4,4 +4,3 @@ tags={
 }
 name="SkelletronWarlock"
 supported_version="1.4.4"
-path="mod/SkelletronWarlock"
