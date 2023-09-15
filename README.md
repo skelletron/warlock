@@ -68,7 +68,9 @@ Manual install [instructions](https://ck3.paradoxwikis.com/Modding#Installing_mo
 - Implement final perks on the Bone tree:
 	+ [bone tree: implement placeholder two](https://github.com/skelletron/warlock/issues/1)
 	+ [bone tree: implement placeholder three](https://github.com/skelletron/warlock/issues/2)
-	+ [bone tree: implement placeholder four](https://github.com/skelletron/warlock/issues/3)
+	+ [bone tree: implement placeholder four](https://github.com/skelletron/warlock/issues/3)	
+- Art - we need art!
+	+ [Unit art](https://github.com/skelletron/warlock/issues/8)
 
 ## Attributions
 
