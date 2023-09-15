@@ -69,11 +69,18 @@ Manual install [instructions](https://ck3.paradoxwikis.com/Modding#Installing_mo
 	+ [bone tree: implement placeholder two](https://github.com/skelletron/warlock/issues/1)
 	+ [bone tree: implement placeholder three](https://github.com/skelletron/warlock/issues/2)
 	+ [bone tree: implement placeholder four](https://github.com/skelletron/warlock/issues/3)
-	
+
+## Attributions
+
+- [Thumbnail CC0](https://commons.wikimedia.org/wiki/File:Pentagram_Levi_black.PNG)
+- [Unit placeholders (large) CC0](https://commons.wikimedia.org/wiki/File:DnD_Vampire.png)
+- - [Unit placeholders (small) CC0](https://commons.wikimedia.org/wiki/File:Pentagram_Levi_black.PNG)
+
 ## Changelog
 
 Date | Version | Notes
 --- | --- | ---
+15/09/2023 | 0.4 | Replace art with CC0 placeholders
 15/09/2023 | 0.3 | Fix missing localization
 14/09/2023 | 0.2 | Handover to Cheb Gonaz; cleanup & readme; add license
 12/01/2022 | 0.1 | Skelletron's final commit
